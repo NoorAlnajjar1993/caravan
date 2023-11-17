@@ -1,0 +1,31 @@
+com/dominate/caravan/retrofit/di/AppModule_ProvideRetrofitFactory.java
+ com.dominate.caravan.retrofit.di.AppModule_ProvideRetrofitFactory
+com/dominate/caravan/BR.java
+ com.dominate.caravan.BR
+com/dominate/caravan/retrofit/di/AppModule_GetLanguageHeaderOkHttpClientFactory.java
+ com.dominate.caravan.retrofit.di.AppModule_GetLanguageHeaderOkHttpClientFactory
+com/dominate/caravan/retrofit/di/AppModule_ProvideNetworkServiceFactory.java
+ com.dominate.caravan.retrofit.di.AppModule_ProvideNetworkServiceFactory
+com/dominate/caravan/retrofit/interceptors/LanguageInterceptor_Factory.java
+ com.dominate.caravan.retrofit.interceptors.LanguageInterceptor_Factory
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+com/dominate/caravan/BuildConfig.java
+ com.dominate.caravan.BuildConfig
+hilt_aggregated_deps/com_dominate_caravan_retrofit_di_AppModuleModuleDeps.java
+ hilt_aggregated_deps.com_dominate_caravan_retrofit_di_AppModuleModuleDeps
+com/dominate/caravan/DataBindingTriggerClass.java
+ com.dominate.caravan.DataBindingTriggerClass
+com/dominate/caravan/utils/Prefs_Factory.java
+ com.dominate.caravan.utils.Prefs_Factory
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/dominate/caravan/retrofit/di/AppModule_ProvideGsonFactory.java
+ com.dominate.caravan.retrofit.di.AppModule_ProvideGsonFactory
+ com.dominate.caravan.retrofit.di.AppModule_ProvideGsonFactory$InstanceHolder
+com/dominate/caravan/DataBinderMapperImpl.java
+ com.dominate.caravan.DataBinderMapperImpl
+ com.dominate.caravan.DataBinderMapperImpl$InnerBrLookup
+ com.dominate.caravan.DataBinderMapperImpl$InnerLayoutIdLookup
+com/dominate/caravan/retrofit/di/AppModule_ProvideSharedPreferencesFactory.java
+ com.dominate.caravan.retrofit.di.AppModule_ProvideSharedPreferencesFactory

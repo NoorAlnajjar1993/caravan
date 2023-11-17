@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.esafirm.android-image-picker:imagepicker:2.4.0@aar">
+    <CLASSES>
+      <root url="jar://D:/jdks/caches/transforms-2/files-2.1/fcd6b5fa4d8651422dbbcc1b526fba05/jetified-imagepicker-2.4.0/jars/classes.jar!/" />
+      <root url="file://D:/jdks/caches/transforms-2/files-2.1/fcd6b5fa4d8651422dbbcc1b526fba05/jetified-imagepicker-2.4.0/res" />
+      <root url="file://D:/jdks/caches/transforms-2/files-2.1/fcd6b5fa4d8651422dbbcc1b526fba05/jetified-imagepicker-2.4.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/jdks/caches/modules-2/files-2.1/com.github.esafirm.android-image-picker/imagepicker/2.4.0/571884c2fd985d8054fa2c88401304959f17be74/imagepicker-2.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

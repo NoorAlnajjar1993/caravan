@@ -1,0 +1,663 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:2:1-38:12
+MERGED from [:data] C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.databinding:databinding-adapters:4.1.3] D:\jdks\caches\transforms-2\files-2.1\38c1e0ea9939088a7f2439f7821f5f6b\databinding-adapters-4.1.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:4.1.3] D:\jdks\caches\transforms-2\files-2.1\12b1ce0813214653cbeeb5c996c0e9c1\databinding-runtime-4.1.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:viewbinding:4.1.3] D:\jdks\caches\transforms-2\files-2.1\c23f3e10de0b821df1839009de085c89\jetified-viewbinding-4.1.3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.gitlab.developerdeveloperdeveloper:androidutilslibrary:1.0.0] D:\jdks\caches\transforms-2\files-2.1\7ecf5c7c84b21b78bd23b17ee6939455\jetified-androidutilslibrary-1.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] D:\jdks\caches\transforms-2\files-2.1\c4d0387f15a0dc5060656b65639d446f\navigation-fragment-ktx-2.3.5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.3.2] D:\jdks\caches\transforms-2\files-2.1\7ef90c57c0f15b8b17dbfa6ce6a0bd56\jetified-fragment-ktx-1.3.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.5] D:\jdks\caches\transforms-2\files-2.1\1f805669803305cff92548af54ee84cc\navigation-ui-ktx-2.3.5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.5] D:\jdks\caches\transforms-2\files-2.1\3b6d7d4aff16abd89abdffc27c960179\navigation-runtime-ktx-2.3.5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.2.2] D:\jdks\caches\transforms-2\files-2.1\221bb2745458174cdd705f59b6413987\jetified-activity-ktx-1.2.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] D:\jdks\caches\transforms-2\files-2.1\4669b70fc0eb376503534cc41406faef\navigation-common-ktx-2.3.5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.3.2] D:\jdks\caches\transforms-2\files-2.1\fb25f0d6618c91d7bef0083d05b3bce0\jetified-core-ktx-1.3.2\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\5e105e7ce0f4b7535f31cbcea4233e38\jetified-lifecycle-livedata-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\511c7fd8da3b972e226775f530d6d882\jetified-lifecycle-viewmodel-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:2:1-35:12
+MERGED from [com.github.yalantis:ucrop:2.2.2] D:\jdks\caches\transforms-2\files-2.1\bc6aff8f15e342c41088a9589f32cf5f\jetified-ucrop-2.2.2\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.room:room-ktx:2.2.5] D:\jdks\caches\transforms-2\files-2.1\000d115563327f8a76f01f9df0281b62\jetified-room-ktx-2.2.5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\528f37d9745d6db710def73a0ca42c87\jetified-lifecycle-livedata-core-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] D:\jdks\caches\transforms-2\files-2.1\6a234f751d9c5207d44d183d57657480\jetified-savedstate-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\8890762f45f359a1fcfb1602e54bc1fd\jetified-lifecycle-runtime-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:2:1-19:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] D:\jdks\caches\transforms-2\files-2.1\863ed69cf164c7ee2daaad680825f1b7\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-ui:2.3.5] D:\jdks\caches\transforms-2\files-2.1\0ed30dbd06eeb4cb95fc856798df31a6\navigation-ui-2.3.5\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.4.0-alpha02] D:\jdks\caches\transforms-2\files-2.1\9ec07ad47eaa985e1695020f3335e164\material-1.4.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] D:\jdks\caches\transforms-2\files-2.1\0f812ce17d088c689345a6043760fdfb\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.chrisbanes:PhotoView:2.3.0] D:\jdks\caches\transforms-2\files-2.1\90a7cc7418ead1162087441ef61792d2\jetified-PhotoView-2.3.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:2:1-32:12
+MERGED from [com.github.ceryle:RadioRealButton:v2.1.1] D:\jdks\caches\transforms-2\files-2.1\97083638ff91157c180b20dbbbddafaf\jetified-RadioRealButton-v2.1.1\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] D:\jdks\caches\transforms-2\files-2.1\9795d19233ff20f13288eae69e31374d\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] D:\jdks\caches\transforms-2\files-2.1\2c2da4385d1c6cdf55b54c1462f6ede2\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] D:\jdks\caches\transforms-2\files-2.1\029cedd4438041ed3c62bd0a7ed033af\swiperefreshlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.3.5] D:\jdks\caches\transforms-2\files-2.1\3b2506754bfa04a5e783b5862a1d1f16\navigation-fragment-2.3.5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.3.5] D:\jdks\caches\transforms-2\files-2.1\44f0d68984b581ffdffd2e218004de40\navigation-runtime-2.3.5\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.markomilos:paginate:1.0.0] D:\jdks\caches\transforms-2\files-2.1\8d9ced661f1b95129fe6a8fbef0141ae\jetified-paginate-1.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\485d9dd252fe58207ed5ce4d71991c10\room-runtime-2.2.5\AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02] D:\jdks\caches\transforms-2\files-2.1\a3a182d174c43d6f01a40e39b3c76f40\jetified-hilt-lifecycle-viewmodel-1.0.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.hilt:hilt-common:1.0.0-alpha02] D:\jdks\caches\transforms-2\files-2.1\909245aa2d8b42384dbba2a0cc9d66e1\jetified-hilt-common-1.0.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.dagger:hilt-android:2.28.3-alpha] D:\jdks\caches\transforms-2\files-2.1\a3854f99ab0b36b9fe506f2b1be0978e\jetified-hilt-android-2.28.3-alpha\AndroidManifest.xml:16:1-19:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] D:\jdks\caches\transforms-2\files-2.1\173d1517054a228fce45c7e7819b2090\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
+MERGED from [com.jakewharton.timber:timber:4.7.1] D:\jdks\caches\transforms-2\files-2.1\a1ac85b6c9c4dee4f22e868217f5f37b\jetified-timber-4.7.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:2:1-18:12
+MERGED from [com.github.sevar83:indeterminate-checkbox:1.0.5] D:\jdks\caches\transforms-2\files-2.1\50667fccaceb3272c91c3f62463af15f\jetified-indeterminate-checkbox-1.0.5\AndroidManifest.xml:2:1-17:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] D:\jdks\caches\transforms-2\files-2.1\3c6fef60ebc41eeee0624e122f89277a\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\e6cf393f98957a4837448458d75978c8\jetified-vision-common-16.3.0\AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] D:\jdks\caches\transforms-2\files-2.1\c35496fe4a5c928c1cfd8d69729b9920\jetified-play-services-clearcut-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] D:\jdks\caches\transforms-2\files-2.1\ae64fb5517d19e725d83fc48c13cf6bc\jetified-play-services-phenotype-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:17.4.0] D:\jdks\caches\transforms-2\files-2.1\39be93830b4be82b9baa76a8bbc22118\jetified-play-services-base-17.4.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] D:\jdks\caches\transforms-2\files-2.1\1b6567aefc9e6e9bfced6db895012ea5\jetified-play-services-tasks-17.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.4.0] D:\jdks\caches\transforms-2\files-2.1\4def4fe340bbade3f4564dc661fb2911\jetified-play-services-basement-17.4.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.3.2] D:\jdks\caches\transforms-2\files-2.1\1008eccf31774579262ba11d1ff24d5f\fragment-1.3.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.0] D:\jdks\caches\transforms-2\files-2.1\2f700c3887ce3a068d2062a12babd53c\recyclerview-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] D:\jdks\caches\transforms-2\files-2.1\b8356508f0fe978cb4f2e03fad2e6cf2\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] D:\jdks\caches\transforms-2\files-2.1\f5cb64f60ab8b83dfb12d82b5d73c131\jetified-circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.media:media:1.0.0] D:\jdks\caches\transforms-2\files-2.1\11a3950c53f752fd325ac93a8bdb1c13\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] D:\jdks\caches\transforms-2\files-2.1\9a0d0c08376df40700001f95c93651ed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] D:\jdks\caches\transforms-2\files-2.1\1105907ce2d0456877b16ac68b7a6366\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] D:\jdks\caches\transforms-2\files-2.1\d8df687df48b93aa97a9113b9f6a6b6d\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] D:\jdks\caches\transforms-2\files-2.1\7b7215d3731f2542b9ad641ec5bd7fec\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] D:\jdks\caches\transforms-2\files-2.1\99e1eb822ae438d4aafd37b120d2de61\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] D:\jdks\caches\transforms-2\files-2.1\6b64e4464f736f5b77db687b68c17763\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] D:\jdks\caches\transforms-2\files-2.1\92b1b303ee045619a9a7a1c2abfc5c4f\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.3.0] D:\jdks\caches\transforms-2\files-2.1\b44c6b7c4b05d07c05702656c07665bf\transition-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] D:\jdks\caches\transforms-2\files-2.1\1c48bb9aebf5d05c2909112d53f35ade\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] D:\jdks\caches\transforms-2\files-2.1\ce7330d3375bc7f07ee2a601b77b3c96\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] D:\jdks\caches\transforms-2\files-2.1\b9111a2417f51a6e6cc70648bd25a743\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.2] D:\jdks\caches\transforms-2\files-2.1\5ae665eafb4409cc476c7f1ae498f1c7\jetified-activity-1.2.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] D:\jdks\caches\transforms-2\files-2.1\991c244aba3cc4548d4a0ae3f930dd2f\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] D:\jdks\caches\transforms-2\files-2.1\79b71f6d6443e3f932a3197c666fa418\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common:2.3.5] D:\jdks\caches\transforms-2\files-2.1\04f0e514d3eef20f5901ce396d2d5141\navigation-common-2.3.5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.3.2] D:\jdks\caches\transforms-2\files-2.1\893a5d726c1662a589498de2933e6756\core-1.3.2\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] D:\jdks\caches\transforms-2\files-2.1\ad1ad041f0642729c2a8610ebb6012b1\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] D:\jdks\caches\transforms-2\files-2.1\32e09cbba15fb22f94165da01bdeced7\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\jdks\caches\transforms-2\files-2.1\88900eb63ed58b600db98650793bf1bd\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] D:\jdks\caches\transforms-2\files-2.1\22fc0465abdf76c3d0dd4ea7dc4ee1fc\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] D:\jdks\caches\transforms-2\files-2.1\8b66a4f7107087e86b7e4a333d77480a\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] D:\jdks\caches\transforms-2\files-2.1\29fcf295eb510e0c2d575f90a2757d5a\sqlite-framework-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] D:\jdks\caches\transforms-2\files-2.1\9491e15401bc47d8f3dcc4b572915708\sqlite-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] D:\jdks\caches\transforms-2\files-2.1\3eaa80fd275d08477af96643d563e0ad\jetified-gifdecoder-4.11.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] D:\jdks\caches\transforms-2\files-2.1\fcb2b851a50eb6be3bb035c91dbc035c\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] D:\jdks\caches\transforms-2\files-2.1\5b9ab503630b0df4df3921e704345695\jetified-transport-api-2.2.1\AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-components:16.0.0] D:\jdks\caches\transforms-2\files-2.1\a7bf6aedeac883bf149be72810635223\jetified-firebase-components-16.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] D:\jdks\caches\transforms-2\files-2.1\9ad5bfc72bb44bacceeaa8e32711e2d3\jetified-firebase-encoders-json-17.1.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] D:\jdks\caches\transforms-2\files-2.1\eff37ad31c672b4310f1c4df741dd4bd\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] D:\jdks\caches\transforms-2\files-2.1\2218cb1636837d3d0860c55772f4e5f2\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] D:\jdks\caches\transforms-2\files-2.1\37362d02469901219045342c7603f9cd\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] D:\jdks\caches\transforms-2\files-2.1\fcc951c0e41d002935bc707d4bdce616\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] D:\jdks\caches\transforms-2\files-2.1\0f9b3fba43aa3ff4c529bf6fd346f367\lifecycle-livedata-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] D:\jdks\caches\transforms-2\files-2.1\b81400aae7de55b0e00a2e9b74922a92\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] D:\jdks\caches\transforms-2\files-2.1\0d6a8187877a4cad2bb94f793d168c10\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] D:\jdks\caches\transforms-2\files-2.1\50516a637bd80052a91561ec807b0afb\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] D:\jdks\caches\transforms-2\files-2.1\396ce2e94fc3d90363fec1bce80076e5\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] D:\jdks\caches\transforms-2\files-2.1\92d5a6fdeb3448d48e76acefa085151a\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.dagger:dagger-lint-aar:2.28.3] D:\jdks\caches\transforms-2\files-2.1\0d9a96d01575c6891f3366cdb5c48918\jetified-dagger-lint-aar-2.28.3\AndroidManifest.xml:16:1-19:12
+MERGED from [com.facebook.fresco:fresco:1.13.0] D:\jdks\caches\transforms-2\files-2.1\5259ebf9721f81e151c3ffadeb983847\jetified-fresco-1.13.0\AndroidManifest.xml:2:1-9:12
+MERGED from [me.relex:circleindicator:1.2.2] D:\jdks\caches\transforms-2\files-2.1\d9d9567bca7f9d1a6c09297b735ecd4f\jetified-circleindicator-1.2.2\AndroidManifest.xml:2:1-12:12
+MERGED from [com.facebook.fresco:drawee:1.13.0] D:\jdks\caches\transforms-2\files-2.1\046c9482a764a03744be07c726b31a12\jetified-drawee-1.13.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:1.13.0] D:\jdks\caches\transforms-2\files-2.1\96b796444e89df0e4786e9557e635344\jetified-nativeimagefilters-1.13.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.13.0] D:\jdks\caches\transforms-2\files-2.1\03d9cf4ba160aa75bb0d285873d93055\jetified-imagepipeline-1.13.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:1.13.0] D:\jdks\caches\transforms-2\files-2.1\6d09b6c2a27d9d405076d48c8ce54723\jetified-nativeimagetranscoder-1.13.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.13.0] D:\jdks\caches\transforms-2\files-2.1\0676bbc0eae1fb054c8b2d6c493e8795\jetified-imagepipeline-base-1.13.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.13.0] D:\jdks\caches\transforms-2\files-2.1\91dcf8d0e4879a39a7a0888fb0258c5f\jetified-fbcore-1.13.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] D:\jdks\caches\transforms-2\files-2.1\80a1acb0ab1eb240096996989a4fcab6\jetified-soloader-0.6.0\AndroidManifest.xml:2:1-13:12
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:2:1-38:12
+	package
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:3:5-26
+		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:2:1-38:12
+		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:2:1-38:12
+		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:5:22-76
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:11:5-67
+MERGED from [io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android:networkSecurityConfig=@xml/security_config
+ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:7:5-90
+	android:name
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:7:22-87
+uses-permission#android:usesCleartextTraffic=true
+ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:8:5-73
+	android:name
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:8:22-70
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:9:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:9:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:10:22-78
+application
+ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:12:5-36:19
+MERGED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:14:5-33:19
+MERGED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:14:5-33:19
+MERGED from [io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:13:5-17:19
+MERGED from [io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:13:5-17:19
+MERGED from [com.google.android.material:material:1.4.0-alpha02] D:\jdks\caches\transforms-2\files-2.1\9ec07ad47eaa985e1695020f3335e164\material-1.4.0-alpha02\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.4.0-alpha02] D:\jdks\caches\transforms-2\files-2.1\9ec07ad47eaa985e1695020f3335e164\material-1.4.0-alpha02\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] D:\jdks\caches\transforms-2\files-2.1\0f812ce17d088c689345a6043760fdfb\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] D:\jdks\caches\transforms-2\files-2.1\0f812ce17d088c689345a6043760fdfb\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:15:5-30:19
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:15:5-30:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\485d9dd252fe58207ed5ce4d71991c10\room-runtime-2.2.5\AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\485d9dd252fe58207ed5ce4d71991c10\room-runtime-2.2.5\AndroidManifest.xml:24:5-29:19
+MERGED from [com.github.bumptech.glide:glide:4.11.0] D:\jdks\caches\transforms-2\files-2.1\173d1517054a228fce45c7e7819b2090\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] D:\jdks\caches\transforms-2\files-2.1\173d1517054a228fce45c7e7819b2090\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [com.jakewharton.timber:timber:4.7.1] D:\jdks\caches\transforms-2\files-2.1\a1ac85b6c9c4dee4f22e868217f5f37b\jetified-timber-4.7.1\AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.timber:timber:4.7.1] D:\jdks\caches\transforms-2\files-2.1\a1ac85b6c9c4dee4f22e868217f5f37b\jetified-timber-4.7.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:8:5-16:19
+MERGED from [com.github.sevar83:indeterminate-checkbox:1.0.5] D:\jdks\caches\transforms-2\files-2.1\50667fccaceb3272c91c3f62463af15f\jetified-indeterminate-checkbox-1.0.5\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.sevar83:indeterminate-checkbox:1.0.5] D:\jdks\caches\transforms-2\files-2.1\50667fccaceb3272c91c3f62463af15f\jetified-indeterminate-checkbox-1.0.5\AndroidManifest.xml:11:5-15:19
+MERGED from [com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\e6cf393f98957a4837448458d75978c8\jetified-vision-common-16.3.0\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\e6cf393f98957a4837448458d75978c8\jetified-vision-common-16.3.0\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:8:5-24:19
+MERGED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:8:5-24:19
+MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] D:\jdks\caches\transforms-2\files-2.1\c35496fe4a5c928c1cfd8d69729b9920\jetified-play-services-clearcut-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] D:\jdks\caches\transforms-2\files-2.1\c35496fe4a5c928c1cfd8d69729b9920\jetified-play-services-clearcut-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] D:\jdks\caches\transforms-2\files-2.1\ae64fb5517d19e725d83fc48c13cf6bc\jetified-play-services-phenotype-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] D:\jdks\caches\transforms-2\files-2.1\ae64fb5517d19e725d83fc48c13cf6bc\jetified-play-services-phenotype-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:17.4.0] D:\jdks\caches\transforms-2\files-2.1\39be93830b4be82b9baa76a8bbc22118\jetified-play-services-base-17.4.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.4.0] D:\jdks\caches\transforms-2\files-2.1\39be93830b4be82b9baa76a8bbc22118\jetified-play-services-base-17.4.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] D:\jdks\caches\transforms-2\files-2.1\1b6567aefc9e6e9bfced6db895012ea5\jetified-play-services-tasks-17.2.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] D:\jdks\caches\transforms-2\files-2.1\1b6567aefc9e6e9bfced6db895012ea5\jetified-play-services-tasks-17.2.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.4.0] D:\jdks\caches\transforms-2\files-2.1\4def4fe340bbade3f4564dc661fb2911\jetified-play-services-basement-17.4.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.4.0] D:\jdks\caches\transforms-2\files-2.1\4def4fe340bbade3f4564dc661fb2911\jetified-play-services-basement-17.4.0\AndroidManifest.xml:22:5-26:19
+MERGED from [de.hdodenhof:circleimageview:3.1.0] D:\jdks\caches\transforms-2\files-2.1\f5cb64f60ab8b83dfb12d82b5d73c131\jetified-circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] D:\jdks\caches\transforms-2\files-2.1\f5cb64f60ab8b83dfb12d82b5d73c131\jetified-circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.3.2] D:\jdks\caches\transforms-2\files-2.1\893a5d726c1662a589498de2933e6756\core-1.3.2\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.2] D:\jdks\caches\transforms-2\files-2.1\893a5d726c1662a589498de2933e6756\core-1.3.2\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] D:\jdks\caches\transforms-2\files-2.1\8b66a4f7107087e86b7e4a333d77480a\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] D:\jdks\caches\transforms-2\files-2.1\8b66a4f7107087e86b7e4a333d77480a\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] D:\jdks\caches\transforms-2\files-2.1\3eaa80fd275d08477af96643d563e0ad\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] D:\jdks\caches\transforms-2\files-2.1\3eaa80fd275d08477af96643d563e0ad\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:25:5-39:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] D:\jdks\caches\transforms-2\files-2.1\80a1acb0ab1eb240096996989a4fcab6\jetified-soloader-0.6.0\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] D:\jdks\caches\transforms-2\files-2.1\80a1acb0ab1eb240096996989a4fcab6\jetified-soloader-0.6.0\AndroidManifest.xml:11:5-20
+	android:requestLegacyExternalStorage
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:19:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.2] D:\jdks\caches\transforms-2\files-2.1\893a5d726c1662a589498de2933e6756\core-1.3.2\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:18:9-35
+	android:label
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:16:9-41
+	android:roundIcon
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:17:9-54
+	android:icon
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:15:9-43
+	android:allowBackup
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:14:9-35
+	android:theme
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:21:9-41
+	android:usesCleartextTraffic
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:20:9-44
+	android:name
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:13:9-55
+activity#com.dominate.caravan.ui.home.HomeActivity
+ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:23:9-27:47
+	android:label
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:26:13-56
+	android:configChanges
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:25:13-66
+	android:theme
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:27:13-45
+	android:name
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:24:13-69
+activity#com.dominate.caravan.ui.splach.SplachActivity
+ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:28:9-34:20
+	android:name
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:28:19-79
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:29:13-33:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:32:17-77
+	android:name
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:32:27-74
+uses-sdk
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+MERGED from [:data] C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:data] C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.databinding:databinding-adapters:4.1.3] D:\jdks\caches\transforms-2\files-2.1\38c1e0ea9939088a7f2439f7821f5f6b\databinding-adapters-4.1.3\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-adapters:4.1.3] D:\jdks\caches\transforms-2\files-2.1\38c1e0ea9939088a7f2439f7821f5f6b\databinding-adapters-4.1.3\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:4.1.3] D:\jdks\caches\transforms-2\files-2.1\12b1ce0813214653cbeeb5c996c0e9c1\databinding-runtime-4.1.3\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:4.1.3] D:\jdks\caches\transforms-2\files-2.1\12b1ce0813214653cbeeb5c996c0e9c1\databinding-runtime-4.1.3\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:viewbinding:4.1.3] D:\jdks\caches\transforms-2\files-2.1\c23f3e10de0b821df1839009de085c89\jetified-viewbinding-4.1.3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.1.3] D:\jdks\caches\transforms-2\files-2.1\c23f3e10de0b821df1839009de085c89\jetified-viewbinding-4.1.3\AndroidManifest.xml:20:5-44
+MERGED from [com.gitlab.developerdeveloperdeveloper:androidutilslibrary:1.0.0] D:\jdks\caches\transforms-2\files-2.1\7ecf5c7c84b21b78bd23b17ee6939455\jetified-androidutilslibrary-1.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.gitlab.developerdeveloperdeveloper:androidutilslibrary:1.0.0] D:\jdks\caches\transforms-2\files-2.1\7ecf5c7c84b21b78bd23b17ee6939455\jetified-androidutilslibrary-1.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] D:\jdks\caches\transforms-2\files-2.1\c4d0387f15a0dc5060656b65639d446f\navigation-fragment-ktx-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] D:\jdks\caches\transforms-2\files-2.1\c4d0387f15a0dc5060656b65639d446f\navigation-fragment-ktx-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.3.2] D:\jdks\caches\transforms-2\files-2.1\7ef90c57c0f15b8b17dbfa6ce6a0bd56\jetified-fragment-ktx-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.3.2] D:\jdks\caches\transforms-2\files-2.1\7ef90c57c0f15b8b17dbfa6ce6a0bd56\jetified-fragment-ktx-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.5] D:\jdks\caches\transforms-2\files-2.1\1f805669803305cff92548af54ee84cc\navigation-ui-ktx-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.5] D:\jdks\caches\transforms-2\files-2.1\1f805669803305cff92548af54ee84cc\navigation-ui-ktx-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.5] D:\jdks\caches\transforms-2\files-2.1\3b6d7d4aff16abd89abdffc27c960179\navigation-runtime-ktx-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.5] D:\jdks\caches\transforms-2\files-2.1\3b6d7d4aff16abd89abdffc27c960179\navigation-runtime-ktx-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.2.2] D:\jdks\caches\transforms-2\files-2.1\221bb2745458174cdd705f59b6413987\jetified-activity-ktx-1.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.2.2] D:\jdks\caches\transforms-2\files-2.1\221bb2745458174cdd705f59b6413987\jetified-activity-ktx-1.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] D:\jdks\caches\transforms-2\files-2.1\4669b70fc0eb376503534cc41406faef\navigation-common-ktx-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] D:\jdks\caches\transforms-2\files-2.1\4669b70fc0eb376503534cc41406faef\navigation-common-ktx-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.3.2] D:\jdks\caches\transforms-2\files-2.1\fb25f0d6618c91d7bef0083d05b3bce0\jetified-core-ktx-1.3.2\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.3.2] D:\jdks\caches\transforms-2\files-2.1\fb25f0d6618c91d7bef0083d05b3bce0\jetified-core-ktx-1.3.2\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\5e105e7ce0f4b7535f31cbcea4233e38\jetified-lifecycle-livedata-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\5e105e7ce0f4b7535f31cbcea4233e38\jetified-lifecycle-livedata-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\511c7fd8da3b972e226775f530d6d882\jetified-lifecycle-viewmodel-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\511c7fd8da3b972e226775f530d6d882\jetified-lifecycle-viewmodel-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.2] D:\jdks\caches\transforms-2\files-2.1\bc6aff8f15e342c41088a9589f32cf5f\jetified-ucrop-2.2.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.2] D:\jdks\caches\transforms-2\files-2.1\bc6aff8f15e342c41088a9589f32cf5f\jetified-ucrop-2.2.2\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.room:room-ktx:2.2.5] D:\jdks\caches\transforms-2\files-2.1\000d115563327f8a76f01f9df0281b62\jetified-room-ktx-2.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.2.5] D:\jdks\caches\transforms-2\files-2.1\000d115563327f8a76f01f9df0281b62\jetified-room-ktx-2.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\528f37d9745d6db710def73a0ca42c87\jetified-lifecycle-livedata-core-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\528f37d9745d6db710def73a0ca42c87\jetified-lifecycle-livedata-core-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] D:\jdks\caches\transforms-2\files-2.1\6a234f751d9c5207d44d183d57657480\jetified-savedstate-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] D:\jdks\caches\transforms-2\files-2.1\6a234f751d9c5207d44d183d57657480\jetified-savedstate-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\8890762f45f359a1fcfb1602e54bc1fd\jetified-lifecycle-runtime-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\8890762f45f359a1fcfb1602e54bc1fd\jetified-lifecycle-runtime-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] D:\jdks\caches\transforms-2\files-2.1\863ed69cf164c7ee2daaad680825f1b7\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] D:\jdks\caches\transforms-2\files-2.1\863ed69cf164c7ee2daaad680825f1b7\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.3.5] D:\jdks\caches\transforms-2\files-2.1\0ed30dbd06eeb4cb95fc856798df31a6\navigation-ui-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.5] D:\jdks\caches\transforms-2\files-2.1\0ed30dbd06eeb4cb95fc856798df31a6\navigation-ui-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.4.0-alpha02] D:\jdks\caches\transforms-2\files-2.1\9ec07ad47eaa985e1695020f3335e164\material-1.4.0-alpha02\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.4.0-alpha02] D:\jdks\caches\transforms-2\files-2.1\9ec07ad47eaa985e1695020f3335e164\material-1.4.0-alpha02\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] D:\jdks\caches\transforms-2\files-2.1\0f812ce17d088c689345a6043760fdfb\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] D:\jdks\caches\transforms-2\files-2.1\0f812ce17d088c689345a6043760fdfb\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.chrisbanes:PhotoView:2.3.0] D:\jdks\caches\transforms-2\files-2.1\90a7cc7418ead1162087441ef61792d2\jetified-PhotoView-2.3.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.chrisbanes:PhotoView:2.3.0] D:\jdks\caches\transforms-2\files-2.1\90a7cc7418ead1162087441ef61792d2\jetified-PhotoView-2.3.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.ceryle:RadioRealButton:v2.1.1] D:\jdks\caches\transforms-2\files-2.1\97083638ff91157c180b20dbbbddafaf\jetified-RadioRealButton-v2.1.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.ceryle:RadioRealButton:v2.1.1] D:\jdks\caches\transforms-2\files-2.1\97083638ff91157c180b20dbbbddafaf\jetified-RadioRealButton-v2.1.1\AndroidManifest.xml:8:5-10:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] D:\jdks\caches\transforms-2\files-2.1\9795d19233ff20f13288eae69e31374d\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] D:\jdks\caches\transforms-2\files-2.1\9795d19233ff20f13288eae69e31374d\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] D:\jdks\caches\transforms-2\files-2.1\2c2da4385d1c6cdf55b54c1462f6ede2\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] D:\jdks\caches\transforms-2\files-2.1\2c2da4385d1c6cdf55b54c1462f6ede2\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] D:\jdks\caches\transforms-2\files-2.1\029cedd4438041ed3c62bd0a7ed033af\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] D:\jdks\caches\transforms-2\files-2.1\029cedd4438041ed3c62bd0a7ed033af\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.5] D:\jdks\caches\transforms-2\files-2.1\3b2506754bfa04a5e783b5862a1d1f16\navigation-fragment-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.5] D:\jdks\caches\transforms-2\files-2.1\3b2506754bfa04a5e783b5862a1d1f16\navigation-fragment-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.5] D:\jdks\caches\transforms-2\files-2.1\44f0d68984b581ffdffd2e218004de40\navigation-runtime-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.5] D:\jdks\caches\transforms-2\files-2.1\44f0d68984b581ffdffd2e218004de40\navigation-runtime-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.markomilos:paginate:1.0.0] D:\jdks\caches\transforms-2\files-2.1\8d9ced661f1b95129fe6a8fbef0141ae\jetified-paginate-1.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.markomilos:paginate:1.0.0] D:\jdks\caches\transforms-2\files-2.1\8d9ced661f1b95129fe6a8fbef0141ae\jetified-paginate-1.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\485d9dd252fe58207ed5ce4d71991c10\room-runtime-2.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\485d9dd252fe58207ed5ce4d71991c10\room-runtime-2.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02] D:\jdks\caches\transforms-2\files-2.1\a3a182d174c43d6f01a40e39b3c76f40\jetified-hilt-lifecycle-viewmodel-1.0.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02] D:\jdks\caches\transforms-2\files-2.1\a3a182d174c43d6f01a40e39b3c76f40\jetified-hilt-lifecycle-viewmodel-1.0.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-common:1.0.0-alpha02] D:\jdks\caches\transforms-2\files-2.1\909245aa2d8b42384dbba2a0cc9d66e1\jetified-hilt-common-1.0.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-common:1.0.0-alpha02] D:\jdks\caches\transforms-2\files-2.1\909245aa2d8b42384dbba2a0cc9d66e1\jetified-hilt-common-1.0.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.dagger:hilt-android:2.28.3-alpha] D:\jdks\caches\transforms-2\files-2.1\a3854f99ab0b36b9fe506f2b1be0978e\jetified-hilt-android-2.28.3-alpha\AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:hilt-android:2.28.3-alpha] D:\jdks\caches\transforms-2\files-2.1\a3854f99ab0b36b9fe506f2b1be0978e\jetified-hilt-android-2.28.3-alpha\AndroidManifest.xml:18:3-42
+MERGED from [com.github.bumptech.glide:glide:4.11.0] D:\jdks\caches\transforms-2\files-2.1\173d1517054a228fce45c7e7819b2090\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] D:\jdks\caches\transforms-2\files-2.1\173d1517054a228fce45c7e7819b2090\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.jakewharton.timber:timber:4.7.1] D:\jdks\caches\transforms-2\files-2.1\a1ac85b6c9c4dee4f22e868217f5f37b\jetified-timber-4.7.1\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton.timber:timber:4.7.1] D:\jdks\caches\transforms-2\files-2.1\a1ac85b6c9c4dee4f22e868217f5f37b\jetified-timber-4.7.1\AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:6:5-44
+MERGED from [com.github.sevar83:indeterminate-checkbox:1.0.5] D:\jdks\caches\transforms-2\files-2.1\50667fccaceb3272c91c3f62463af15f\jetified-indeterminate-checkbox-1.0.5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.sevar83:indeterminate-checkbox:1.0.5] D:\jdks\caches\transforms-2\files-2.1\50667fccaceb3272c91c3f62463af15f\jetified-indeterminate-checkbox-1.0.5\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] D:\jdks\caches\transforms-2\files-2.1\3c6fef60ebc41eeee0624e122f89277a\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] D:\jdks\caches\transforms-2\files-2.1\3c6fef60ebc41eeee0624e122f89277a\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\e6cf393f98957a4837448458d75978c8\jetified-vision-common-16.3.0\AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\e6cf393f98957a4837448458d75978c8\jetified-vision-common-16.3.0\AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] D:\jdks\caches\transforms-2\files-2.1\c35496fe4a5c928c1cfd8d69729b9920\jetified-play-services-clearcut-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] D:\jdks\caches\transforms-2\files-2.1\c35496fe4a5c928c1cfd8d69729b9920\jetified-play-services-clearcut-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] D:\jdks\caches\transforms-2\files-2.1\ae64fb5517d19e725d83fc48c13cf6bc\jetified-play-services-phenotype-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] D:\jdks\caches\transforms-2\files-2.1\ae64fb5517d19e725d83fc48c13cf6bc\jetified-play-services-phenotype-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.4.0] D:\jdks\caches\transforms-2\files-2.1\39be93830b4be82b9baa76a8bbc22118\jetified-play-services-base-17.4.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.4.0] D:\jdks\caches\transforms-2\files-2.1\39be93830b4be82b9baa76a8bbc22118\jetified-play-services-base-17.4.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] D:\jdks\caches\transforms-2\files-2.1\1b6567aefc9e6e9bfced6db895012ea5\jetified-play-services-tasks-17.2.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] D:\jdks\caches\transforms-2\files-2.1\1b6567aefc9e6e9bfced6db895012ea5\jetified-play-services-tasks-17.2.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.4.0] D:\jdks\caches\transforms-2\files-2.1\4def4fe340bbade3f4564dc661fb2911\jetified-play-services-basement-17.4.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.4.0] D:\jdks\caches\transforms-2\files-2.1\4def4fe340bbade3f4564dc661fb2911\jetified-play-services-basement-17.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.3.2] D:\jdks\caches\transforms-2\files-2.1\1008eccf31774579262ba11d1ff24d5f\fragment-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.2] D:\jdks\caches\transforms-2\files-2.1\1008eccf31774579262ba11d1ff24d5f\fragment-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.0] D:\jdks\caches\transforms-2\files-2.1\2f700c3887ce3a068d2062a12babd53c\recyclerview-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.0] D:\jdks\caches\transforms-2\files-2.1\2f700c3887ce3a068d2062a12babd53c\recyclerview-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] D:\jdks\caches\transforms-2\files-2.1\b8356508f0fe978cb4f2e03fad2e6cf2\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] D:\jdks\caches\transforms-2\files-2.1\b8356508f0fe978cb4f2e03fad2e6cf2\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:3.1.0] D:\jdks\caches\transforms-2\files-2.1\f5cb64f60ab8b83dfb12d82b5d73c131\jetified-circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] D:\jdks\caches\transforms-2\files-2.1\f5cb64f60ab8b83dfb12d82b5d73c131\jetified-circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.media:media:1.0.0] D:\jdks\caches\transforms-2\files-2.1\11a3950c53f752fd325ac93a8bdb1c13\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] D:\jdks\caches\transforms-2\files-2.1\11a3950c53f752fd325ac93a8bdb1c13\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] D:\jdks\caches\transforms-2\files-2.1\9a0d0c08376df40700001f95c93651ed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] D:\jdks\caches\transforms-2\files-2.1\9a0d0c08376df40700001f95c93651ed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] D:\jdks\caches\transforms-2\files-2.1\1105907ce2d0456877b16ac68b7a6366\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] D:\jdks\caches\transforms-2\files-2.1\1105907ce2d0456877b16ac68b7a6366\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] D:\jdks\caches\transforms-2\files-2.1\d8df687df48b93aa97a9113b9f6a6b6d\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] D:\jdks\caches\transforms-2\files-2.1\d8df687df48b93aa97a9113b9f6a6b6d\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] D:\jdks\caches\transforms-2\files-2.1\7b7215d3731f2542b9ad641ec5bd7fec\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] D:\jdks\caches\transforms-2\files-2.1\7b7215d3731f2542b9ad641ec5bd7fec\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] D:\jdks\caches\transforms-2\files-2.1\99e1eb822ae438d4aafd37b120d2de61\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] D:\jdks\caches\transforms-2\files-2.1\99e1eb822ae438d4aafd37b120d2de61\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] D:\jdks\caches\transforms-2\files-2.1\6b64e4464f736f5b77db687b68c17763\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] D:\jdks\caches\transforms-2\files-2.1\6b64e4464f736f5b77db687b68c17763\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] D:\jdks\caches\transforms-2\files-2.1\92b1b303ee045619a9a7a1c2abfc5c4f\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] D:\jdks\caches\transforms-2\files-2.1\92b1b303ee045619a9a7a1c2abfc5c4f\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] D:\jdks\caches\transforms-2\files-2.1\b44c6b7c4b05d07c05702656c07665bf\transition-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] D:\jdks\caches\transforms-2\files-2.1\b44c6b7c4b05d07c05702656c07665bf\transition-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] D:\jdks\caches\transforms-2\files-2.1\1c48bb9aebf5d05c2909112d53f35ade\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] D:\jdks\caches\transforms-2\files-2.1\1c48bb9aebf5d05c2909112d53f35ade\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] D:\jdks\caches\transforms-2\files-2.1\ce7330d3375bc7f07ee2a601b77b3c96\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] D:\jdks\caches\transforms-2\files-2.1\ce7330d3375bc7f07ee2a601b77b3c96\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] D:\jdks\caches\transforms-2\files-2.1\b9111a2417f51a6e6cc70648bd25a743\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] D:\jdks\caches\transforms-2\files-2.1\b9111a2417f51a6e6cc70648bd25a743\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.2] D:\jdks\caches\transforms-2\files-2.1\5ae665eafb4409cc476c7f1ae498f1c7\jetified-activity-1.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.2] D:\jdks\caches\transforms-2\files-2.1\5ae665eafb4409cc476c7f1ae498f1c7\jetified-activity-1.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] D:\jdks\caches\transforms-2\files-2.1\991c244aba3cc4548d4a0ae3f930dd2f\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] D:\jdks\caches\transforms-2\files-2.1\991c244aba3cc4548d4a0ae3f930dd2f\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] D:\jdks\caches\transforms-2\files-2.1\79b71f6d6443e3f932a3197c666fa418\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] D:\jdks\caches\transforms-2\files-2.1\79b71f6d6443e3f932a3197c666fa418\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.3.5] D:\jdks\caches\transforms-2\files-2.1\04f0e514d3eef20f5901ce396d2d5141\navigation-common-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.5] D:\jdks\caches\transforms-2\files-2.1\04f0e514d3eef20f5901ce396d2d5141\navigation-common-2.3.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.2] D:\jdks\caches\transforms-2\files-2.1\893a5d726c1662a589498de2933e6756\core-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.2] D:\jdks\caches\transforms-2\files-2.1\893a5d726c1662a589498de2933e6756\core-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] D:\jdks\caches\transforms-2\files-2.1\ad1ad041f0642729c2a8610ebb6012b1\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] D:\jdks\caches\transforms-2\files-2.1\ad1ad041f0642729c2a8610ebb6012b1\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] D:\jdks\caches\transforms-2\files-2.1\32e09cbba15fb22f94165da01bdeced7\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] D:\jdks\caches\transforms-2\files-2.1\32e09cbba15fb22f94165da01bdeced7\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\jdks\caches\transforms-2\files-2.1\88900eb63ed58b600db98650793bf1bd\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\jdks\caches\transforms-2\files-2.1\88900eb63ed58b600db98650793bf1bd\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] D:\jdks\caches\transforms-2\files-2.1\22fc0465abdf76c3d0dd4ea7dc4ee1fc\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] D:\jdks\caches\transforms-2\files-2.1\22fc0465abdf76c3d0dd4ea7dc4ee1fc\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] D:\jdks\caches\transforms-2\files-2.1\8b66a4f7107087e86b7e4a333d77480a\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] D:\jdks\caches\transforms-2\files-2.1\8b66a4f7107087e86b7e4a333d77480a\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] D:\jdks\caches\transforms-2\files-2.1\29fcf295eb510e0c2d575f90a2757d5a\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] D:\jdks\caches\transforms-2\files-2.1\29fcf295eb510e0c2d575f90a2757d5a\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] D:\jdks\caches\transforms-2\files-2.1\9491e15401bc47d8f3dcc4b572915708\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] D:\jdks\caches\transforms-2\files-2.1\9491e15401bc47d8f3dcc4b572915708\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] D:\jdks\caches\transforms-2\files-2.1\3eaa80fd275d08477af96643d563e0ad\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] D:\jdks\caches\transforms-2\files-2.1\3eaa80fd275d08477af96643d563e0ad\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] D:\jdks\caches\transforms-2\files-2.1\fcb2b851a50eb6be3bb035c91dbc035c\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] D:\jdks\caches\transforms-2\files-2.1\fcb2b851a50eb6be3bb035c91dbc035c\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] D:\jdks\caches\transforms-2\files-2.1\5b9ab503630b0df4df3921e704345695\jetified-transport-api-2.2.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] D:\jdks\caches\transforms-2\files-2.1\5b9ab503630b0df4df3921e704345695\jetified-transport-api-2.2.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] D:\jdks\caches\transforms-2\files-2.1\a7bf6aedeac883bf149be72810635223\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] D:\jdks\caches\transforms-2\files-2.1\a7bf6aedeac883bf149be72810635223\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] D:\jdks\caches\transforms-2\files-2.1\9ad5bfc72bb44bacceeaa8e32711e2d3\jetified-firebase-encoders-json-17.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] D:\jdks\caches\transforms-2\files-2.1\9ad5bfc72bb44bacceeaa8e32711e2d3\jetified-firebase-encoders-json-17.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] D:\jdks\caches\transforms-2\files-2.1\eff37ad31c672b4310f1c4df741dd4bd\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] D:\jdks\caches\transforms-2\files-2.1\eff37ad31c672b4310f1c4df741dd4bd\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] D:\jdks\caches\transforms-2\files-2.1\2218cb1636837d3d0860c55772f4e5f2\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] D:\jdks\caches\transforms-2\files-2.1\2218cb1636837d3d0860c55772f4e5f2\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] D:\jdks\caches\transforms-2\files-2.1\37362d02469901219045342c7603f9cd\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] D:\jdks\caches\transforms-2\files-2.1\37362d02469901219045342c7603f9cd\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] D:\jdks\caches\transforms-2\files-2.1\fcc951c0e41d002935bc707d4bdce616\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] D:\jdks\caches\transforms-2\files-2.1\fcc951c0e41d002935bc707d4bdce616\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] D:\jdks\caches\transforms-2\files-2.1\0f9b3fba43aa3ff4c529bf6fd346f367\lifecycle-livedata-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] D:\jdks\caches\transforms-2\files-2.1\0f9b3fba43aa3ff4c529bf6fd346f367\lifecycle-livedata-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] D:\jdks\caches\transforms-2\files-2.1\b81400aae7de55b0e00a2e9b74922a92\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] D:\jdks\caches\transforms-2\files-2.1\b81400aae7de55b0e00a2e9b74922a92\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] D:\jdks\caches\transforms-2\files-2.1\0d6a8187877a4cad2bb94f793d168c10\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] D:\jdks\caches\transforms-2\files-2.1\0d6a8187877a4cad2bb94f793d168c10\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] D:\jdks\caches\transforms-2\files-2.1\50516a637bd80052a91561ec807b0afb\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] D:\jdks\caches\transforms-2\files-2.1\50516a637bd80052a91561ec807b0afb\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] D:\jdks\caches\transforms-2\files-2.1\396ce2e94fc3d90363fec1bce80076e5\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] D:\jdks\caches\transforms-2\files-2.1\396ce2e94fc3d90363fec1bce80076e5\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] D:\jdks\caches\transforms-2\files-2.1\92d5a6fdeb3448d48e76acefa085151a\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] D:\jdks\caches\transforms-2\files-2.1\92d5a6fdeb3448d48e76acefa085151a\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.dagger:dagger-lint-aar:2.28.3] D:\jdks\caches\transforms-2\files-2.1\0d9a96d01575c6891f3366cdb5c48918\jetified-dagger-lint-aar-2.28.3\AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-lint-aar:2.28.3] D:\jdks\caches\transforms-2\files-2.1\0d9a96d01575c6891f3366cdb5c48918\jetified-dagger-lint-aar-2.28.3\AndroidManifest.xml:18:3-42
+MERGED from [com.facebook.fresco:fresco:1.13.0] D:\jdks\caches\transforms-2\files-2.1\5259ebf9721f81e151c3ffadeb983847\jetified-fresco-1.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.13.0] D:\jdks\caches\transforms-2\files-2.1\5259ebf9721f81e151c3ffadeb983847\jetified-fresco-1.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [me.relex:circleindicator:1.2.2] D:\jdks\caches\transforms-2\files-2.1\d9d9567bca7f9d1a6c09297b735ecd4f\jetified-circleindicator-1.2.2\AndroidManifest.xml:8:5-10:41
+MERGED from [me.relex:circleindicator:1.2.2] D:\jdks\caches\transforms-2\files-2.1\d9d9567bca7f9d1a6c09297b735ecd4f\jetified-circleindicator-1.2.2\AndroidManifest.xml:8:5-10:41
+MERGED from [com.facebook.fresco:drawee:1.13.0] D:\jdks\caches\transforms-2\files-2.1\046c9482a764a03744be07c726b31a12\jetified-drawee-1.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.13.0] D:\jdks\caches\transforms-2\files-2.1\046c9482a764a03744be07c726b31a12\jetified-drawee-1.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:1.13.0] D:\jdks\caches\transforms-2\files-2.1\96b796444e89df0e4786e9557e635344\jetified-nativeimagefilters-1.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:1.13.0] D:\jdks\caches\transforms-2\files-2.1\96b796444e89df0e4786e9557e635344\jetified-nativeimagefilters-1.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.13.0] D:\jdks\caches\transforms-2\files-2.1\03d9cf4ba160aa75bb0d285873d93055\jetified-imagepipeline-1.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.13.0] D:\jdks\caches\transforms-2\files-2.1\03d9cf4ba160aa75bb0d285873d93055\jetified-imagepipeline-1.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:1.13.0] D:\jdks\caches\transforms-2\files-2.1\6d09b6c2a27d9d405076d48c8ce54723\jetified-nativeimagetranscoder-1.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:1.13.0] D:\jdks\caches\transforms-2\files-2.1\6d09b6c2a27d9d405076d48c8ce54723\jetified-nativeimagetranscoder-1.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.13.0] D:\jdks\caches\transforms-2\files-2.1\0676bbc0eae1fb054c8b2d6c493e8795\jetified-imagepipeline-base-1.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.13.0] D:\jdks\caches\transforms-2\files-2.1\0676bbc0eae1fb054c8b2d6c493e8795\jetified-imagepipeline-base-1.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.13.0] D:\jdks\caches\transforms-2\files-2.1\91dcf8d0e4879a39a7a0888fb0258c5f\jetified-fbcore-1.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.13.0] D:\jdks\caches\transforms-2\files-2.1\91dcf8d0e4879a39a7a0888fb0258c5f\jetified-fbcore-1.13.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] D:\jdks\caches\transforms-2\files-2.1\80a1acb0ab1eb240096996989a4fcab6\jetified-soloader-0.6.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] D:\jdks\caches\transforms-2\files-2.1\80a1acb0ab1eb240096996989a4fcab6\jetified-soloader-0.6.0\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:11:5-80
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:11:5-80
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:11:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:12:5-81
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:12:5-81
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:12:22-78
+activity#com.github.dhaval2404.imagepicker.ImagePickerActivity
+ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:15:9-18:68
+	android:screenOrientation
+		ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:17:13-52
+	android:theme
+		ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:18:13-65
+	android:name
+		ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:16:13-81
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:19:9-22:72
+	android:screenOrientation
+		ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:21:13-49
+	android:theme
+		ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:22:13-69
+	android:name
+		ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:20:13-60
+provider#com.github.dhaval2404.imagepicker.ImagePickerFileProvider
+ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:24:9-32:20
+	android:grantUriPermissions
+		ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:28:13-47
+	android:authorities
+		ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:26:13-72
+	android:exported
+		ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:25:13-85
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:29:13-31:71
+	android:resource
+		ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:31:17-68
+	android:name
+		ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:30:17-67
+activity#com.custom.sliderimage.activities.FullScreenImageActivity
+ADDED from [io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:14:9-16:75
+	android:theme
+		ADDED from [io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:16:13-72
+	android:name
+		ADDED from [io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:15:13-85
+uses-permission#android.permission.CAMERA
+ADDED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:13:5-65
+	android:name
+		ADDED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:13:22-62
+activity#com.esafirm.imagepicker.features.ImagePickerActivity
+ADDED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:16:9-19:50
+	android:configChanges
+		ADDED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:18:13-59
+	android:theme
+		ADDED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:19:13-47
+	android:name
+		ADDED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:17:13-80
+provider#com.esafirm.imagepicker.helper.ImagePickerFileProvider
+ADDED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:21:9-29:20
+	android:grantUriPermissions
+		ADDED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:25:13-47
+	android:authorities
+		ADDED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:23:13-72
+	android:exported
+		ADDED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:22:13-82
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\485d9dd252fe58207ed5ce4d71991c10\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\485d9dd252fe58207ed5ce4d71991c10\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\485d9dd252fe58207ed5ce4d71991c10\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\485d9dd252fe58207ed5ce4d71991c10\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
+ADDED from [com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\e6cf393f98957a4837448458d75978c8\jetified-vision-common-16.3.0\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\e6cf393f98957a4837448458d75978c8\jetified-vision-common-16.3.0\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:15:9-23:19
+MERGED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:15:9-23:19
+	android:exported
+		ADDED from [com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:11:13-37
+	tools:targetApi
+		ADDED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:19:13-32
+	android:directBootAware
+		ADDED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:17:13-43
+	android:name
+		ADDED from [com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:10:13-91
+meta-data#com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar
+ADDED from [com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:13:17-114
+meta-data#com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar
+ADDED from [com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\e6cf393f98957a4837448458d75978c8\jetified-vision-common-16.3.0\AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\e6cf393f98957a4837448458d75978c8\jetified-vision-common-16.3.0\AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\e6cf393f98957a4837448458d75978c8\jetified-vision-common-16.3.0\AndroidManifest.xml:13:17-124
+provider#com.google.mlkit.common.internal.MlKitInitProvider
+ADDED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:9:9-13:38
+	android:authorities
+		ADDED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:11:13-69
+	android:exported
+		ADDED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:12:13-37
+	android:initOrder
+		ADDED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:13:13-35
+	android:name
+		ADDED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:10:13-78
+meta-data#com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar
+ADDED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:21:17-120
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.4.0] D:\jdks\caches\transforms-2\files-2.1\39be93830b4be82b9baa76a8bbc22118\jetified-play-services-base-17.4.0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.4.0] D:\jdks\caches\transforms-2\files-2.1\39be93830b4be82b9baa76a8bbc22118\jetified-play-services-base-17.4.0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.4.0] D:\jdks\caches\transforms-2\files-2.1\39be93830b4be82b9baa76a8bbc22118\jetified-play-services-base-17.4.0\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.4.0] D:\jdks\caches\transforms-2\files-2.1\39be93830b4be82b9baa76a8bbc22118\jetified-play-services-base-17.4.0\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.4.0] D:\jdks\caches\transforms-2\files-2.1\4def4fe340bbade3f4564dc661fb2911\jetified-play-services-basement-17.4.0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.4.0] D:\jdks\caches\transforms-2\files-2.1\4def4fe340bbade3f4564dc661fb2911\jetified-play-services-basement-17.4.0\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.4.0] D:\jdks\caches\transforms-2\files-2.1\4def4fe340bbade3f4564dc661fb2911\jetified-play-services-basement-17.4.0\AndroidManifest.xml:24:13-58
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
