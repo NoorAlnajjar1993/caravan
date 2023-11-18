@@ -15,15 +15,21 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         app:defaultNavHost="true"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:navGraph="@navigation/graph_main"/>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
-        android:background="@color/colorPrimary"
+        android:background="@color/purble"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:itemTextColor="@drawable/bottom_navigation_selector"
         android:layout_gravity="bottom"
+        app:itemTextAppearanceActive="@style/Style_TextView_bottom_nav"
+        app:itemTextAppearance="@style/Style_TextView_bottom_nav"
+        app:itemTextAppearanceInactive="@style/Style_TextView_bottom_nav"
+        app:itemIconTint="@drawable/bottom_navigation_selector"
         app:labelVisibilityMode="labeled"
         android:theme="@style/Widget.BottomNavigationView"
         app:menu="@menu/bottom_nav_menu" />

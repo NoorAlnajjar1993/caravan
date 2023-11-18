@@ -13,7 +13,7 @@ import com.dominate.caravan.ui.auth.siginin.SigininFragment_GeneratedInjector;
 import com.dominate.caravan.ui.contactus.ContactUsFragment_GeneratedInjector;
 import com.dominate.caravan.ui.contactus.CountactUsViewModel_HiltModule;
 import com.dominate.caravan.ui.home.HomeActivity_GeneratedInjector;
-import com.dominate.caravan.ui.splach.SplachActivity_GeneratedInjector;
+import com.dominate.caravan.ui.splach.SplashViewModel_HiltModule;
 import com.dominate.caravan.ui.uservisitor.UserNotLoginFragment_GeneratedInjector;
 import dagger.Binds;
 import dagger.Component;
@@ -127,7 +127,6 @@ public final class CaravanApp_HiltComponents {
   @ActivityScoped
   public abstract static class ActivityC implements BaseActivity_GeneratedInjector,
       HomeActivity_GeneratedInjector,
-      SplachActivity_GeneratedInjector,
       ActivityComponent,
       DefaultViewModelFactories.ActivityEntryPoint,
       FragmentComponentManager.FragmentComponentBuilderEntryPoint,
@@ -145,7 +144,8 @@ public final class CaravanApp_HiltComponents {
           CountactUsViewModel_HiltModule.class,
           EditPasswordViewModel_HiltModule.class,
           ReqisterViewModel_HiltModule.class,
-          SiginInViewModel_HiltModule.class
+          SiginInViewModel_HiltModule.class,
+          SplashViewModel_HiltModule.class
       }
   )
   @ActivityRetainedScoped

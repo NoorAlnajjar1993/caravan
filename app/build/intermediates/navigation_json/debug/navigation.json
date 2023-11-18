@@ -5,6 +5,11 @@
     "deepLinks": []
   },
   {
+    "name": "graph_main",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
     "name": "home_nav",
     "navigationXmlIds": [],
     "deepLinks": []

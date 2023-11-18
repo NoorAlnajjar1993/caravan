@@ -6,6 +6,11 @@ import android.view.View;
 import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
+import com.caravan.databinding.RowDistinctAdvertismentBindingImpl;
+import com.caravan.databinding.RowHousingAdsBindingImpl;
+import com.caravan.databinding.RowLatestAdsBindingImpl;
+import com.caravan.databinding.RowPropertiesNearYouBindingImpl;
+import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
 import java.lang.Override;
@@ -18,7 +23,22 @@ import javax.annotation.Generated;
 
 @Generated("Android Data Binding")
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(0);
+  private static final int LAYOUT_ROWDISTINCTADVERTISMENT = 1;
+
+  private static final int LAYOUT_ROWHOUSINGADS = 2;
+
+  private static final int LAYOUT_ROWLATESTADS = 3;
+
+  private static final int LAYOUT_ROWPROPERTIESNEARYOU = 4;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
+
+  static {
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.caravan.R.layout.row_distinct_advertisment, LAYOUT_ROWDISTINCTADVERTISMENT);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.caravan.R.layout.row_housing_ads, LAYOUT_ROWHOUSINGADS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.caravan.R.layout.row_latest_ads, LAYOUT_ROWLATESTADS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.caravan.R.layout.row_properties_near_you, LAYOUT_ROWPROPERTIESNEARYOU);
+  }
 
   @Override
   public ViewDataBinding getDataBinder(DataBindingComponent component, View view, int layoutId) {
@@ -27,6 +47,32 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       final Object tag = view.getTag();
       if(tag == null) {
         throw new RuntimeException("view must have a tag");
+      }
+      switch(localizedLayoutId) {
+        case  LAYOUT_ROWDISTINCTADVERTISMENT: {
+          if ("layout/row_distinct_advertisment_0".equals(tag)) {
+            return new RowDistinctAdvertismentBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for row_distinct_advertisment is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ROWHOUSINGADS: {
+          if ("layout/row_housing_ads_0".equals(tag)) {
+            return new RowHousingAdsBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for row_housing_ads is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ROWLATESTADS: {
+          if ("layout/row_latest_ads_0".equals(tag)) {
+            return new RowLatestAdsBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for row_latest_ads is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ROWPROPERTIESNEARYOU: {
+          if ("layout/row_properties_near_you_0".equals(tag)) {
+            return new RowPropertiesNearYouBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for row_properties_near_you is invalid. Received: " + tag);
+        }
       }
     }
     return null;
@@ -81,6 +127,13 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(0);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
+
+    static {
+      sKeys.put("layout/row_distinct_advertisment_0", com.caravan.R.layout.row_distinct_advertisment);
+      sKeys.put("layout/row_housing_ads_0", com.caravan.R.layout.row_housing_ads);
+      sKeys.put("layout/row_latest_ads_0", com.caravan.R.layout.row_latest_ads);
+      sKeys.put("layout/row_properties_near_you_0", com.caravan.R.layout.row_properties_near_you);
+    }
   }
 }

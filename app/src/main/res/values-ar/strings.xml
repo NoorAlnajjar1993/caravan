@@ -6,4 +6,37 @@
     <string name="title_activity_home">Home</string>
 
 
+    <string name="talk_through_1">اكتشف منزل أحلامك القادم \n بسهولة مع تطبيق كرفان</string>
+    <string name="talk_through_2"> يمكنك البحث عن المنازل والشقق \n والأراضي المتاحة بسهولة والعثور على\n  منزل أحلامك بسرعة.</string>
+    <string name="next">التالي</string>
+
+    <string name="talk_through_3">قم ببيع أو تأجير عقارك بسرعة \n وسهولة</string>
+    <string name="talk_through_4">التطبيق يتيح لك إضافة إعلانات للعقارات \n الخاصة بك بسهولة وسرعه. يمكنك الوصول \n إلى شريحة واسعة من المستخدمين.</string>
+    <string name="back">رجوع</string>
+
+    <string name="talk_through_5">استفد من مزايا التصفح السهل \n والعروض الحصرية</string>
+    <string name="talk_through_6">يمكنك تصفح العقارات بسهولة مع واجهة \n مستخدم بسيطة وبديهية. ستحصل على \n فرصة الوصول إلى عروض ومميزة للعقارات</string>
+    <string name="sale">للبيع</string>
+    <string name="rent">للإيجار</string>
+    <string name="partment">شقة</string>
+    <string name="commercial_real_estate">عقار تجاري</string>
+    <string name="land_farm">أرض/مزرعة</string>
+    <string name="house_villa">منزل/فيلا</string>
+    <string name="search">ابحث باسم المنطقة..</string>
+    <string name="more">المزيد ></string>
+    <string name="featured_ads_">اعلانات مميزة</string>
+    <string name="distinct">مميز</string>
+    <string name="housing_ads">اعلانات الإسكانات</string>
+    <string name="housing">اسكان</string>
+    <string name="properties_near_you">عقارات قريبة منك</string>
+    <string name="latest_ads">أحدث الإعلانات</string>
+
+    <string name="increase_the_chances">قم بزيادة فرص بيع أو تأجير عقارك اليوم</string>
+    <string name="add_your_ad_now">أضف اعلانك الآن!</string>
+    <string name="adv_1">وسّع دائرة إعلانك</string>
+    <string name="adv_2">قم بإدارة تفاصيل إعلانك بسهولة ويُسر</string>
+    <string name="adv_3">استقبل الاستفسارات وتواصل مع العملاء بسرعة</string>
+    <string name="Post_ad_now">أضف اعلان الآن</string>
+
+
 </resources>

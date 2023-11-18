@@ -1,5 +1,3 @@
-com/dominate/caravan/ui/splach/Hilt_SplachActivity.java
- com.dominate.caravan.ui.splach.Hilt_SplachActivity
 hilt_aggregated_deps/com_dominate_caravan_ui_contactus_CountactUsViewModel_HiltModuleModuleDeps.java
  hilt_aggregated_deps.com_dominate_caravan_ui_contactus_CountactUsViewModel_HiltModuleModuleDeps
 com/dominate/caravan/DaggerCaravanApp_HiltComponents_SingletonC.java
@@ -23,10 +21,10 @@ com/dominate/caravan/ui/auth/siginin/SiginInViewModel_AssistedFactory.java
  com.dominate.caravan.ui.auth.siginin.SiginInViewModel_AssistedFactory
 com/caravan/databinding/BannarHolderBinding.java
  com.caravan.databinding.BannarHolderBinding
-com/dominate/caravan/ui/splach/SplachActivity_GeneratedInjector.java
- com.dominate.caravan.ui.splach.SplachActivity_GeneratedInjector
 androidx/databinding/DataBinderMapperImpl.java
  androidx.databinding.DataBinderMapperImpl
+com/caravan/databinding/RowDistinctAdvertismentBindingImpl.java
+ com.caravan.databinding.RowDistinctAdvertismentBindingImpl
 com/dominate/caravan/ui/contactus/CountactUsViewModel_HiltModule.java
  com.dominate.caravan.ui.contactus.CountactUsViewModel_HiltModule
 androidx/databinding/library/baseAdapters/BR.java
@@ -36,21 +34,25 @@ com/dominate/caravan/subfeatures/banner/BannerViewModel_AssistedFactory_Factory.
  com.dominate.caravan.subfeatures.banner.BannerViewModel_AssistedFactory_Factory$InstanceHolder
 com/dominate/caravan/ui/auth/editpassword/EditPasswordFragment_GeneratedInjector.java
  com.dominate.caravan.ui.auth.editpassword.EditPasswordFragment_GeneratedInjector
+com/caravan/databinding/FragmentSplachBinding.java
+ com.caravan.databinding.FragmentSplachBinding
 com/dominate/caravan/ui/auth/siginin/SiginInViewModel_AssistedFactory_Factory.java
  com.dominate.caravan.ui.auth.siginin.SiginInViewModel_AssistedFactory_Factory
  com.dominate.caravan.ui.auth.siginin.SiginInViewModel_AssistedFactory_Factory$InstanceHolder
 com/caravan/BR.java
  com.caravan.BR
-hilt_aggregated_deps/com_dominate_caravan_ui_splach_SplachActivity_GeneratedInjectorModuleDeps.java
- hilt_aggregated_deps.com_dominate_caravan_ui_splach_SplachActivity_GeneratedInjectorModuleDeps
 com/dominate/caravan/core/base/BaseActivity_MembersInjector.java
  com.dominate.caravan.core.base.BaseActivity_MembersInjector
+com/caravan/databinding/RowDistinctAdvertismentBinding.java
+ com.caravan.databinding.RowDistinctAdvertismentBinding
 com/dominate/caravan/ui/home/HomeActivity_GeneratedInjector.java
  com.dominate.caravan.ui.home.HomeActivity_GeneratedInjector
 com/dominate/caravan/ui/auth/editpassword/Hilt_EditPasswordFragment.java
  com.dominate.caravan.ui.auth.editpassword.Hilt_EditPasswordFragment
 com/dominate/caravan/core/base/Hilt_BaseActivity.java
  com.dominate.caravan.core.base.Hilt_BaseActivity
+com/caravan/databinding/RowLatestAdsBinding.java
+ com.caravan.databinding.RowLatestAdsBinding
 com/dominate/caravan/subfeatures/banner/BannerViewModel_AssistedFactory.java
  com.dominate.caravan.subfeatures.banner.BannerViewModel_AssistedFactory
 com/caravan/databinding/FragmentForgotPasswordBinding.java
@@ -68,6 +70,8 @@ com/dominate/caravan/ui/auth/editpassword/EditPasswordViewModel_HiltModule.java
  com.dominate.caravan.ui.auth.editpassword.EditPasswordViewModel_HiltModule
 hilt_aggregated_deps/com_dominate_caravan_ui_auth_editpassword_EditPasswordViewModel_HiltModuleModuleDeps.java
  hilt_aggregated_deps.com_dominate_caravan_ui_auth_editpassword_EditPasswordViewModel_HiltModuleModuleDeps
+com/dominate/caravan/ui/splach/SplashViewModel_AssistedFactory.java
+ com.dominate.caravan.ui.splach.SplashViewModel_AssistedFactory
 com/caravan/databinding/BottomSheetLanguageBinding.java
  com.caravan.databinding.BottomSheetLanguageBinding
 com/dominate/caravan/ui/auth/register/ReqisterViewModel_HiltModule.java
@@ -109,6 +113,8 @@ com/dominate/caravan/core/base/BaseActivity_GeneratedInjector.java
  com.dominate.caravan.core.base.BaseActivity_GeneratedInjector
 hilt_aggregated_deps/com_dominate_caravan_ui_home_HomeActivity_GeneratedInjectorModuleDeps.java
  hilt_aggregated_deps.com_dominate_caravan_ui_home_HomeActivity_GeneratedInjectorModuleDeps
+com/caravan/databinding/RowHousingAdsBindingImpl.java
+ com.caravan.databinding.RowHousingAdsBindingImpl
 com/dominate/caravan/ui/auth/siginin/Hilt_SigininFragment.java
  com.dominate.caravan.ui.auth.siginin.Hilt_SigininFragment
 hilt_aggregated_deps/com_dominate_caravan_ui_auth_editpassword_EditPasswordFragment_GeneratedInjectorModuleDeps.java
@@ -117,33 +123,47 @@ hilt_aggregated_deps/com_dominate_caravan_ui_contactus_ContactUsFragment_Generat
  hilt_aggregated_deps.com_dominate_caravan_ui_contactus_ContactUsFragment_GeneratedInjectorModuleDeps
 com/caravan/databinding/FragmentProfileBinding.java
  com.caravan.databinding.FragmentProfileBinding
+com/caravan/databinding/FragmentTalkThrough2Binding.java
+ com.caravan.databinding.FragmentTalkThrough2Binding
 com/dominate/caravan/BR.java
  com.dominate.caravan.BR
 com/caravan/databinding/FragmentUserNotLoginBinding.java
  com.caravan.databinding.FragmentUserNotLoginBinding
+com/caravan/databinding/FragmentTalkThrough1Binding.java
+ com.caravan.databinding.FragmentTalkThrough1Binding
 com/dominate/caravan/ui/contactus/ContactUsFragment_GeneratedInjector.java
  com.dominate.caravan.ui.contactus.ContactUsFragment_GeneratedInjector
-com/caravan/databinding/ActivitySplachBinding.java
- com.caravan.databinding.ActivitySplachBinding
 hilt_aggregated_deps/com_dominate_caravan_ui_auth_register_RegisterFragment_GeneratedInjectorModuleDeps.java
  hilt_aggregated_deps.com_dominate_caravan_ui_auth_register_RegisterFragment_GeneratedInjectorModuleDeps
 com/dominate/caravan/core/base/BaseFragment_MembersInjector.java
  com.dominate.caravan.core.base.BaseFragment_MembersInjector
 com/dominate/caravan/ui/home/Hilt_HomeActivity.java
  com.dominate.caravan.ui.home.Hilt_HomeActivity
+com/caravan/databinding/RowPropertiesNearYouBindingImpl.java
+ com.caravan.databinding.RowPropertiesNearYouBindingImpl
 com/dominate/caravan/ui/contactus/CountactUsViewModel_AssistedFactory.java
  com.dominate.caravan.ui.contactus.CountactUsViewModel_AssistedFactory
+com/dominate/caravan/ui/splach/SplashViewModel_HiltModule.java
+ com.dominate.caravan.ui.splach.SplashViewModel_HiltModule
 com/dominate/caravan/Hilt_CaravanApp.java
  com.dominate.caravan.Hilt_CaravanApp
  com.dominate.caravan.Hilt_CaravanApp$1
+hilt_aggregated_deps/com_dominate_caravan_ui_splach_SplashViewModel_HiltModuleModuleDeps.java
+ hilt_aggregated_deps.com_dominate_caravan_ui_splach_SplashViewModel_HiltModuleModuleDeps
 com/dominate/caravan/ui/auth/register/Hilt_RegisterFragment.java
  com.dominate.caravan.ui.auth.register.Hilt_RegisterFragment
 com/caravan/databinding/FragmentBannerBinding.java
  com.caravan.databinding.FragmentBannerBinding
+com/caravan/databinding/FragmentTalkThrough3Binding.java
+ com.caravan.databinding.FragmentTalkThrough3Binding
 hilt_aggregated_deps/com_dominate_caravan_ui_uservisitor_UserNotLoginFragment_GeneratedInjectorModuleDeps.java
  hilt_aggregated_deps.com_dominate_caravan_ui_uservisitor_UserNotLoginFragment_GeneratedInjectorModuleDeps
+com/caravan/databinding/RowHousingAdsBinding.java
+ com.caravan.databinding.RowHousingAdsBinding
 com/dominate/caravan/ui/uservisitor/UserNotLoginFragment_GeneratedInjector.java
  com.dominate.caravan.ui.uservisitor.UserNotLoginFragment_GeneratedInjector
+com/caravan/databinding/ActivityOnBoardingBinding.java
+ com.caravan.databinding.ActivityOnBoardingBinding
 hilt_aggregated_deps/com_dominate_caravan_ui_auth_siginin_SiginInViewModel_HiltModuleModuleDeps.java
  hilt_aggregated_deps.com_dominate_caravan_ui_auth_siginin_SiginInViewModel_HiltModuleModuleDeps
 hilt_aggregated_deps/com_dominate_caravan_CaravanApp_GeneratedInjectorModuleDeps.java
@@ -152,6 +172,8 @@ com/dominate/caravan/ui/auth/register/ReqisterViewModel_AssistedFactory.java
  com.dominate.caravan.ui.auth.register.ReqisterViewModel_AssistedFactory
 com/dominate/caravan/ui/auth/siginin/SiginInViewModel_HiltModule.java
  com.dominate.caravan.ui.auth.siginin.SiginInViewModel_HiltModule
+com/caravan/databinding/FragmentHomeBinding.java
+ com.caravan.databinding.FragmentHomeBinding
 com/caravan/databinding/FragmentEditPasswordBinding.java
  com.caravan.databinding.FragmentEditPasswordBinding
 com/caravan/databinding/FragmentSigininBinding.java
@@ -167,6 +189,11 @@ com/caravan/databinding/FragmentContactUsBinding.java
  com.caravan.databinding.FragmentContactUsBinding
 com/caravan/BuildConfig.java
  com.caravan.BuildConfig
+com/dominate/caravan/ui/splach/SplashViewModel_AssistedFactory_Factory.java
+ com.dominate.caravan.ui.splach.SplashViewModel_AssistedFactory_Factory
+ com.dominate.caravan.ui.splach.SplashViewModel_AssistedFactory_Factory$InstanceHolder
+com/caravan/databinding/RowLatestAdsBindingImpl.java
+ com.caravan.databinding.RowLatestAdsBindingImpl
 com/dominate/caravan/ui/uservisitor/Hilt_UserNotLoginFragment.java
  com.dominate.caravan.ui.uservisitor.Hilt_UserNotLoginFragment
 com/dominate/caravan/ui/contactus/CountactUsViewModel_AssistedFactory_Factory.java
@@ -180,5 +207,7 @@ com/dominate/caravan/ui/auth/siginin/SigininFragment_GeneratedInjector.java
  com.dominate.caravan.ui.auth.siginin.SigininFragment_GeneratedInjector
 com/caravan/databinding/FragmentRegisterBinding.java
  com.caravan.databinding.FragmentRegisterBinding
+com/caravan/databinding/RowPropertiesNearYouBinding.java
+ com.caravan.databinding.RowPropertiesNearYouBinding
 androidx/databinding/DataBindingComponent.java
  androidx.databinding.DataBindingComponent

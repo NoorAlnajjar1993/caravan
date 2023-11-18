@@ -2,19 +2,29 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/home_nav"
-        android:icon="@drawable/ic_check_box_white_24dp"
-        android:title="" />
+        android:id="@+id/account_nav"
+        android:icon="@drawable/ic_profile"
+        android:title="حسابي" />
 
     <item
-        android:id="@+id/search_nav"
-        android:icon="@drawable/ic_check_box_white_24dp"
-        android:title="" />
+        android:id="@+id/favourites_nav"
+        android:icon="@drawable/ic_favourites_gray"
+        android:title="المفضلة" />
 
     <item
         android:id="@+id/notifications_nav"
-        android:icon="@drawable/ic_check_box_white_24dp"
-        android:title="" />
+        android:icon="@drawable/ic_notification"
+        android:title="التنبيهات" />
+
+    <item
+        android:id="@+id/add_adv_nav"
+        android:icon="@drawable/ic_add_adv"
+        android:title="أضف إعلان" />
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="الرئيسية" />
 
 
 </menu>

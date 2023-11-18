@@ -1,13 +1,15 @@
 package com.dominate.caravan.ui.home
 
 import android.os.Bundle
+import android.view.View
 import androidx.lifecycle.LiveData
 import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import com.caravan.R
 import com.dominate.caravan.core.base.BaseActivity
 import com.caravan.databinding.ActivityHomeBinding
 import dagger.hilt.android.AndroidEntryPoint
-
-
+import androidx.navigation.ui.setupWithNavController
 
 @AndroidEntryPoint
 class HomeActivity : BaseActivity() {
@@ -18,6 +20,10 @@ class HomeActivity : BaseActivity() {
     lateinit var binding: ActivityHomeBinding
 
     lateinit var navGraphIds: List<Int>
+
+    var navHostFragment :NavHostFragment ?= null
+    var navController :NavController ?= null
+    var isUpdateLanguage = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
@@ -25,7 +31,8 @@ class HomeActivity : BaseActivity() {
 
         setContentView(binding.root)
         if (savedInstanceState == null) {
-            setupBottomNavigationBar()
+            //setupBottomNavigationBar()
+            handleNavController()
         }
 
     }
@@ -78,6 +85,36 @@ class HomeActivity : BaseActivity() {
         }
     }
 
+    private fun handleNavController(){
+        navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        navController = navHostFragment?.navController
+
+        binding.navView.setupWithNavController(navController!!)
+
+        binding.navView.setOnNavigationItemSelectedListener {item->
+            when (item.itemId) {
+
+                R.id.homeFragment -> {
+                    navController?.navigate(R.id.homeFragment)
+                    true
+                }
+
+
+
+            }
+
+            false
+        }
+
+
+        navController?.addOnDestinationChangedListener { _, destination, _ ->
+            if (destination.id == R.id.homeFragment ){
+                binding.navView.visibility = View.VISIBLE
+            }else{
+                binding.navView.visibility = View.GONE
+            }
+        }
+    }
 
 
 }

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph_main"
+    app:startDestination="@id/splashFragment">
+
+
+    <fragment
+        android:id="@+id/splashFragment"
+        tools:layout="@layout/fragment_splach"
+        android:name="com.dominate.caravan.ui.splach.SplashFragment"
+        android:label="SplashFragment" >
+
+        <action
+            android:id="@+id/action_splashFragment_to_talkThrough1Fragment"
+            app:destination="@id/talkThrough1Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/talkThrough1Fragment"
+        tools:layout="@layout/fragment_talk_through_1"
+        android:name="com.dominate.caravan.ui.onboarding.TalkThrough1Fragment"
+        android:label="TalkThrough1Fragment" >
+        <action
+            android:id="@+id/action_talkThrough1Fragment_to_talkThrough2Fragment"
+            app:destination="@id/talkThrough2Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/talkThrough2Fragment"
+        tools:layout="@layout/fragment_talk_through_2"
+        android:name="com.dominate.caravan.ui.onboarding.TalkThrough2Fragment"
+        android:label="TalkThrough2Fragment" >
+
+        <action
+            android:id="@+id/action_talkThrough2Fragment_to_talkThrough3Fragment"
+            app:destination="@id/talkThrough3Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        tools:layout="@layout/fragment_home"
+        android:name="com.dominate.caravan.ui.home.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/talkThrough3Fragment"
+        tools:layout="@layout/fragment_talk_through_3"
+        android:name="com.dominate.caravan.ui.onboarding.TalkThrough3Fragment"
+        android:label="TalkThrough3Fragment" >
+        <action
+            android:id="@+id/action_talkThrough3Fragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+</navigation>

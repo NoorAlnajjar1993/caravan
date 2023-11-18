@@ -20,12 +20,12 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/HomeTheme">
 
-        <activity
-            android:name="com.dominate.caravan.ui.home.HomeActivity"
-            android:configChanges="layoutDirection|uiMode|locale"
-            android:label="@string/title_activity_home"
-            android:theme="@style/HomeTheme"/>
-        <activity android:name="com.dominate.caravan.ui.splach.SplachActivity">
+
+        <activity android:name="com.dominate.caravan.ui.home.HomeActivity"
+            android:exported="true"
+            android:configChanges="uiMode"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

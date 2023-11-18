@@ -30,7 +30,8 @@ import com.dominate.caravan.ui.contactus.ContactUsFragment;
 import com.dominate.caravan.ui.contactus.CountactUsViewModel_AssistedFactory;
 import com.dominate.caravan.ui.contactus.CountactUsViewModel_AssistedFactory_Factory;
 import com.dominate.caravan.ui.home.HomeActivity;
-import com.dominate.caravan.ui.splach.SplachActivity;
+import com.dominate.caravan.ui.splach.SplashViewModel_AssistedFactory;
+import com.dominate.caravan.ui.splach.SplashViewModel_AssistedFactory_Factory;
 import com.dominate.caravan.ui.uservisitor.UserNotLoginFragment;
 import com.dominate.caravan.utils.Prefs;
 import dagger.hilt.android.internal.builders.ActivityComponentBuilder;
@@ -173,6 +174,8 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
 
       private volatile Provider<SiginInViewModel_AssistedFactory> siginInViewModel_AssistedFactoryProvider;
 
+      private volatile Provider<SplashViewModel_AssistedFactory> splashViewModel_AssistedFactoryProvider;
+
       private ActivityCImpl(Activity activityParam) {
         this.activity = activityParam;
       }
@@ -231,9 +234,19 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
         return (Provider<SiginInViewModel_AssistedFactory>) local;
       }
 
+      private Provider<SplashViewModel_AssistedFactory> getSplashViewModel_AssistedFactoryProvider(
+          ) {
+        Object local = splashViewModel_AssistedFactoryProvider;
+        if (local == null) {
+          local = new SwitchingProvider<>(5);
+          splashViewModel_AssistedFactoryProvider = (Provider<SplashViewModel_AssistedFactory>) local;
+        }
+        return (Provider<SplashViewModel_AssistedFactory>) local;
+      }
+
       private Map<String, Provider<ViewModelAssistedFactory<? extends ViewModel>>> getMapOfStringAndProviderOfViewModelAssistedFactoryOf(
           ) {
-        return MapBuilder.<String, Provider<ViewModelAssistedFactory<? extends ViewModel>>>newMapBuilder(5).put("com.dominate.caravan.subfeatures.banner.BannerViewModel", (Provider) getBannerViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.contactus.CountactUsViewModel", (Provider) getCountactUsViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.auth.editpassword.EditPasswordViewModel", (Provider) getEditPasswordViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.auth.register.ReqisterViewModel", (Provider) getReqisterViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.auth.siginin.SiginInViewModel", (Provider) getSiginInViewModel_AssistedFactoryProvider()).build();
+        return MapBuilder.<String, Provider<ViewModelAssistedFactory<? extends ViewModel>>>newMapBuilder(6).put("com.dominate.caravan.subfeatures.banner.BannerViewModel", (Provider) getBannerViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.contactus.CountactUsViewModel", (Provider) getCountactUsViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.auth.editpassword.EditPasswordViewModel", (Provider) getEditPasswordViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.auth.register.ReqisterViewModel", (Provider) getReqisterViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.auth.siginin.SiginInViewModel", (Provider) getSiginInViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.splach.SplashViewModel", (Provider) getSplashViewModel_AssistedFactoryProvider()).build();
       }
 
       private ViewModelProvider.Factory getProvideFactory() {
@@ -248,11 +261,6 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
       @Override
       public void injectHomeActivity(HomeActivity homeActivity) {
         injectHomeActivity2(homeActivity);
-      }
-
-      @Override
-      public void injectSplachActivity(SplachActivity splachActivity) {
-        injectSplachActivity2(splachActivity);
       }
 
       @Override
@@ -276,11 +284,6 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
       }
 
       private HomeActivity injectHomeActivity2(HomeActivity instance) {
-        BaseActivity_MembersInjector.injectPrefs(instance, getPrefs());
-        return instance;
-      }
-
-      private SplachActivity injectSplachActivity2(SplachActivity instance) {
         BaseActivity_MembersInjector.injectPrefs(instance, getPrefs());
         return instance;
       }
@@ -442,6 +445,9 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
 
             case 4: // com.dominate.caravan.ui.auth.siginin.SiginInViewModel_AssistedFactory 
             return (T) SiginInViewModel_AssistedFactory_Factory.newInstance();
+
+            case 5: // com.dominate.caravan.ui.splach.SplashViewModel_AssistedFactory 
+            return (T) SplashViewModel_AssistedFactory_Factory.newInstance();
 
             default: throw new AssertionError(id);
           }
