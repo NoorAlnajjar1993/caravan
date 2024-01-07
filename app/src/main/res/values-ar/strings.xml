@@ -22,7 +22,7 @@
     <string name="commercial_real_estate">عقار تجاري</string>
     <string name="land_farm">أرض/مزرعة</string>
     <string name="house_villa">منزل/فيلا</string>
-    <string name="search">ابحث باسم المنطقة..</string>
+    <string name="search_region_name">ابحث باسم المنطقة..</string>
     <string name="more">المزيد ></string>
     <string name="featured_ads_">اعلانات مميزة</string>
     <string name="distinct">مميز</string>
@@ -37,6 +37,5 @@
     <string name="adv_2">قم بإدارة تفاصيل إعلانك بسهولة ويُسر</string>
     <string name="adv_3">استقبل الاستفسارات وتواصل مع العملاء بسرعة</string>
     <string name="Post_ad_now">أضف اعلان الآن</string>
-
 
 </resources>

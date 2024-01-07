@@ -661,6 +661,23 @@ attr listPreferredItemPaddingStart
 attr liteMode
 attr logo
 attr logoDescription
+attr lottieAnimationViewStyle
+attr lottie_autoPlay
+attr lottie_cacheComposition
+attr lottie_colorFilter
+attr lottie_enableMergePathsForKitKatAndAbove
+attr lottie_fallbackRes
+attr lottie_fileName
+attr lottie_imageAssetsFolder
+attr lottie_loop
+attr lottie_progress
+attr lottie_rawRes
+attr lottie_renderMode
+attr lottie_repeatCount
+attr lottie_repeatMode
+attr lottie_scale
+attr lottie_speed
+attr lottie_url
 attr mapType
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogTheme
@@ -1238,6 +1255,9 @@ color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
 color control_checkable_material
+color dark_bg_color
+color delete_bg_color
+color delete_color
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1292,6 +1312,8 @@ color ef_colorTextPrimary
 color ef_grey
 color ef_teal
 color ef_white
+color error_bg_color
+color error_color
 color error_color_material
 color error_color_material_dark
 color error_color_material_light
@@ -1301,6 +1323,8 @@ color highlighted_text_material_dark
 color highlighted_text_material_light
 color hint_foreground_material_dark
 color hint_foreground_material_light
+color info_bg_color
+color info_color
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1408,6 +1432,9 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color success_bg_color
+color success_color
+color success_title_color
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -1432,6 +1459,8 @@ color ucrop_color_widget_active
 color ucrop_color_widget_background
 color ucrop_color_widget_text
 color ucrop_scale_text_view_selector
+color warning_bg_color
+color warning_color
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1991,6 +2020,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable btn_radio_to_off_mtrl_000
 drawable btn_radio_to_on_mtrl_000
+drawable color_view_background
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2010,6 +2040,8 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable darkbackground
+drawable default_background
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -2022,6 +2054,7 @@ drawable ef_ic_arrow_forward
 drawable ef_ic_camera_white
 drawable ef_ic_done_white
 drawable ef_image_placeholder
+drawable error_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_check_box_outline_blank_white_24dp
@@ -2032,7 +2065,11 @@ drawable ic_checkbox_indeterminate
 drawable ic_checkbox_unchecked
 drawable ic_checkbox_unchecked_to_checked_animation
 drawable ic_clock_black_24dp
+drawable ic_error
+drawable ic_error_2
 drawable ic_indeterminate_check_box_white_24dp
+drawable ic_info
+drawable ic_info_2
 drawable ic_keyboard_black_24dp
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
@@ -2041,6 +2078,12 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_photo_black_48dp
 drawable ic_photo_camera_black_48dp
 drawable ic_radio_indeterminate
+drawable ic_success
+drawable ic_success_2
+drawable ic_warning
+drawable ic_warning_2
+drawable ic_warning_yellow
+drawable info_background
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2075,6 +2118,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rounded_corners
+drawable success_background
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -2090,7 +2135,10 @@ drawable ucrop_shadow_upside
 drawable ucrop_vector_ic_crop
 drawable ucrop_vector_loader
 drawable ucrop_vector_loader_animated
+drawable warning_background
 drawable white_radius
+font ar
+font custom_font
 id BOTTOM_END
 id BOTTOM_START
 id NO_DEBUG
@@ -2172,6 +2220,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id automatic
 id barrier
 id baseline
 id beginning
@@ -2203,6 +2252,7 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id collapseActionView
+id color_toast_view
 id confirm_button
 id container
 id content
@@ -2216,6 +2266,9 @@ id customPanel
 id cut
 id cycle
 id dark
+id dark_toast_description
+id dark_toast_icon
+id dark_toast_message
 id dataBinding
 id date_picker_actions
 id decelerate
@@ -2277,6 +2330,7 @@ id glide_custom_view_target_tag
 id gone
 id group_divider
 id guideline
+id hardware
 id header_title
 id home
 id homeAsUp
@@ -2321,6 +2375,7 @@ id linear
 id linearOutSlowIn
 id listMode
 id list_item
+id lottie_layer_name
 id lytCameraPick
 id lytGalleryPick
 id main
@@ -2423,6 +2478,8 @@ id progress_horizontal
 id radio
 id rectangles
 id recyclerView
+id restart
+id reverse
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2470,6 +2527,7 @@ id slide
 id smallLabel
 id snackbar_action
 id snackbar_text
+id software
 id spacer
 id special_effects_controller_view_tag
 id spline
@@ -2530,6 +2588,9 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toast_background_type
+id toast_icon
+id toast_message
 id toolbar
 id toolbar_title
 id top
@@ -2651,6 +2712,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout custom_dialog
+layout dark_layout
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -2667,6 +2729,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_password_icon
 layout design_text_input_start_icon
+layout designer_layout
 layout dialog_choose_app
 layout ef_activity_image_picker
 layout ef_fragment_image_picker
@@ -2940,6 +3003,7 @@ string status_bar_notification_info_overflow
 string title_camera
 string title_choose_image_provider
 string title_gallery
+string toast_icon
 string ucrop_error_input_data_is_absent
 string ucrop_label_edit_photo
 string ucrop_label_original
@@ -3783,6 +3847,7 @@ styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_height
 styleable LinearProgressIndicator indeterminateAnimationType indicatorDirectionLinear
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
+styleable LottieAnimationView lottie_autoPlay lottie_cacheComposition lottie_colorFilter lottie_enableMergePathsForKitKatAndAbove lottie_fallbackRes lottie_fileName lottie_imageAssetsFolder lottie_loop lottie_progress lottie_rawRes lottie_renderMode lottie_repeatCount lottie_repeatMode lottie_scale lottie_speed lottie_url
 styleable MapAttrs ambientEnabled cameraBearing cameraMaxZoomPreference cameraMinZoomPreference cameraTargetLat cameraTargetLng cameraTilt cameraZoom latLngBoundsNorthEastLatitude latLngBoundsNorthEastLongitude latLngBoundsSouthWestLatitude latLngBoundsSouthWestLongitude liteMode mapType uiCompass uiMapToolbar uiRotateGestures uiScrollGestures uiScrollGesturesDuringRotateOrZoom uiTiltGestures uiZoomControls uiZoomGestures useViewLifecycle zOrderOnTop
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle

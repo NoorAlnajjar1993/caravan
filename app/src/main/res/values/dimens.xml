@@ -678,4 +678,12 @@
     <dimen name="_minus8sdp">-8.00dp</dimen>
     <dimen name="_minus9sdp">-9.00dp</dimen>
     <dimen name="_0dp">0dp</dimen>
+
+    <dimen name="fields_margin_top">@dimen/_6sdp</dimen>
+    <dimen name="button_margin_top">@dimen/_45sdp</dimen>
+    <dimen name="fields_margin_bottom">@dimen/_5sdp</dimen>
+    <dimen name="box_corner_radius">@dimen/_8sdp</dimen>
+
+    <!-- General setting-->
+    <dimen name="margin_top">@dimen/_10sdp</dimen>
 </resources>

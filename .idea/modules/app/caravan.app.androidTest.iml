@@ -26,6 +26,8 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
+                <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debugAndroidTest/R.jar</arg>
+                <arg>$MODULE_DIR$/../../../app/build/intermediates/app_classes/debug/classes.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/0df0f3c2953af3e141d2abe0768eade5/jetified-junit-1.1.2-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/dfa1a5a9b4eda07e5a88f74a0999ee72/espresso-core-3.3.0-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../data/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
@@ -51,6 +53,7 @@
                 <arg>D:/jdks/caches/transforms-2/files-2.1/d0327028794c1a8be122f017c36cdb4f/jetified-imageslider-1.0.3-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/8fc4c21b87692d0e55b2c3f9a5194c23/constraintlayout-2.0.4-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/7cb45e835c2b30cd46a20c0c75b2f928/jetified-RadioRealButton-v2.1.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/473b5f80fffa327dec437b5387a40543/jetified-lottie-3.4.2-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/a8335c91a6a58b180e2f259e5b929b41/appcompat-1.2.0-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/d354b66937ccadd9fb7278319401e8e5/legacy-support-v4-1.0.0-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/312bec973134685006d0611266d27b9d/legacy-support-core-ui-1.0.0-api.jar</arg>
@@ -150,6 +153,7 @@
                 <arg>D:/jdks/caches/transforms-2/files-2.1/c7c18f09431c28077a578a5104e3d0cf/jetified-timber-4.7.1-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/9b30ee414cb76405662cf104577613f9/jetified-imagepicker-support-1.7.1-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/09c6557c5da22e89b9b5898e0e62eeb4/jetified-indeterminate-checkbox-1.0.5-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/ca0de8307f9ccabb923e9f00c4f8e2fb/jetified-DesignerToast-0.1.2-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/143c662a65fa148a8fd7a3f36fbe52ce/jetified-androidutilslibrary-1.0.0-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/a5d81cc90f3a8756ee4aeabca26601f2/jetified-circleimageview-3.1.0-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/0f7740304f9772144ec4741611c9669f/jetified-kotlin-stdlib-common-1.4.32.jar</arg>
@@ -218,13 +222,27 @@
     <output-test url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/debugUnitTest/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../app/build/generated/aidl_source_output_dir/debugAndroidTest/out" />
-    <content url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/debugAndroidTest/out" />
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/debugAndroidTest/out">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/debugAndroidTest/out" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/debugAndroidTest/out" isTestSource="true" generated="true" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../app/build/generated/renderscript_source_output_dir/debugAndroidTest/out" />
-    <content url="file://$MODULE_DIR$/../../../app/build/generated/res/resValues/androidTest/debug" />
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/res/resValues/androidTest/debug">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/res/resValues/androidTest/debug" type="java-test-resource" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../app/build/generated/res/rs/androidTest/debug" />
-    <content url="file://$MODULE_DIR$/../../../app/build/generated/source/buildConfig/androidTest/debug" />
-    <content url="file://$MODULE_DIR$/../../../app/build/generated/source/kapt/debugAndroidTest" />
-    <content url="file://$MODULE_DIR$/../../../app/build/generated/source/kaptKotlin/debugAndroidTest" />
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/source/buildConfig/androidTest/debug">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/buildConfig/androidTest/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/buildConfig/androidTest/debug" isTestSource="true" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/source/kapt/debugAndroidTest">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/kapt/debugAndroidTest" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/kapt/debugAndroidTest" isTestSource="true" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/source/kaptKotlin/debugAndroidTest">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/kaptKotlin/debugAndroidTest" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/kaptKotlin/debugAndroidTest" isTestSource="true" generated="true" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../app/src/androidTest">
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/androidTest/java" isTestSource="true" />
     </content>
@@ -294,6 +312,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: io.github.ivanespitiac:imageslider:1.0.3@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.constraintlayout:constraintlayout:2.0.4@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.ceryle:RadioRealButton:v2.1.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.airbnb.android:lottie:3.4.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.appcompat:appcompat:1.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-v4:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0@aar" level="project" />
@@ -371,6 +390,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.jakewharton.timber:timber:4.7.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.dhaval2404:imagepicker-support:1.7.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.sevar83:indeterminate-checkbox:1.0.5@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.github.vedraj360:DesignerToast:0.1.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.gitlab.developerdeveloperdeveloper:androidutilslibrary:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: de.hdodenhof:circleimageview:3.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-experimental:1.0.0@aar" level="project" />

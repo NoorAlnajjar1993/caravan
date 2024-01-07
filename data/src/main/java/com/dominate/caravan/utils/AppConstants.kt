@@ -3,7 +3,7 @@ package com.dominate.caravan.utils
 class AppConstants {
 
     companion object{
-        const val BASE_URL = "https://bdirectory.dominate.dev/api/"
+        const val BASE_URL = "https://caravan-ddedb9092a1f.herokuapp.com/apis/"
         const val defaultLanguage:String ="en"
         const val defaultLanguageKey:String ="DEFAULT_LANGUAGE"
         const val userTypeKey:String ="USER_TYPE"
@@ -16,6 +16,8 @@ class AppConstants {
         const val USER_EMAIL="user email"
         const val USER_PHONE="user phone"
         const val USER_NAME="user name"
+        const val CURRENT_USER="current user"
+
         const val PASSWORD_PATTERN = "^" +
                 "(?=.*[0-9])" +         //at least 1 digit
                 "(?=.*[A-Z])" +         //at least 1 upper case letter

@@ -15,15 +15,24 @@
 
 
     <color name="pink">#9e3e95</color>
+    <color name="pink_01">#7b3085</color>
     <color name="light_gray">#A1A1A1</color>
     <color name="purble">#5E309A</color>
     <color name="light_gray_1">#CACACA</color>
     <color name="light_gray_2">#f6f6f6</color>
     <color name="black">#000000</color>
     <color name="yellow">#F8E32F</color>
+
     <color name="light_blue">#C9F9FF</color>
+    <color name="light_blue_2">#e1f0fa</color>
+    <color name="light_gray_3">#f9fafb</color>
+    <color name="light_gray_4">#A9A9A9</color>
 
+    <color name="dark_gray">#2C3131</color>
 
+    <color name="light_purple">#cbbdde</color>
+    <color name="red_light">#E25C5C</color>
+    <color name="green">#ccf3d6</color>
 
 
 

@@ -21,7 +21,7 @@
     <string name="commercial_real_estate">عقار تجاري</string>
     <string name="land_farm">أرض/مزرعة</string>
     <string name="house_villa">منزل/فيلا</string>
-    <string name="search">ابحث باسم المنطقة..</string>
+    <string name="search_region_name">ابحث باسم المنطقة..</string>
     <string name="more">المزيد ></string>
     <string name="featured_ads_">اعلانات مميزة</string>
     <string name="distinct">مميز</string>
@@ -36,6 +36,175 @@
     <string name="adv_2">قم بإدارة تفاصيل إعلانك بسهولة ويُسر</string>
     <string name="adv_3">استقبل الاستفسارات وتواصل مع العملاء بسرعة</string>
     <string name="Post_ad_now">أضف اعلان الآن</string>
+    <string name="welcome">مرحباً بك!</string>
+    <string name="Log_access_unique_experience">قم بتسجيل الدخول للوصول إلى تجربة \n  عقارية مميزة</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="password">كلمة المرور</string>
+
+    <string name="already_have_an_account">لديك حساب بالفعل؟</string>
+    <string name="signin">تسجيل الدخول</string>
+    <string name="subscribe">اشترك</string>
+    <string name="Phonenumber_username">رقم الهاتف أو اسم المستخدم</string>
+
+    <string name="dont_have_account">ليس لديك حساب؟</string>
+    <string name="did_forget_password">هل نسيت كلمة المرور؟</string>
+    <string name="Password_reset">اعادة تعيين كلمة المرور</string>
+    <string name="dont_worry_enter_phonenumber">لا تقلق ، قم بادخال رقم هاتقك وسيصلك \n رمز التأكيد لاستعادة كلمة المرور</string>
+    <string name="continuation">استمرار</string>
+    <string name="enter_confirmation_code">أدخل رمز التأكيد</string>
+    <string name="we_have_sent_confirmation_code">قمنا بإرسال رمز التأكيد الى هاتفك \n  قم بادخاله من فضلك</string>
+
+    <string name="resend_in">أعد الإرسال إلى</string>
+    <string name="seconds">ثانية</string>
+    <string name="set_new_password">تعيين كلمة مرور جديدة</string>
+    <string name="set_password">تعيين كلمة المرور</string>
+
+    <string name="recent_search_results">نتائج البحث الأخيرة</string>
+    <string name="recently_displayed">المعروضة مؤخراً</string>
+    <string name="search">البحث</string>
+    <string name="search_now">ابحث الآن</string>
+    <string name="filter">فلتر</string>
+
+    <string name="reset">إعادة ضبط</string>
+    <string name="select_ad_category">حدد فئة الإعلان</string>
+    <string name="property_type">نوع العقار</string>
+    <string name="architecture">عمارة</string>
+    <string name="land">أرض</string>
+    <string name="farm_chalet">مزرعة/شالية</string>
+
+    <string name="apartment_options">خيارات الشقق</string>
+
+    <string name="new_">جديد</string>
+    <string name="used">مستعمل</string>
+    <string name="furnished">مفروش</string>
+    <string name="unfurnished">غير مفروش</string>
+    <string name="number_bedrooms">عدد غرف النوم</string>
+    <string name="studio">ستوديو</string>
+    <string name="floor">الطابق</string>
+
+    <string name="first">الأول</string>
+    <string name="earthly">أرضي</string>
+    <string name="Semi_terrestrial">شبه أرضي</string>
+    <string name="settlement">تسوية</string>
+
+    <string name="last">أخير</string>
+    <string name="fourth">الرابع</string>
+    <string name="third">الثالث</string>
+    <string name="second">الثاني</string>
+
+    <string name="duplex">دوبلكس</string>
+    <string name="roof">روف</string>
+    <string name="last_roof">أخير مع روف</string>
+
+    <string name="building_area">مساحة البناء (متر مربع)</string>
+    <string name="building_area_title">مساحة البناء</string>
+
+    <string name="Maximum_area">أكبر مساحة /الحد الأعلى</string>
+    <string name="Minimum_area">أقل مساحة /الحد الأدنى</string>
+    <string name="price">السعر ( الدينار الأردني)</string>
+    <string name="Maximum_price">أعلى سعر /الحد الأعلى</string>
+    <string name="Minimum_price">أقل سعر /الحد الأدنى</string>
+    <string name="other_options">خيارات أخرى</string>
+
+    <string name="directly_from_owner">من المالك مباشرة</string>
+    <string name="installment">تقسيط</string>
+    <string name="bank_owned_real_estate">عقارات مملوكة للبنك</string>
+    <string name="featured_ads">اعلانات مميزة</string>
+    <string name="application">تطبيق</string>
+
+    <string name="profile_personly">الملف الشخصي</string>
+    <string name="account_settings">إعدادات الحساب</string>
+    <string name="my_real_estate_ads">اعلاناتي العقارية</string>
+    <string name="my_commercials">اعلاناتي التجارية</string>
+    <string name="advertisement_package">باقة الاعلانات</string>
+    <string name="about_caravan_company">عن شركة كرفان</string>
+    <string name="are_you_having_problem_connect_with_us">هل تواجه مشكلة؟ تواصل معنا</string>
+
+    <string name="our_team_ready_answer_your_inquiries">فريقنا جاهز للرد على استفساراتكم</string>
+    <string name="name">الإسم</string>
+    <string name="whatsapp">واتساب</string>
+    <string name="introduction_optional">نبذة تعريفية ( اختياري )</string>
+    <string name="if_write_introductory_overview">اذا كنت صاحب شركة ، يمكنك كتابه نبذة تعريفية عنها ..</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="login">تسجيل الدخول</string>
+
+    <string name="delete_account">حذف الحساب</string>
+    <string name="view_my_profile">عرض ملفي</string>
+    <string name="old_password">كلمة المرور القديمة</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+
+    <string name="save">حفظ</string>
+
+    <string name="terms_of_use">شروط الاستخدام</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+
+    <string name="rejected">مرفوضة</string>
+    <string name="arrested">موقوفة</string>
+    <string name="under_review">قيد المراجعة</string>
+    <string name="effective">فعالة</string>
+    <string name="make_your_ad_standout">ميّز اعلانك</string>
+    <string name="favorite">المفضلة</string>
+    <string name="notifications">الاشعارات</string>
+
+    <string name="add_ads">أضف اعلان</string>
+    <string name="text_04">اعلان عقاري (متبقي 5 اعلانات)</string>
+    <string name="text_05">شقة، منزل، أرض، مزرعة، عمارة، تجاري</string>
+    <string name="text_06">اعلان شركة اسكان</string>
+    <string name="text_07">عدة شقق وطوابق، اسكان قائم او تحت الإنشاء</string>
+    <string name="text_08">اعلان تجاري</string>
+    <string name="text_09">اعللانات خدمات معينة بالعقارات</string>
+
+    <string name="text_10">اختر باقة اعلانات</string>
+    <string name="text_11">واحصل على العديد من المميزات</string>
+    <string name="choose_now">اختر الآن</string>
+
+    <string name="logout_question">هل تريد تسجيل الخروج؟</string>
+    <string name="login_question">يجب تسجيل الدخول للاستمرار</string>
+
+    <string name="deactivate_question">يرجى ملاحظة أنك إذا قمت بتأكيد هذا , فسيتم حذف جميع البيانات المرتبطة بهذا الحساب نهائيا</string>
+    <string name="deactivate">حذف الحساب</string>
+
+    <string name="add_a_real_estate_ad">اضف اعلان عقاري</string>
+    <string name="apartment_condition">حالة الشقة</string>
+
+    <string name="age_construction_years">عمر البناء بالسنوات</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="select">اختر</string>
+    <string name="number_bathrooms">عدد الحمامات</string>
+    <string name="land_area">مساحة الأرض</string>
+    <string name="year_construction">سنة البناء</string>
+    <string name="total_number_apartments_building">مجموع عدد الشقق في المبنى</string>
+    <string name="number_floors_building">عدد طوابق المبنى</string>
+    <string name="with_garden_gear">مع حديقة / ترس؟</string>
+
+    <string name="gear_area_square_metres">مساحة الترس ( متر مربع )</string>
+    <string name="with_roof">مع روف</string>
+    <string name="roof_area_square_metres">مساحة الروف ( متر مربع )</string>
+    <string name="residential_building">عمارة سكني</string>
+    <string name="determine_apartments_features">عحدد مميزات الشقة</string>
+
+    <string name="fill_fields">الرجاء ملىء الحقول</string>
+    <string name="login_successfully">تم الدخول بنجاح &#x1F60A; </string>
+
+    <string name="password_should_be_match">يجب ان تتطابق كلمتي المرور</string>
+    <string name="updated_successfully">تم التعديل بنجاح</string>
+    <string name="invalid_old_password_please_try_again">كلمة المرور القديمة غير صحيحة، يرجى اعادة المحاولة</string>
+
+    <string name="error_phone_number_password">رقم الهاتف او كلمة المرور خطأ</string>
+    <string name="jod">JOD</string>
+    <string name="no_fav">لا يوجد مفضلة</string>
+    <string name="no_notification">لا يوجد إشعارات</string>
+    <string name="real_estate_ads">الإعلانات العقارية</string>
+    <string name="commertcial_real_estate_ads">الإعلانات العقارية التجارية</string>
+    <string name="commertcial_ads">الإعلانات التجارية</string>
+    <string name="bathroom">حمام</string>
+    <string name="room">غرف</string>
+    <string name="m2">متر</string>
+    <string name="number_of_ads_">رقم الإعلان:</string>
 
 
 </resources>

@@ -8,18 +8,24 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.caravan.R;
+import com.dominate.caravan.medule.home.HousingAd;
+import com.google.android.material.imageview.ShapeableImageView;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class RowHousingAdsBinding extends ViewDataBinding {
   @NonNull
-  public final AppCompatImageView imageView02;
+  public final ShapeableImageView imageView02;
 
   @NonNull
   public final AppCompatImageView imageView03;
+
+  @NonNull
+  public final AppCompatImageView ivFavourite;
 
   @NonNull
   public final AppCompatTextView tvDirection;
@@ -36,18 +42,29 @@ public abstract class RowHousingAdsBinding extends ViewDataBinding {
   @NonNull
   public final AppCompatTextView tvPrice;
 
+  @Bindable
+  protected HousingAd mItem;
+
   protected RowHousingAdsBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      AppCompatImageView imageView02, AppCompatImageView imageView03, AppCompatTextView tvDirection,
-      AppCompatTextView tvDistance, AppCompatTextView tvLocation, AppCompatTextView tvName,
-      AppCompatTextView tvPrice) {
+      ShapeableImageView imageView02, AppCompatImageView imageView03,
+      AppCompatImageView ivFavourite, AppCompatTextView tvDirection, AppCompatTextView tvDistance,
+      AppCompatTextView tvLocation, AppCompatTextView tvName, AppCompatTextView tvPrice) {
     super(_bindingComponent, _root, _localFieldCount);
     this.imageView02 = imageView02;
     this.imageView03 = imageView03;
+    this.ivFavourite = ivFavourite;
     this.tvDirection = tvDirection;
     this.tvDistance = tvDistance;
     this.tvLocation = tvLocation;
     this.tvName = tvName;
     this.tvPrice = tvPrice;
+  }
+
+  public abstract void setItem(@Nullable HousingAd item);
+
+  @Nullable
+  public HousingAd getItem() {
+    return mItem;
   }
 
   @NonNull

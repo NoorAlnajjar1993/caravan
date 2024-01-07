@@ -23,7 +23,8 @@ class HomeActivity : BaseActivity() {
 
     var navHostFragment :NavHostFragment ?= null
     var navController :NavController ?= null
-    var isUpdateLanguage = ""
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
@@ -31,44 +32,8 @@ class HomeActivity : BaseActivity() {
 
         setContentView(binding.root)
         if (savedInstanceState == null) {
-            //setupBottomNavigationBar()
             handleNavController()
         }
-
-    }
-
-    private fun setupBottomNavigationBar() {
-        val bottomNavigationView=binding.navView
-        bottomNavigationView.itemIconTintList = null
-        navGraphIds = listOf(
-
-
-        )
-
-        // Setup the bottom navigation view with a list of navigation graphs
-      /*  val controller = bottomNavigationView.setupWithNavController(
-                navGraphIds = navGraphIds,
-                fragmentManager = supportFragmentManager,
-                containerId = R.id.nav_host_fragment,
-                intent = intent
-        )*/
-
-        if (!prefs.isLoggedIn){
-
-            navGraphIds
-            bottomNavigationView.setOnNavigationItemSelectedListener { item ->
-                when (item.itemId) {
-
-                }
-                true
-            }
-
-        }
-
-
-       // currentNavController = controller
-
-
 
     }
     override fun onSupportNavigateUp(): Boolean {
@@ -99,8 +64,29 @@ class HomeActivity : BaseActivity() {
                     true
                 }
 
+                R.id.profileFragment -> {
+                    if (prefs.isLoggedIn){
+                        navController?.navigate(R.id.profileFragment)
+                    } else {
+                        navController?.navigate(R.id.sigininFragment)
+                    }
+                    true
+                }
 
+                R.id.notificationFragment -> {
+                    navController?.navigate(R.id.notificationFragment)
+                    true
+                }
 
+                R.id.favouriteFragment -> {
+                    navController?.navigate(R.id.favouriteFragment)
+                    true
+                }
+
+                R.id.addAdsFragment -> {
+                    navController?.navigate(R.id.addAdsFragment)
+                    true
+                }
             }
 
             false
@@ -108,7 +94,11 @@ class HomeActivity : BaseActivity() {
 
 
         navController?.addOnDestinationChangedListener { _, destination, _ ->
-            if (destination.id == R.id.homeFragment ){
+            if (destination.id == R.id.homeFragment ||
+                destination.id == R.id.profileFragment ||
+                destination.id == R.id.notificationFragment ||
+                destination.id == R.id.favouriteFragment ||
+                destination.id == R.id.addAdsFragment){
                 binding.navView.visibility = View.VISIBLE
             }else{
                 binding.navView.visibility = View.GONE

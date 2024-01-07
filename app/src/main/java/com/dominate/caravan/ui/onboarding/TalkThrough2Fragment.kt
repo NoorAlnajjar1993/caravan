@@ -6,6 +6,8 @@ import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.caravan.R
@@ -33,6 +35,16 @@ class TalkThrough2Fragment : BaseFragment() {
     }
 
     private fun setData(){
+
+        val fade_in: Animation = AnimationUtils.loadAnimation(
+            requireContext(),
+            R.anim.fade_in)
+        val slide_up: Animation = AnimationUtils.loadAnimation(
+            requireContext(),
+            R.anim.slide_up)
+        binding.constraintLayout01.startAnimation(fade_in)
+        binding.textView01.startAnimation(slide_up)
+        binding.textView02.startAnimation(slide_up)
 
         binding.btnNext.setOnClickListener {
             findNavController().navigate(R.id.action_talkThrough2Fragment_to_talkThrough3Fragment)

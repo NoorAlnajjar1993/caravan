@@ -2,10 +2,13 @@ package com.dominate.caravan.utils
 
 import android.content.SharedPreferences
 import androidx.core.content.edit
+import com.dominate.caravan.medule.profile.user.User
+import com.dominate.caravan.utils.AppConstants.Companion.CURRENT_USER
 import com.dominate.caravan.utils.AppConstants.Companion.USER_EMAIL
 import com.dominate.caravan.utils.AppConstants.Companion.USER_NAME
 import com.dominate.caravan.utils.AppConstants.Companion.USER_PHONE
 import com.dominate.caravan.utils.AppConstants.Companion.USER_TOKEN
+import com.google.gson.Gson
 import java.util.*
 import javax.inject.Inject
 
@@ -53,27 +56,6 @@ class Prefs @Inject constructor(
         return sharedPrefs.getString(USER_TOKEN, null)
     }
 
-
-    fun saveEmailToken(email: String){
-        val editor =sharedPrefs.edit()
-        editor.putString(USER_EMAIL, email)
-        editor.apply()
-    }
-    fun featchEmailToken():String ?{
-        return sharedPrefs.getString(USER_EMAIL, null)
-    }
-
-    fun savePhoneToken(phone: String){
-        val editor =sharedPrefs.edit()
-        editor.putString(USER_PHONE, phone)
-        editor.apply()
-    }
-    fun featchPhoneToken():String ?{
-        return sharedPrefs.getString(USER_PHONE, null)
-    }
-
-
-
     fun saveNameToken(name: String){
         val editor =sharedPrefs.edit()
         editor.putString(USER_NAME, name)
@@ -85,4 +67,22 @@ class Prefs @Inject constructor(
     fun deleteAllSharedPrefs() {
         sharedPrefs.edit().clear().apply()
     }
+
+
+
+    fun saveCurrentUser(current_user: User){
+        val prefsEditor = sharedPrefs.edit()
+        val gson = Gson()
+        val json = gson.toJson(current_user)
+        prefsEditor.putString(CURRENT_USER, json)
+        prefsEditor.commit()
+    }
+
+    fun getCurrentUser(): User {
+        val gson = Gson()
+        val json: String? = sharedPrefs.getString(CURRENT_USER, null)
+        val obj: User = gson.fromJson(json, User::class.java)
+        return obj
+    }
+
 }

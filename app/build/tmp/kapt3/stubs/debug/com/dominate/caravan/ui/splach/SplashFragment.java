@@ -7,7 +7,7 @@ public final class SplashFragment extends com.dominate.caravan.core.base.BaseFra
     @org.jetbrains.annotations.NotNull()
     private final kotlin.Lazy viewModel$delegate = null;
     public com.caravan.databinding.FragmentSplachBinding binding;
-    private final long SPLASH_TIME_OUT = 3000L;
+    private final long SPLASH_TIME_OUT = 6000L;
     private java.util.HashMap _$_findViewCache;
     
     @org.jetbrains.annotations.NotNull()

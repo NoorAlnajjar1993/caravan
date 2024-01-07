@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,8 +13,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:paddingBottom="20dp"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageView2"
@@ -31,164 +30,164 @@
                 android:id="@+id/mageView_01"
                 android:layout_width="108dp"
                 android:layout_height="32dp"
-                app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginTop="30dp"
+                android:src="@drawable/ic_caravan_01"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:src="@drawable/ic_caravan_01"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout_01"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_marginTop="30dp"
-                android:paddingVertical="16dp"
                 android:layout_marginHorizontal="20dp"
-                android:background="@drawable/outline_gray"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/outline_light_purple"
+                android:paddingVertical="16dp"
                 app:layout_constraintTop_toBottomOf="@+id/mageView_01">
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tv_rent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/rent"
-                    android:fontFamily="@font/neo_sans_arabic"
-                    android:textSize="16sp"
-                    android:gravity="center"
-                    android:drawablePadding="10dp"
                     android:drawableBottom="@drawable/underline_gray"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:gravity="center"
+                    android:text="@string/rent"
                     android:textColor="@color/light_gray"
-                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="16sp"
                     app:layout_constraintEnd_toStartOf="@+id/tv_sale"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tv_sale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/sale"
+                    android:drawableBottom="@drawable/underline_purple"
+                    android:drawablePadding="10dp"
                     android:fontFamily="@font/neo_sans_arabic"
                     android:gravity="center"
-                    android:drawablePadding="10dp"
-                    app:layout_constraintStart_toEndOf="@+id/tv_rent"
-                    android:textSize="16sp"
-                    android:drawableBottom="@drawable/underline_purple"
+                    android:text="@string/sale"
                     android:textColor="@color/purble"
+                    android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    app:layout_constraintStart_toEndOf="@+id/tv_rent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/btn_commercial_real_estate"
                     android:layout_width="wrap_content"
+                    android:layout_height="44dp"
                     android:layout_marginStart="8dp"
-                    android:layout_marginEnd="4dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:text="@string/commercial_real_estate"
-                    app:layout_constraintEnd_toStartOf="@+id/btn_land_farm"
-                    android:fontFamily="@font/neo_sans_arabic"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sale"
-                    android:textColor="@color/black"
                     android:layout_marginTop="18dp"
-                    android:gravity="center"
+                    android:layout_marginEnd="4dp"
                     android:background="@drawable/custom_bg_gray"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:gravity="center"
                     android:paddingHorizontal="8dp"
-                    android:layout_height="44dp"/>
+                    android:text="@string/commercial_real_estate"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_land_farm"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sale" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/btn_land_farm"
                     android:layout_width="wrap_content"
-                    app:layout_constraintStart_toEndOf="@+id/btn_commercial_real_estate"
-                    app:layout_constraintEnd_toStartOf="@+id/btn_house_villa"
-                    android:text="@string/land_farm"
-                    android:fontFamily="@font/neo_sans_arabic"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sale"
-                    android:textColor="@color/black"
+                    android:layout_height="44dp"
                     android:layout_marginStart="4dp"
                     android:layout_marginTop="18dp"
                     android:layout_marginEnd="4dp"
+                    android:background="@drawable/custom_bg_gray"
+                    android:fontFamily="@font/neo_sans_arabic"
                     android:gravity="center"
                     android:paddingHorizontal="8dp"
-                    android:background="@drawable/custom_bg_gray"
-                    android:layout_height="44dp"/>
+                    android:text="@string/land_farm"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_house_villa"
+                    app:layout_constraintStart_toEndOf="@+id/btn_commercial_real_estate"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sale" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/btn_house_villa"
                     android:layout_width="wrap_content"
-                    app:layout_constraintStart_toEndOf="@+id/btn_land_farm"
-                    android:text="@string/house_villa"
-                    android:fontFamily="@font/neo_sans_arabic"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sale"
-                    app:layout_constraintEnd_toStartOf="@+id/btn_partment"
-                    android:textColor="@color/black"
+                    android:layout_height="44dp"
                     android:layout_marginStart="4dp"
-                    android:paddingHorizontal="8dp"
                     android:layout_marginTop="18dp"
                     android:layout_marginEnd="4dp"
-                    android:gravity="center"
                     android:background="@drawable/custom_bg_gray"
-                    android:layout_height="44dp"/>
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:gravity="center"
+                    android:paddingHorizontal="8dp"
+                    android:text="@string/house_villa"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_partment"
+                    app:layout_constraintStart_toEndOf="@+id/btn_land_farm"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sale" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/btn_partment"
                     android:layout_width="wrap_content"
-                    app:layout_constraintStart_toEndOf="@+id/btn_house_villa"
-                    android:text="@string/partment"
-                    android:paddingHorizontal="8dp"
-                    android:fontFamily="@font/neo_sans_arabic"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sale"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_marginTop="18dp"
+                    android:layout_height="44dp"
                     android:layout_marginStart="4dp"
+                    android:layout_marginTop="18dp"
                     android:layout_marginEnd="8dp"
-                    android:textColor="@color/black"
                     android:background="@drawable/custom_bg_yellow"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/neo_sans_arabic"
                     android:gravity="center"
-                    android:layout_height="44dp"/>
+                    android:paddingHorizontal="8dp"
+                    android:text="@string/partment"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_house_villa"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sale" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:id="@+id/ll_search_view"
-                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginTop="16dp"
                     android:background="@drawable/custom_bg_gray"
-                    android:layout_width="0dp"
-                    android:layout_height="55dp"
                     android:gravity="center"
-                    app:layout_constraintTop_toBottomOf="@+id/btn_partment"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent">
+                    app:layout_constraintTop_toBottomOf="@+id/btn_partment">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:hint="@string/search"
-                        android:fontFamily="@font/neo_sans_arabic"
                         android:id="@+id/et_search"
-                        android:inputType="text"
-                        android:drawablePadding="8dp"
-                        android:paddingHorizontal="24dp"
-                        android:drawableStart="@drawable/ic_search"
-                        android:drawableEnd="@drawable/ic_location"
-                        android:textColorHint="@color/light_gray_1"
-                        android:textColor="@color/light_gray_1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center_vertical"
                         android:background="@drawable/custom_bg_gray"
-                        android:textSize="14sp"/>
+                        android:drawableStart="@drawable/ic_search"
+                        android:drawableEnd="@drawable/ic_location"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/neo_sans_arabic"
+                        android:gravity="center_vertical"
+                        android:hint="@string/search_region_name"
+                        android:inputType="text"
+                        android:paddingHorizontal="24dp"
+                        android:textColor="@color/light_gray_1"
+                        android:textColorHint="@color/light_gray_1"
+                        android:textSize="14sp" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_next"
+                    android:id="@+id/btn_search_now"
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
+                    android:layout_marginVertical="16dp"
                     android:layout_marginStart="@dimen/_25sdp"
                     android:layout_marginEnd="@dimen/_25sdp"
                     android:backgroundTint="@color/purble"
                     android:fontFamily="@font/neo_sans_arabic"
-                    android:text="@string/next"
+                    android:text="@string/search_now"
                     android:textAllCaps="false"
-                    android:layout_marginVertical="16dp"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     app:cornerRadius="@dimen/_8sdp"
@@ -196,229 +195,215 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/imageView_01"
-                android:layout_marginHorizontal="20dp"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout_01"
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
-                android:scaleType="fitXY"
-                android:layout_marginTop="25dp"
-                android:src="@drawable/photo4"/>
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:layout_marginHorizontal="20dp"
-                android:fontFamily="@font/neo_sans_arabic"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="25dp"
-                android:textColor="@color/purble"
-                android:textStyle="bold"
-                android:text="@string/more"
-                app:layout_constraintTop_toBottomOf="@+id/imageView_01"/>
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_featured_ads"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:layout_marginHorizontal="20dp"
-                android:fontFamily="@font/neo_sans_arabic"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="25dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:text="@string/featured_ads_"
-                app:layout_constraintTop_toBottomOf="@+id/imageView_01"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout_01" />
 
-            <include
-                android:id="@+id/include_distinct_advertisment"
-                layout="@layout/row_distinct_advertisment" />
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="7dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:background="@android:color/transparent"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:layoutDirection="ltr"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_pager"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabGravity="center"
+                app:tabIndicator="@android:color/transparent"
+                app:tabIndicatorColor="@android:color/transparent"
+                app:tabIndicatorGravity="stretch"
+                app:tabIndicatorHeight="0dp"
+                app:tabMaxWidth="0dp"
+                app:tabMinWidth="6dp"
+                app:tabMode="scrollable"
+                app:tabPadding="0dp"
+                app:tabPaddingBottom="3dp"
+                app:tabPaddingEnd="3dp"
+                app:tabPaddingStart="3dp"
+                app:tabPaddingTop="3dp"></com.google.android.material.tabs.TabLayout>
 
             <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMoreHousingAds"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
                 android:layout_marginHorizontal="20dp"
-                android:fontFamily="@font/neo_sans_arabic"
-                app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginTop="25dp"
-                android:textColor="@color/purble"
-                android:textStyle="bold"
+                android:fontFamily="@font/neo_sans_arabic"
                 android:text="@string/more"
-                app:layout_constraintTop_toBottomOf="@+id/include_distinct_advertisment"/>
-
+                android:textColor="@color/purble"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_housing_ads"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
                 android:layout_marginHorizontal="20dp"
-                android:fontFamily="@font/neo_sans_arabic"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="25dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
+                android:fontFamily="@font/neo_sans_arabic"
                 android:text="@string/housing_ads"
-                app:layout_constraintTop_toBottomOf="@+id/include_distinct_advertisment"/>
-
-            <include
-                android:id="@+id/include_row_housing_ads"
-                layout="@layout/row_housing_ads" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:layout_marginHorizontal="20dp"
-                android:fontFamily="@font/neo_sans_arabic"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="25dp"
-                android:textColor="@color/purble"
-                android:textStyle="bold"
-                android:text="@string/more"
-                app:layout_constraintTop_toBottomOf="@+id/include_row_housing_ads"/>
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_properties_near_you"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:layout_marginHorizontal="20dp"
-                android:fontFamily="@font/neo_sans_arabic"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="25dp"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:text="@string/properties_near_you"
-                app:layout_constraintTop_toBottomOf="@+id/include_row_housing_ads"/>
-
-            <include
-                android:id="@+id/include_properties_near_you"
-                layout="@layout/row_properties_near_you" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:layout_marginHorizontal="20dp"
-                android:fontFamily="@font/neo_sans_arabic"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="25dp"
-                android:textColor="@color/purble"
-                android:textStyle="bold"
-                android:text="@string/more"
-                app:layout_constraintTop_toBottomOf="@+id/include_properties_near_you"/>
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_latest_ads"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:layout_marginHorizontal="20dp"
-                android:fontFamily="@font/neo_sans_arabic"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="25dp"
-                android:textColor="@color/black"
                 android:textStyle="bold"
-                android:text="@string/latest_ads"
-                app:layout_constraintTop_toBottomOf="@+id/include_properties_near_you"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvHousingAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                app:reverseLayout="true"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@+id/tv_housing_ads"
+                tools:itemCount="1"
+                tools:listitem="@layout/row_housing_ads" />
 
-            <include
-                android:id="@+id/include_latest_ads"
-                layout="@layout/row_latest_ads" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMoreRealEstateAds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="@string/more"
+                android:textColor="@color/purble"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvHousingAds" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRealEstateAds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="@string/real_estate_ads"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvHousingAds" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRealEstateAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                app:reverseLayout="true"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@+id/tvRealEstateAds"
+                tools:itemCount="1"
+                tools:listitem="@layout/row_housing_ads" />
+
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout_02"
                 android:layout_width="match_parent"
-                android:layout_marginTop="20dp"
-                android:paddingBottom="25dp"
-                android:background="@drawable/custom_bg_gray"
+                android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
-                app:layout_constraintTop_toBottomOf="@+id/include_latest_ads"
-                android:layout_height="wrap_content">
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_bg_gray"
+                android:paddingBottom="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/rvRealEstateAds">
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/imageView_03"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/photo6"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_height="wrap_content"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/textView_05"
                     android:layout_width="match_parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView_03"
-                    android:text="@string/increase_the_chances"
-                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
                     android:layout_marginTop="12dp"
                     android:fontFamily="@font/neo_sans_arabic"
+                    android:text="@string/increase_the_chances"
                     android:textColor="@color/black"
-                    android:layout_marginHorizontal="18dp"
-                    android:layout_height="wrap_content"/>
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_03" />
 
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/textView_06"
                     android:layout_width="match_parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView_05"
-                    android:text="@string/add_your_ad_now"
-                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/neo_sans_arabic_bold"
+                    android:text="@string/add_your_ad_now"
                     android:textColor="@color/black"
+                    android:textSize="16sp"
                     android:textStyle="bold"
-                    android:layout_marginHorizontal="18dp"
-                    android:layout_height="wrap_content"/>
+                    app:layout_constraintTop_toBottomOf="@+id/textView_05" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/textView_07"
                     android:layout_width="match_parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView_06"
-                    android:text="@string/adv_1"
-                    android:textSize="14sp"
-                    android:drawablePadding="8dp"
-                    android:layout_marginTop="18dp"
-                    android:fontFamily="@font/neo_sans_arabic"
-                    android:drawableEnd="@drawable/ic_check"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="18dp"
-                    android:layout_height="wrap_content"/>
+                    android:layout_marginTop="18dp"
+                    android:drawableEnd="@drawable/ic_check"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:text="@string/adv_1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_06" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/textView_08"
                     android:layout_width="match_parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView_07"
-                    android:text="@string/adv_2"
-                    android:textSize="14sp"
-                    android:drawablePadding="8dp"
-                    android:layout_marginTop="15dp"
-                    android:fontFamily="@font/neo_sans_arabic"
-                    android:drawableEnd="@drawable/ic_check"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="18dp"
-                    android:layout_height="wrap_content"/>
+                    android:layout_marginTop="15dp"
+                    android:drawableEnd="@drawable/ic_check"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:text="@string/adv_2"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_07" />
 
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/textView_09"
                     android:layout_width="match_parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView_08"
-                    android:text="@string/adv_3"
-                    android:textSize="14sp"
-                    android:drawablePadding="8dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:fontFamily="@font/neo_sans_arabic"
-                    android:drawableEnd="@drawable/ic_check"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
                     android:layout_marginEnd="18dp"
-                    android:layout_height="wrap_content"/>
+                    android:drawableEnd="@drawable/ic_check"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:text="@string/adv_3"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_08" />
 
 
                 <com.google.android.material.button.MaterialButton
@@ -426,16 +411,97 @@
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:layout_marginHorizontal="18dp"
+                    android:layout_marginVertical="16dp"
                     android:backgroundTint="@color/purble"
                     android:fontFamily="@font/neo_sans_arabic"
                     android:text="@string/Post_ad_now"
                     android:textAllCaps="false"
-                    android:layout_marginVertical="16dp"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     app:cornerRadius="@dimen/_8sdp"
                     app:layout_constraintTop_toBottomOf="@+id/textView_09" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMoreCommercialEstates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="@string/more"
+                android:textColor="@color/purble"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout_02" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCommercialEstates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="@string/commertcial_real_estate_ads"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout_02" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCommercialEstates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                app:reverseLayout="true"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@+id/tvCommercialEstates"
+                tools:itemCount="1"
+                tools:listitem="@layout/row_commertcial_estate" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMoreCommercialAds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="@string/more"
+                android:textColor="@color/purble"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvCommercialEstates" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCommercialAds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="@string/commertcial_ads"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvCommercialEstates" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCommercialAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                app:reverseLayout="true"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@+id/tvCommercialAds"
+                tools:itemCount="1"
+                tools:listitem="@layout/row_commertcial_estate" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

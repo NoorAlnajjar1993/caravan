@@ -14,4 +14,37 @@
         <item name="textInputStyle">@style/textInput</item>
         <item name="android:windowBackground">@null</item>
     </style>
+
+    <!-- EditText -->
+    <style name="AppTheme.EditText" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:elevation">3dp</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/fields_margin_top</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/box_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/box_corner_radius</item>
+        <item name="boxCornerRadiusTopStart">@dimen/box_corner_radius</item>
+        <item name="boxStrokeColor">@color/light_gray</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintEnabled">false</item>
+        <item name="boxStrokeErrorColor">@color/red</item>
+        <item name="colorError">@color/red</item>
+        <item name="errorTextColor">@color/red</item>
+        <item name="boxStrokeWidthFocused">@dimen/_1sdp</item>
+        <item name="fontFamily">@font/neo_sans_arabic</item>
+        <item name="subtitleTextAppearance">@style/HomeToolbarSubTitleTextAppearance</item>
+    </style>
+
+    <color name="title_toolbar_color">@android:color/white</color>
+    <color name="subtitle_toolbar_color">#7a7a7a</color>
+    <color name="secondary_toolbar_color">@android:color/white</color>
+
+    <style name="HomeToolbarSubTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/neo_sans_arabic</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/subtitle_toolbar_color</item>
+    </style>
 </resources>

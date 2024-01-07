@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import com.airbnb.lottie.LottieAnimationView;
 import com.caravan.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -19,11 +20,15 @@ public final class FragmentSplachBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final LottieAnimationView animationView;
+
+  @NonNull
   public final AppCompatImageView imageView2;
 
   private FragmentSplachBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppCompatImageView imageView2) {
+      @NonNull LottieAnimationView animationView, @NonNull AppCompatImageView imageView2) {
     this.rootView = rootView;
+    this.animationView = animationView;
     this.imageView2 = imageView2;
   }
 
@@ -54,13 +59,19 @@ public final class FragmentSplachBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.animationView;
+      LottieAnimationView animationView = rootView.findViewById(id);
+      if (animationView == null) {
+        break missingId;
+      }
+
       id = R.id.imageView2;
       AppCompatImageView imageView2 = rootView.findViewById(id);
       if (imageView2 == null) {
         break missingId;
       }
 
-      return new FragmentSplachBinding((ConstraintLayout) rootView, imageView2);
+      return new FragmentSplachBinding((ConstraintLayout) rootView, animationView, imageView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -13,6 +13,7 @@
         android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout01"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -38,7 +39,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_20sdp"
                     android:padding="4dp"
-                    android:src="@drawable/ic_circle_gray"
+                    android:src="@drawable/ic_rectangle_purble"
                     app:layout_constraintEnd_toStartOf="@+id/imageView_02"
                     app:layout_constraintHorizontal_chainStyle="packed"
                     app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_20sdp"
                     android:padding="4dp"
-                    android:src="@drawable/ic_rectangle_purble"
+                    android:src="@drawable/ic_circle_gray"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_chainStyle="packed"
                     app:layout_constraintStart_toEndOf="@+id/imageView_02"
@@ -105,7 +106,7 @@
                     android:backgroundTint="@null"
                     android:fontFamily="@font/neo_sans_arabic"
                     android:text="@string/back"
-                    android:background="@drawable/outline_gray"
+                    android:background="@drawable/outline_light_purple"
                     android:textAllCaps="false"
                     android:textColor="@color/black"
                     android:gravity="center"

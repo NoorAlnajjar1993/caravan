@@ -2,22 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/account_nav"
+        android:id="@+id/profileFragment"
         android:icon="@drawable/ic_profile"
         android:title="حسابي" />
 
     <item
-        android:id="@+id/favourites_nav"
+        android:id="@+id/favouriteFragment"
         android:icon="@drawable/ic_favourites_gray"
         android:title="المفضلة" />
 
     <item
-        android:id="@+id/notifications_nav"
+        android:id="@+id/notificationFragment"
         android:icon="@drawable/ic_notification"
         android:title="التنبيهات" />
 
     <item
-        android:id="@+id/add_adv_nav"
+        android:id="@+id/addAdsFragment"
         android:icon="@drawable/ic_add_adv"
         android:title="أضف إعلان" />
 

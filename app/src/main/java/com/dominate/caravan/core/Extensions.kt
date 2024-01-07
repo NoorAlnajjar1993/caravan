@@ -1,12 +1,15 @@
 package com.dominate.caravan.core
 
+import android.app.Dialog
 import android.content.Context
 import android.content.res.Resources
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.MotionEvent
 import android.view.View
+import android.view.Window
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
 import android.widget.*
@@ -18,6 +21,9 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
+import com.caravan.databinding.DialogDeactivateBinding
+import com.caravan.databinding.DialogLogInBinding
+import com.caravan.databinding.DialogLogOutBinding
 import com.dominate.caravan.R
 import com.dominate.caravan.core.base.BaseAdapter
 import com.dominate.caravan.core.base.BaseViewHolder
@@ -310,4 +316,86 @@ fun Toolbar.setupWithNavController(
     configuration: AppBarConfiguration = AppBarConfiguration(navController.graph)
 ) {
     NavigationUI.setupWithNavController(this, navController, configuration)
+}
+
+
+fun Context.showLogoutDialog(
+    onPositiveButtonClick: (dialog: Dialog) -> Unit = {},
+    onNegativeButtonClick: (dialog: Dialog) -> Unit = {},
+    isCancelable: Boolean = true
+) {
+    val dialog = Dialog(this)
+    dialog.apply {
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
+        val binding = DialogLogOutBinding.inflate(LayoutInflater.from(context))
+        setContentView(binding.root)
+
+        binding.apply {
+            onClickListener = View.OnClickListener {
+                when (it) {
+                    btnLogout -> onPositiveButtonClick(dialog)
+                    btnCancel -> onNegativeButtonClick(dialog)
+                }
+            }
+        }
+
+        window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+        setCancelable(isCancelable)
+
+    }.show()
+}
+
+fun Context.showDeactivateDialog(
+    onPositiveButtonClick: (dialog: Dialog) -> Unit = {},
+    onNegativeButtonClick: (dialog: Dialog) -> Unit = {},
+    isCancelable: Boolean = true
+) {
+    val dialog = Dialog(this)
+    dialog.apply {
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
+        val binding = DialogDeactivateBinding.inflate(LayoutInflater.from(context))
+        setContentView(binding.root)
+
+        binding.apply {
+            onClickListener = View.OnClickListener {
+                when (it) {
+                    btnLogout -> onPositiveButtonClick(dialog)
+                    btnCancel -> onNegativeButtonClick(dialog)
+                }
+            }
+        }
+
+        window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+        setCancelable(isCancelable)
+
+    }.show()
+}
+
+fun Context.showLoginDialog(
+    onPositiveButtonClick: (dialog: Dialog) -> Unit = {},
+    onNegativeButtonClick: (dialog: Dialog) -> Unit = {},
+    isCancelable: Boolean = true
+) {
+    val dialog = Dialog(this)
+    dialog.apply {
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
+        val binding = DialogLogInBinding.inflate(LayoutInflater.from(context))
+        setContentView(binding.root)
+
+        binding.apply {
+            onClickListener = View.OnClickListener {
+                when (it) {
+                    btnLogout -> onPositiveButtonClick(dialog)
+                    btnCancel -> onNegativeButtonClick(dialog)
+                }
+            }
+        }
+
+        window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+        setCancelable(isCancelable)
+
+    }.show()
 }

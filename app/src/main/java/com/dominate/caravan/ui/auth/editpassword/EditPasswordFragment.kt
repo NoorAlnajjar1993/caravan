@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import com.caravan.R
 import com.caravan.databinding.FragmentEditPasswordBinding
 import com.dominate.caravan.core.autoCleared
 import com.dominate.caravan.core.base.BaseFragment
@@ -17,9 +19,6 @@ class EditPasswordFragment  : BaseFragment()  , TextWatcher {
 
      var binding: FragmentEditPasswordBinding by autoCleared()
     private val viewModel: EditPasswordViewModel by viewModels()
-    var isOldPasswordValid = false
-    var isNewPasswordValid = false
-    var isNewPasswordAginValid = false
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -33,7 +32,11 @@ class EditPasswordFragment  : BaseFragment()  , TextWatcher {
 
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setData()
 
+    }
 
 
     override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
@@ -49,5 +52,19 @@ class EditPasswordFragment  : BaseFragment()  , TextWatcher {
     override fun afterTextChanged(s: Editable?) {
 
 
+    }
+
+
+    private fun setData(){
+
+        binding.btnSetPassword.setOnClickListener {
+            findNavController().navigate(R.id.action_editPasswordFragment_to_sigininFragment)
+
+        }
+
+        binding.ivClose.setOnClickListener {
+            findNavController().popBackStack()
+
+        }
     }
 }

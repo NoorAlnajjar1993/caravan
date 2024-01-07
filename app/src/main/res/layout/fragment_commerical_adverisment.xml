@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray_3">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/ic_arrow_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="@string/add_a_real_estate_ad"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_apartment_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/apartment_condition"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup_apartment_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_apartment_condition">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:button="@drawable/selector_apartment_condition"
+                    android:checked="true"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:onClick="@{onClickListener}"
+                    android:padding="16dp"
+                    android:text="@string/new_"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:button="@drawable/selector_apartment_condition"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:padding="16dp"
+                    android:text="@string/used"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_age_construction_years"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/age_construction_years"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup_apartment_condition" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_age_construction_years"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_age_construction_years">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_age_construction_years"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="@string/age_construction_years"
+                    android:inputType="number"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_End"
+                    app:layout_constraintStart_toStartOf="@+id/gl_Start"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_furnished"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/furnished"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tl_age_construction_years" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_furnished"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_furnished">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio_yes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:button="@drawable/selector_apartment_condition"
+                    android:checked="true"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:onClick="@{onClickListener}"
+                    android:padding="16dp"
+                    android:text="@string/yes"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:button="@drawable/selector_apartment_condition"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:onClick="@{onClickListener}"
+                    android:padding="16dp"
+                    android:text="@string/no"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_number_bedrooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/number_bedrooms"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup_furnished" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_number_bedrooms"
+                style="@style/AppTheme.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:hintEnabled="false"
+                app:layout_constraintTop_toBottomOf="@+id/tv_number_bedrooms">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/actv_number_bedrooms"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="@string/select"
+                    android:inputType="none"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textDirection="rtl"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_number_bathrooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/number_bathrooms"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/til_number_bedrooms" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_number_bathrooms"
+                style="@style/AppTheme.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:hintEnabled="false"
+                app:layout_constraintTop_toBottomOf="@+id/tv_number_bathrooms">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/actv_number_bathrooms"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="@string/select"
+                    android:inputType="none"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textDirection="rtl"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_building_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/building_area"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/til_number_bathrooms" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_building_area_title"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_building_area">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_building_area_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="@string/building_area_title"
+                    android:inputType="number"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_End"
+                    app:layout_constraintStart_toStartOf="@+id/gl_Start"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_land_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/land_area"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tl_building_area_title" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_land_area"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_land_area">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_land_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="@string/land_area"
+                    android:inputType="number"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_End"
+                    app:layout_constraintStart_toStartOf="@+id/gl_Start"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_year_construction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/year_construction"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tl_land_area" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_year_construction"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_year_construction">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_year_construction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="@string/year_construction"
+                    android:inputType="number"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_End"
+                    app:layout_constraintStart_toStartOf="@+id/gl_Start"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_total_number_apartments_building"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/total_number_apartments_building"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tl_year_construction" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_total_number_apartments_building"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_total_number_apartments_building">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_total_number_apartments_building"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="@string/total_number_apartments_building"
+                    android:inputType="number"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_End"
+                    app:layout_constraintStart_toStartOf="@+id/gl_Start"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_number_floors_building"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/number_floors_building"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tl_total_number_apartments_building" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_number_floors_building"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_number_floors_building">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_number_floors_building"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="@string/number_floors_building"
+                    android:inputType="number"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_End"
+                    app:layout_constraintStart_toStartOf="@+id/gl_Start"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_floor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/floor"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tl_number_floors_building" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_floor"
+                style="@style/AppTheme.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:hintEnabled="false"
+                app:layout_constraintTop_toBottomOf="@+id/tv_floor">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/actv_floor"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="@string/select"
+                    android:inputType="none"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textDirection="rtl"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_with_garden_gear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/with_garden_gear"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/til_floor" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_with_garden_gear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_with_garden_gear">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio_yes_with_garden_gear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:button="@drawable/selector_apartment_condition"
+                    android:checked="true"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:padding="16dp"
+                    android:text="@string/yes"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio_no_with_garden_gear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:button="@drawable/selector_apartment_condition"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:padding="16dp"
+                    android:text="@string/no"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_gear_area_square_metres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/gear_area_square_metres"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup_with_garden_gear" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_gear_area_square_metres"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_gear_area_square_metres">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_gear_area_square_metres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="@string/gear_area_square_metres"
+                    android:inputType="number"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_End"
+                    app:layout_constraintStart_toStartOf="@+id/gl_Start"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_with_roof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/with_roof"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tl_gear_area_square_metres" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_with_roof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_with_roof">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio_yes_with_roof"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:button="@drawable/selector_apartment_condition"
+                    android:checked="true"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:padding="16dp"
+                    android:text="@string/yes"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio_no_with_roof"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:button="@drawable/selector_apartment_condition"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:padding="16dp"
+                    android:text="@string/no"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_roof_area_square_metres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/roof_area_square_metres"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup_with_roof" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_roof_area_square_metres"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_roof_area_square_metres">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_roof_area_square_metres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="@string/roof_area_square_metres"
+                    android:inputType="number"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_End"
+                    app:layout_constraintStart_toStartOf="@+id/gl_Start"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup_residential_building"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintTop_toBottomOf="@+id/tl_roof_area_square_metres">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio_yes_residential_building"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:button="@drawable/selector_rectangular"
+                    android:checked="true"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:padding="16dp"
+                    android:text="@string/residential_building"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio_no_residential_building"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:button="@drawable/selector_rectangular"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:padding="16dp"
+                    android:text="@string/commercial_real_estate"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_determine_apartments_features"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/determine_apartments_features"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup_residential_building" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_determine_apartments_features"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="16dp"
+                android:clipToPadding="false"
+                app:layout_constraintTop_toBottomOf="@+id/tv_determine_apartments_features"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.0"
+                tools:itemCount="4"
+                android:orientation="vertical"
+                tools:listitem="@layout/row_apartment_features"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="16dp"
+                android:backgroundTint="@color/purble"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="@string/next"
+                android:layout_marginTop="32dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:cornerRadius="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_determine_apartments_features" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

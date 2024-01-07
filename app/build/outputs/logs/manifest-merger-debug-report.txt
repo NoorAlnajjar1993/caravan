@@ -24,6 +24,7 @@ MERGED from [androidx.room:room-ktx:2.2.5] D:\jdks\caches\transforms-2\files-2.1
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\528f37d9745d6db710def73a0ca42c87\jetified-lifecycle-livedata-core-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] D:\jdks\caches\transforms-2\files-2.1\6a234f751d9c5207d44d183d57657480\jetified-savedstate-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\8890762f45f359a1fcfb1602e54bc1fd\jetified-lifecycle-runtime-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.airbnb.android:lottie:3.4.2] D:\jdks\caches\transforms-2\files-2.1\8c08d9e1a1c2104fd92d281e10864f4c\jetified-lottie-3.4.2\AndroidManifest.xml:2:1-11:12
 MERGED from [io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:2:1-19:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] D:\jdks\caches\transforms-2\files-2.1\863ed69cf164c7ee2daaad680825f1b7\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.3.5] D:\jdks\caches\transforms-2\files-2.1\0ed30dbd06eeb4cb95fc856798df31a6\navigation-ui-2.3.5\AndroidManifest.xml:17:1-24:12
@@ -32,6 +33,7 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] D:\jdks\caches\tr
 MERGED from [com.github.chrisbanes:PhotoView:2.3.0] D:\jdks\caches\transforms-2\files-2.1\90a7cc7418ead1162087441ef61792d2\jetified-PhotoView-2.3.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:2:1-32:12
 MERGED from [com.github.ceryle:RadioRealButton:v2.1.1] D:\jdks\caches\transforms-2\files-2.1\97083638ff91157c180b20dbbbddafaf\jetified-RadioRealButton-v2.1.1\AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.vedraj360:DesignerToast:0.1.2] D:\jdks\caches\transforms-2\files-2.1\2661d272857e2c152d4fc371eca31347\jetified-DesignerToast-0.1.2\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] D:\jdks\caches\transforms-2\files-2.1\9795d19233ff20f13288eae69e31374d\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] D:\jdks\caches\transforms-2\files-2.1\2c2da4385d1c6cdf55b54c1462f6ede2\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -167,6 +169,8 @@ application
 ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:12:5-36:19
 MERGED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:14:5-33:19
 MERGED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:14:5-33:19
+MERGED from [com.airbnb.android:lottie:3.4.2] D:\jdks\caches\transforms-2\files-2.1\8c08d9e1a1c2104fd92d281e10864f4c\jetified-lottie-3.4.2\AndroidManifest.xml:9:5-20
+MERGED from [com.airbnb.android:lottie:3.4.2] D:\jdks\caches\transforms-2\files-2.1\8c08d9e1a1c2104fd92d281e10864f4c\jetified-lottie-3.4.2\AndroidManifest.xml:9:5-20
 MERGED from [io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:13:5-17:19
 MERGED from [io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:13:5-17:19
 MERGED from [com.google.android.material:material:1.4.0-alpha02] D:\jdks\caches\transforms-2\files-2.1\9ec07ad47eaa985e1695020f3335e164\material-1.4.0-alpha02\AndroidManifest.xml:22:5-20
@@ -301,6 +305,8 @@ MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] D:\jdks\caches\transforms
 MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] D:\jdks\caches\transforms-2\files-2.1\6a234f751d9c5207d44d183d57657480\jetified-savedstate-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\8890762f45f359a1fcfb1602e54bc1fd\jetified-lifecycle-runtime-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\8890762f45f359a1fcfb1602e54bc1fd\jetified-lifecycle-runtime-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.airbnb.android:lottie:3.4.2] D:\jdks\caches\transforms-2\files-2.1\8c08d9e1a1c2104fd92d281e10864f4c\jetified-lottie-3.4.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.airbnb.android:lottie:3.4.2] D:\jdks\caches\transforms-2\files-2.1\8c08d9e1a1c2104fd92d281e10864f4c\jetified-lottie-3.4.2\AndroidManifest.xml:5:5-7:41
 MERGED from [io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:7:5-9:41
 MERGED from [io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] D:\jdks\caches\transforms-2\files-2.1\863ed69cf164c7ee2daaad680825f1b7\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
@@ -317,6 +323,8 @@ MERGED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\
 MERGED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.ceryle:RadioRealButton:v2.1.1] D:\jdks\caches\transforms-2\files-2.1\97083638ff91157c180b20dbbbddafaf\jetified-RadioRealButton-v2.1.1\AndroidManifest.xml:8:5-10:41
 MERGED from [com.github.ceryle:RadioRealButton:v2.1.1] D:\jdks\caches\transforms-2\files-2.1\97083638ff91157c180b20dbbbddafaf\jetified-RadioRealButton-v2.1.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.vedraj360:DesignerToast:0.1.2] D:\jdks\caches\transforms-2\files-2.1\2661d272857e2c152d4fc371eca31347\jetified-DesignerToast-0.1.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.vedraj360:DesignerToast:0.1.2] D:\jdks\caches\transforms-2\files-2.1\2661d272857e2c152d4fc371eca31347\jetified-DesignerToast-0.1.2\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] D:\jdks\caches\transforms-2\files-2.1\9795d19233ff20f13288eae69e31374d\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] D:\jdks\caches\transforms-2\files-2.1\9795d19233ff20f13288eae69e31374d\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:20:5-44

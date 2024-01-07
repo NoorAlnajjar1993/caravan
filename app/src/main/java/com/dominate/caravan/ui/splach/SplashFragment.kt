@@ -6,6 +6,8 @@ import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.caravan.R
@@ -18,7 +20,7 @@ class SplashFragment : BaseFragment() {
 
     val viewModel: SplashViewModel by viewModels()
     lateinit var binding: FragmentSplachBinding
-    private val SPLASH_TIME_OUT:Long=3000 // 3 sec
+    private val SPLASH_TIME_OUT:Long=6000 // 3 sec
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentSplachBinding.inflate(inflater, container, false)
@@ -28,6 +30,10 @@ class SplashFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val slide_up: Animation = AnimationUtils.loadAnimation(
+            requireContext(),
+            R.anim.slide_up)
+        binding.imageView2.startAnimation(slide_up)
 
         Handler().postDelayed({
             this@SplashFragment.findNavController().navigate(R.id.action_splashFragment_to_talkThrough1Fragment)

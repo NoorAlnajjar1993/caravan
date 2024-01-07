@@ -6,18 +6,65 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.caravan.R;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentEditPasswordBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  private FragmentEditPasswordBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final MaterialButton btnSetPassword;
+
+  @NonNull
+  public final TextInputEditText etConfirmPassword;
+
+  @NonNull
+  public final TextInputEditText etNewPassword;
+
+  @NonNull
+  public final AppCompatTextView imageView06;
+
+  @NonNull
+  public final AppCompatTextView imageView07;
+
+  @NonNull
+  public final AppCompatImageView ivClose;
+
+  @NonNull
+  public final TextInputLayout tlConfirmPassword;
+
+  @NonNull
+  public final TextInputLayout tlNewPassword;
+
+  @NonNull
+  public final AppCompatTextView tvWelcome;
+
+  private FragmentEditPasswordBinding(@NonNull ConstraintLayout rootView,
+      @NonNull MaterialButton btnSetPassword, @NonNull TextInputEditText etConfirmPassword,
+      @NonNull TextInputEditText etNewPassword, @NonNull AppCompatTextView imageView06,
+      @NonNull AppCompatTextView imageView07, @NonNull AppCompatImageView ivClose,
+      @NonNull TextInputLayout tlConfirmPassword, @NonNull TextInputLayout tlNewPassword,
+      @NonNull AppCompatTextView tvWelcome) {
     this.rootView = rootView;
+    this.btnSetPassword = btnSetPassword;
+    this.etConfirmPassword = etConfirmPassword;
+    this.etNewPassword = etNewPassword;
+    this.imageView06 = imageView06;
+    this.imageView07 = imageView07;
+    this.ivClose = ivClose;
+    this.tlConfirmPassword = tlConfirmPassword;
+    this.tlNewPassword = tlNewPassword;
+    this.tvWelcome = tvWelcome;
   }
 
   @Override
@@ -43,10 +90,69 @@ public final class FragmentEditPasswordBinding implements ViewBinding {
 
   @NonNull
   public static FragmentEditPasswordBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.btn_set_password;
+      MaterialButton btnSetPassword = rootView.findViewById(id);
+      if (btnSetPassword == null) {
+        break missingId;
+      }
 
-    return new FragmentEditPasswordBinding((ConstraintLayout) rootView);
+      id = R.id.et_confirm_password;
+      TextInputEditText etConfirmPassword = rootView.findViewById(id);
+      if (etConfirmPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.et_new_password;
+      TextInputEditText etNewPassword = rootView.findViewById(id);
+      if (etNewPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView_06;
+      AppCompatTextView imageView06 = rootView.findViewById(id);
+      if (imageView06 == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView_07;
+      AppCompatTextView imageView07 = rootView.findViewById(id);
+      if (imageView07 == null) {
+        break missingId;
+      }
+
+      id = R.id.iv_close;
+      AppCompatImageView ivClose = rootView.findViewById(id);
+      if (ivClose == null) {
+        break missingId;
+      }
+
+      id = R.id.tl_confirm_password;
+      TextInputLayout tlConfirmPassword = rootView.findViewById(id);
+      if (tlConfirmPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.tl_new_password;
+      TextInputLayout tlNewPassword = rootView.findViewById(id);
+      if (tlNewPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_welcome;
+      AppCompatTextView tvWelcome = rootView.findViewById(id);
+      if (tvWelcome == null) {
+        break missingId;
+      }
+
+      return new FragmentEditPasswordBinding((ConstraintLayout) rootView, btnSetPassword,
+          etConfirmPassword, etNewPassword, imageView06, imageView07, ivClose, tlConfirmPassword,
+          tlNewPassword, tvWelcome);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

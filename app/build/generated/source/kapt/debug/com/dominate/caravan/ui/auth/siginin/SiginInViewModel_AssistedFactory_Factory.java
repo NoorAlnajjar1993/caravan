@@ -1,7 +1,9 @@
 package com.dominate.caravan.ui.auth.siginin;
 
+import com.dominate.caravan.retrofit.data.ProfileDataSource;
 import dagger.internal.Factory;
 import javax.annotation.Generated;
+import javax.inject.Provider;
 
 @Generated(
     value = "dagger.internal.codegen.ComponentProcessor",
@@ -12,20 +14,25 @@ import javax.annotation.Generated;
     "rawtypes"
 })
 public final class SiginInViewModel_AssistedFactory_Factory implements Factory<SiginInViewModel_AssistedFactory> {
+  private final Provider<ProfileDataSource> profileDataSourceProvider;
+
+  public SiginInViewModel_AssistedFactory_Factory(
+      Provider<ProfileDataSource> profileDataSourceProvider) {
+    this.profileDataSourceProvider = profileDataSourceProvider;
+  }
+
   @Override
   public SiginInViewModel_AssistedFactory get() {
-    return newInstance();
+    return newInstance(profileDataSourceProvider);
   }
 
-  public static SiginInViewModel_AssistedFactory_Factory create() {
-    return InstanceHolder.INSTANCE;
+  public static SiginInViewModel_AssistedFactory_Factory create(
+      Provider<ProfileDataSource> profileDataSourceProvider) {
+    return new SiginInViewModel_AssistedFactory_Factory(profileDataSourceProvider);
   }
 
-  public static SiginInViewModel_AssistedFactory newInstance() {
-    return new SiginInViewModel_AssistedFactory();
-  }
-
-  private static final class InstanceHolder {
-    private static final SiginInViewModel_AssistedFactory_Factory INSTANCE = new SiginInViewModel_AssistedFactory_Factory();
+  public static SiginInViewModel_AssistedFactory newInstance(
+      Provider<ProfileDataSource> ProfileDataSource) {
+    return new SiginInViewModel_AssistedFactory(ProfileDataSource);
   }
 }

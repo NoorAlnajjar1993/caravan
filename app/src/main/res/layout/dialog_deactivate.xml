@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="onClickListener"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:paddingHorizontal="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingVertical="19dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outline_purple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_dialog"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="@string/deactivate_question"
+            android:textColor="@color/purble"
+            android:fontFamily="@font/neo_sans_arabic_bold"
+            android:textSize="14sp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:text="@string/back"
+                android:onClick="@{onClickListener}"
+                android:layout_weight="0.5"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:textSize="12sp"
+                android:textColor="@color/dark_gray"
+                android:background="@drawable/outline_light_purple"
+                android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnLogout"
+            android:background="@drawable/custom_bg_purple"
+            android:layout_width="0dp"
+            android:textSize="12sp"
+            android:layout_weight="0.5"
+            android:onClick="@{onClickListener}"
+            android:gravity="center"
+            android:text="@string/deactivate"
+            android:padding="10dp"
+            android:fontFamily="@font/neo_sans_arabic"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

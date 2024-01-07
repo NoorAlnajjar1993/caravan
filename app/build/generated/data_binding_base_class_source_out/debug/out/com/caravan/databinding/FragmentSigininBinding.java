@@ -4,12 +4,16 @@ package com.caravan.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.caravan.R;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -19,12 +23,70 @@ public final class FragmentSigininBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ProgressBar progressBar;
+  public final MaterialButton btnSignin;
+
+  @NonNull
+  public final TextInputEditText etPassword;
+
+  @NonNull
+  public final TextInputEditText etPhonenumberUsername;
+
+  @NonNull
+  public final AppCompatImageView imageView02;
+
+  @NonNull
+  public final AppCompatTextView imageView03;
+
+  @NonNull
+  public final AppCompatTextView imageView04;
+
+  @NonNull
+  public final AppCompatTextView imageView06;
+
+  @NonNull
+  public final AppCompatImageView ivClose;
+
+  @NonNull
+  public final TextInputLayout tlPassword;
+
+  @NonNull
+  public final TextInputLayout tlPhonenumberUsername;
+
+  @NonNull
+  public final AppCompatTextView tvDidForgetPassword;
+
+  @NonNull
+  public final AppCompatTextView tvDontHaveAccount;
+
+  @NonNull
+  public final AppCompatTextView tvSubscribe;
+
+  @NonNull
+  public final AppCompatTextView tvWelcome;
 
   private FragmentSigininBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ProgressBar progressBar) {
+      @NonNull MaterialButton btnSignin, @NonNull TextInputEditText etPassword,
+      @NonNull TextInputEditText etPhonenumberUsername, @NonNull AppCompatImageView imageView02,
+      @NonNull AppCompatTextView imageView03, @NonNull AppCompatTextView imageView04,
+      @NonNull AppCompatTextView imageView06, @NonNull AppCompatImageView ivClose,
+      @NonNull TextInputLayout tlPassword, @NonNull TextInputLayout tlPhonenumberUsername,
+      @NonNull AppCompatTextView tvDidForgetPassword, @NonNull AppCompatTextView tvDontHaveAccount,
+      @NonNull AppCompatTextView tvSubscribe, @NonNull AppCompatTextView tvWelcome) {
     this.rootView = rootView;
-    this.progressBar = progressBar;
+    this.btnSignin = btnSignin;
+    this.etPassword = etPassword;
+    this.etPhonenumberUsername = etPhonenumberUsername;
+    this.imageView02 = imageView02;
+    this.imageView03 = imageView03;
+    this.imageView04 = imageView04;
+    this.imageView06 = imageView06;
+    this.ivClose = ivClose;
+    this.tlPassword = tlPassword;
+    this.tlPhonenumberUsername = tlPhonenumberUsername;
+    this.tvDidForgetPassword = tvDidForgetPassword;
+    this.tvDontHaveAccount = tvDontHaveAccount;
+    this.tvSubscribe = tvSubscribe;
+    this.tvWelcome = tvWelcome;
   }
 
   @Override
@@ -54,13 +116,94 @@ public final class FragmentSigininBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.progress_bar;
-      ProgressBar progressBar = rootView.findViewById(id);
-      if (progressBar == null) {
+      id = R.id.btn_signin;
+      MaterialButton btnSignin = rootView.findViewById(id);
+      if (btnSignin == null) {
         break missingId;
       }
 
-      return new FragmentSigininBinding((ConstraintLayout) rootView, progressBar);
+      id = R.id.et_password;
+      TextInputEditText etPassword = rootView.findViewById(id);
+      if (etPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.et_phonenumber_username;
+      TextInputEditText etPhonenumberUsername = rootView.findViewById(id);
+      if (etPhonenumberUsername == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView_02;
+      AppCompatImageView imageView02 = rootView.findViewById(id);
+      if (imageView02 == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView_03;
+      AppCompatTextView imageView03 = rootView.findViewById(id);
+      if (imageView03 == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView_04;
+      AppCompatTextView imageView04 = rootView.findViewById(id);
+      if (imageView04 == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView_06;
+      AppCompatTextView imageView06 = rootView.findViewById(id);
+      if (imageView06 == null) {
+        break missingId;
+      }
+
+      id = R.id.iv_close;
+      AppCompatImageView ivClose = rootView.findViewById(id);
+      if (ivClose == null) {
+        break missingId;
+      }
+
+      id = R.id.tl_password;
+      TextInputLayout tlPassword = rootView.findViewById(id);
+      if (tlPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.tl_phonenumber_username;
+      TextInputLayout tlPhonenumberUsername = rootView.findViewById(id);
+      if (tlPhonenumberUsername == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_did_forget_password;
+      AppCompatTextView tvDidForgetPassword = rootView.findViewById(id);
+      if (tvDidForgetPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_dont_have_account;
+      AppCompatTextView tvDontHaveAccount = rootView.findViewById(id);
+      if (tvDontHaveAccount == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_subscribe;
+      AppCompatTextView tvSubscribe = rootView.findViewById(id);
+      if (tvSubscribe == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_welcome;
+      AppCompatTextView tvWelcome = rootView.findViewById(id);
+      if (tvWelcome == null) {
+        break missingId;
+      }
+
+      return new FragmentSigininBinding((ConstraintLayout) rootView, btnSignin, etPassword,
+          etPhonenumberUsername, imageView02, imageView03, imageView04, imageView06, ivClose,
+          tlPassword, tlPhonenumberUsername, tvDidForgetPassword, tvDontHaveAccount, tvSubscribe,
+          tvWelcome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -27,6 +27,9 @@ public final class FragmentTalkThrough2Binding implements ViewBinding {
   public final MaterialButton btnNext;
 
   @NonNull
+  public final ConstraintLayout constraintLayout01;
+
+  @NonNull
   public final AppCompatImageView imageView01;
 
   @NonNull
@@ -46,12 +49,14 @@ public final class FragmentTalkThrough2Binding implements ViewBinding {
 
   private FragmentTalkThrough2Binding(@NonNull ConstraintLayout rootView,
       @NonNull AppCompatTextView btnBack, @NonNull MaterialButton btnNext,
-      @NonNull AppCompatImageView imageView01, @NonNull AppCompatImageView imageView02,
-      @NonNull AppCompatImageView imageView03, @NonNull AppCompatImageView imageView2,
-      @NonNull AppCompatTextView textView01, @NonNull AppCompatTextView textView02) {
+      @NonNull ConstraintLayout constraintLayout01, @NonNull AppCompatImageView imageView01,
+      @NonNull AppCompatImageView imageView02, @NonNull AppCompatImageView imageView03,
+      @NonNull AppCompatImageView imageView2, @NonNull AppCompatTextView textView01,
+      @NonNull AppCompatTextView textView02) {
     this.rootView = rootView;
     this.btnBack = btnBack;
     this.btnNext = btnNext;
+    this.constraintLayout01 = constraintLayout01;
     this.imageView01 = imageView01;
     this.imageView02 = imageView02;
     this.imageView03 = imageView03;
@@ -99,6 +104,12 @@ public final class FragmentTalkThrough2Binding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.constraintLayout01;
+      ConstraintLayout constraintLayout01 = rootView.findViewById(id);
+      if (constraintLayout01 == null) {
+        break missingId;
+      }
+
       id = R.id.imageView_01;
       AppCompatImageView imageView01 = rootView.findViewById(id);
       if (imageView01 == null) {
@@ -136,7 +147,8 @@ public final class FragmentTalkThrough2Binding implements ViewBinding {
       }
 
       return new FragmentTalkThrough2Binding((ConstraintLayout) rootView, btnBack, btnNext,
-          imageView01, imageView02, imageView03, imageView2, textView01, textView02);
+          constraintLayout01, imageView01, imageView02, imageView03, imageView2, textView01,
+          textView02);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

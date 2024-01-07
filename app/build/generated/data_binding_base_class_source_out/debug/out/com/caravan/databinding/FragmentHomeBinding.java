@@ -10,9 +10,12 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewpager.widget.ViewPager;
 import com.caravan.R;
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.textfield.TextInputEditText;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -32,22 +35,22 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final AppCompatTextView btnLandFarm;
 
   @NonNull
-  public final MaterialButton btnNext;
-
-  @NonNull
   public final AppCompatTextView btnPartment;
 
   @NonNull
   public final MaterialButton btnPostAdNow;
 
   @NonNull
+  public final MaterialButton btnSearchNow;
+
+  @NonNull
   public final ConstraintLayout constraintLayout01;
 
   @NonNull
-  public final TextInputEditText etSearch;
+  public final ConstraintLayout constraintLayout02;
 
   @NonNull
-  public final AppCompatImageView imageView01;
+  public final TextInputEditText etSearch;
 
   @NonNull
   public final AppCompatImageView imageView03;
@@ -56,22 +59,25 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final AppCompatImageView imageView2;
 
   @NonNull
-  public final RowDistinctAdvertismentBinding includeDistinctAdvertisment;
-
-  @NonNull
-  public final RowLatestAdsBinding includeLatestAds;
-
-  @NonNull
-  public final RowPropertiesNearYouBinding includePropertiesNearYou;
-
-  @NonNull
-  public final RowHousingAdsBinding includeRowHousingAds;
-
-  @NonNull
   public final LinearLayoutCompat llSearchView;
 
   @NonNull
   public final AppCompatImageView mageView01;
+
+  @NonNull
+  public final RecyclerView rvCommercialAds;
+
+  @NonNull
+  public final RecyclerView rvCommercialEstates;
+
+  @NonNull
+  public final RecyclerView rvHousingAds;
+
+  @NonNull
+  public final RecyclerView rvRealEstateAds;
+
+  @NonNull
+  public final TabLayout tabLayout;
 
   @NonNull
   public final AppCompatTextView textView05;
@@ -89,16 +95,28 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final AppCompatTextView textView09;
 
   @NonNull
-  public final AppCompatTextView tvFeaturedAds;
+  public final AppCompatTextView tvCommercialAds;
+
+  @NonNull
+  public final AppCompatTextView tvCommercialEstates;
 
   @NonNull
   public final AppCompatTextView tvHousingAds;
 
   @NonNull
-  public final AppCompatTextView tvLatestAds;
+  public final AppCompatTextView tvMoreCommercialAds;
 
   @NonNull
-  public final AppCompatTextView tvPropertiesNearYou;
+  public final AppCompatTextView tvMoreCommercialEstates;
+
+  @NonNull
+  public final AppCompatTextView tvMoreHousingAds;
+
+  @NonNull
+  public final AppCompatTextView tvMoreRealEstateAds;
+
+  @NonNull
+  public final AppCompatTextView tvRealEstateAds;
 
   @NonNull
   public final AppCompatTextView tvRent;
@@ -106,52 +124,63 @@ public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
   public final AppCompatTextView tvSale;
 
+  @NonNull
+  public final ViewPager viewPager;
+
   private FragmentHomeBinding(@NonNull ConstraintLayout rootView,
       @NonNull AppCompatTextView btnCommercialRealEstate, @NonNull AppCompatTextView btnHouseVilla,
-      @NonNull AppCompatTextView btnLandFarm, @NonNull MaterialButton btnNext,
-      @NonNull AppCompatTextView btnPartment, @NonNull MaterialButton btnPostAdNow,
-      @NonNull ConstraintLayout constraintLayout01, @NonNull TextInputEditText etSearch,
-      @NonNull AppCompatImageView imageView01, @NonNull AppCompatImageView imageView03,
-      @NonNull AppCompatImageView imageView2,
-      @NonNull RowDistinctAdvertismentBinding includeDistinctAdvertisment,
-      @NonNull RowLatestAdsBinding includeLatestAds,
-      @NonNull RowPropertiesNearYouBinding includePropertiesNearYou,
-      @NonNull RowHousingAdsBinding includeRowHousingAds, @NonNull LinearLayoutCompat llSearchView,
-      @NonNull AppCompatImageView mageView01, @NonNull AppCompatTextView textView05,
-      @NonNull AppCompatTextView textView06, @NonNull AppCompatTextView textView07,
-      @NonNull AppCompatTextView textView08, @NonNull AppCompatTextView textView09,
-      @NonNull AppCompatTextView tvFeaturedAds, @NonNull AppCompatTextView tvHousingAds,
-      @NonNull AppCompatTextView tvLatestAds, @NonNull AppCompatTextView tvPropertiesNearYou,
-      @NonNull AppCompatTextView tvRent, @NonNull AppCompatTextView tvSale) {
+      @NonNull AppCompatTextView btnLandFarm, @NonNull AppCompatTextView btnPartment,
+      @NonNull MaterialButton btnPostAdNow, @NonNull MaterialButton btnSearchNow,
+      @NonNull ConstraintLayout constraintLayout01, @NonNull ConstraintLayout constraintLayout02,
+      @NonNull TextInputEditText etSearch, @NonNull AppCompatImageView imageView03,
+      @NonNull AppCompatImageView imageView2, @NonNull LinearLayoutCompat llSearchView,
+      @NonNull AppCompatImageView mageView01, @NonNull RecyclerView rvCommercialAds,
+      @NonNull RecyclerView rvCommercialEstates, @NonNull RecyclerView rvHousingAds,
+      @NonNull RecyclerView rvRealEstateAds, @NonNull TabLayout tabLayout,
+      @NonNull AppCompatTextView textView05, @NonNull AppCompatTextView textView06,
+      @NonNull AppCompatTextView textView07, @NonNull AppCompatTextView textView08,
+      @NonNull AppCompatTextView textView09, @NonNull AppCompatTextView tvCommercialAds,
+      @NonNull AppCompatTextView tvCommercialEstates, @NonNull AppCompatTextView tvHousingAds,
+      @NonNull AppCompatTextView tvMoreCommercialAds,
+      @NonNull AppCompatTextView tvMoreCommercialEstates,
+      @NonNull AppCompatTextView tvMoreHousingAds, @NonNull AppCompatTextView tvMoreRealEstateAds,
+      @NonNull AppCompatTextView tvRealEstateAds, @NonNull AppCompatTextView tvRent,
+      @NonNull AppCompatTextView tvSale, @NonNull ViewPager viewPager) {
     this.rootView = rootView;
     this.btnCommercialRealEstate = btnCommercialRealEstate;
     this.btnHouseVilla = btnHouseVilla;
     this.btnLandFarm = btnLandFarm;
-    this.btnNext = btnNext;
     this.btnPartment = btnPartment;
     this.btnPostAdNow = btnPostAdNow;
+    this.btnSearchNow = btnSearchNow;
     this.constraintLayout01 = constraintLayout01;
+    this.constraintLayout02 = constraintLayout02;
     this.etSearch = etSearch;
-    this.imageView01 = imageView01;
     this.imageView03 = imageView03;
     this.imageView2 = imageView2;
-    this.includeDistinctAdvertisment = includeDistinctAdvertisment;
-    this.includeLatestAds = includeLatestAds;
-    this.includePropertiesNearYou = includePropertiesNearYou;
-    this.includeRowHousingAds = includeRowHousingAds;
     this.llSearchView = llSearchView;
     this.mageView01 = mageView01;
+    this.rvCommercialAds = rvCommercialAds;
+    this.rvCommercialEstates = rvCommercialEstates;
+    this.rvHousingAds = rvHousingAds;
+    this.rvRealEstateAds = rvRealEstateAds;
+    this.tabLayout = tabLayout;
     this.textView05 = textView05;
     this.textView06 = textView06;
     this.textView07 = textView07;
     this.textView08 = textView08;
     this.textView09 = textView09;
-    this.tvFeaturedAds = tvFeaturedAds;
+    this.tvCommercialAds = tvCommercialAds;
+    this.tvCommercialEstates = tvCommercialEstates;
     this.tvHousingAds = tvHousingAds;
-    this.tvLatestAds = tvLatestAds;
-    this.tvPropertiesNearYou = tvPropertiesNearYou;
+    this.tvMoreCommercialAds = tvMoreCommercialAds;
+    this.tvMoreCommercialEstates = tvMoreCommercialEstates;
+    this.tvMoreHousingAds = tvMoreHousingAds;
+    this.tvMoreRealEstateAds = tvMoreRealEstateAds;
+    this.tvRealEstateAds = tvRealEstateAds;
     this.tvRent = tvRent;
     this.tvSale = tvSale;
+    this.viewPager = viewPager;
   }
 
   @Override
@@ -199,12 +228,6 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btn_next;
-      MaterialButton btnNext = rootView.findViewById(id);
-      if (btnNext == null) {
-        break missingId;
-      }
-
       id = R.id.btn_partment;
       AppCompatTextView btnPartment = rootView.findViewById(id);
       if (btnPartment == null) {
@@ -217,21 +240,27 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btn_search_now;
+      MaterialButton btnSearchNow = rootView.findViewById(id);
+      if (btnSearchNow == null) {
+        break missingId;
+      }
+
       id = R.id.constraintLayout_01;
       ConstraintLayout constraintLayout01 = rootView.findViewById(id);
       if (constraintLayout01 == null) {
         break missingId;
       }
 
-      id = R.id.et_search;
-      TextInputEditText etSearch = rootView.findViewById(id);
-      if (etSearch == null) {
+      id = R.id.constraintLayout_02;
+      ConstraintLayout constraintLayout02 = rootView.findViewById(id);
+      if (constraintLayout02 == null) {
         break missingId;
       }
 
-      id = R.id.imageView_01;
-      AppCompatImageView imageView01 = rootView.findViewById(id);
-      if (imageView01 == null) {
+      id = R.id.et_search;
+      TextInputEditText etSearch = rootView.findViewById(id);
+      if (etSearch == null) {
         break missingId;
       }
 
@@ -247,34 +276,6 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.include_distinct_advertisment;
-      View includeDistinctAdvertisment = rootView.findViewById(id);
-      if (includeDistinctAdvertisment == null) {
-        break missingId;
-      }
-      RowDistinctAdvertismentBinding binding_includeDistinctAdvertisment = RowDistinctAdvertismentBinding.bind(includeDistinctAdvertisment);
-
-      id = R.id.include_latest_ads;
-      View includeLatestAds = rootView.findViewById(id);
-      if (includeLatestAds == null) {
-        break missingId;
-      }
-      RowLatestAdsBinding binding_includeLatestAds = RowLatestAdsBinding.bind(includeLatestAds);
-
-      id = R.id.include_properties_near_you;
-      View includePropertiesNearYou = rootView.findViewById(id);
-      if (includePropertiesNearYou == null) {
-        break missingId;
-      }
-      RowPropertiesNearYouBinding binding_includePropertiesNearYou = RowPropertiesNearYouBinding.bind(includePropertiesNearYou);
-
-      id = R.id.include_row_housing_ads;
-      View includeRowHousingAds = rootView.findViewById(id);
-      if (includeRowHousingAds == null) {
-        break missingId;
-      }
-      RowHousingAdsBinding binding_includeRowHousingAds = RowHousingAdsBinding.bind(includeRowHousingAds);
-
       id = R.id.ll_search_view;
       LinearLayoutCompat llSearchView = rootView.findViewById(id);
       if (llSearchView == null) {
@@ -284,6 +285,36 @@ public final class FragmentHomeBinding implements ViewBinding {
       id = R.id.mageView_01;
       AppCompatImageView mageView01 = rootView.findViewById(id);
       if (mageView01 == null) {
+        break missingId;
+      }
+
+      id = R.id.rvCommercialAds;
+      RecyclerView rvCommercialAds = rootView.findViewById(id);
+      if (rvCommercialAds == null) {
+        break missingId;
+      }
+
+      id = R.id.rvCommercialEstates;
+      RecyclerView rvCommercialEstates = rootView.findViewById(id);
+      if (rvCommercialEstates == null) {
+        break missingId;
+      }
+
+      id = R.id.rvHousingAds;
+      RecyclerView rvHousingAds = rootView.findViewById(id);
+      if (rvHousingAds == null) {
+        break missingId;
+      }
+
+      id = R.id.rvRealEstateAds;
+      RecyclerView rvRealEstateAds = rootView.findViewById(id);
+      if (rvRealEstateAds == null) {
+        break missingId;
+      }
+
+      id = R.id.tabLayout;
+      TabLayout tabLayout = rootView.findViewById(id);
+      if (tabLayout == null) {
         break missingId;
       }
 
@@ -317,9 +348,15 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tv_featured_ads;
-      AppCompatTextView tvFeaturedAds = rootView.findViewById(id);
-      if (tvFeaturedAds == null) {
+      id = R.id.tvCommercialAds;
+      AppCompatTextView tvCommercialAds = rootView.findViewById(id);
+      if (tvCommercialAds == null) {
+        break missingId;
+      }
+
+      id = R.id.tvCommercialEstates;
+      AppCompatTextView tvCommercialEstates = rootView.findViewById(id);
+      if (tvCommercialEstates == null) {
         break missingId;
       }
 
@@ -329,15 +366,33 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tv_latest_ads;
-      AppCompatTextView tvLatestAds = rootView.findViewById(id);
-      if (tvLatestAds == null) {
+      id = R.id.tvMoreCommercialAds;
+      AppCompatTextView tvMoreCommercialAds = rootView.findViewById(id);
+      if (tvMoreCommercialAds == null) {
         break missingId;
       }
 
-      id = R.id.tv_properties_near_you;
-      AppCompatTextView tvPropertiesNearYou = rootView.findViewById(id);
-      if (tvPropertiesNearYou == null) {
+      id = R.id.tvMoreCommercialEstates;
+      AppCompatTextView tvMoreCommercialEstates = rootView.findViewById(id);
+      if (tvMoreCommercialEstates == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMoreHousingAds;
+      AppCompatTextView tvMoreHousingAds = rootView.findViewById(id);
+      if (tvMoreHousingAds == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMoreRealEstateAds;
+      AppCompatTextView tvMoreRealEstateAds = rootView.findViewById(id);
+      if (tvMoreRealEstateAds == null) {
+        break missingId;
+      }
+
+      id = R.id.tvRealEstateAds;
+      AppCompatTextView tvRealEstateAds = rootView.findViewById(id);
+      if (tvRealEstateAds == null) {
         break missingId;
       }
 
@@ -353,12 +408,19 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.view_pager;
+      ViewPager viewPager = rootView.findViewById(id);
+      if (viewPager == null) {
+        break missingId;
+      }
+
       return new FragmentHomeBinding((ConstraintLayout) rootView, btnCommercialRealEstate,
-          btnHouseVilla, btnLandFarm, btnNext, btnPartment, btnPostAdNow, constraintLayout01,
-          etSearch, imageView01, imageView03, imageView2, binding_includeDistinctAdvertisment,
-          binding_includeLatestAds, binding_includePropertiesNearYou, binding_includeRowHousingAds,
-          llSearchView, mageView01, textView05, textView06, textView07, textView08, textView09,
-          tvFeaturedAds, tvHousingAds, tvLatestAds, tvPropertiesNearYou, tvRent, tvSale);
+          btnHouseVilla, btnLandFarm, btnPartment, btnPostAdNow, btnSearchNow, constraintLayout01,
+          constraintLayout02, etSearch, imageView03, imageView2, llSearchView, mageView01,
+          rvCommercialAds, rvCommercialEstates, rvHousingAds, rvRealEstateAds, tabLayout,
+          textView05, textView06, textView07, textView08, textView09, tvCommercialAds,
+          tvCommercialEstates, tvHousingAds, tvMoreCommercialAds, tvMoreCommercialEstates,
+          tvMoreHousingAds, tvMoreRealEstateAds, tvRealEstateAds, tvRent, tvSale, viewPager);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
