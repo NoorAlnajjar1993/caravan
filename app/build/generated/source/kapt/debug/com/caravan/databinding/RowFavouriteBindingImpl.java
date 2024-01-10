@@ -15,10 +15,8 @@ public class RowFavouriteBindingImpl extends RowFavouriteBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.imageView_02, 4);
-        sViewsWithIds.put(R.id.tv_direction, 5);
-        sViewsWithIds.put(R.id.imageView_03, 6);
-        sViewsWithIds.put(R.id.tv_distance, 7);
+        sViewsWithIds.put(R.id.imageView_02, 6);
+        sViewsWithIds.put(R.id.imageView_03, 7);
         sViewsWithIds.put(R.id.ivFavourite, 8);
     }
     // views
@@ -33,16 +31,18 @@ public class RowFavouriteBindingImpl extends RowFavouriteBinding  {
     private RowFavouriteBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
-            , (androidx.appcompat.widget.AppCompatImageView) bindings[4]
             , (androidx.appcompat.widget.AppCompatImageView) bindings[6]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[7]
             , (androidx.appcompat.widget.AppCompatImageView) bindings[8]
-            , (androidx.appcompat.widget.AppCompatTextView) bindings[5]
-            , (androidx.appcompat.widget.AppCompatTextView) bindings[7]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[4]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[2]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[1]
-            , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[5]
             );
         this.constraintLayout02.setTag(null);
+        this.tvDirection.setTag(null);
+        this.tvDistance.setTag(null);
         this.tvLocation.setTag(null);
         this.tvName.setTag(null);
         this.tvPrice.setTag(null);
@@ -104,22 +104,34 @@ public class RowFavouriteBindingImpl extends RowFavouriteBinding  {
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
+        int itemNumberOfBedrooms = 0;
         com.dominate.caravan.medule.home.RealEstateAd item = mItem;
+        java.lang.String stringValueOfItemNumberOfBathroomsChar = null;
+        java.lang.String stringValueOfItemNumberOfBathroomsCharTvDirectionAndroidStringBathroom = null;
         java.lang.String itemRegionTitle = null;
         java.lang.String itemTitle = null;
         java.lang.String stringValueOfItemPriceChar = null;
         java.lang.String stringValueOfItemPriceCharTvPriceAndroidStringJod = null;
+        int itemNumberOfBathrooms = 0;
+        java.lang.String stringValueOfItemPrice = null;
+        java.lang.String stringValueOfItemNumberOfBathrooms = null;
+        java.lang.String stringValueOfItemNumberOfBedroomsChar = null;
+        java.lang.String stringValueOfItemNumberOfBedrooms = null;
+        java.lang.String stringValueOfItemNumberOfBedroomsCharTvDistanceAndroidStringRoom = null;
         double itemPrice = 0.0;
         com.dominate.caravan.medule.home.Region itemRegion = null;
-        java.lang.String stringValueOfItemPrice = null;
 
         if ((dirtyFlags & 0x3L) != 0) {
 
 
 
                 if (item != null) {
+                    // read item.numberOfBedrooms
+                    itemNumberOfBedrooms = item.getNumberOfBedrooms();
                     // read item.title
                     itemTitle = item.getTitle();
+                    // read item.numberOfBathrooms
+                    itemNumberOfBathrooms = item.getNumberOfBathrooms();
                     // read item.price
                     itemPrice = item.getPrice();
                     // read item.region
@@ -127,6 +139,10 @@ public class RowFavouriteBindingImpl extends RowFavouriteBinding  {
                 }
 
 
+                // read String.valueOf(item.numberOfBedrooms)
+                stringValueOfItemNumberOfBedrooms = java.lang.String.valueOf(itemNumberOfBedrooms);
+                // read String.valueOf(item.numberOfBathrooms)
+                stringValueOfItemNumberOfBathrooms = java.lang.String.valueOf(itemNumberOfBathrooms);
                 // read String.valueOf(item.price)
                 stringValueOfItemPrice = java.lang.String.valueOf(itemPrice);
                 if (itemRegion != null) {
@@ -135,10 +151,18 @@ public class RowFavouriteBindingImpl extends RowFavouriteBinding  {
                 }
 
 
+                // read (String.valueOf(item.numberOfBedrooms)) + (' ')
+                stringValueOfItemNumberOfBedroomsChar = (stringValueOfItemNumberOfBedrooms) + (' ');
+                // read (String.valueOf(item.numberOfBathrooms)) + (' ')
+                stringValueOfItemNumberOfBathroomsChar = (stringValueOfItemNumberOfBathrooms) + (' ');
                 // read (String.valueOf(item.price)) + (' ')
                 stringValueOfItemPriceChar = (stringValueOfItemPrice) + (' ');
 
 
+                // read ((String.valueOf(item.numberOfBedrooms)) + (' ')) + (@android:string/room)
+                stringValueOfItemNumberOfBedroomsCharTvDistanceAndroidStringRoom = (stringValueOfItemNumberOfBedroomsChar) + (tvDistance.getResources().getString(R.string.room));
+                // read ((String.valueOf(item.numberOfBathrooms)) + (' ')) + (@android:string/bathroom)
+                stringValueOfItemNumberOfBathroomsCharTvDirectionAndroidStringBathroom = (stringValueOfItemNumberOfBathroomsChar) + (tvDirection.getResources().getString(R.string.bathroom));
                 // read ((String.valueOf(item.price)) + (' ')) + (@android:string/jod)
                 stringValueOfItemPriceCharTvPriceAndroidStringJod = (stringValueOfItemPriceChar) + (tvPrice.getResources().getString(R.string.jod));
         }
@@ -146,6 +170,8 @@ public class RowFavouriteBindingImpl extends RowFavouriteBinding  {
         if ((dirtyFlags & 0x3L) != 0) {
             // api target 1
 
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.tvDirection, stringValueOfItemNumberOfBathroomsCharTvDirectionAndroidStringBathroom);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.tvDistance, stringValueOfItemNumberOfBedroomsCharTvDistanceAndroidStringRoom);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.tvLocation, itemRegionTitle);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.tvName, itemTitle);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.tvPrice, stringValueOfItemPriceCharTvPriceAndroidStringJod);

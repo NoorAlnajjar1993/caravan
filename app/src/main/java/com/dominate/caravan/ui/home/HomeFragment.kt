@@ -1,10 +1,17 @@
 package com.dominate.caravan.ui.home
 
+import android.content.ActivityNotFoundException
+import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
@@ -14,10 +21,12 @@ import com.caravan.R
 import com.caravan.databinding.FragmentHomeBinding
 import com.dominate.caravan.core.base.BaseFragment
 import com.dominate.caravan.core.showLoginDialog
+import com.dominate.caravan.medule.home.Banner
 import com.dominate.caravan.medule.home.CommercialAd
 import com.dominate.caravan.medule.home.CommercialEstate
 import com.dominate.caravan.medule.home.HousingAd
 import com.dominate.caravan.medule.home.RealEstateAd
+import com.dominate.caravan.ui.estatedetails.EstateDetailsFragment
 import com.dominate.caravan.ui.home.adapter.CommercialAdsAdapter
 import com.dominate.caravan.ui.home.adapter.CommercialEstatesAdapter
 import com.dominate.caravan.ui.home.adapter.HousingAdsAdapter
@@ -37,6 +46,7 @@ class HomeFragment : BaseFragment() {
     lateinit var commercialEstatesAdapter: CommercialEstatesAdapter
     lateinit var commercialAdsAdapter: CommercialAdsAdapter
     lateinit var bannerAdapter: BannerAdapter
+    var maxCount = 2
     var token: String? = ""
     var currentPage = 0
     var NUM_PAGES = 5
@@ -65,8 +75,27 @@ class HomeFragment : BaseFragment() {
         } catch (_: Exception) {
         }
 
+        val slideUpAnimation: Animation = AnimationUtils.loadAnimation(
+            requireContext(),
+            R.anim.slide_up
+        )
+        binding.constraintLayout01.startAnimation(slideUpAnimation)
+        binding.viewPager.startAnimation(slideUpAnimation)
+        binding.tabLayout.startAnimation(slideUpAnimation)
+        binding.tvHousingAds.startAnimation(slideUpAnimation)
+        binding.tvMoreHousingAds.startAnimation(slideUpAnimation)
+        binding.rvHousingAds.startAnimation(slideUpAnimation)
+        binding.tvMoreRealEstateAds.startAnimation(slideUpAnimation)
+        binding.tvRealEstateAds.startAnimation(slideUpAnimation)
+        binding.rvRealEstateAds.startAnimation(slideUpAnimation)
+        binding.constraintLayout02.startAnimation(slideUpAnimation)
 
-        binding.viewPager.setPageTransformer(true, ZoomOutPageTransformer())
+        Handler().postDelayed({
+            binding.loading.visibility = View.GONE
+        }, 2000)
+
+
+        // binding.viewPager.setPageTransformer(true, ZoomOutPageTransformer())
 
         val handler = Handler()
         val update = Runnable {
@@ -87,6 +116,18 @@ class HomeFragment : BaseFragment() {
             findNavController().navigate(R.id.action_homeFragment_to_searchFragment)
         }
 
+        binding.tvMoreHousingAds.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_housingAdsFragment)
+        }
+        binding.tvMoreCommercialEstates.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_commercialEstateFragment)
+        }
+        binding.tvMoreRealEstateAds.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_realEstateAdsFragment2)
+        }
+        binding.tvMoreCommercialAds.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_commercialAdsFragment)
+        }
         observeHome()
     }
 
@@ -96,11 +137,55 @@ class HomeFragment : BaseFragment() {
 
             if (it.status == Resource.Status.SUCCESS) {
                 if (it.data?.status?.code == 200) {
-                    it.data!!.let {
-                        housingAdsData(it.results.housing_ads)
-                        realEstateAdsData(it.results.real_estate_ads)
-                        commercialEstatesData(it.results.commercial_estates)
-                        commercialAdsData(it.results.commercial_ads)
+                    it.data!!.let { it ->
+                        bannerSetData(it.results.banners)
+                        if (it.results.housing_ads.size > maxCount) {
+                            binding.tvMoreHousingAds.visibility = View.VISIBLE
+                            val housing_ads_list: MutableList<HousingAd> = mutableListOf()
+                            for (i in 0..maxCount) {
+                                housing_ads_list.add(it.results.housing_ads[i])
+                            }
+                            housingAdsData(housing_ads_list)
+                        } else {
+                            binding.tvMoreHousingAds.visibility = View.INVISIBLE
+                            housingAdsData(it.results.housing_ads)
+                        }
+
+                        if (it.results.real_estate_ads.size > maxCount) {
+                            binding.tvMoreRealEstateAds.visibility = View.VISIBLE
+                            val real_estate_ads_list: MutableList<RealEstateAd> = mutableListOf()
+                            for (i in 0..maxCount) {
+                                real_estate_ads_list.add(it.results.real_estate_ads[i])
+                            }
+                            realEstateAdsData(real_estate_ads_list)
+                        } else {
+                            binding.tvMoreRealEstateAds.visibility = View.INVISIBLE
+                            realEstateAdsData(it.results.real_estate_ads)
+                        }
+
+                        if (it.results.commercial_estates.size > maxCount) {
+                            binding.tvMoreCommercialEstates.visibility = View.VISIBLE
+                            val commercial_estates_list: MutableList<CommercialEstate> = mutableListOf()
+                            for (i in 0..maxCount) {
+                                commercial_estates_list.add(it.results.commercial_estates[i])
+                            }
+                            commercialEstatesData(commercial_estates_list)
+                        } else {
+                            binding.tvMoreCommercialEstates.visibility = View.INVISIBLE
+                            commercialEstatesData(it.results.commercial_estates)
+                        }
+
+                        if (it.results.commercial_ads.size > maxCount) {
+                            binding.tvMoreCommercialAds.visibility = View.VISIBLE
+                            val CommercialEstate_list: MutableList<CommercialAd> = mutableListOf()
+                            for (i in 0..maxCount) {
+                                CommercialEstate_list.add(it.results.commercial_ads[i])
+                            }
+                            commercialAdsData(CommercialEstate_list)
+                        } else {
+                            binding.tvMoreCommercialAds.visibility = View.INVISIBLE
+                            commercialAdsData(it.results.commercial_ads)
+                        }
                     }
                 } else {
                     Toast.makeText(
@@ -123,7 +208,7 @@ class HomeFragment : BaseFragment() {
 
     private fun housingAdsData(housingAds: MutableList<HousingAd>) {
         if (housingAds.isNotEmpty()) {
-            housingAdsAdapter = HousingAdsAdapter(housingAds) {
+            housingAdsAdapter = HousingAdsAdapter(housingAds, {
                 if (prefs.isLoggedIn && !token.isNullOrEmpty()) {
                     it!!.is_favorite = !it.is_favorite
                     AddRemoveFavorite(id = it.id, it.is_favorite)
@@ -137,7 +222,12 @@ class HomeFragment : BaseFragment() {
                             it.dismiss()
                         })
                 }
-            }
+            }, {
+                EstateDetailsFragment.housing = it!!
+                EstateDetailsFragment.type = "housing"
+
+                findNavController().navigate(R.id.action_homeFragment_to_estateDetailsFragment)
+            })
             housingAdsAdapter.notifyDataSetChanged()
             binding.rvHousingAds.adapter = housingAdsAdapter
         } else {
@@ -145,10 +235,9 @@ class HomeFragment : BaseFragment() {
             binding.tvMoreHousingAds.visibility = View.GONE
         }
     }
-
     private fun realEstateAdsData(realEstateAds: MutableList<RealEstateAd>) {
         if (realEstateAds.isNotEmpty()) {
-            realEstateAdsAdapter = RealEstateAdsAdapter(realEstateAds) {
+            realEstateAdsAdapter = RealEstateAdsAdapter(realEstateAds, {
                 if (prefs.isLoggedIn && !token.isNullOrEmpty()) {
                     it!!.is_favorite = !it.is_favorite
                     AddRemoveFavorite(id = it.id, it.is_favorite)
@@ -162,7 +251,13 @@ class HomeFragment : BaseFragment() {
                             it.dismiss()
                         })
                 }
-            }
+            }, {
+                EstateDetailsFragment.realEstate = it!!
+                EstateDetailsFragment.type = "real_estate"
+
+                findNavController().navigate(R.id.action_homeFragment_to_estateDetailsFragment)
+
+            })
             realEstateAdsAdapter.notifyDataSetChanged()
             binding.rvRealEstateAds.adapter = realEstateAdsAdapter
         } else {
@@ -170,6 +265,66 @@ class HomeFragment : BaseFragment() {
             binding.tvMoreRealEstateAds.visibility = View.GONE
         }
     }
+    private fun commercialEstatesData(commercialEstates: MutableList<CommercialEstate>) {
+        if (commercialEstates.isNotEmpty()) {
+            commercialEstatesAdapter = CommercialEstatesAdapter(commercialEstates, {
+                if (prefs.isLoggedIn && !token.isNullOrEmpty()) {
+                    it!!.is_favorite = !it.is_favorite
+                    AddRemoveFavorite(id = it.id, it.is_favorite)
+                } else {
+                    // IF USER NOT LOGIN SHOW DIALOG
+                    requireContext().showLoginDialog(
+                        onPositiveButtonClick = {
+                            findNavController().navigate(R.id.action_homeFragment_to_sigininFragment)
+                            it.dismiss()
+                        }, onNegativeButtonClick = {
+                            it.dismiss()
+                        })
+                }
+            }, {
+                EstateDetailsFragment.commertcial_estate = it!!
+                EstateDetailsFragment.type = "commertcial_estate"
+
+                findNavController().navigate(R.id.action_homeFragment_to_estateDetailsFragment)
+
+            })
+            commercialEstatesAdapter.notifyDataSetChanged()
+            binding.rvCommercialEstates.adapter = commercialEstatesAdapter
+        } else {
+            binding.tvCommercialEstates.visibility = View.GONE
+            binding.tvMoreCommercialEstates.visibility = View.GONE
+        }
+    }
+    private fun commercialAdsData(commercialAds: MutableList<CommercialAd>) {
+        if (commercialAds.isNotEmpty()) {
+            commercialAdsAdapter = CommercialAdsAdapter(commercialAds, {
+                if (prefs.isLoggedIn && !token.isNullOrEmpty()) {
+                    it!!.is_favorite = !it.is_favorite!!
+                    it.id?.let { it1 -> AddRemoveFavorite(id = it1, it.is_favorite!!) }
+                } else {
+                    // IF USER NOT LOGIN SHOW DIALOG
+                    requireContext().showLoginDialog(
+                        onPositiveButtonClick = {
+                            findNavController().navigate(R.id.action_homeFragment_to_sigininFragment)
+                            it.dismiss()
+                        }, onNegativeButtonClick = {
+                            it.dismiss()
+                        })
+                }
+            }, {
+                EstateDetailsFragment.commertcial = it!!
+                EstateDetailsFragment.type = "commertcial"
+
+                findNavController().navigate(R.id.action_homeFragment_to_estateDetailsFragment)
+            })
+            commercialAdsAdapter.notifyDataSetChanged()
+            binding.rvCommercialAds.adapter = commercialAdsAdapter
+        } else {
+            binding.tvMoreCommercialAds.visibility = View.GONE
+            binding.tvCommercialAds.visibility = View.GONE
+        }
+    }
+
 
     private fun AddRemoveFavorite(id: Int, isFavorite: Boolean) {
         if (isFavorite) {
@@ -216,70 +371,34 @@ class HomeFragment : BaseFragment() {
         }
 
     }
-
-
-    private fun commercialEstatesData(commercialEstates: MutableList<CommercialEstate>) {
-        if (commercialEstates.isNotEmpty()) {
-            commercialEstatesAdapter = CommercialEstatesAdapter(commercialEstates) {
-                if (prefs.isLoggedIn && !token.isNullOrEmpty()) {
-                    it!!.is_favorite = !it.is_favorite
-                    AddRemoveFavorite(id = it.id, it.is_favorite)
-                } else {
-                    // IF USER NOT LOGIN SHOW DIALOG
-                    requireContext().showLoginDialog(
-                        onPositiveButtonClick = {
-                            findNavController().navigate(R.id.action_homeFragment_to_sigininFragment)
-                            it.dismiss()
-                        }, onNegativeButtonClick = {
-                            it.dismiss()
-                        })
-                }
+    private fun bannerSetData(banners: MutableList<Banner>) {
+        if (banners.isNotEmpty()) {
+            bannerAdapter = BannerAdapter(requireContext(), banners) {
+                openUrl(context = requireContext(), it!!.link)
             }
-            commercialEstatesAdapter.notifyDataSetChanged()
-            binding.rvCommercialEstates.adapter = commercialEstatesAdapter
+            bannerAdapter.notifyDataSetChanged()
+
+            binding.viewPager.adapter = bannerAdapter
+            binding.tabLayout.setupWithViewPager(binding.viewPager, true)
+
         } else {
-            binding.tvCommercialEstates.visibility = View.GONE
-            binding.tvMoreCommercialEstates.visibility = View.GONE
+            binding.viewPager.visibility = View.GONE
+            binding.tabLayout.visibility = View.GONE
         }
     }
 
-    private fun commercialAdsData(commercialAds: MutableList<CommercialAd>) {
-        if (commercialAds.isNotEmpty()) {
-            commercialAdsAdapter = CommercialAdsAdapter(commercialAds) {
-                if (prefs.isLoggedIn && !token.isNullOrEmpty()) {
-                    it!!.is_favorite = !it.is_favorite
-                    AddRemoveFavorite(id = it.id, it.is_favorite)
-                } else {
-                    // IF USER NOT LOGIN SHOW DIALOG
-                    requireContext().showLoginDialog(
-                        onPositiveButtonClick = {
-                            findNavController().navigate(R.id.action_homeFragment_to_sigininFragment)
-                            it.dismiss()
-                        }, onNegativeButtonClick = {
-                            it.dismiss()
-                        })
-                }
-            }
-            commercialAdsAdapter.notifyDataSetChanged()
-            binding.rvCommercialAds.adapter = commercialAdsAdapter
-        } else {
-            binding.tvMoreCommercialAds.visibility = View.GONE
-            binding.tvCommercialAds.visibility = View.GONE
-        }
+    fun openUrl(context: Context, url: String) = try {
+        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+
+        true
+    } catch (exception: ActivityNotFoundException) {
+        Log.d("exception", exception.toString())
+
+        false
     }
 
     private fun setRecycleView() {
-        var imageList: MutableList<BannerModule> = mutableListOf()
-        imageList.add(BannerModule(R.drawable.photo4))
-        imageList.add(BannerModule(R.drawable.photo4))
-        imageList.add(BannerModule(R.drawable.photo4))
-        imageList.add(BannerModule(R.drawable.photo4))
-        imageList.add(BannerModule(R.drawable.photo4))
-        bannerAdapter = BannerAdapter(requireContext(), imageList)
-        bannerAdapter.notifyDataSetChanged()
 
-        binding.viewPager.adapter = bannerAdapter
-        binding.tabLayout.setupWithViewPager(binding.viewPager, true)
     }
 
 }

@@ -14,7 +14,8 @@ import com.dominate.caravan.medule.home.CommercialEstate
 
 class CommercialEstatesAdapter (
     marketCategories: MutableList<CommercialEstate>?,
-    private val onclickListener: ((CommercialEstate?) -> Unit)
+    private val onclickListener: ((CommercialEstate?) -> Unit),
+    private val onclickListenerItem: ((CommercialEstate?) -> Unit)
 ) : BaseAdapter<CommercialEstate, CommercialEstatesAdapter.MarketCategoryItemViewHolder>(marketCategories) {
 
 
@@ -39,6 +40,10 @@ class CommercialEstatesAdapter (
 
                 binding.ivFavourite.setOnClickListener {
                     onclickListener(item)
+                    notifyDataSetChanged()
+                }
+                binding.constraintLayout01.setOnClickListener {
+                    onclickListenerItem(item)
                     notifyDataSetChanged()
                 }
 

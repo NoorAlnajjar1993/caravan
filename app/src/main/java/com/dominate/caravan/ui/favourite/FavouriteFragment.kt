@@ -17,6 +17,7 @@ import com.dominate.caravan.core.autoCleared
 import com.dominate.caravan.core.base.BaseFragment
 import com.dominate.caravan.core.showLoginDialog
 import com.dominate.caravan.medule.home.RealEstateAd
+import com.dominate.caravan.medule.profile.user.User
 import com.dominate.caravan.ui.favourite.adapter.FavouritesAdapter
 import com.dominate.caravan.ui.home.HomeViewModel
 import com.dominate.caravan.utils.Resource
@@ -86,7 +87,13 @@ class FavouriteFragment : BaseFragment(), TextWatcher {
         } catch (ec: java.lang.Exception) {
         }
         try {
-            observeFavorites()
+            if (prefs.isLoggedIn) {
+                observeFavorites()
+            } else {
+                binding.animationView.visibility = View.VISIBLE
+                binding.tvNoFav.visibility = View.VISIBLE
+                binding.rvFavourite.visibility = View.GONE
+            }
         } catch (e: java.lang.Exception) {
         }
 
@@ -96,9 +103,14 @@ class FavouriteFragment : BaseFragment(), TextWatcher {
         viewModel.getFavoriteList(token!!)
         viewModel.favoriteListResponse.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
             if (it.status == Resource.Status.SUCCESS) {
+
                 it.data!!.let {
-                    binding.loading.visibility = View.GONE
-                    favoritesData(it.results)
+                    if (it.status.code != 401) {
+                        binding.loading.visibility = View.GONE
+                        favoritesData(it.results)
+                    } else {
+                        clearSharedPreferenceLogout()
+                    }
                 }
             } else {
                 binding.loading.visibility = View.GONE
@@ -106,10 +118,25 @@ class FavouriteFragment : BaseFragment(), TextWatcher {
         })
     }
 
+    private fun clearSharedPreferenceLogout(){
+        prefs.isLoggedIn = false
+        prefs.saveAuthToken("")
+        prefs.saveCurrentUser(
+            User(
+                "",
+                "",
+                "",
+                "",
+                ""
+            )
+        )
+    }
+
     private fun favoritesData(realEstateAd: MutableList<RealEstateAd>) {
         if (realEstateAd.isNotEmpty()) {
             binding.animationView.visibility = View.GONE
             binding.tvNoFav.visibility = View.GONE
+            binding.rvFavourite.visibility = View.VISIBLE
             favouritesAdapter = FavouritesAdapter(realEstateAd) {
                 if (prefs.isLoggedIn && !token.isNullOrEmpty()) {
                     it!!.is_favorite = !it.is_favorite
@@ -130,6 +157,7 @@ class FavouriteFragment : BaseFragment(), TextWatcher {
         } else {
             binding.animationView.visibility = View.VISIBLE
             binding.tvNoFav.visibility = View.VISIBLE
+            binding.rvFavourite.visibility = View.GONE
         }
     }
 

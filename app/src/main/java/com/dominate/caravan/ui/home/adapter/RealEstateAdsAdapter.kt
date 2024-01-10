@@ -13,7 +13,8 @@ import com.dominate.caravan.medule.home.RealEstateAd
 
 class RealEstateAdsAdapter (
     marketCategories: MutableList<RealEstateAd>?,
-    private val onclickListener: ((RealEstateAd?) -> Unit)
+    private val onclickListener: ((RealEstateAd?) -> Unit),
+    private val onclickListenerItem: ((RealEstateAd?) -> Unit),
 ) : BaseAdapter<RealEstateAd, RealEstateAdsAdapter.MarketCategoryItemViewHolder>(marketCategories) {
 
 
@@ -41,7 +42,17 @@ class RealEstateAdsAdapter (
                     notifyDataSetChanged()
                 }
 
-                setImageUrl(binding.imageView02,item!!.media[0].image )
+
+                binding.constraintLayout01.setOnClickListener {
+                    onclickListenerItem(item)
+                    notifyDataSetChanged()
+                }
+
+                item!!.media.let {
+                    if (item!!.media.isNotEmpty()) {
+                        setImageUrl(binding.imageView02, item!!.media[0].image)
+                    }
+                }
 
 
             }

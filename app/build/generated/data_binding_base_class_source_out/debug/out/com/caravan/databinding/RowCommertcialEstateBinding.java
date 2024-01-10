@@ -20,7 +20,7 @@ import java.lang.Object;
 
 public abstract class RowCommertcialEstateBinding extends ViewDataBinding {
   @NonNull
-  public final ConstraintLayout constraintLayout02;
+  public final ConstraintLayout constraintLayout01;
 
   @NonNull
   public final ShapeableImageView imageView02;
@@ -50,12 +50,12 @@ public abstract class RowCommertcialEstateBinding extends ViewDataBinding {
   protected CommercialEstate mItem;
 
   protected RowCommertcialEstateBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ConstraintLayout constraintLayout02, ShapeableImageView imageView02,
+      ConstraintLayout constraintLayout01, ShapeableImageView imageView02,
       AppCompatImageView imageView03, AppCompatImageView ivFavourite, AppCompatTextView tvDirection,
       AppCompatTextView tvDistance, AppCompatTextView tvLocation, AppCompatTextView tvName,
       AppCompatTextView tvPrice) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.constraintLayout02 = constraintLayout02;
+    this.constraintLayout01 = constraintLayout01;
     this.imageView02 = imageView02;
     this.imageView03 = imageView03;
     this.ivFavourite = ivFavourite;

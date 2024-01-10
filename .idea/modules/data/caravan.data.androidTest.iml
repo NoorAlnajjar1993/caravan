@@ -76,6 +76,7 @@
                 <arg>D:/jdks/caches/transforms-2/files-2.1/2788dcb0179331877df3105bc5ff82b9/jetified-paginate-1.0.0-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/f19d0a649f50c3dfb2a47a45683597a1/recyclerview-1.2.0-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/f74cc810d270b828c285d3164efadd56/cardview-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/40b06482c286fb0032d8a5484035fd5f/jetified-picasso-2.71828-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/f5d5cb200444b4d7920405a0ed889662/monitor-1.3.0-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/86b4de51a47130a2afba79efc5efe95f/coordinatorlayout-1.1.0-api.jar</arg>
                 <arg>D:/jdks/caches/transforms-2/files-2.1/f535089eec6769162575ae0c58d09d88/dynamicanimation-1.0.0-api.jar</arg>
@@ -318,6 +319,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.markomilos:paginate:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.recyclerview:recyclerview:1.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.cardview:cardview:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.picasso:picasso:2.71828@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:monitor:1.3.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.dynamicanimation:dynamicanimation:1.0.0@aar" level="project" />

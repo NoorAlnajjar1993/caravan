@@ -34,5 +34,12 @@ data class CommercialEstate(
     val user: Profile,
     val video: List<Any>,
     val whatsapp: String,
-    val year_of_construction: Int
-)
+    val year_of_construction: Int,
+    val with_garden: Boolean,
+    val with_roof: Boolean,
+    val is_featured: Boolean,
+    val floor: String = "",
+    val building_apartments: Int,
+    val garden_area: Double,
+    val roof_area: Double
+    )

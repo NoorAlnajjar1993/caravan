@@ -77,4 +77,9 @@ interface NetworkService {
         @Header("Authorization") token:String,
     ): Response<FavouriteResponse>
 
+    @POST("ads/details")
+    suspend fun getRealEstate(
+        @Body favouriteRequest: FavouriteRequest
+    ): Response<FavouriteResponse>
+
 }

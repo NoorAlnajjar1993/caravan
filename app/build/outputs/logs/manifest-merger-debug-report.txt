@@ -18,6 +18,7 @@ MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] D:\jdks\caches\tra
 MERGED from [androidx.core:core-ktx:1.3.2] D:\jdks\caches\transforms-2\files-2.1\fb25f0d6618c91d7bef0083d05b3bce0\jetified-core-ktx-1.3.2\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\5e105e7ce0f4b7535f31cbcea4233e38\jetified-lifecycle-livedata-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\511c7fd8da3b972e226775f530d6d882\jetified-lifecycle-viewmodel-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\f78fde715294cdebae8c1ac0120f8067\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
 MERGED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:2:1-35:12
 MERGED from [com.github.yalantis:ucrop:2.2.2] D:\jdks\caches\transforms-2\files-2.1\bc6aff8f15e342c41088a9589f32cf5f\jetified-ucrop-2.2.2\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.room:room-ktx:2.2.5] D:\jdks\caches\transforms-2\files-2.1\000d115563327f8a76f01f9df0281b62\jetified-room-ktx-2.2.5\AndroidManifest.xml:17:1-24:12
@@ -167,6 +168,8 @@ ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-
 		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:10:22-78
 application
 ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:12:5-36:19
+MERGED from [com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\f78fde715294cdebae8c1ac0120f8067\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\f78fde715294cdebae8c1ac0120f8067\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
 MERGED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:14:5-33:19
 MERGED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:14:5-33:19
 MERGED from [com.airbnb.android:lottie:3.4.2] D:\jdks\caches\transforms-2\files-2.1\8c08d9e1a1c2104fd92d281e10864f4c\jetified-lottie-3.4.2\AndroidManifest.xml:9:5-20
@@ -293,6 +296,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] D:\jdks\caches\tra
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\5e105e7ce0f4b7535f31cbcea4233e38\jetified-lifecycle-livedata-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\511c7fd8da3b972e226775f530d6d882\jetified-lifecycle-viewmodel-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] D:\jdks\caches\transforms-2\files-2.1\511c7fd8da3b972e226775f530d6d882\jetified-lifecycle-viewmodel-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\f78fde715294cdebae8c1ac0120f8067\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\f78fde715294cdebae8c1ac0120f8067\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
 MERGED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.yalantis:ucrop:2.2.2] D:\jdks\caches\transforms-2\files-2.1\bc6aff8f15e342c41088a9589f32cf5f\jetified-ucrop-2.2.2\AndroidManifest.xml:7:5-9:41
@@ -491,6 +496,14 @@ INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawali
 		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\f78fde715294cdebae8c1ac0120f8067\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\f78fde715294cdebae8c1ac0120f8067\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\f78fde715294cdebae8c1ac0120f8067\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\f78fde715294cdebae8c1ac0120f8067\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from [com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:11:5-80
 MERGED from [com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:11:5-80

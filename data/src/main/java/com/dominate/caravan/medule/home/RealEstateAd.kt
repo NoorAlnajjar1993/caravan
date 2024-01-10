@@ -3,7 +3,7 @@ package com.dominate.caravan.medule.home
 import com.dominate.caravan.medule.profile.profile.Profile
 
 data class RealEstateAd(
-    val age_of_construction: Int,
+    val age_of_construction: Int ? = null,
     val bathrooms_number: Int,
     val bedrooms_number: Int,
     val building_apartments: Int,
@@ -18,7 +18,7 @@ data class RealEstateAd(
     val id: Int,
     val installment_payment: Boolean,
     val is_commercial: Boolean,
-    var is_favorite: Boolean,
+    var is_favorite: Boolean = false,
     val numberOfBathrooms: Int,
     val numberOfBedrooms: Int,
     val is_featured: Boolean,
@@ -35,12 +35,12 @@ data class RealEstateAd(
     val price: Double,
     val `property`: Property,
     val property_ownership: Int,
-    val region: Region,
+    val region: Region? = null,
     val roof_area: Double,
     val street: String,
     val title: String,
     val typeOfAds: TypeOfAds,
-    val user: Profile,
+    val user: Profile? = null,
     val videos: List<Any>,
     val whatsapp: String,
     val with_garden: Boolean,

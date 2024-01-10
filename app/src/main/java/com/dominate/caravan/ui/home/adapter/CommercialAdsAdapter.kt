@@ -13,7 +13,8 @@ import com.dominate.caravan.medule.home.CommercialAd
 
 class CommercialAdsAdapter (
     marketCategories: MutableList<CommercialAd>?,
-    private val onclickListener: ((CommercialAd?) -> Unit)
+    private val onclickListener: ((CommercialAd?) -> Unit),
+    private val onclickListenerItem: ((CommercialAd?) -> Unit),
 ) : BaseAdapter<CommercialAd, CommercialAdsAdapter.MarketCategoryItemViewHolder>(marketCategories) {
 
 
@@ -30,19 +31,27 @@ class CommercialAdsAdapter (
             bind<RowCommertcialAdsBinding> {
                 item = itemPos
 
-                if (itemPos?.is_favorite!!){
-                    binding.ivFavourite.setImageResource(R.drawable.ic_favourite)
-                } else {
-                    binding.ivFavourite.setImageResource(R.drawable.ic_favourites_gray)
-                }
+
+                try {
+                    if (itemPos?.is_favorite!!){
+                        binding.ivFavourite.setImageResource(R.drawable.ic_favourite)
+                    } else {
+                        binding.ivFavourite.setImageResource(R.drawable.ic_favourites_gray)
+                    }
+                } catch (e:Exception){}
+
 
                 binding.ivFavourite.setOnClickListener {
                     onclickListener(item)
                     notifyDataSetChanged()
                 }
+                binding.constraintLayout01.setOnClickListener {
+                    onclickListenerItem(item)
+                    notifyDataSetChanged()
+                }
 
-                if (item!!.media.isNotEmpty()) {
-                    setImageUrl(binding.imageView02, item!!.media[0].image)
+                if (item!!.media!!.isNotEmpty()) {
+                    setImageUrl(binding.imageView02, item!!.media?.get(0)?.image)
                 }
 
             }

@@ -97,7 +97,7 @@
     <string name="roof">روف</string>
     <string name="last_roof">أخير مع روف</string>
 
-    <string name="building_area">مساحة البناء (متر مربع)</string>
+    <string name="building_area_m2">مساحة البناء (متر مربع)</string>
     <string name="building_area_title">مساحة البناء</string>
 
     <string name="Maximum_area">أكبر مساحة /الحد الأعلى</string>
@@ -205,6 +205,32 @@
     <string name="room">غرف</string>
     <string name="m2">متر</string>
     <string name="number_of_ads_">رقم الإعلان:</string>
+    <string name="estate_details">تفاصيل العقار</string>
+    <string name="share">مشاركة</string>
+    <string name="sale_or_rent">للبيع أو للإيجار</string>
+    <string name="owner">المُعلن</string>
 
+    <string name="installments_available">قابل للتقسيط</string>
+    <string name="construction_age">عمر البناء</string>
+
+    <string name="building_area">مساحة البناء</string>
+    <string name="property_condition">حالة العقار</string>
+
+    <string name="number_apartments_building">عدد الشقق في المبنى</string>
+    <string name="it_has_garden">تحتوي على حديقة؟</string>
+    <string name="garden_space"> مساحة الحديقة</string>
+
+    <string name="have_roof">تحتوي على روف؟</string>
+
+    <string name="roof_space">مساحة الروف</string>
+    <string name="description">الوصف</string>
+    <string name="property_location">موقع العقار</string>
+    <string name="approximate_location">موقع تقريبي</string>
+    <string name="to_communicate">للتواصل</string>
+
+    <string name="similar_estate">عقارات مشابهة</string>
+    <string name="Whatsapp_is_not_installed">تطبيق واتساب غير مثبت في هاتفك.</string>
+    <string name="block">حظر</string>
+    <string name="report">ابلاغ</string>
 
 </resources>

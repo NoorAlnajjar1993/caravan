@@ -27,7 +27,7 @@ public class ItemBannerBindingImpl extends ItemBannerBinding  {
     }
     private ItemBannerBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (androidx.appcompat.widget.AppCompatImageView) bindings[0]
+            , (com.google.android.material.imageview.ShapeableImageView) bindings[0]
             );
         this.imageView01.setTag(null);
         setRootTag(root);

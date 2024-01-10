@@ -30,11 +30,6 @@ class SplashFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val slide_up: Animation = AnimationUtils.loadAnimation(
-            requireContext(),
-            R.anim.slide_up)
-        binding.imageView2.startAnimation(slide_up)
-
         Handler().postDelayed({
             this@SplashFragment.findNavController().navigate(R.id.action_splashFragment_to_talkThrough1Fragment)
         }, SPLASH_TIME_OUT)

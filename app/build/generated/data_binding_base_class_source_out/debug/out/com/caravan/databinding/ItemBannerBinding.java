@@ -6,19 +6,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatImageView;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.caravan.R;
+import com.google.android.material.imageview.ShapeableImageView;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ItemBannerBinding extends ViewDataBinding {
   @NonNull
-  public final AppCompatImageView imageView01;
+  public final ShapeableImageView imageView01;
 
   protected ItemBannerBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      AppCompatImageView imageView01) {
+      ShapeableImageView imageView01) {
     super(_bindingComponent, _root, _localFieldCount);
     this.imageView01 = imageView01;
   }

@@ -20,8 +20,6 @@ public class RowHousingAdsBindingImpl extends RowHousingAdsBinding  {
         sViewsWithIds.put(R.id.iv_favourite, 8);
     }
     // views
-    @NonNull
-    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
     // variables
     // values
     // listeners
@@ -32,6 +30,7 @@ public class RowHousingAdsBindingImpl extends RowHousingAdsBinding  {
     }
     private RowHousingAdsBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
             , (com.google.android.material.imageview.ShapeableImageView) bindings[6]
             , (androidx.appcompat.widget.AppCompatImageView) bindings[7]
             , (androidx.appcompat.widget.AppCompatImageView) bindings[8]
@@ -41,8 +40,7 @@ public class RowHousingAdsBindingImpl extends RowHousingAdsBinding  {
             , (androidx.appcompat.widget.AppCompatTextView) bindings[1]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[5]
             );
-        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
-        this.mboundView0.setTag(null);
+        this.constraintLayout01.setTag(null);
         this.tvDirection.setTag(null);
         this.tvDistance.setTag(null);
         this.tvLocation.setTag(null);

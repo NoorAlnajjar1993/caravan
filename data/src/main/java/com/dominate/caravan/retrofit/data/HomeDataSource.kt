@@ -25,4 +25,8 @@ class HomeDataSource @Inject constructor(
     suspend fun getFavoriteList(token:String) = getResult {
         networkService.listFavorite(token)
     }
+
+    suspend fun getRealEstate(id:Int) = getResult {
+        networkService.getRealEstate(FavouriteRequest(id))
+    }
 }

@@ -24,6 +24,7 @@ import androidx.viewpager.widget.ViewPager
 import com.caravan.databinding.DialogDeactivateBinding
 import com.caravan.databinding.DialogLogInBinding
 import com.caravan.databinding.DialogLogOutBinding
+import com.caravan.databinding.DialogReportBinding
 import com.dominate.caravan.R
 import com.dominate.caravan.core.base.BaseAdapter
 import com.dominate.caravan.core.base.BaseViewHolder
@@ -392,6 +393,33 @@ fun Context.showLoginDialog(
                 }
             }
         }
+
+        window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+        setCancelable(isCancelable)
+
+    }.show()
+}
+
+fun Context.showBlockDialog(
+    onPositiveButtonClick: (dialog: Dialog) -> Unit = {},
+    isCancelable: Boolean = true,
+    text: String = ""
+) {
+    val dialog = Dialog(this)
+    dialog.apply {
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
+        val binding = DialogReportBinding.inflate(LayoutInflater.from(context))
+        setContentView(binding.root)
+
+        binding.apply {
+            onClickListener = View.OnClickListener {
+                when (it) {
+                    btnLogout -> onPositiveButtonClick(dialog)
+                }
+            }
+        }
+        binding.tvTitle.text = "هل أنت متأكد من انك تريد حظر " + text + " ؟"
 
         window?.setBackgroundDrawableResource(android.R.color.transparent)
 

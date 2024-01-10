@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.airbnb.lottie.LottieAnimationView;
@@ -22,14 +21,10 @@ public final class FragmentSplachBinding implements ViewBinding {
   @NonNull
   public final LottieAnimationView animationView;
 
-  @NonNull
-  public final AppCompatImageView imageView2;
-
   private FragmentSplachBinding(@NonNull ConstraintLayout rootView,
-      @NonNull LottieAnimationView animationView, @NonNull AppCompatImageView imageView2) {
+      @NonNull LottieAnimationView animationView) {
     this.rootView = rootView;
     this.animationView = animationView;
-    this.imageView2 = imageView2;
   }
 
   @Override
@@ -65,13 +60,7 @@ public final class FragmentSplachBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView2;
-      AppCompatImageView imageView2 = rootView.findViewById(id);
-      if (imageView2 == null) {
-        break missingId;
-      }
-
-      return new FragmentSplachBinding((ConstraintLayout) rootView, animationView, imageView2);
+      return new FragmentSplachBinding((ConstraintLayout) rootView, animationView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

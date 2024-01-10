@@ -26,13 +26,20 @@ import com.dominate.caravan.ui.auth.register.RegisterFragment_GeneratedInjector;
 import com.dominate.caravan.ui.auth.register.ReqisterViewModel_HiltModule;
 import com.dominate.caravan.ui.auth.siginin.SiginInViewModel_HiltModule;
 import com.dominate.caravan.ui.auth.siginin.SigininFragment_GeneratedInjector;
+import com.dominate.caravan.ui.commercialads.CommercialAdsFragment_GeneratedInjector;
+import com.dominate.caravan.ui.commercialestate.CommercialEstateFragment_GeneratedInjector;
+import com.dominate.caravan.ui.estatedetails.EstateDetailsFragment_GeneratedInjector;
+import com.dominate.caravan.ui.estatedetails.EstateDetailsViewModel_HiltModule;
 import com.dominate.caravan.ui.favourite.FavouriteFragment_GeneratedInjector;
 import com.dominate.caravan.ui.favourite.FavouriteViewModel_HiltModule;
 import com.dominate.caravan.ui.home.HomeActivity_GeneratedInjector;
 import com.dominate.caravan.ui.home.HomeFragment_GeneratedInjector;
 import com.dominate.caravan.ui.home.HomeViewModel_HiltModule;
+import com.dominate.caravan.ui.housingads.HousingAdsFragment_GeneratedInjector;
 import com.dominate.caravan.ui.notification.NotificationFragment_GeneratedInjector;
 import com.dominate.caravan.ui.notification.NotificationViewModel_HiltModule;
+import com.dominate.caravan.ui.owner.OwnerFragment_GeneratedInjector;
+import com.dominate.caravan.ui.owner.OwnerViewModel_HiltModule;
 import com.dominate.caravan.ui.search.FilterFragment_GeneratedInjector;
 import com.dominate.caravan.ui.search.SearchFragment_GeneratedInjector;
 import com.dominate.caravan.ui.search.SearchViewModel_HiltModule;
@@ -169,9 +176,11 @@ public final class CaravanApp_HiltComponents {
           ChangePasswordViewModel_HiltModule.class,
           CommericalAdvertismentViewModel_HiltModule.class,
           EditPasswordViewModel_HiltModule.class,
+          EstateDetailsViewModel_HiltModule.class,
           FavouriteViewModel_HiltModule.class,
           HomeViewModel_HiltModule.class,
           NotificationViewModel_HiltModule.class,
+          OwnerViewModel_HiltModule.class,
           ProfileViewModel_HiltModule.class,
           RealEstateAdsViewModel_HiltModule.class,
           ReqisterViewModel_HiltModule.class,
@@ -225,9 +234,15 @@ public final class CaravanApp_HiltComponents {
       EditPasswordFragment_GeneratedInjector,
       RegisterFragment_GeneratedInjector,
       SigininFragment_GeneratedInjector,
+      CommercialAdsFragment_GeneratedInjector,
+      CommercialEstateFragment_GeneratedInjector,
+      EstateDetailsFragment_GeneratedInjector,
       FavouriteFragment_GeneratedInjector,
       HomeFragment_GeneratedInjector,
+      HousingAdsFragment_GeneratedInjector,
       NotificationFragment_GeneratedInjector,
+      OwnerFragment_GeneratedInjector,
+      com.dominate.caravan.ui.realestateads.RealEstateAdsFragment_GeneratedInjector,
       FilterFragment_GeneratedInjector,
       SearchFragment_GeneratedInjector,
       FragmentComponent,

@@ -10,7 +10,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.net.toUri
 import androidx.core.os.bundleOf
+import androidx.databinding.BindingAdapter
 import androidx.databinding.ViewDataBinding
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.AsyncListDiffer
@@ -19,9 +21,13 @@ import androidx.viewpager.widget.PagerAdapter
 import com.bumptech.glide.Glide
 import com.caravan.R
 import com.caravan.databinding.ItemBannerBinding
+import com.dominate.caravan.medule.home.Banner
 
-class BannerAdapter (private val context: Context,
-                         private val urls: List<BannerModule>) : PagerAdapter() {
+class BannerAdapter(
+    private val context: Context,
+    private val urls: List<Banner>,
+    private val onclickListener: ((Banner?) -> Unit),
+) : PagerAdapter() {
 
     private val inflater: LayoutInflater
 
@@ -46,7 +52,13 @@ class BannerAdapter (private val context: Context,
         val imageView_01 = imageLayout
             .findViewById(R.id.imageView_01) as ImageView
 
-        imageView_01.setBackgroundResource(urls[position].image)
+        setImageUrl(imageView_01, urls[position].image)
+
+
+        imageView_01.setOnClickListener {
+            onclickListener(urls[position])
+            notifyDataSetChanged()
+        }
 
         view.addView(imageLayout, 0)
         return imageLayout
@@ -59,5 +71,16 @@ class BannerAdapter (private val context: Context,
     override fun restoreState(state: Parcelable?, loader: ClassLoader?) {}
     override fun saveState(): Parcelable? {
         return null
+    }
+
+    @BindingAdapter("imageUrl")
+    fun setImageUrl(imgView: ImageView, imgUrl: String?) {
+        imgUrl?.let {
+            val imgUri = it.toUri().buildUpon().scheme("http").build()
+            Glide.with(imgView.context)
+                .load(imgUri)
+                .into(imgView)
+
+        }
     }
 }

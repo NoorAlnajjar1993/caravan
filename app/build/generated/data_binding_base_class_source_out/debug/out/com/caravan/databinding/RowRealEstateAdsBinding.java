@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
@@ -18,6 +19,9 @@ import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class RowRealEstateAdsBinding extends ViewDataBinding {
+  @NonNull
+  public final ConstraintLayout constraintLayout01;
+
   @NonNull
   public final ShapeableImageView imageView02;
 
@@ -46,10 +50,12 @@ public abstract class RowRealEstateAdsBinding extends ViewDataBinding {
   protected RealEstateAd mItem;
 
   protected RowRealEstateAdsBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ShapeableImageView imageView02, AppCompatImageView imageView03,
-      AppCompatImageView ivFavourite, AppCompatTextView tvDirection, AppCompatTextView tvDistance,
-      AppCompatTextView tvLocation, AppCompatTextView tvName, AppCompatTextView tvPrice) {
+      ConstraintLayout constraintLayout01, ShapeableImageView imageView02,
+      AppCompatImageView imageView03, AppCompatImageView ivFavourite, AppCompatTextView tvDirection,
+      AppCompatTextView tvDistance, AppCompatTextView tvLocation, AppCompatTextView tvName,
+      AppCompatTextView tvPrice) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.constraintLayout01 = constraintLayout01;
     this.imageView02 = imageView02;
     this.imageView03 = imageView03;
     this.ivFavourite = ivFavourite;

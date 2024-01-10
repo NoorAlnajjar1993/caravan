@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,6 +9,7 @@
     tools:context="com.dominate.caravan.ui.onboarding.TalkThrough1Fragment">
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -232,11 +234,12 @@
                 app:tabPaddingBottom="3dp"
                 app:tabPaddingEnd="3dp"
                 app:tabPaddingStart="3dp"
-                app:tabPaddingTop="3dp"></com.google.android.material.tabs.TabLayout>
+                app:tabPaddingTop="3dp" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvMoreHousingAds"
                 android:layout_width="wrap_content"
+                android:visibility="invisible"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="25dp"
@@ -277,6 +280,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvMoreRealEstateAds"
                 android:layout_width="wrap_content"
+                android:visibility="invisible"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="25dp"
@@ -426,6 +430,7 @@
                 android:id="@+id/tvMoreCommercialEstates"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:visibility="invisible"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="25dp"
                 android:fontFamily="@font/neo_sans_arabic"
@@ -468,6 +473,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="25dp"
+                android:visibility="invisible"
                 android:fontFamily="@font/neo_sans_arabic"
                 android:text="@string/more"
                 android:textColor="@color/purble"
@@ -504,4 +510,15 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
+    <ProgressBar
+        android:id="@+id/loading"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:theme="@style/HomeTheme.WhiteAccent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

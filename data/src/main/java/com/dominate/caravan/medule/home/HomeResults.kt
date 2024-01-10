@@ -6,5 +6,6 @@ data class HomeResults(
     val featured_ads: MutableList<Any>, //اعلانات مميزة
     val housing_ads: MutableList<HousingAd>,
     val latest_ads: MutableList<LatestAd>,
-    val real_estate_ads: MutableList<RealEstateAd> // اعلانات عقارية
+    val real_estate_ads: MutableList<RealEstateAd>, // اعلانات عقارية
+    val banners: MutableList<Banner>
 )

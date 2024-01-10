@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/constraintLayout01"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray_3">
+
+    <ProgressBar
+        android:id="@+id/loading"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:theme="@style/HomeTheme.WhiteAccent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView_01"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="12dp"
+        android:src="@drawable/ic_arrow_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/neo_sans_arabic"
+        android:text="@string/estate_details"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_share"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/ic_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_share"
+                android:layout_width="wrap_content"
+                android:text="@string/share"
+                android:layout_marginTop="24dp"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_share"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_favourites"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_favourite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="14dp"
+                android:layout_width="26dp"
+                android:layout_height="26dp"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="343dp"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_favourites" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="7dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:background="@android:color/transparent"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:layoutDirection="ltr"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_pager"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabGravity="center"
+                app:tabIndicator="@android:color/transparent"
+                app:tabIndicatorColor="@android:color/transparent"
+                app:tabIndicatorGravity="stretch"
+                app:tabIndicatorHeight="0dp"
+                app:tabMaxWidth="0dp"
+                app:tabMinWidth="6dp"
+                app:tabMode="scrollable"
+                app:tabPadding="0dp"
+                app:tabPaddingBottom="3dp"
+                app:tabPaddingEnd="3dp"
+                app:tabPaddingStart="3dp"
+                app:tabPaddingTop="3dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text="فيلا للبيع في خلدا"
+                android:textStyle="bold"
+                android:layout_margin="12dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginHorizontal="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text="عمان. خلدا"
+                android:layout_marginHorizontal="14dp"
+                android:drawablePadding="3dp"
+                android:drawableEnd="@drawable/ic_location_purple"
+                android:lines="1"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:textColor="@color/light_gray" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_number_of_ads"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text="رقم الاعلان: 1"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="14dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:textColor="@color/light_gray" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text="30.000 JOD"
+                android:textSize="17sp"
+                android:layout_marginHorizontal="14dp"
+                android:lines="1"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_location"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:textColor="@color/purble" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text="عمان. خلدا"
+                android:layout_marginHorizontal="14dp"
+                android:drawablePadding="3dp"
+                android:drawableEnd="@drawable/ic_area"
+                android:lines="1"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_price"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:textColor="@color/light_gray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text="23/10/2023"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="14dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_area"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:textColor="@color/light_gray" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_seen"
+                android:layout_width="16dp"
+                android:src="@drawable/ic_seen"
+                android:layout_marginTop="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="14dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_area"
+                android:layout_height="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_seen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text="423"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="14dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintEnd_toStartOf="@+id/iv_seen"
+                app:layout_constraintTop_toBottomOf="@+id/tv_area"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:textColor="@color/light_gray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_estate_details"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/estate_details"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_seen"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout_02"
+                android:layout_width="match_parent"
+                android:layout_margin="14dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_estate_details"
+                android:background="@drawable/outline_purple"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_sale_or_rent_title"
+                    android:text="@string/sale_or_rent"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_land"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_sale_or_rent"
+                    tools:text="@string/sale_or_rent"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:id="@+id/view_01"
+                    android:layout_marginHorizontal="17dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sale_or_rent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_owner_title"
+                    android:text="@string/owner"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_land"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_owner"
+                    android:text="المالك"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:id="@+id/view_02"
+                    android:layout_marginHorizontal="17dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_installments_available_title"
+                    android:text="@string/installments_available"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_installments_available"
+                    tools:text="@string/owner"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:id="@+id/view_03"
+                    android:layout_marginHorizontal="17dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_installments_available"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_construction_age_title"
+                    android:text="@string/construction_age"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_construction"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_construction_age"
+                    tools:text="@string/owner"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:id="@+id/view_04"
+                    android:layout_marginHorizontal="17dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_construction_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_furnished_title"
+                    android:text="@string/furnished"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_construction"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_furnished"
+                    tools:text="@string/owner"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:id="@+id/view_05"
+                    android:layout_marginHorizontal="17dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_furnished"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_building_area_title"
+                    android:text="@string/building_area"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_directions"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_building_area"
+                    tools:text="@string/owner"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:id="@+id/view_06"
+                    android:layout_marginHorizontal="17dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_building_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_floor_title"
+                    android:text="@string/floor"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_buliding"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_floor"
+                    tools:text="@string/owner"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:id="@+id/view_07"
+                    android:layout_marginHorizontal="17dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_floor"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_number_bedrooms_title"
+                    android:text="@string/number_bedrooms"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_land"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_number_bedrooms"
+                    tools:text="@string/owner"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:id="@+id/view_08"
+                    android:layout_marginHorizontal="17dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_number_bedrooms"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_number_bathrooms_title"
+                    android:text="@string/number_bathrooms"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_bathroom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_number_bathrooms"
+                    tools:text="@string/owner"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:id="@+id/view_09"
+                    android:layout_marginHorizontal="17dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_number_bathrooms"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_property_condition_title"
+                    android:text="@string/property_condition"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_house_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_property_condition"
+                    tools:text="@string/owner"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:id="@+id/view_10"
+                    android:layout_marginHorizontal="17dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_property_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_number_apartments_building_title"
+                    android:text="@string/number_apartments_building"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_buildings_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_number_apartments_building"
+                    tools:text="@string/owner"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:id="@+id/view_11"
+                    android:layout_marginHorizontal="17dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_number_apartments_building"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_it_has_garden_title"
+                    android:text="@string/it_has_garden"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_tree"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_it_has_garden"
+                    tools:text="@string/owner"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:id="@+id/view_12"
+                    android:layout_marginHorizontal="17dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_it_has_garden"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_garden_space_title"
+                    android:text="@string/garden_space"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_tree"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_garden_space"
+                    tools:text="@string/owner"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:id="@+id/view_13"
+                    android:layout_marginHorizontal="17dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_garden_space"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_have_roof_title"
+                    android:text="@string/have_roof"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_roof"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_have_roof"
+                    tools:text="@string/owner"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:id="@+id/view_14"
+                    android:layout_marginHorizontal="17dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_have_roof"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_roof_space_title"
+                    android:text="@string/roof_space"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:drawablePadding="16dp"
+                    android:padding="16dp"
+                    android:drawableEnd="@drawable/ic_roof"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_roof_space"
+                    tools:text="@string/owner"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_description_title"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/description"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout_02"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_description"
+                android:fontFamily="@font/neo_sans_arabic"
+                tools:text="@string/description"
+                android:textColor="@color/light_gray"
+                android:textSize="16sp"
+                android:textDirection="rtl"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_description_title"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_property_location_title"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/property_location"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="24dp"
+                android:layout_width="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_description"
+                android:layout_height="wrap_content"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_approximate_location"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="@string/approximate_location"
+                android:textColor="@color/light_gray"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="24dp"
+                android:layout_width="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_description"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardViewMap"
+                app:layout_constraintTop_toBottomOf="@+id/tv_approximate_location"
+                android:background="@drawable/rounded_background"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp" >
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_to_communicate_title"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/to_communicate"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="24dp"
+                android:layout_width="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardViewMap"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout_03"
+                app:layout_constraintTop_toBottomOf="@+id/tv_to_communicate_title"
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_bg_light_blue_2"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="14dp"
+                android:padding="16dp"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_arrow_left"
+                    android:src="@drawable/ic_arrow_left"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_user_name"
+                    tools:text="Mahmodul Hasan"
+                    android:layout_marginEnd="17dp"
+                    android:fontFamily="@font/neo_sans_arabic_bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_gray"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_user_owner"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_profile_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_user_owner"
+                    android:text="مالك العقار"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="17dp"
+                    android:textColor="@color/light_gray"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_user_name"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_profile_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/iv_profile_image"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_account"
+                    android:scaleType="centerCrop"
+                    app:strokeColor="@color/purble"
+                    app:strokeWidth="0.5dp"
+                    android:adjustViewBounds="true"
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_bg_gray"
+                android:paddingBottom="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout_03">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/photo6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView_05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:text="@string/increase_the_chances"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_03" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView_06"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/neo_sans_arabic_bold"
+                    android:text="@string/add_your_ad_now"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_05" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView_07"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="18dp"
+                    android:drawableEnd="@drawable/ic_check"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:text="@string/adv_1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_06" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView_08"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="15dp"
+                    android:drawableEnd="@drawable/ic_check"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:text="@string/adv_2"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_07" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView_09"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="18dp"
+                    android:drawableEnd="@drawable/ic_check"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:text="@string/adv_3"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_08" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_Post_ad_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginVertical="16dp"
+                    android:backgroundTint="@color/purble"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:text="@string/Post_ad_now"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:cornerRadius="@dimen/_8sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_09" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_similar_properties"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="@string/similar_estate"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout_04"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSimilarEstate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                app:reverseLayout="true"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@+id/tv_similar_properties"
+                tools:itemCount="1"
+                tools:listitem="@layout/row_similar_estate" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@null"
+            android:elevation="0dp"
+            android:scaleType="center"
+            android:tint="@null"
+            app:backgroundTint="@android:color/transparent"
+            app:elevation="0dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:maxImageSize="@dimen/_62sdp"
+            app:srcCompat="@drawable/ic_call"
+            app:tint="@null" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/fab"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="60dp"
+            android:background="@null"
+            android:elevation="0dp"
+            android:scaleType="center"
+            android:tint="@null"
+            app:backgroundTint="@android:color/transparent"
+            app:elevation="0dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:maxImageSize="@dimen/_62sdp"
+            app:srcCompat="@drawable/ic_whatsapp"
+            app:tint="@null" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

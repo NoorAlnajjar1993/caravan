@@ -9,6 +9,7 @@
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
+        android:id="@+id/constraintLayout01"
         android:background="@drawable/outline_light_purple"
         android:layout_marginHorizontal="20dp"
         android:paddingBottom="12dp"
@@ -86,7 +87,7 @@
             android:textSize="16sp"
             android:layout_marginEnd="12dp"
             android:drawablePadding="3dp"
-            android:drawableEnd="@drawable/ic_directions"
+            android:drawableEnd="@drawable/ic_bathroom"
             android:lines="1"
             android:maxLines="1"
             android:ellipsize="end"
@@ -114,7 +115,7 @@
             android:textSize="16sp"
             android:layout_marginEnd="12dp"
             android:drawablePadding="3dp"
-            android:drawableEnd="@drawable/ic_car"
+            android:drawableEnd="@drawable/ic_area"
             android:lines="1"
             android:maxLines="1"
             android:ellipsize="end"

@@ -67,6 +67,43 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_homeFragment_to_estateDetailsFragment"
+            app:destination="@id/estateDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_homeFragment_to_housingAdsFragment"
+            app:destination="@id/housingAdsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_homeFragment_to_commercialEstateFragment"
+            app:destination="@id/commercialEstateFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_homeFragment_to_realEstateAdsFragment2"
+            app:destination="@id/realEstateAdsFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_homeFragment_to_commercialAdsFragment"
+            app:destination="@id/commercialAdsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/talkThrough3Fragment"
@@ -313,4 +350,113 @@
         tools:layout="@layout/fragment_commerical_adverisment"
         android:name="com.dominate.caravan.ui.addads.commericaladvertisment.CommericalAdvertismentFragment"
         android:label="CommericalAdvertismentFragment" />
+    <fragment
+        android:id="@+id/estateDetailsFragment"
+        tools:layout="@layout/fragment_real_estate_ads"
+        android:name="com.dominate.caravan.ui.estatedetails.EstateDetailsFragment"
+        android:label="EstateDetailsFragment" >
+        <action
+            android:id="@+id/action_estateDetailsFragment_to_sigininFragment"
+            app:destination="@id/sigininFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_estateDetailsFragment_to_ownerFragment"
+            app:destination="@id/ownerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/ownerFragment"
+        tools:layout="@layout/fragment_owner"
+        android:name="com.dominate.caravan.ui.owner.OwnerFragment"
+        android:label="OwnerFragment" />
+    <fragment
+        android:id="@+id/housingAdsFragment"
+        tools:layout="@layout/fragment_housing_ads"
+        android:name="com.dominate.caravan.ui.housingads.HousingAdsFragment"
+        android:label="HousingAdsFragment" >
+        <action
+            android:id="@+id/action_housingAdsFragment_to_sigininFragment"
+            app:destination="@id/sigininFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_housingAdsFragment_to_estateDetailsFragment"
+            app:destination="@id/estateDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/commercialEstateFragment"
+        tools:layout="@layout/fragment_commercial_estate"
+        android:name="com.dominate.caravan.ui.commercialestate.CommercialEstateFragment"
+        android:label="CommercialEstateFragment">
+        <action
+            android:id="@+id/action_commercialEstateFragment_to_sigininFragment"
+            app:destination="@id/sigininFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_commercialEstateFragment_to_estateDetailsFragment"
+            app:destination="@id/estateDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/realEstateAdsFragment2"
+        tools:layout="@layout/fragment_real_estate_ads_home"
+        android:name="com.dominate.caravan.ui.realestateads.RealEstateAdsFragment"
+        android:label="RealEstateAdsFragment" >
+
+        <action
+        android:id="@+id/action_realEstateAdsFragment2_to_sigininFragment"
+        app:destination="@id/sigininFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_realEstateAdsFragment2_to_estateDetailsFragment"
+            app:destination="@id/estateDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/commercialAdsFragment"
+        tools:layout="@layout/fragment_commercial_ads"
+        android:name="com.dominate.caravan.ui.commercialads.CommercialAdsFragment"
+        android:label="CommercialAdsFragment" >
+        <action
+            android:id="@+id/action_commercialAdsFragment_to_sigininFragment"
+            app:destination="@id/sigininFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_commercialAdsFragment_to_estateDetailsFragment"
+            app:destination="@id/estateDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
 </navigation>

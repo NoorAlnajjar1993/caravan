@@ -14,7 +14,8 @@ import com.dominate.caravan.medule.home.HousingAd
 
 class HousingAdsAdapter (
     marketCategories: MutableList<HousingAd>?,
-    private val onclickListener: ((HousingAd?) -> Unit)
+    private val onclickListener: ((HousingAd?) -> Unit),
+    private val onclickListenerItem: ((HousingAd?) -> Unit),
 ) : BaseAdapter<HousingAd, HousingAdsAdapter.MarketCategoryItemViewHolder>(marketCategories) {
 
 
@@ -39,6 +40,10 @@ class HousingAdsAdapter (
 
                 binding.ivFavourite.setOnClickListener {
                     onclickListener(item)
+                    notifyDataSetChanged()
+                }
+                binding.constraintLayout01.setOnClickListener {
+                    onclickListenerItem(item)
                     notifyDataSetChanged()
                 }
                 if (item!!.media.isNotEmpty()) {

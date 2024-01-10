@@ -8,7 +8,7 @@
             type="com.dominate.caravan.medule.home.CommercialEstate" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout_02"
+        android:id="@+id/constraintLayout_01"
         android:layout_width="310dp"
         android:background="@drawable/outline_light_purple"
         android:layout_marginHorizontal="20dp"
@@ -74,7 +74,7 @@
             android:textSize="16sp"
             android:layout_marginEnd="12dp"
             android:drawablePadding="3dp"
-            android:drawableEnd="@drawable/ic_directions"
+            android:drawableEnd="@drawable/ic_bathroom"
             android:lines="1"
             android:maxLines="1"
             android:ellipsize="end"
@@ -102,7 +102,7 @@
             android:textSize="16sp"
             android:layout_marginEnd="12dp"
             android:drawablePadding="3dp"
-            android:drawableEnd="@drawable/ic_car"
+            android:drawableEnd="@drawable/ic_area"
             android:lines="1"
             android:maxLines="1"
             android:ellipsize="end"

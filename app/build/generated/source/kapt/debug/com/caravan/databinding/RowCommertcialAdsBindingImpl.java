@@ -19,8 +19,6 @@ public class RowCommertcialAdsBindingImpl extends RowCommertcialAdsBinding  {
         sViewsWithIds.put(R.id.iv_favourite, 6);
     }
     // views
-    @NonNull
-    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
     // variables
     // values
     // listeners
@@ -31,6 +29,7 @@ public class RowCommertcialAdsBindingImpl extends RowCommertcialAdsBinding  {
     }
     private RowCommertcialAdsBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
             , (com.google.android.material.imageview.ShapeableImageView) bindings[5]
             , (androidx.appcompat.widget.AppCompatImageView) bindings[6]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
@@ -38,8 +37,7 @@ public class RowCommertcialAdsBindingImpl extends RowCommertcialAdsBinding  {
             , (androidx.appcompat.widget.AppCompatTextView) bindings[1]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[4]
             );
-        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
-        this.mboundView0.setTag(null);
+        this.constraintLayout01.setTag(null);
         this.tvDirection.setTag(null);
         this.tvLocation.setTag(null);
         this.tvName.setTag(null);
@@ -107,7 +105,8 @@ public class RowCommertcialAdsBindingImpl extends RowCommertcialAdsBinding  {
         java.lang.String itemTitle = null;
         java.lang.String tvDirectionAndroidStringNumberOfAdsCharStringValueOfItemId = null;
         java.lang.String stringValueOfItemId = null;
-        int itemId = 0;
+        java.lang.Integer itemId = null;
+        int androidxDatabindingViewDataBindingSafeUnboxItemId = 0;
         java.lang.String itemRegion = null;
 
         if ((dirtyFlags & 0x3L) != 0) {
@@ -126,11 +125,15 @@ public class RowCommertcialAdsBindingImpl extends RowCommertcialAdsBinding  {
                 }
 
 
-                // read String.valueOf(item.id)
-                stringValueOfItemId = java.lang.String.valueOf(itemId);
+                // read androidx.databinding.ViewDataBinding.safeUnbox(item.id)
+                androidxDatabindingViewDataBindingSafeUnboxItemId = androidx.databinding.ViewDataBinding.safeUnbox(itemId);
 
 
-                // read ((@android:string/number_of_ads_) + (' ')) + (String.valueOf(item.id))
+                // read String.valueOf(androidx.databinding.ViewDataBinding.safeUnbox(item.id))
+                stringValueOfItemId = java.lang.String.valueOf(androidxDatabindingViewDataBindingSafeUnboxItemId);
+
+
+                // read ((@android:string/number_of_ads_) + (' ')) + (String.valueOf(androidx.databinding.ViewDataBinding.safeUnbox(item.id)))
                 tvDirectionAndroidStringNumberOfAdsCharStringValueOfItemId = ((tvDirection.getResources().getString(R.string.number_of_ads_)) + (' ')) + (stringValueOfItemId);
         }
         // batch finished

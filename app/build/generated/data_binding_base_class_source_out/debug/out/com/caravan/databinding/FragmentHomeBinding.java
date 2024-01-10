@@ -4,12 +4,14 @@ package com.caravan.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewpager.widget.ViewPager;
@@ -62,7 +64,13 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final LinearLayoutCompat llSearchView;
 
   @NonNull
+  public final ProgressBar loading;
+
+  @NonNull
   public final AppCompatImageView mageView01;
+
+  @NonNull
+  public final NestedScrollView nestedScrollView;
 
   @NonNull
   public final RecyclerView rvCommercialAds;
@@ -134,7 +142,8 @@ public final class FragmentHomeBinding implements ViewBinding {
       @NonNull ConstraintLayout constraintLayout01, @NonNull ConstraintLayout constraintLayout02,
       @NonNull TextInputEditText etSearch, @NonNull AppCompatImageView imageView03,
       @NonNull AppCompatImageView imageView2, @NonNull LinearLayoutCompat llSearchView,
-      @NonNull AppCompatImageView mageView01, @NonNull RecyclerView rvCommercialAds,
+      @NonNull ProgressBar loading, @NonNull AppCompatImageView mageView01,
+      @NonNull NestedScrollView nestedScrollView, @NonNull RecyclerView rvCommercialAds,
       @NonNull RecyclerView rvCommercialEstates, @NonNull RecyclerView rvHousingAds,
       @NonNull RecyclerView rvRealEstateAds, @NonNull TabLayout tabLayout,
       @NonNull AppCompatTextView textView05, @NonNull AppCompatTextView textView06,
@@ -159,7 +168,9 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.imageView03 = imageView03;
     this.imageView2 = imageView2;
     this.llSearchView = llSearchView;
+    this.loading = loading;
     this.mageView01 = mageView01;
+    this.nestedScrollView = nestedScrollView;
     this.rvCommercialAds = rvCommercialAds;
     this.rvCommercialEstates = rvCommercialEstates;
     this.rvHousingAds = rvHousingAds;
@@ -282,9 +293,21 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.loading;
+      ProgressBar loading = rootView.findViewById(id);
+      if (loading == null) {
+        break missingId;
+      }
+
       id = R.id.mageView_01;
       AppCompatImageView mageView01 = rootView.findViewById(id);
       if (mageView01 == null) {
+        break missingId;
+      }
+
+      id = R.id.nestedScrollView;
+      NestedScrollView nestedScrollView = rootView.findViewById(id);
+      if (nestedScrollView == null) {
         break missingId;
       }
 
@@ -416,9 +439,9 @@ public final class FragmentHomeBinding implements ViewBinding {
 
       return new FragmentHomeBinding((ConstraintLayout) rootView, btnCommercialRealEstate,
           btnHouseVilla, btnLandFarm, btnPartment, btnPostAdNow, btnSearchNow, constraintLayout01,
-          constraintLayout02, etSearch, imageView03, imageView2, llSearchView, mageView01,
-          rvCommercialAds, rvCommercialEstates, rvHousingAds, rvRealEstateAds, tabLayout,
-          textView05, textView06, textView07, textView08, textView09, tvCommercialAds,
+          constraintLayout02, etSearch, imageView03, imageView2, llSearchView, loading, mageView01,
+          nestedScrollView, rvCommercialAds, rvCommercialEstates, rvHousingAds, rvRealEstateAds,
+          tabLayout, textView05, textView06, textView07, textView08, textView09, tvCommercialAds,
           tvCommercialEstates, tvHousingAds, tvMoreCommercialAds, tvMoreCommercialEstates,
           tvMoreHousingAds, tvMoreRealEstateAds, tvRealEstateAds, tvRent, tvSale, viewPager);
     }

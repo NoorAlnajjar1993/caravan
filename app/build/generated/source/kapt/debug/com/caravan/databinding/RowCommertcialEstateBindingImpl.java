@@ -40,7 +40,7 @@ public class RowCommertcialEstateBindingImpl extends RowCommertcialEstateBinding
             , (androidx.appcompat.widget.AppCompatTextView) bindings[1]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[5]
             );
-        this.constraintLayout02.setTag(null);
+        this.constraintLayout01.setTag(null);
         this.tvDirection.setTag(null);
         this.tvDistance.setTag(null);
         this.tvLocation.setTag(null);
