@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.hilt:hilt-common:1.0.0-alpha02@aar">
     <CLASSES>
-      <root url="jar://D:/jdks/caches/transforms-2/files-2.1/909245aa2d8b42384dbba2a0cc9d66e1/jetified-hilt-common-1.0.0-alpha02/jars/classes.jar!/" />
-      <root url="file://D:/jdks/caches/transforms-2/files-2.1/909245aa2d8b42384dbba2a0cc9d66e1/jetified-hilt-common-1.0.0-alpha02/AndroidManifest.xml" />
+      <root url="jar://D:/jdks/caches/transforms-2/files-2.1/3e0a88541a08bc347902f6feaf319c87/jetified-hilt-common-1.0.0-alpha02/jars/classes.jar!/" />
+      <root url="file://D:/jdks/caches/transforms-2/files-2.1/3e0a88541a08bc347902f6feaf319c87/jetified-hilt-common-1.0.0-alpha02/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

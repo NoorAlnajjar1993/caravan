@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.vedraj360:DesignerToast:0.1.2@aar">
     <CLASSES>
-      <root url="jar://D:/jdks/caches/transforms-2/files-2.1/2661d272857e2c152d4fc371eca31347/jetified-DesignerToast-0.1.2/jars/classes.jar!/" />
-      <root url="file://D:/jdks/caches/transforms-2/files-2.1/2661d272857e2c152d4fc371eca31347/jetified-DesignerToast-0.1.2/res" />
-      <root url="file://D:/jdks/caches/transforms-2/files-2.1/2661d272857e2c152d4fc371eca31347/jetified-DesignerToast-0.1.2/AndroidManifest.xml" />
+      <root url="file://D:/jdks/caches/transforms-2/files-2.1/5f39ea761e06fff53dee6008784ba980/jetified-DesignerToast-0.1.2/res" />
+      <root url="jar://D:/jdks/caches/transforms-2/files-2.1/5f39ea761e06fff53dee6008784ba980/jetified-DesignerToast-0.1.2/jars/classes.jar!/" />
+      <root url="file://D:/jdks/caches/transforms-2/files-2.1/5f39ea761e06fff53dee6008784ba980/jetified-DesignerToast-0.1.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

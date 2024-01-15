@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.markomilos:paginate:1.0.0@aar">
     <CLASSES>
-      <root url="jar://D:/jdks/caches/transforms-2/files-2.1/8d9ced661f1b95129fe6a8fbef0141ae/jetified-paginate-1.0.0/jars/classes.jar!/" />
-      <root url="file://D:/jdks/caches/transforms-2/files-2.1/8d9ced661f1b95129fe6a8fbef0141ae/jetified-paginate-1.0.0/res" />
-      <root url="file://D:/jdks/caches/transforms-2/files-2.1/8d9ced661f1b95129fe6a8fbef0141ae/jetified-paginate-1.0.0/AndroidManifest.xml" />
+      <root url="jar://D:/jdks/caches/transforms-2/files-2.1/d59f2ebf8259cfc4d6d950c8a2fbbddf/jetified-paginate-1.0.0/jars/classes.jar!/" />
+      <root url="file://D:/jdks/caches/transforms-2/files-2.1/d59f2ebf8259cfc4d6d950c8a2fbbddf/jetified-paginate-1.0.0/AndroidManifest.xml" />
+      <root url="file://D:/jdks/caches/transforms-2/files-2.1/d59f2ebf8259cfc4d6d950c8a2fbbddf/jetified-paginate-1.0.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/jdks/caches/modules-2/files-2.1/com.github.markomilos/paginate/1.0.0/65ab8b3a38620e9c06becfef85b36132f3fa5c1d/paginate-1.0.0-javadoc.jar!/" />

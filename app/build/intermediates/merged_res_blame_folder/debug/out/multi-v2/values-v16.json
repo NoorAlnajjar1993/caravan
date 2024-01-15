@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "D:\\jdks\\caches\\transforms-2\\files-2.1\\893a5d726c1662a589498de2933e6756\\core-1.3.2\\res\\values-v16\\values-v16.xml",
+                    "source": "D:\\jdks\\caches\\transforms-2\\files-2.1\\171fba9bf848af58f10b590b607f9f55\\core-1.3.2\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "D:\\jdks\\caches\\transforms-2\\files-2.1\\9795d19233ff20f13288eae69e31374d\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
+                    "source": "D:\\jdks\\caches\\transforms-2\\files-2.1\\72afc561e078c933f9ed91df145a2b3d\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

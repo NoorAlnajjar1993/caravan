@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray_3">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-89dp"
+        tools:layout_editor_absoluteY="141dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/ic_arrow_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="تفاصيل إضافية للإعلان" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ad_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="عنوان الإعلان"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_ad_title"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ad_title">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_ad_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="عنوان الإعلان"
+                    android:inputType="textMultiLine"
+                    android:maxLength="100"
+                    android:gravity="top"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_End"
+                    app:layout_constraintStart_toStartOf="@+id/gl_Start"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ad_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="وصف العقار(تفاصيل إضافية للعقار)"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tl_ad_title" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_ad_description"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ad_description">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_ad_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="اكتب وصف أو تفاصيل إضافية للعقار."
+                    android:inputType="textMultiLine"
+                    android:maxLength="100"
+                    android:gravity="top"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_End"
+                    app:layout_constraintStart_toStartOf="@+id/gl_Start"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="ملكية العقار"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tl_ad_description" />
+            <RadioGroup
+                android:id="@+id/radioGroup_apartment_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_owner">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio_owner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:button="@drawable/selector_apartment_condition"
+                    android:checked="true"
+                    android:fontFamily="@font/neo_sans_arabic"
+
+                    android:padding="16dp"
+                    android:text="صاحب العقار"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio_not_owner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:button="@drawable/selector_apartment_condition"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:padding="16dp"
+                    android:text="وسيط تجاري"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_installment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="قابل للتقسيط"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup_apartment_condition" />
+            <RadioGroup
+                android:id="@+id/radioGroup_installment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_installment">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio_yes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:button="@drawable/selector_apartment_condition"
+                    android:checked="true"
+                    android:fontFamily="@font/neo_sans_arabic"
+
+                    android:padding="16dp"
+                    android:text="نعم"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radio_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:button="@drawable/selector_apartment_condition"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:padding="16dp"
+                    android:text="لا"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="السعر (دينار أردني)"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup_installment" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_price"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_price">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="السعر"
+                    android:inputType="numberDecimal"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_End"
+                    app:layout_constraintStart_toStartOf="@+id/gl_Start"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_region"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="المنطقة"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tl_price" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_region"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_region">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_region"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="المنطقة"
+                    android:inputType="text"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_End"
+                    app:layout_constraintStart_toStartOf="@+id/gl_Start"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="رقم الموبايل"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tl_region" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_phone_number"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_phone_number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="match_parent"
+                    android:textAlignment="viewEnd"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="رقم الموبايل"
+                    android:inputType="phone"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_End"
+                    app:layout_constraintStart_toStartOf="@+id/gl_Start"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_whatsApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="رقم الواتساب"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tl_phone_number" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_whatsApp"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_whatsApp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_whatsApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:hint="رقم الواتساب"
+                    android:textAlignment="viewEnd"
+                    android:inputType="phone"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_End"
+                    app:layout_constraintStart_toStartOf="@+id/gl_Start"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_upload_media"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="تحميل الوسائط (صور /فيديوهات)"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tl_whatsApp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_maximum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="الحد الأقصى هو 20 صورة/فيديو"
+                android:textColor="@color/light_gray"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_upload_media" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_uploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginHorizontal="16dp"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toBottomOf="@+id/tv_maximum"
+                android:src="@drawable/ic_upload_images"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_Media"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_marginTop="8dp"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/iv_uploadImage"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                android:paddingHorizontal="16dp"
+                app:spanCount="2"
+                tools:itemCount="4"
+                tools:listitem="@layout/row_add_media" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/purble"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:cornerRadius="@dimen/_8sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_Media" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

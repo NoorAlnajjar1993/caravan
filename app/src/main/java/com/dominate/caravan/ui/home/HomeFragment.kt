@@ -128,6 +128,9 @@ class HomeFragment : BaseFragment() {
         binding.tvMoreCommercialAds.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_commercialAdsFragment)
         }
+        binding.btnPostAdNow.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_addAdsFragment)
+        }
         observeHome()
     }
 

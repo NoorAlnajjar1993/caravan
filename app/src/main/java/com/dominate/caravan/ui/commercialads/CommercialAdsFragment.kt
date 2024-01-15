@@ -38,7 +38,7 @@ class CommercialAdsFragment  : BaseFragment()  , TextWatcher {
 
      var binding: FragmentCommercialAdsBinding by autoCleared()
     private val viewModel: HomeViewModel by viewModels()
-    lateinit var commercialAdsAdapter: CommercialAdsAdapter
+    lateinit var commercialAdsAdapter: CommercialAdsSingleAdapter
 
     var token: String? = ""
 
@@ -126,7 +126,7 @@ class CommercialAdsFragment  : BaseFragment()  , TextWatcher {
 
     private fun commercialAdsData(commercialAds: MutableList<CommercialAd>) {
         if (commercialAds.isNotEmpty()) {
-            commercialAdsAdapter = CommercialAdsAdapter(commercialAds, {
+            commercialAdsAdapter = CommercialAdsSingleAdapter(commercialAds, {
                 if (prefs.isLoggedIn && !token.isNullOrEmpty()) {
                     it!!.is_favorite = !it.is_favorite!!
                     it.id?.let { it1 -> AddRemoveFavorite(id = it1, it.is_favorite!!) }

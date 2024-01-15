@@ -22,10 +22,10 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imageView_02"
             android:layout_width="93dp"
-            android:src="@drawable/photo5"
             android:layout_height="93dp"
             android:scaleType="fitXY"
             android:layout_margin="18dp"
+            android:src="@drawable/ic_building_hint"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>

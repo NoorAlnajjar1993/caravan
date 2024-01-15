@@ -104,6 +104,13 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_homeFragment_to_addAdsFragment"
+            app:destination="@id/addAdsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/talkThrough3Fragment"
@@ -281,6 +288,13 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_profileFragment_to_addAdsFragment"
+            app:destination="@id/addAdsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/changePasswordFragment"
@@ -344,12 +358,50 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_addAdsFragment_to_addEstateAdsFragment"
+            app:destination="@id/addEstateAdsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_addAdsFragment_to_addHousingAdsFragment"
+            app:destination="@id/addHousingAdsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_addAdsFragment_to_addCommercialAdsFragment"
+            app:destination="@id/addCommercialAdsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_addAdsFragment_to_sigininFragment"
+            app:destination="@id/sigininFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/commericalAdvertismentFragment"
         tools:layout="@layout/fragment_commerical_adverisment"
         android:name="com.dominate.caravan.ui.addads.commericaladvertisment.CommericalAdvertismentFragment"
-        android:label="CommericalAdvertismentFragment" />
+        android:label="CommericalAdvertismentFragment" >
+        <action
+            android:id="@+id/action_commericalAdvertismentFragment_to_addAdsImages"
+            app:destination="@id/addAdsImages"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
     <fragment
         android:id="@+id/estateDetailsFragment"
         tools:layout="@layout/fragment_real_estate_ads"
@@ -454,6 +506,116 @@
         <action
             android:id="@+id/action_commercialAdsFragment_to_estateDetailsFragment"
             app:destination="@id/estateDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addEstateAdsFragment"
+        tools:layout="@layout/fragment_add_estate_ads"
+        android:name="com.dominate.caravan.ui.addads.addestateads.AddEstateAdsFragment"
+        android:label="AddEstateAdsFragment" >
+        <action
+            android:id="@+id/action_addEstateAdsFragment_to_commericalAdvertismentFragment"
+            app:destination="@id/commericalAdvertismentFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_addEstateAdsFragment_to_addCommercialEstateFragment"
+            app:destination="@id/addCommercialEstateFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addCommercialEstateFragment"
+        tools:layout="@layout/fragment_add_commercial_estate"
+        android:name="com.dominate.caravan.ui.addads.addcommercialestate.AddCommercialEstateFragment"
+        android:label="AddCommercialEstateFragment" >
+        <action
+            android:id="@+id/action_addCommercialEstateFragment_to_commericalAdSpecificationsFragment"
+            app:destination="@id/commericalAdSpecificationsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_addCommercialEstateFragment_to_addAdsImages"
+            app:destination="@id/addAdsImages"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/commericalAdSpecificationsFragment"
+        tools:layout="@layout/fragment_commerical_ad_specification"
+        android:name="com.dominate.caravan.ui.addads.addcommercialestate.CommericalAdSpecificationsFragment"
+        android:label="CommericalAdSpecificationsFragment">
+        <action
+            android:id="@+id/action_commericalAdSpecificationsFragment_to_addAdsImages"
+            app:destination="@id/addAdsImages"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addAdsImages"
+        tools:layout="@layout/fragment_add_ads_images"
+        android:name="com.dominate.caravan.ui.addads.addadsimages.AddAdsImages"
+        android:label="AddAdsImages" >
+        <action
+            android:id="@+id/action_addAdsImages_to_mapsFragment"
+            app:destination="@id/mapsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        tools:layout="@layout/fragment_maps"
+        android:name="com.dominate.caravan.ui.map.MapsFragment"
+        android:label="MapsFragment">
+        <action
+            android:id="@+id/action_mapsFragment_to_completeFragment"
+            app:destination="@id/completeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/completeFragment"
+        tools:layout="@layout/fragment_complete"
+        android:name="com.dominate.caravan.ui.addads.complete.CompleteFragment"
+        android:label="CompleteFragment" />
+    <fragment
+        android:id="@+id/addHousingAdsFragment"
+        tools:layout="@layout/fragment_add_housing_ads"
+        android:name="com.dominate.caravan.ui.addads.addhousingads.AddHousingAdsFragment"
+        android:label="AddHousingAdsFragment" >
+        <action
+            android:id="@+id/action_addHousingAdsFragment_to_addAdsImages"
+            app:destination="@id/addAdsImages"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addCommercialAdsFragment"
+        tools:layout="@layout/fragment_add_commercial_ads"
+        android:name="com.dominate.caravan.ui.addads.addcommercialads.AddCommercialAdsFragment"
+        android:label="AddCommercialAdsFragment" >
+        <action
+            android:id="@+id/action_addCommercialAdsFragment_to_addAdsImages"
+            app:destination="@id/addAdsImages"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"

@@ -18,8 +18,14 @@ import com.dominate.caravan.ui.account.realestateads.RealEstateAdsFragment_Gener
 import com.dominate.caravan.ui.account.realestateads.RealEstateAdsViewModel_HiltModule;
 import com.dominate.caravan.ui.addads.AddAdsFragment_GeneratedInjector;
 import com.dominate.caravan.ui.addads.AddAdsViewModel_HiltModule;
+import com.dominate.caravan.ui.addads.addadsimages.AddAdsImages_GeneratedInjector;
+import com.dominate.caravan.ui.addads.addcommercialads.AddCommercialAdsFragment_GeneratedInjector;
+import com.dominate.caravan.ui.addads.addcommercialestate.AddCommercialEstateFragment_GeneratedInjector;
+import com.dominate.caravan.ui.addads.addcommercialestate.CommericalAdSpecificationsFragment_GeneratedInjector;
+import com.dominate.caravan.ui.addads.addestateads.AddEstateAdsFragment_GeneratedInjector;
+import com.dominate.caravan.ui.addads.addhousingads.AddHousingAdsFragment_GeneratedInjector;
 import com.dominate.caravan.ui.addads.commericaladvertisment.CommericalAdvertismentFragment_GeneratedInjector;
-import com.dominate.caravan.ui.addads.commericaladvertisment.CommericalAdvertismentViewModel_HiltModule;
+import com.dominate.caravan.ui.addads.complete.CompleteFragment_GeneratedInjector;
 import com.dominate.caravan.ui.auth.editpassword.EditPasswordFragment_GeneratedInjector;
 import com.dominate.caravan.ui.auth.editpassword.EditPasswordViewModel_HiltModule;
 import com.dominate.caravan.ui.auth.register.RegisterFragment_GeneratedInjector;
@@ -174,7 +180,6 @@ public final class CaravanApp_HiltComponents {
           BannerViewModel_HiltModule.class,
           ActivityCBuilderModule.class,
           ChangePasswordViewModel_HiltModule.class,
-          CommericalAdvertismentViewModel_HiltModule.class,
           EditPasswordViewModel_HiltModule.class,
           EstateDetailsViewModel_HiltModule.class,
           FavouriteViewModel_HiltModule.class,
@@ -230,7 +235,14 @@ public final class CaravanApp_HiltComponents {
       ProfileFragment_GeneratedInjector,
       RealEstateAdsFragment_GeneratedInjector,
       AddAdsFragment_GeneratedInjector,
+      AddAdsImages_GeneratedInjector,
+      AddCommercialAdsFragment_GeneratedInjector,
+      AddCommercialEstateFragment_GeneratedInjector,
+      CommericalAdSpecificationsFragment_GeneratedInjector,
+      AddEstateAdsFragment_GeneratedInjector,
+      AddHousingAdsFragment_GeneratedInjector,
       CommericalAdvertismentFragment_GeneratedInjector,
+      CompleteFragment_GeneratedInjector,
       EditPasswordFragment_GeneratedInjector,
       RegisterFragment_GeneratedInjector,
       SigininFragment_GeneratedInjector,

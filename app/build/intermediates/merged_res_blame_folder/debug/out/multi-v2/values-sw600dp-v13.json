@@ -4,17 +4,7 @@
             "outputFile": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "D:\\jdks\\caches\\transforms-2\\files-2.1\\9795d19233ff20f13288eae69e31374d\\appcompat-1.2.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,124,193,263,337,413,472,543",
-                        "endColumns": "68,68,69,73,75,58,70,67",
-                        "endOffsets": "119,188,258,332,408,467,538,606"
-                    }
-                },
-                {
-                    "source": "D:\\jdks\\caches\\transforms-2\\files-2.1\\9ec07ad47eaa985e1695020f3335e164\\material-1.4.0-alpha02\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "D:\\jdks\\caches\\transforms-2\\files-2.1\\15e3538094447355ef814a7228371ad0\\material-1.4.0-alpha02\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
@@ -33,7 +23,17 @@
                     }
                 },
                 {
-                    "source": "D:\\jdks\\caches\\transforms-2\\files-2.1\\fcd6b5fa4d8651422dbbcc1b526fba05\\jetified-imagepicker-2.4.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "D:\\jdks\\caches\\transforms-2\\files-2.1\\72afc561e078c933f9ed91df145a2b3d\\appcompat-1.2.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
+                    }
+                },
+                {
+                    "source": "D:\\jdks\\caches\\transforms-2\\files-2.1\\210b9a23f3332cec9da0b6a371c65c65\\jetified-imagepicker-2.4.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

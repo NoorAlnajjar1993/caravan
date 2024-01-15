@@ -29,246 +29,285 @@
 16-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:10:5-81
 16-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:10:22-78
 17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-17-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:11:5-80
-17-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:11:22-77
+17-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:11:5-80
+17-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:11:22-77
 18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-18-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:12:5-81
-18-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:12:22-78
+18-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:12:5-81
+18-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:12:22-78
 19    <uses-permission android:name="android.permission.CAMERA" />
-19-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:13:5-65
-19-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:13:22-62
+19-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\210b9a23f3332cec9da0b6a371c65c65\jetified-imagepicker-2.4.0\AndroidManifest.xml:13:5-65
+19-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\210b9a23f3332cec9da0b6a371c65c65\jetified-imagepicker-2.4.0\AndroidManifest.xml:13:22-62
 20
 21    <uses-feature
-21-->[com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+21-->[com.google.android.gms:play-services-maps:18.2.0] D:\jdks\caches\transforms-2\files-2.1\941e0aefd78b0f5ddcc206169212935a\jetified-play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
 22        android:glEsVersion="0x00020000"
-22-->[com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+22-->[com.google.android.gms:play-services-maps:18.2.0] D:\jdks\caches\transforms-2\files-2.1\941e0aefd78b0f5ddcc206169212935a\jetified-play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
 23        android:required="true" />
-23-->[com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+23-->[com.google.android.gms:play-services-maps:18.2.0] D:\jdks\caches\transforms-2\files-2.1\941e0aefd78b0f5ddcc206169212935a\jetified-play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
 24
-25    <application
-25-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:12:5-36:19
-26        android:name="com.dominate.caravan.CaravanApp"
-26-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:13:9-55
-27        android:allowBackup="true"
-27-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:14:9-35
-28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-28-->[androidx.core:core:1.3.2] D:\jdks\caches\transforms-2\files-2.1\893a5d726c1662a589498de2933e6756\core-1.3.2\AndroidManifest.xml:24:18-86
-29        android:debuggable="true"
-30        android:extractNativeLibs="false"
-31        android:icon="@mipmap/ic_launcher"
-31-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:15:9-43
-32        android:label="@string/app_name"
-32-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:16:9-41
-33        android:requestLegacyExternalStorage="true"
-33-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:19:9-52
-34        android:roundIcon="@mipmap/ic_launcher_round"
-34-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:17:9-54
-35        android:supportsRtl="true"
-35-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:18:9-35
-36        android:testOnly="true"
-37        android:theme="@style/HomeTheme"
-37-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:21:9-41
-38        android:usesCleartextTraffic="true" >
-38-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:20:9-44
-39        <activity
-39-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:24:9-34:20
-40            android:name="com.dominate.caravan.ui.home.HomeActivity"
-40-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:24:19-75
-41            android:configChanges="uiMode"
-41-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:26:13-43
-42            android:exported="true"
-42-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:25:13-36
-43            android:screenOrientation="portrait"
-43-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:27:13-49
-44            android:windowSoftInputMode="adjustPan" >
-44-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:28:13-52
-45            <intent-filter>
-45-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:29:13-33:29
-46                <action android:name="android.intent.action.MAIN" />
-46-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:30:17-69
-46-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:30:25-66
-47
-48                <category android:name="android.intent.category.LAUNCHER" />
-48-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:32:17-77
-48-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:32:27-74
-49            </intent-filter>
-50        </activity>
-51
-52        <provider
-52-->[com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\f78fde715294cdebae8c1ac0120f8067\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-53            android:name="com.squareup.picasso.PicassoProvider"
-53-->[com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\f78fde715294cdebae8c1ac0120f8067\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-54            android:authorities="com.dominate.caravan.com.squareup.picasso"
-54-->[com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\f78fde715294cdebae8c1ac0120f8067\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-55            android:exported="false" />
-55-->[com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\f78fde715294cdebae8c1ac0120f8067\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-56
-57        <activity
-57-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:15:9-18:68
-58            android:name="com.github.dhaval2404.imagepicker.ImagePickerActivity"
-58-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:16:13-81
-59            android:screenOrientation="unspecified"
-59-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:17:13-52
-60            android:theme="@style/Theme.Transparent.ImagePicker" />
-60-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:18:13-65
+25    <queries>
+25-->[com.google.android.gms:play-services-maps:18.2.0] D:\jdks\caches\transforms-2\files-2.1\941e0aefd78b0f5ddcc206169212935a\jetified-play-services-maps-18.2.0\AndroidManifest.xml:30:5-34:15
+26
+27        <!-- Needs to be explicitly declared on Android R+ -->
+28        <package android:name="com.google.android.apps.maps" />
+28-->[com.google.android.gms:play-services-maps:18.2.0] D:\jdks\caches\transforms-2\files-2.1\941e0aefd78b0f5ddcc206169212935a\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+28-->[com.google.android.gms:play-services-maps:18.2.0] D:\jdks\caches\transforms-2\files-2.1\941e0aefd78b0f5ddcc206169212935a\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+29    </queries>
+30
+31    <application
+31-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:12:5-50:19
+32        android:name="com.dominate.caravan.CaravanApp"
+32-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:13:9-55
+33        android:allowBackup="true"
+33-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:14:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.3.2] D:\jdks\caches\transforms-2\files-2.1\171fba9bf848af58f10b590b607f9f55\core-1.3.2\AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:extractNativeLibs="false"
+37        android:icon="@mipmap/ic_launcher"
+37-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:15:9-43
+38        android:label="@string/app_name"
+38-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:16:9-41
+39        android:requestLegacyExternalStorage="true"
+39-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:17:9-52
+40        android:roundIcon="@mipmap/ic_launcher_round"
+40-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:18:9-54
+41        android:supportsRtl="true"
+41-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:19:9-35
+42        android:testOnly="true"
+43        android:theme="@style/HomeTheme"
+43-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:20:9-41
+44        android:usesCleartextTraffic="true" >
+44-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:21:9-44
+45
+46        <!--
+47             TODO: Before you run your application, you need a Google Maps API key.
+48
+49             To get one, follow the directions here:
+50
+51                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+52
+53             Once you have your API key (it starts with "AIza"), define a new property in your
+54             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+55             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+56        -->
+57        <meta-data
+57-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:34:9-36:71
+58            android:name="com.google.android.geo.API_KEY"
+58-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:35:13-58
+59            android:value="AIzaSyD8QrczlhLWxM59xSF0zMhuIYRFZkQFW1A" />
+59-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:36:13-68
+60
 61        <activity
-61-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:19:9-22:72
-62            android:name="com.yalantis.ucrop.UCropActivity"
-62-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:20:13-60
-63            android:screenOrientation="portrait"
-63-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:21:13-49
-64            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-64-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:22:13-69
-65
-66        <provider
-66-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:24:9-32:20
-67            android:name="com.github.dhaval2404.imagepicker.ImagePickerFileProvider"
-67-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:25:13-85
-68            android:authorities="com.dominate.caravan.imagepicker.provider"
-68-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:26:13-72
-69            android:exported="false"
-69-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:27:13-37
-70            android:grantUriPermissions="true" >
-70-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:28:13-47
-71            <meta-data
-71-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:29:13-31:71
-72                android:name="android.support.FILE_PROVIDER_PATHS"
-72-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:30:17-67
-73                android:resource="@xml/image_picker_provider_paths" />
-73-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:31:17-68
-74        </provider>
-75
-76        <activity
-76-->[io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:14:9-16:75
-77            android:name="com.custom.sliderimage.activities.FullScreenImageActivity"
-77-->[io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:15:13-85
-78            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-78-->[io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\bd6948ee0fa022c931d32d92d5ab0237\jetified-imageslider-1.0.3\AndroidManifest.xml:16:13-72
+61-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:38:9-49:20
+62            android:name="com.dominate.caravan.ui.home.HomeActivity"
+62-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:39:13-69
+63            android:configChanges="uiMode"
+63-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:40:13-43
+64            android:exported="true"
+64-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:41:13-36
+65            android:screenOrientation="portrait"
+65-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:42:13-49
+66            android:windowSoftInputMode="adjustPan" >
+66-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:43:13-52
+67            <intent-filter>
+67-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:44:13-48:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:45:17-69
+68-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:45:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:47:17-77
+70-->C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\app\src\main\AndroidManifest.xml:47:27-74
+71            </intent-filter>
+72        </activity>
+73
+74        <provider
+74-->[com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\e191c641b5191fe8a8092326e9dc851d\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+75            android:name="com.squareup.picasso.PicassoProvider"
+75-->[com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\e191c641b5191fe8a8092326e9dc851d\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+76            android:authorities="com.dominate.caravan.com.squareup.picasso"
+76-->[com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\e191c641b5191fe8a8092326e9dc851d\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+77            android:exported="false" />
+77-->[com.squareup.picasso:picasso:2.71828] D:\jdks\caches\transforms-2\files-2.1\e191c641b5191fe8a8092326e9dc851d\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+78
 79        <activity
-79-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:16:9-19:50
-80            android:name="com.esafirm.imagepicker.features.ImagePickerActivity"
-80-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:17:13-80
-81            android:configChanges="orientation|screenSize"
-81-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:18:13-59
-82            android:theme="@style/ef_AppTheme" />
-82-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:19:13-47
-83
-84        <provider
-84-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:21:9-29:20
-85            android:name="com.esafirm.imagepicker.helper.ImagePickerFileProvider"
-85-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:22:13-82
-86            android:authorities="com.dominate.caravan.imagepicker.provider"
-86-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:23:13-72
-87            android:exported="false"
-87-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:24:13-37
-88            android:grantUriPermissions="true" >
-88-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\fcd6b5fa4d8651422dbbcc1b526fba05\jetified-imagepicker-2.4.0\AndroidManifest.xml:25:13-47
-89            <meta-data
-89-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:29:13-31:71
-90                android:name="android.support.FILE_PROVIDER_PATHS"
-90-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:30:17-67
-91                android:resource="@xml/image_picker_provider_paths" />
-91-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\6ef64512fa0066650f9da80e4f5b8bbd\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:31:17-68
-92        </provider> <!-- Needs to be explicitly declared on P+ -->
-93        <uses-library
-93-->[com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
-94            android:name="org.apache.http.legacy"
-94-->[com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
-95            android:required="false" />
-95-->[com.google.android.gms:play-services-maps:17.0.0] D:\jdks\caches\transforms-2\files-2.1\6ebe3ae5bbb8e61fa7d1904afa9b6665\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
-96
-97        <service
-97-->[androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\485d9dd252fe58207ed5ce4d71991c10\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
-98            android:name="androidx.room.MultiInstanceInvalidationService"
-98-->[androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\485d9dd252fe58207ed5ce4d71991c10\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
-99            android:directBootAware="true"
-99-->[androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\485d9dd252fe58207ed5ce4d71991c10\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
-100            android:exported="false" />
-100-->[androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\485d9dd252fe58207ed5ce4d71991c10\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
-101        <service
-101-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:9:9-15:19
-102            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
-102-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:10:13-91
-103            android:directBootAware="true"
-103-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:17:13-43
-104            android:exported="false" >
-104-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:11:13-37
-105            <meta-data
-105-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:12:13-14:85
-106                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
-106-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:13:17-114
-107                android:value="com.google.firebase.components.ComponentRegistrar" />
-107-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\bda61fdec97b4e2c2e3e5efc32fe4861\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:14:17-82
-108            <meta-data
-108-->[com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\e6cf393f98957a4837448458d75978c8\jetified-vision-common-16.3.0\AndroidManifest.xml:12:13-14:85
-109                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
-109-->[com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\e6cf393f98957a4837448458d75978c8\jetified-vision-common-16.3.0\AndroidManifest.xml:13:17-124
-110                android:value="com.google.firebase.components.ComponentRegistrar" />
-110-->[com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\e6cf393f98957a4837448458d75978c8\jetified-vision-common-16.3.0\AndroidManifest.xml:14:17-82
+79-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:15:9-18:68
+80            android:name="com.github.dhaval2404.imagepicker.ImagePickerActivity"
+80-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:16:13-81
+81            android:screenOrientation="unspecified"
+81-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:17:13-52
+82            android:theme="@style/Theme.Transparent.ImagePicker" />
+82-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:18:13-65
+83        <activity
+83-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:19:9-22:72
+84            android:name="com.yalantis.ucrop.UCropActivity"
+84-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:20:13-60
+85            android:screenOrientation="portrait"
+85-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:21:13-49
+86            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+86-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:22:13-69
+87
+88        <provider
+88-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:24:9-32:20
+89            android:name="com.github.dhaval2404.imagepicker.ImagePickerFileProvider"
+89-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:25:13-85
+90            android:authorities="com.dominate.caravan.imagepicker.provider"
+90-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:26:13-72
+91            android:exported="false"
+91-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:27:13-37
+92            android:grantUriPermissions="true" >
+92-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:28:13-47
+93            <meta-data
+93-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:29:13-31:71
+94                android:name="android.support.FILE_PROVIDER_PATHS"
+94-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:30:17-67
+95                android:resource="@xml/image_picker_provider_paths" />
+95-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:31:17-68
+96        </provider>
+97
+98        <activity
+98-->[io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\ea72ca06cb89ddf8db5b8aad5a30e7d4\jetified-imageslider-1.0.3\AndroidManifest.xml:14:9-16:75
+99            android:name="com.custom.sliderimage.activities.FullScreenImageActivity"
+99-->[io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\ea72ca06cb89ddf8db5b8aad5a30e7d4\jetified-imageslider-1.0.3\AndroidManifest.xml:15:13-85
+100            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+100-->[io.github.ivanespitiac:imageslider:1.0.3] D:\jdks\caches\transforms-2\files-2.1\ea72ca06cb89ddf8db5b8aad5a30e7d4\jetified-imageslider-1.0.3\AndroidManifest.xml:16:13-72
+101        <activity
+101-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\210b9a23f3332cec9da0b6a371c65c65\jetified-imagepicker-2.4.0\AndroidManifest.xml:16:9-19:50
+102            android:name="com.esafirm.imagepicker.features.ImagePickerActivity"
+102-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\210b9a23f3332cec9da0b6a371c65c65\jetified-imagepicker-2.4.0\AndroidManifest.xml:17:13-80
+103            android:configChanges="orientation|screenSize"
+103-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\210b9a23f3332cec9da0b6a371c65c65\jetified-imagepicker-2.4.0\AndroidManifest.xml:18:13-59
+104            android:theme="@style/ef_AppTheme" />
+104-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\210b9a23f3332cec9da0b6a371c65c65\jetified-imagepicker-2.4.0\AndroidManifest.xml:19:13-47
+105
+106        <provider
+106-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\210b9a23f3332cec9da0b6a371c65c65\jetified-imagepicker-2.4.0\AndroidManifest.xml:21:9-29:20
+107            android:name="com.esafirm.imagepicker.helper.ImagePickerFileProvider"
+107-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\210b9a23f3332cec9da0b6a371c65c65\jetified-imagepicker-2.4.0\AndroidManifest.xml:22:13-82
+108            android:authorities="com.dominate.caravan.imagepicker.provider"
+108-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\210b9a23f3332cec9da0b6a371c65c65\jetified-imagepicker-2.4.0\AndroidManifest.xml:23:13-72
+109            android:exported="false"
+109-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\210b9a23f3332cec9da0b6a371c65c65\jetified-imagepicker-2.4.0\AndroidManifest.xml:24:13-37
+110            android:grantUriPermissions="true" >
+110-->[com.github.esafirm.android-image-picker:imagepicker:2.4.0] D:\jdks\caches\transforms-2\files-2.1\210b9a23f3332cec9da0b6a371c65c65\jetified-imagepicker-2.4.0\AndroidManifest.xml:25:13-47
 111            <meta-data
-111-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:20:13-22:85
-112                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
-112-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:21:17-120
-113                android:value="com.google.firebase.components.ComponentRegistrar" />
-113-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:22:17-82
-114        </service>
+111-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:29:13-31:71
+112                android:name="android.support.FILE_PROVIDER_PATHS"
+112-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:30:17-67
+113                android:resource="@xml/image_picker_provider_paths" />
+113-->[com.github.dhaval2404:imagepicker-support:1.7.1] D:\jdks\caches\transforms-2\files-2.1\72cdf6c6ba7db590971522d9b44bdad4\jetified-imagepicker-support-1.7.1\AndroidManifest.xml:31:17-68
+114        </provider>
 115
-116        <provider
-116-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:9:9-13:38
-117            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
-117-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:10:13-78
-118            android:authorities="com.dominate.caravan.mlkitinitprovider"
-118-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:11:13-69
-119            android:exported="false"
-119-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:12:13-37
-120            android:initOrder="99" />
-120-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\a47c431e1b39a4d393cf6aef2a9daf71\jetified-common-17.1.1\AndroidManifest.xml:13:13-35
-121
-122        <activity
-122-->[com.google.android.gms:play-services-base:17.4.0] D:\jdks\caches\transforms-2\files-2.1\39be93830b4be82b9baa76a8bbc22118\jetified-play-services-base-17.4.0\AndroidManifest.xml:23:9-26:75
-123            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-123-->[com.google.android.gms:play-services-base:17.4.0] D:\jdks\caches\transforms-2\files-2.1\39be93830b4be82b9baa76a8bbc22118\jetified-play-services-base-17.4.0\AndroidManifest.xml:24:13-79
-124            android:exported="false"
-124-->[com.google.android.gms:play-services-base:17.4.0] D:\jdks\caches\transforms-2\files-2.1\39be93830b4be82b9baa76a8bbc22118\jetified-play-services-base-17.4.0\AndroidManifest.xml:25:13-37
-125            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-125-->[com.google.android.gms:play-services-base:17.4.0] D:\jdks\caches\transforms-2\files-2.1\39be93830b4be82b9baa76a8bbc22118\jetified-play-services-base-17.4.0\AndroidManifest.xml:26:13-72
-126
-127        <meta-data
-127-->[com.google.android.gms:play-services-basement:17.4.0] D:\jdks\caches\transforms-2\files-2.1\4def4fe340bbade3f4564dc661fb2911\jetified-play-services-basement-17.4.0\AndroidManifest.xml:23:9-25:69
-128            android:name="com.google.android.gms.version"
-128-->[com.google.android.gms:play-services-basement:17.4.0] D:\jdks\caches\transforms-2\files-2.1\4def4fe340bbade3f4564dc661fb2911\jetified-play-services-basement-17.4.0\AndroidManifest.xml:24:13-58
-129            android:value="@integer/google_play_services_version" />
-129-->[com.google.android.gms:play-services-basement:17.4.0] D:\jdks\caches\transforms-2\files-2.1\4def4fe340bbade3f4564dc661fb2911\jetified-play-services-basement-17.4.0\AndroidManifest.xml:25:13-66
-130
-131        <service
-131-->[com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:29:9-35:19
-132            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-132-->[com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:30:13-103
-133            android:exported="false" >
-133-->[com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:31:13-37
-134            <meta-data
-134-->[com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:32:13-34:39
-135                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-135-->[com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:33:17-94
-136                android:value="cct" />
-136-->[com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\88e7b2575e863bc067fbb1d6162fa08e\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:34:17-36
-137        </service>
-138        <service
-138-->[com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
-139            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-139-->[com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
-140            android:exported="false"
-140-->[com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
-141            android:permission="android.permission.BIND_JOB_SERVICE" >
-141-->[com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
+116        <activity
+116-->[pub.devrel:easypermissions:3.0.0] D:\jdks\caches\transforms-2\files-2.1\1fd8c056b41000467d1b5974cfa8767b\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
+117            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+117-->[pub.devrel:easypermissions:3.0.0] D:\jdks\caches\transforms-2\files-2.1\1fd8c056b41000467d1b5974cfa8767b\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
+118            android:exported="false"
+118-->[pub.devrel:easypermissions:3.0.0] D:\jdks\caches\transforms-2\files-2.1\1fd8c056b41000467d1b5974cfa8767b\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
+119            android:label=""
+119-->[pub.devrel:easypermissions:3.0.0] D:\jdks\caches\transforms-2\files-2.1\1fd8c056b41000467d1b5974cfa8767b\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
+120            android:theme="@style/EasyPermissions.Transparent" /> <!-- Needs to be explicitly declared on P+ -->
+120-->[pub.devrel:easypermissions:3.0.0] D:\jdks\caches\transforms-2\files-2.1\1fd8c056b41000467d1b5974cfa8767b\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
+121        <uses-library
+121-->[com.google.android.gms:play-services-maps:18.2.0] D:\jdks\caches\transforms-2\files-2.1\941e0aefd78b0f5ddcc206169212935a\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+122            android:name="org.apache.http.legacy"
+122-->[com.google.android.gms:play-services-maps:18.2.0] D:\jdks\caches\transforms-2\files-2.1\941e0aefd78b0f5ddcc206169212935a\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+123            android:required="false" />
+123-->[com.google.android.gms:play-services-maps:18.2.0] D:\jdks\caches\transforms-2\files-2.1\941e0aefd78b0f5ddcc206169212935a\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+124
+125        <service
+125-->[androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\64f93184e362e452eab853a23a24bb86\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+126            android:name="androidx.room.MultiInstanceInvalidationService"
+126-->[androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\64f93184e362e452eab853a23a24bb86\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+127            android:directBootAware="true"
+127-->[androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\64f93184e362e452eab853a23a24bb86\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+128            android:exported="false" />
+128-->[androidx.room:room-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\64f93184e362e452eab853a23a24bb86\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+129        <service
+129-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\6d883a3236306e2510e3fb96df343967\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:9:9-15:19
+130            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+130-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\6d883a3236306e2510e3fb96df343967\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:10:13-91
+131            android:directBootAware="true"
+131-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\797132f4e74dd7a2ec418e0b52ee74f2\jetified-common-17.1.1\AndroidManifest.xml:17:13-43
+132            android:exported="false" >
+132-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\6d883a3236306e2510e3fb96df343967\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:11:13-37
+133            <meta-data
+133-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\6d883a3236306e2510e3fb96df343967\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:12:13-14:85
+134                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+134-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\6d883a3236306e2510e3fb96df343967\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:13:17-114
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.3] D:\jdks\caches\transforms-2\files-2.1\6d883a3236306e2510e3fb96df343967\jetified-play-services-mlkit-text-recognition-16.1.3\AndroidManifest.xml:14:17-82
+136            <meta-data
+136-->[com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\d96fcf94aa0a0e9de9515e3c78d6a055\jetified-vision-common-16.3.0\AndroidManifest.xml:12:13-14:85
+137                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+137-->[com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\d96fcf94aa0a0e9de9515e3c78d6a055\jetified-vision-common-16.3.0\AndroidManifest.xml:13:17-124
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.mlkit:vision-common:16.3.0] D:\jdks\caches\transforms-2\files-2.1\d96fcf94aa0a0e9de9515e3c78d6a055\jetified-vision-common-16.3.0\AndroidManifest.xml:14:17-82
+139            <meta-data
+139-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\797132f4e74dd7a2ec418e0b52ee74f2\jetified-common-17.1.1\AndroidManifest.xml:20:13-22:85
+140                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+140-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\797132f4e74dd7a2ec418e0b52ee74f2\jetified-common-17.1.1\AndroidManifest.xml:21:17-120
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\797132f4e74dd7a2ec418e0b52ee74f2\jetified-common-17.1.1\AndroidManifest.xml:22:17-82
 142        </service>
 143
-144        <receiver
-144-->[com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
-145            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-145-->[com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
-146            android:exported="false" />
-146-->[com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\6b1f3291b881a11bc2bed2b4febc54bb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
-147    </application>
-148
-149</manifest>
+144        <provider
+144-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\797132f4e74dd7a2ec418e0b52ee74f2\jetified-common-17.1.1\AndroidManifest.xml:9:9-13:38
+145            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+145-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\797132f4e74dd7a2ec418e0b52ee74f2\jetified-common-17.1.1\AndroidManifest.xml:10:13-78
+146            android:authorities="com.dominate.caravan.mlkitinitprovider"
+146-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\797132f4e74dd7a2ec418e0b52ee74f2\jetified-common-17.1.1\AndroidManifest.xml:11:13-69
+147            android:exported="false"
+147-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\797132f4e74dd7a2ec418e0b52ee74f2\jetified-common-17.1.1\AndroidManifest.xml:12:13-37
+148            android:initOrder="99" />
+148-->[com.google.mlkit:common:17.1.1] D:\jdks\caches\transforms-2\files-2.1\797132f4e74dd7a2ec418e0b52ee74f2\jetified-common-17.1.1\AndroidManifest.xml:13:13-35
+149
+150        <activity
+150-->[com.google.android.gms:play-services-base:18.1.0] D:\jdks\caches\transforms-2\files-2.1\4c8dabc741e19e06110d98616400b197\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+151            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+151-->[com.google.android.gms:play-services-base:18.1.0] D:\jdks\caches\transforms-2\files-2.1\4c8dabc741e19e06110d98616400b197\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+152            android:exported="false"
+152-->[com.google.android.gms:play-services-base:18.1.0] D:\jdks\caches\transforms-2\files-2.1\4c8dabc741e19e06110d98616400b197\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+153            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+153-->[com.google.android.gms:play-services-base:18.1.0] D:\jdks\caches\transforms-2\files-2.1\4c8dabc741e19e06110d98616400b197\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+154
+155        <meta-data
+155-->[com.google.android.gms:play-services-basement:18.1.0] D:\jdks\caches\transforms-2\files-2.1\2669d2cf178a56cc698f8e3ffaf9408b\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+156            android:name="com.google.android.gms.version"
+156-->[com.google.android.gms:play-services-basement:18.1.0] D:\jdks\caches\transforms-2\files-2.1\2669d2cf178a56cc698f8e3ffaf9408b\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+157            android:value="@integer/google_play_services_version" />
+157-->[com.google.android.gms:play-services-basement:18.1.0] D:\jdks\caches\transforms-2\files-2.1\2669d2cf178a56cc698f8e3ffaf9408b\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+158
+159        <service
+159-->[com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\474c3b718771fe2a7eaaf8172b958769\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:29:9-35:19
+160            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+160-->[com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\474c3b718771fe2a7eaaf8172b958769\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:30:13-103
+161            android:exported="false" >
+161-->[com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\474c3b718771fe2a7eaaf8172b958769\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:31:13-37
+162            <meta-data
+162-->[com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\474c3b718771fe2a7eaaf8172b958769\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:32:13-34:39
+163                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+163-->[com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\474c3b718771fe2a7eaaf8172b958769\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:33:17-94
+164                android:value="cct" />
+164-->[com.google.android.datatransport:transport-backend-cct:2.3.2] D:\jdks\caches\transforms-2\files-2.1\474c3b718771fe2a7eaaf8172b958769\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:34:17-36
+165        </service>
+166        <service
+166-->[com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\cffe9e8688928e8310074bd9f33744e0\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
+167            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+167-->[com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\cffe9e8688928e8310074bd9f33744e0\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
+168            android:exported="false"
+168-->[com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\cffe9e8688928e8310074bd9f33744e0\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
+169            android:permission="android.permission.BIND_JOB_SERVICE" >
+169-->[com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\cffe9e8688928e8310074bd9f33744e0\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
+170        </service>
+171
+172        <receiver
+172-->[com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\cffe9e8688928e8310074bd9f33744e0\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
+173            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+173-->[com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\cffe9e8688928e8310074bd9f33744e0\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
+174            android:exported="false" />
+174-->[com.google.android.datatransport:transport-runtime:2.2.5] D:\jdks\caches\transforms-2\files-2.1\cffe9e8688928e8310074bd9f33744e0\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
+175    </application>
+176
+177</manifest>

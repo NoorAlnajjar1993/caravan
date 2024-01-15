@@ -69,11 +69,7 @@ public final class FragmentRealEstateAdsHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.constraintLayout01;
-      ConstraintLayout constraintLayout01 = rootView.findViewById(id);
-      if (constraintLayout01 == null) {
-        break missingId;
-      }
+      ConstraintLayout constraintLayout01 = (ConstraintLayout) rootView;
 
       id = R.id.iv_back;
       AppCompatImageView ivBack = rootView.findViewById(id);

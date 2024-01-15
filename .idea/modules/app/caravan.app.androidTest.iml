@@ -26,152 +26,156 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/0df0f3c2953af3e141d2abe0768eade5/jetified-junit-1.1.2-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/dfa1a5a9b4eda07e5a88f74a0999ee72/espresso-core-3.3.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/13ce76a76480e5cdfaeeb24245fafb3a/jetified-junit-1.1.2-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/417316211948b9ef42187df44f725370/espresso-core-3.3.0-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../data/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/c8b8c8bab6924da1946f735c59ea18c0/databinding-adapters-4.1.3-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/d54fd76b23e4d046d0e141e9aa44c2e7/databinding-runtime-4.1.3-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/f647cd88665f428e37db6008a83ee867/jetified-viewbinding-4.1.3-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/d46c95f9fe950d661970471a94997ea5/databinding-adapters-4.1.3-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/2f99da6b2b20f81d96d49d62274e6039/databinding-runtime-4.1.3-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/7f7c05e2ab2177d1ba568e4e31330395/jetified-viewbinding-4.1.3-api.jar</arg>
                 <arg>D:/jdks/caches/modules-2/files-2.1/androidx.databinding/databinding-common/4.1.3/38c07effff5b5a85e4a340086efcea530695cc1c/databinding-common-4.1.3.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/c2c7a7e9703c2ee97e115e2924895303/runner-1.3.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/0d3a21119c5ed52c6e8335c5ad4ae74d/jetified-junit-4.12.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/9abcd510797601f800a8ec9593dedb0b/jetified-hamcrest-integration-1.3.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/510450a211d07cb2589c0f7d68566d72/jetified-hamcrest-library-1.3.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/963f7bed72eccf83da8db92f53919122/jetified-hamcrest-core-1.3.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/59f7827f908c123174bf3e8861536daa/jetified-core-1.3.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/e74761b98e374fafff3ed7d4071d64ad/navigation-fragment-ktx-2.3.5-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/4a02c4b527a24be06e2ad7c145cf9088/jetified-fragment-ktx-1.3.2-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/92fd484d68f1d62492636019efadb9cd/navigation-ui-ktx-2.3.5-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/7c456a6729ceef8bb7ba2d64472bafde/navigation-runtime-ktx-2.3.5-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/fe817a681b48f913e444da80278d515a/jetified-activity-ktx-1.2.2-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/6e4ebd3c82e36cd09271daeb5440e451/jetified-core-ktx-1.3.2-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/b0d5f17c2cfeaee1b0135fea5a4986d7/runner-1.3.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/7b5c9b4e4156a21f476f3e928c108839/jetified-junit-4.12.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/af6f6dfd23c7055321cd0c902e284c7c/jetified-hamcrest-integration-1.3.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/07c9269365bf5b207be96a90202647bd/jetified-hamcrest-library-1.3.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/6c1c402959c8b6a2a265c74b3f98cfda/jetified-hamcrest-core-1.3.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/45ef67bcdc9c591e487ac85216374d41/jetified-core-1.3.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/45a4b0406b0d9a44a8b42dae6bd4bbc3/navigation-fragment-ktx-2.3.5-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/af46ca8615727c73bdc816a723992153/jetified-fragment-ktx-1.3.2-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/36e1a4c24355bf5a4fcbef4faf85a1d3/navigation-ui-ktx-2.3.5-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/d29a23aa1ba0812992c82ba8e05189dc/navigation-runtime-ktx-2.3.5-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/d5fccc69f69ed6b6ff4afcb50e7aa117/jetified-activity-ktx-1.2.2-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/41f81985f7df1197ce7c941088f7dfd8/jetified-core-ktx-1.3.2-api.jar</arg>
                 <arg>D:/jdks/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common-java8/2.2.0/cd3478503da69b1a7e0319bd2d1389943db9b364/lifecycle-common-java8-2.2.0.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/06b306e81a13743ee73680e58b98345a/navigation-ui-2.3.5-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/23508be76938b5c7486562f8e9bcf6d3/material-1.4.0-alpha02-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/d0327028794c1a8be122f017c36cdb4f/jetified-imageslider-1.0.3-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/8fc4c21b87692d0e55b2c3f9a5194c23/constraintlayout-2.0.4-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/7cb45e835c2b30cd46a20c0c75b2f928/jetified-RadioRealButton-v2.1.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/473b5f80fffa327dec437b5387a40543/jetified-lottie-3.4.2-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/a8335c91a6a58b180e2f259e5b929b41/appcompat-1.2.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/d354b66937ccadd9fb7278319401e8e5/legacy-support-v4-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/312bec973134685006d0611266d27b9d/legacy-support-core-ui-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/d23ab362e7a3ea5fc4f8a0e1ef0acaa0/swiperefreshlayout-1.1.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/f57a5a5c973f7b4b830c590946194b4d/jetified-hilt-lifecycle-viewmodel-1.0.0-alpha02-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/7f98e5c0c74cc7f4ad4c2fb855d7d08f/jetified-hilt-android-2.28.3-alpha-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/751b374f666f48d0c20bbb05176286cf/jetified-play-services-maps-17.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/b2b74b7cd2515e91b0693c550493f183/navigation-fragment-2.3.5-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/3e62bfb6de7a7f708c94a0377d8b82ea/jetified-glide-4.11.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/e81f0678b061f3e6c922dc216a17c00f/jetified-viewpager2-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/b535b1a4fdeea8831556e9aec07eedd2/jetified-play-services-mlkit-text-recognition-16.1.3-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/eb9221cff35b5b5c16b66736dad1f9e2/jetified-vision-common-16.3.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/f7eb92f1fc587aa68666e143b15f1e4f/jetified-common-17.1.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/0704d5f0f6e70b81dfd541c0002be659/jetified-play-services-clearcut-17.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/f6b9045eac4cb273406dff77d6760c71/jetified-play-services-phenotype-17.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/4b62db049b8de3bce05a1bc01f595f8d/jetified-play-services-base-17.4.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/1fd86586e675cc3eaef0f5c90489cf71/jetified-play-services-tasks-17.2.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/0bf1a9547aadd2d14d867e4df280d9ff/jetified-play-services-basement-17.4.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/61c34d658e26fb3e3a8677e004c9e2b7/fragment-1.3.2-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/2788dcb0179331877df3105bc5ff82b9/jetified-paginate-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/f19d0a649f50c3dfb2a47a45683597a1/recyclerview-1.2.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/f74cc810d270b828c285d3164efadd56/cardview-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/40b06482c286fb0032d8a5484035fd5f/jetified-picasso-2.71828-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/f5d5cb200444b4d7920405a0ed889662/monitor-1.3.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/36a76ead981ca7dfafda878dc6f60e0b/media-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/f535089eec6769162575ae0c58d09d88/dynamicanimation-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/04b013503cd4abf4ffc6af2821222e52/legacy-support-core-utils-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/91b811bc2ea993bf07287ea9bd781b24/jetified-appcompat-resources-1.2.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/86b4de51a47130a2afba79efc5efe95f/coordinatorlayout-1.1.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/862f9deada5bccca1c2bf132e73f3123/transition-1.2.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/c5223852b7a1cd81fadff51dedeaa126/vectordrawable-animated-1.1.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/1cec54a7601925067999abd0ec149193/vectordrawable-1.1.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/fb0827be043d3e9c40bb8a2056a991d5/drawerlayout-1.1.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/08f44284aadde89963a234f99b38ef7c/viewpager-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/5f9e5ab481c1fe913a97e1449e0a58f3/slidingpanelayout-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/e42296816866716b108e521e1ecc1f82/customview-1.1.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/97f2d234bda5ed9a1157f464bf9bbd76/navigation-runtime-2.3.5-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/397baf081b898a4fd09289a7187fecbb/jetified-activity-1.2.2-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/617ce1cdc4f4bbc162146d2fc2899e4b/loader-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/a63a758aad15fe9c9ce594d8170d3ee7/asynclayoutinflater-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/ed9fe47179f39747bf384ef6934d375b/core-1.3.2-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/0d473f073b90a0efd68f2dac964e40e3/jetified-lifecycle-livedata-ktx-2.3.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/ba21f4c5b12b975ca88bc910198bcdcc/jetified-lifecycle-livedata-core-ktx-2.3.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/99a8a2b0554283415306123996d96ccd/lifecycle-livedata-2.3.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/4d386456026f52afa7ca80f98151e269/jetified-lifecycle-viewmodel-savedstate-2.3.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/3a0fac255aa928d6f954d0655dd10bfa/lifecycle-livedata-core-2.3.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/2998e83f92a676c8addeaad134f71709/jetified-lifecycle-runtime-ktx-2.3.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/a07bbf2a7b438d1f1f1efe2e3c72903f/lifecycle-runtime-2.3.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/afcb4848ddb1fb01b351146a7c150db1/navigation-ui-2.3.5-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/d95790657a0601131a751455b90bf82f/material-1.4.0-alpha02-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/bdb6d1843da1e93acbb721b1ccca2bb1/jetified-imageslider-1.0.3-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/07ff93bb45c0d6db2a2ea6a565d666e7/constraintlayout-2.0.4-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/c9c687e786900f002ca64b963774b556/jetified-RadioRealButton-v2.1.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/f2ac8c0731050c2452744d05caf88ffd/jetified-lottie-3.4.2-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/2baf7fa95af654e02c9f934c127a040b/jetified-easypermissions-3.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/351dd2b2181e10309ee5347bd6f6760f/appcompat-1.2.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/f67369e95fc6119ad22763872068ba76/legacy-support-v4-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/e03d15dd99a511d93c8928149eb2f6c3/legacy-support-core-ui-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/eb5bcce45baf5f706b71bbe199802741/swiperefreshlayout-1.1.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/677a46185fd1db669565855d6fa36cde/jetified-hilt-lifecycle-viewmodel-1.0.0-alpha02-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/86b9d93b5369e43e69b0bd4ec5e88674/jetified-hilt-android-2.28.3-alpha-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/6255b61a3b8f0a4149564fe2876ffbde/jetified-play-services-places-17.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/26cc306b72e94aed45976be54b1dfc07/jetified-play-services-maps-18.2.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/3a73857c369007c2b7cb47bc1ba0f816/navigation-fragment-2.3.5-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/b6f0b00eda4b346e83059ee33c8424f2/jetified-glide-4.11.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/85630a9b5376e5d32a630f5c09e0fe55/jetified-viewpager2-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/c46f440ffabcde0d31a3858bec1d2308/jetified-play-services-mlkit-text-recognition-16.1.3-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/94035a4a3bdd349622ce1c840be1f739/jetified-play-services-location-21.0.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/ab798c47c066c12ac25dbf4d235cccba/jetified-vision-common-16.3.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/d5f9af4db55b74dac7cd96bb54f76a58/jetified-common-17.1.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/9f774f1e3905379aa465e6fdbde2bc63/jetified-play-services-clearcut-17.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/f22c223a61b2bdc2f9632d1d3402905f/jetified-play-services-phenotype-17.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/136126fd52ee835a7bf2d427aa5f6842/jetified-play-services-base-18.1.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/1da36395c397d432e755ceb42281c5ce/jetified-play-services-tasks-18.0.2-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/4c55c837fb764c14822a53bd16ac9ac8/jetified-play-services-places-placereport-17.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/7a8506129ddfbe2d9bfad3325e524ff8/jetified-play-services-basement-18.1.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/fe944639ed1885a9ac74aac545fb1afb/fragment-1.3.2-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/f31322a79d8755ed94068a070bce218a/jetified-paginate-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/ed9ed2a740ac8d48ee1c6d831aaf270d/recyclerview-1.2.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/b71433ad1c4b4802dbc6d23ffa41c6ae/cardview-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/6073a221c3d41c8855f4ba5ea356d0cf/jetified-picasso-2.71828-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/25c65c3e8436a2455413f6df88b178e3/monitor-1.3.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/13d521fbae10bbce2ef7febf6385222a/media-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/d279c2b1a268a6714820b44e55ec1567/dynamicanimation-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/7e31369977dd0088c82588093aeb6a7b/legacy-support-core-utils-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/8d306e577ade14f9ab6d0f48b75157f7/jetified-appcompat-resources-1.2.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/464d224775ac36c89aa289d3b883186e/coordinatorlayout-1.1.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/d34fb503e6be78846040961e272dc8f8/transition-1.2.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/4fc0e2d1090702e3fbc6b9149d2c2477/vectordrawable-animated-1.1.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/2d9d19136f845718e574e3d2dca7b42f/vectordrawable-1.1.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/d841324d5cfbc58c6c296319cf689ef3/drawerlayout-1.1.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/1e0ac1ab8db3a690cd88ec2e1db2464e/viewpager-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/226d2af5a83a3cf80cbf1c0662bc7d3f/slidingpanelayout-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/694cd97b94270b6d7e958f429b4154cd/customview-1.1.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/125ef9dee040a76f0ac6479d64c3d696/navigation-runtime-2.3.5-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/96e55382b4cc40ac6de2a069596f9fcc/jetified-activity-1.2.2-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/46795a358785bbc6f90da4c8a3d5af68/loader-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/16fa5cf46cc44a92646b2a0c0ee0d621/asynclayoutinflater-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/d209a0e44ee219b4fefff61bb92ad793/core-1.3.2-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/f9c4b037a2f749af85dd2045fd465216/jetified-lifecycle-livedata-ktx-2.3.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/ffa6853302a15b68b8fbf31cff0adaaf/jetified-lifecycle-livedata-core-ktx-2.3.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/0950fb98e937f7d74bcea1820897fada/lifecycle-livedata-2.3.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/0b10a52f59de7ed6dcc83e2e786d3e96/jetified-lifecycle-viewmodel-savedstate-2.3.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/9306b8ff070ad408f790c59a0bb4c5fb/lifecycle-livedata-core-2.3.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/d93840631c11ba5aad86e871220c101e/jetified-lifecycle-runtime-ktx-2.3.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/0e5d35e3e3ace821183c4380dff7a45e/lifecycle-runtime-2.3.1-api.jar</arg>
                 <arg>D:/jdks/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.3.1/fc466261d52f4433863642fb40d12441ae274a98/lifecycle-common-2.3.1.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/372e223204d540558f206b980d06d242/jetified-lifecycle-viewmodel-ktx-2.3.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/5553d43b414309d596f1d93a20da7aec/lifecycle-viewmodel-2.3.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/734de144114b17548b5500563194cf00/cursoradapter-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/681c5223d7ab0d60938a63a733c6d5e7/interpolator-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/0107e0cd5fa0b861e70242787477dc87/jetified-room-ktx-2.2.5-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/ed2898a73f0d7c83de56360385ae5edf/room-runtime-2.2.5-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/8f340be7e9b97cbda20c81c323046f0e/jetified-lifecycle-viewmodel-ktx-2.3.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/9acafb45d986a10b744ddb42bb134a92/lifecycle-viewmodel-2.3.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/264dea674138a9822a36cff13d5dcdd1/cursoradapter-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/302f27fb029251ba3c76396e5c347db9/interpolator-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/4ce477038b56b184849f46bbc04052af/jetified-room-ktx-2.2.5-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/2d4827061a2cb4853526d3ce991fece8/room-runtime-2.2.5-api.jar</arg>
                 <arg>D:/jdks/caches/modules-2/files-2.1/androidx.room/room-common/2.2.5/f5e3b73a0c2ab5e276e26868e4ce3542baede207/room-common-2.2.5.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/95f105740d6c0a4b1b10ed79057f5c6f/sqlite-framework-2.0.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/daa00b1a29ae313946bb726b8a6425a1/sqlite-2.0.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/96f1ef26ff9f7421419abf46ea4fc8b5/jetified-gifdecoder-4.11.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/044e3d75a4a5536b9bc1807791daf294/exifinterface-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/beaabb945e5a3300eb56c05726294859/jetified-transport-backend-cct-2.3.2-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/742418ea8ff6eae131c352319d2d8b0b/jetified-transport-runtime-2.2.5-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/9b5280beaa5ed39b6d9fad5ad15f6712/jetified-transport-api-2.2.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/f67a9570791bb2134c963ff691ac5a4d/jetified-firebase-components-16.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/9998bbeb7fd586fa3aa364dbd0b6b48c/jetified-firebase-encoders-json-17.1.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/41249b3569781bab3582fb9a63d4e1fc/jetified-firebase-encoders-16.1.0.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/d705c1ec980791d1d8291707fd6eb9b0/jetified-collection-ktx-1.1.0.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/c84f65333cfd163f320cb1d7f0dd766c/versionedparcelable-1.1.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/9d643058c6dd3581cfc4df7481b62212/sqlite-framework-2.0.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/921b313d62a77e1414206f6f65fb875b/sqlite-2.0.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/f854bca76d835f916eaea240cc7611ea/jetified-gifdecoder-4.11.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/a07acf925a0b6cc34614a15a4b6db95e/exifinterface-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/1f46d1199a53ef39ad5394d8d878ec4f/jetified-transport-backend-cct-2.3.2-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/6dd9eff79e280b33f707cef62d2d799c/jetified-transport-runtime-2.2.5-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/cf208c21637b8688903de41246c871ad/jetified-transport-api-2.2.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/dedd3bdbbaf1ba24cabd489829bd6efd/jetified-firebase-components-16.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/c28293ceab2289307485cb257316cfa5/jetified-firebase-encoders-json-17.1.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/85708304d23622af3d2a5d9ec6691781/jetified-firebase-encoders-16.1.0.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/9b4487dbfb2d9c12660fffeadfa78d66/jetified-collection-ktx-1.1.0.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/fba7881008dffc2644e39887f3ccc271/versionedparcelable-1.1.0-api.jar</arg>
                 <arg>D:/jdks/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/ccf0d5953990c1245fb2b9a993ac387e/jetified-savedstate-ktx-1.1.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/0e5a7fd8b7a3ea9b6900748bdfbbab73/jetified-savedstate-1.1.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/91557e91cce00a2d88e5060a1a7dfc5f/documentfile-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/d8e1bdbc69e18bc0893936eba29ec94d/localbroadcastmanager-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/622256443e9519c9ec99b47a0479d960/print-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/2052c118c074d7a384c4614d7b18a7dc/core-runtime-2.1.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/2ed2dc707b869c5b0970437a8c0401e3/navigation-common-ktx-2.3.5-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/ac4cccf128814bd0671a6492c6a00ca4/navigation-common-2.3.5-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/240e697736eaa2a89ae55d8df54f622b/jetified-savedstate-ktx-1.1.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/60a53fa0a47104ffd3799d3dd0b312d7/jetified-savedstate-1.1.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/47c32afad8659f19c3d9030b664b8cae/documentfile-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/f07af0bd480c31181448db271967f63b/localbroadcastmanager-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/2ca88fe735e55b349d5b34d1f8d29237/print-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/a1593956818421e715f0225a9fab86a3/core-runtime-2.1.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/4f53c41ac4c0577cc80c21f71659a2d5/navigation-common-ktx-2.3.5-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/62a0c6f6a014443fdd45178604436818/navigation-common-2.3.5-api.jar</arg>
                 <arg>D:/jdks/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar</arg>
                 <arg>D:/jdks/caches/modules-2/files-2.1/androidx.annotation/annotation/1.1.0/e3a6fb2f40e3a3842e6b7472628ba4ce416ea4c8/annotation-1.1.0.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/1dc7c6ac664fe5ec2a0bea95246b700f/espresso-idling-resource-3.3.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/94b778eae7e304d79d32f58969525fb9/jetified-javawriter-2.1.1.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/dffe1d74a779cd8802f9a5e199767480/jetified-dagger-2.28.3.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/7a2706886e9a1589ca1ccebe9daae787/jetified-javax.inject-1.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/3330b1e4ce75c367eff6d6af4945a432/jetified-jsr305-3.0.1.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/8ac2ddbdb35d4a1f80d77f5dd2555181/jetified-kotlin-android-extensions-runtime-1.4.32.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/d4e65b26d5269784d76427f7a6ae0e97/jetified-logging-interceptor-4.7.2.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/8e9cf790ad9e3b51d1a41c4d938c4614/jetified-converter-gson-2.9.0.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/f23681a7fd150d1a2970de6c3f2f0d63/jetified-retrofit-2.9.0.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/6ee95f830f5e4009cff7e0b76c3acaaf/jetified-okhttp-4.7.2.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/f29b61bd81b1880d5b9b66007a4fea14/jetified-kotlinx-coroutines-android-1.4.1.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/586c5792ddf40eb1922afe235ec5e903/jetified-okio-jvm-2.6.0.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/88c55c3bb2d9a3009f63521603ae17d4/jetified-kotlin-stdlib-jdk7-1.3.21.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/711abdc044c51310a4b69b60622e43dc/jetified-kotlinx-coroutines-core-jvm-1.4.1.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/5d437c1bc0a98fff3e6da2ced39b3a75/jetified-kotlin-stdlib-1.4.32.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/36434ed6c7525786c164aff3afb5519c/jetified-gson-2.8.6.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/21aa779642c0cf084eba7c33db164425/jetified-PhotoView-2.3.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/6eaa0326073303184dbbac5b4d0fa929/jetified-imagepicker-2.4.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/c7c18f09431c28077a578a5104e3d0cf/jetified-timber-4.7.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/9b30ee414cb76405662cf104577613f9/jetified-imagepicker-support-1.7.1-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/09c6557c5da22e89b9b5898e0e62eeb4/jetified-indeterminate-checkbox-1.0.5-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/ca0de8307f9ccabb923e9f00c4f8e2fb/jetified-DesignerToast-0.1.2-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/143c662a65fa148a8fd7a3f36fbe52ce/jetified-androidutilslibrary-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/a5d81cc90f3a8756ee4aeabca26601f2/jetified-circleimageview-3.1.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/0f7740304f9772144ec4741611c9669f/jetified-kotlin-stdlib-common-1.4.32.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/c3995db93084c14639a4627428e3323c/jetified-annotations-16.0.1.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/028d0ee9cbd204363829aa0324630fd5/espresso-idling-resource-3.3.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/89ad989aa551beaedd5bde2b432cb3d2/jetified-javawriter-2.1.1.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/cc5108a76f18f94584189791368f078a/jetified-dagger-2.28.3.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/fa876bbd5b8c235b4e612d01fa59d58d/jetified-javax.inject-1.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/63879bec23c04cfe1c6baaf8236f2d50/jetified-jsr305-3.0.1.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/d5172ff72fd5f4586d50c62b4e7cbdf9/jetified-kotlin-android-extensions-runtime-1.4.32.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/4f4723224bf7ddda7882a1044703799d/jetified-logging-interceptor-4.7.2.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/d414881bd0f6d4e3ddcc935e11a47882/jetified-converter-gson-2.9.0.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/75601d01150a4d61536cd59824fe325f/jetified-retrofit-2.9.0.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/9f906bd7f510903cc183b01875ae1aeb/jetified-okhttp-4.7.2.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/2ac97b7f99eb2ec855dad98d335a3638/jetified-kotlinx-coroutines-android-1.4.1.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/c303c663215bdd3d2ef6d55861ff694a/jetified-okio-jvm-2.6.0.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/37a2b5146be56ec836b37e1835b8c728/jetified-kotlin-stdlib-jdk7-1.3.21.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/7d8767222090718f7dd377140d582ebd/jetified-kotlinx-coroutines-core-jvm-1.4.1.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/f0416070cb058f64925082e81a1d0901/jetified-kotlin-stdlib-1.4.32.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/5c8f97221527cdfc507b77a040b88fff/jetified-gson-2.8.6.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/c3f88ef4def3cd1d0c4bff83521334b7/jetified-PhotoView-2.3.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/f186cdba67d30856338581c80f8f850a/jetified-imagepicker-2.4.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/c644b4e16d9e06e74994c53d716e207e/jetified-timber-4.7.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/11aab4fc4e7d0c80ac06ebbc66181cfe/jetified-imagepicker-support-1.7.1-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/08cc7b8cc2b558d7479fb5a64ee55a6e/jetified-indeterminate-checkbox-1.0.5-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/0d0119ebe75a184cccdcdc9a094eb96b/jetified-DesignerToast-0.1.2-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/dbccd7b03524aca01d4b02553fc5f7f5/jetified-androidutilslibrary-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/3e974907592cf3b83b073835eb6f54b7/jetified-circleimageview-3.1.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/f3c9c6f5e761c091e46e7fe04cb59792/jetified-kotlin-stdlib-common-1.4.32.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/8968c49e40fa6fbd02c4e9dcaf93a53c/jetified-annotations-16.0.1.jar</arg>
                 <arg>D:/jdks/caches/modules-2/files-2.1/androidx.constraintlayout/constraintlayout-solver/2.0.4/1f001d7db280a89a6c26b26a66eb064bb6d5efeb/constraintlayout-solver-2.0.4.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/7f936dfad1104cbe53722a19b49d602d/jetified-annotation-experimental-1.0.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/fba700614f092f5eebb0387ddc2bb329/jetified-dagger-lint-aar-2.28.3-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/9c9f094ccecdf60c5f134e3ed1aa36ea/jetified-jsr250-api-1.0.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/83f4c886ed2b8790b8efd7cb682b5822/jetified-hilt-common-1.0.0-alpha02-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/fb3936a69377601634eda22c5945e63e/jetified-fresco-1.13.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/545fbea9d3ac5cbfec793c1052a64b9c/jetified-circleindicator-1.2.2-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/f28c5e8b8fd04973b05fb350c78d08bb/jetified-disklrucache-4.11.0.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/716c680dd7ac57996b3cd06c3239fed9/jetified-annotations-4.11.0.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/de661fcaff4dd926e898b2953c9bd9b8/jetified-fbcore-1.13.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/c9ed365307df9456b0ea7a559982bc50/jetified-drawee-1.13.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/f7cdebdc7ae93455fcca6b4926600a46/jetified-imagepipeline-1.13.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/8b6fc38353e6587a0b261bfe41ac98fc/jetified-nativeimagefilters-1.13.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/bfd93d026f12c4f9c5904c6de3a13045/jetified-nativeimagetranscoder-1.13.0-api.jar</arg>
-                <arg>D:/jdks/caches/transforms-2/files-2.1/93a5968e9bb014a3043de6bdf64a9ec4/jetified-imagepipeline-base-1.13.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/2d6fa72450832afd8020a6670a63667e/jetified-annotation-experimental-1.0.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/53948a86a5f2ba12ebbaab883637173a/jetified-dagger-lint-aar-2.28.3-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/f0a10ec44876c36a53193500ae1a4f4e/jetified-jsr250-api-1.0.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/722ce0c2d8c31acdfcf5e02d21cd4b84/jetified-hilt-common-1.0.0-alpha02-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/9717d66f5b6870e95d102d3e00fb0885/jetified-fresco-1.13.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/ede73337f19a1698126165005d6f08fb/jetified-circleindicator-1.2.2-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/17b3227bdd7d891ec7736376d7fdb136/jetified-disklrucache-4.11.0.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/1115b5ce9efeed0d3e162b519a6db307/jetified-annotations-4.11.0.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/1ca0c231b179ff5178c7f624ecfe994b/jetified-fbcore-1.13.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/e1f7c89d1808f59a3ac14d928ea0e110/jetified-drawee-1.13.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/d87f8eef55ad4f965457f677bae886e0/jetified-imagepipeline-1.13.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/7679f5e5af88d354fe2c4a8d27657f4a/jetified-nativeimagefilters-1.13.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/5c4dda513b90c9f95c2a8c461acb0aea/jetified-nativeimagetranscoder-1.13.0-api.jar</arg>
+                <arg>D:/jdks/caches/transforms-2/files-2.1/eea9318bd465fb04adef6e47d6420cdf/jetified-imagepipeline-base-1.13.0-api.jar</arg>
                 <arg>$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-30/android.jar</arg>
                 <arg>$USER_HOME$/AppData/Local/Android/Sdk/build-tools/29.0.3/core-lambda-stubs.jar</arg>
               </args>
@@ -312,24 +316,28 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.constraintlayout:constraintlayout:2.0.4@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.ceryle:RadioRealButton:v2.1.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.airbnb.android:lottie:3.4.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: pub.devrel:easypermissions:3.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.appcompat:appcompat:1.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-v4:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.dagger:hilt-android:2.28.3-alpha@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-maps:17.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-places:17.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-maps:18.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.navigation:navigation-fragment:2.3.5@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.bumptech.glide:glide:4.11.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-mlkit-text-recognition:16.1.3@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-location:21.0.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.mlkit:vision-common:16.3.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.mlkit:common:17.1.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-clearcut:17.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-phenotype:17.0.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-base:17.4.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-tasks:17.2.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-basement:17.4.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-base:18.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-tasks:18.0.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-places-placereport:17.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-basement:18.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.fragment:fragment:1.3.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.markomilos:paginate:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.recyclerview:recyclerview:1.2.0@aar" level="project" />

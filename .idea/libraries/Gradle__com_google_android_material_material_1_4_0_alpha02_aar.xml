@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.material:material:1.4.0-alpha02@aar">
     <ANNOTATIONS>
-      <root url="jar://D:/jdks/caches/transforms-2/files-2.1/9ec07ad47eaa985e1695020f3335e164/material-1.4.0-alpha02/annotations.zip!/" />
+      <root url="jar://D:/jdks/caches/transforms-2/files-2.1/15e3538094447355ef814a7228371ad0/material-1.4.0-alpha02/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://D:/jdks/caches/transforms-2/files-2.1/9ec07ad47eaa985e1695020f3335e164/material-1.4.0-alpha02/jars/classes.jar!/" />
-      <root url="file://D:/jdks/caches/transforms-2/files-2.1/9ec07ad47eaa985e1695020f3335e164/material-1.4.0-alpha02/res" />
-      <root url="file://D:/jdks/caches/transforms-2/files-2.1/9ec07ad47eaa985e1695020f3335e164/material-1.4.0-alpha02/AndroidManifest.xml" />
+      <root url="file://D:/jdks/caches/transforms-2/files-2.1/15e3538094447355ef814a7228371ad0/material-1.4.0-alpha02/res" />
+      <root url="jar://D:/jdks/caches/transforms-2/files-2.1/15e3538094447355ef814a7228371ad0/material-1.4.0-alpha02/jars/classes.jar!/" />
+      <root url="file://D:/jdks/caches/transforms-2/files-2.1/15e3538094447355ef814a7228371ad0/material-1.4.0-alpha02/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

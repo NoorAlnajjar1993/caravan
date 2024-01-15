@@ -17,6 +17,8 @@ class AppConstants {
         const val USER_PHONE="user phone"
         const val USER_NAME="user name"
         const val CURRENT_USER="current user"
+        const val BUNDLE_MODEL = "BUNDLE_MODEL"
+
 
         const val PASSWORD_PATTERN = "^" +
                 "(?=.*[0-9])" +         //at least 1 digit

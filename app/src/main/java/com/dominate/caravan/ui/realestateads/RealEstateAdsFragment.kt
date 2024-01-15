@@ -38,7 +38,7 @@ class RealEstateAdsFragment  : BaseFragment()  , TextWatcher {
 
      var binding: FragmentRealEstateAdsHomeBinding by autoCleared()
     private val viewModel: HomeViewModel by viewModels()
-    lateinit var realEstateAdsAdapter: RealEstateAdsAdapter
+    lateinit var realEstateAdsAdapter: RealEstateAdsSingleAdapter
     var token: String? = ""
 
     override fun onCreateView(
@@ -124,7 +124,7 @@ class RealEstateAdsFragment  : BaseFragment()  , TextWatcher {
 
     private fun realEstateAdsData(realEstateAds: MutableList<RealEstateAd>) {
         if (realEstateAds.isNotEmpty()) {
-            realEstateAdsAdapter = RealEstateAdsAdapter(realEstateAds, {
+            realEstateAdsAdapter = RealEstateAdsSingleAdapter(realEstateAds, {
                 if (prefs.isLoggedIn && !token.isNullOrEmpty()) {
                     it!!.is_favorite = !it.is_favorite
                     AddRemoveFavorite(id = it.id, it.is_favorite)

@@ -45,6 +45,12 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
   public final TextInputEditText etBuildingAreaTitle;
 
   @NonNull
+  public final TextInputEditText etFacadeStreet;
+
+  @NonNull
+  public final TextInputEditText etFarmArea;
+
+  @NonNull
   public final TextInputEditText etGearAreaSquareMetres;
 
   @NonNull
@@ -52,6 +58,9 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
 
   @NonNull
   public final TextInputEditText etNumberFloorsBuilding;
+
+  @NonNull
+  public final TextInputEditText etNumberUnitsBuilding;
 
   @NonNull
   public final TextInputEditText etRoofAreaSquareMetres;
@@ -75,6 +84,9 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
   public final RadioGroup radioGroupApartmentCondition;
 
   @NonNull
+  public final RadioGroup radioGroupContainsBuilding;
+
+  @NonNull
   public final RadioGroup radioGroupFurnished;
 
   @NonNull
@@ -90,6 +102,9 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
   public final AppCompatRadioButton radioNo;
 
   @NonNull
+  public final AppCompatRadioButton radioNoContainsBuilding;
+
+  @NonNull
   public final AppCompatRadioButton radioNoResidentialBuilding;
 
   @NonNull
@@ -102,6 +117,9 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
   public final AppCompatRadioButton radioYes;
 
   @NonNull
+  public final AppCompatRadioButton radioYesContainsBuilding;
+
+  @NonNull
   public final AppCompatRadioButton radioYesResidentialBuilding;
 
   @NonNull
@@ -112,6 +130,15 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
 
   @NonNull
   public final RecyclerView rvDetermineApartmentsFeatures;
+
+  @NonNull
+  public final RecyclerView rvFarmFeatures;
+
+  @NonNull
+  public final RecyclerView rvLandOrganization;
+
+  @NonNull
+  public final RecyclerView rvRate;
 
   @NonNull
   public final TextInputLayout tilFloor;
@@ -129,6 +156,12 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
   public final TextInputLayout tlBuildingAreaTitle;
 
   @NonNull
+  public final TextInputLayout tlFacadeStreet;
+
+  @NonNull
+  public final TextInputLayout tlFarmArea;
+
+  @NonNull
   public final TextInputLayout tlGearAreaSquareMetres;
 
   @NonNull
@@ -136,6 +169,9 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
 
   @NonNull
   public final TextInputLayout tlNumberFloorsBuilding;
+
+  @NonNull
+  public final TextInputLayout tlNumberUnitsBuilding;
 
   @NonNull
   public final TextInputLayout tlRoofAreaSquareMetres;
@@ -156,7 +192,19 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
   public final AppCompatTextView tvBuildingArea;
 
   @NonNull
+  public final AppCompatTextView tvContainsBuilding;
+
+  @NonNull
   public final AppCompatTextView tvDetermineApartmentsFeatures;
+
+  @NonNull
+  public final AppCompatTextView tvFacadeStreet;
+
+  @NonNull
+  public final AppCompatTextView tvFarmArea;
+
+  @NonNull
+  public final AppCompatTextView tvFarmFeatures;
 
   @NonNull
   public final AppCompatTextView tvFloor;
@@ -171,6 +219,9 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
   public final AppCompatTextView tvLandArea;
 
   @NonNull
+  public final AppCompatTextView tvLandOrganization;
+
+  @NonNull
   public final AppCompatTextView tvNumberBathrooms;
 
   @NonNull
@@ -180,7 +231,16 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
   public final AppCompatTextView tvNumberFloorsBuilding;
 
   @NonNull
+  public final AppCompatTextView tvNumberUnitsBuilding;
+
+  @NonNull
+  public final AppCompatTextView tvRate;
+
+  @NonNull
   public final AppCompatTextView tvRoofAreaSquareMetres;
+
+  @NonNull
+  public final AppCompatTextView tvTitle;
 
   @NonNull
   public final AppCompatTextView tvTotalNumberApartmentsBuilding;
@@ -199,39 +259,49 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
       @NonNull AppCompatAutoCompleteTextView actvNumberBathrooms,
       @NonNull AppCompatAutoCompleteTextView actvNumberBedrooms, @NonNull MaterialButton btnNext,
       @NonNull TextInputEditText etAgeConstructionYears,
-      @NonNull TextInputEditText etBuildingAreaTitle,
-      @NonNull TextInputEditText etGearAreaSquareMetres, @NonNull TextInputEditText etLandArea,
-      @NonNull TextInputEditText etNumberFloorsBuilding,
+      @NonNull TextInputEditText etBuildingAreaTitle, @NonNull TextInputEditText etFacadeStreet,
+      @NonNull TextInputEditText etFarmArea, @NonNull TextInputEditText etGearAreaSquareMetres,
+      @NonNull TextInputEditText etLandArea, @NonNull TextInputEditText etNumberFloorsBuilding,
+      @NonNull TextInputEditText etNumberUnitsBuilding,
       @NonNull TextInputEditText etRoofAreaSquareMetres,
       @NonNull TextInputEditText etTotalNumberApartmentsBuilding,
       @NonNull TextInputEditText etYearConstruction, @NonNull AppCompatImageView ivBack,
       @NonNull AppCompatRadioButton radio1, @NonNull AppCompatRadioButton radio2,
-      @NonNull RadioGroup radioGroupApartmentCondition, @NonNull RadioGroup radioGroupFurnished,
+      @NonNull RadioGroup radioGroupApartmentCondition,
+      @NonNull RadioGroup radioGroupContainsBuilding, @NonNull RadioGroup radioGroupFurnished,
       @NonNull RadioGroup radioGroupResidentialBuilding,
       @NonNull RadioGroup radioGroupWithGardenGear, @NonNull RadioGroup radioGroupWithRoof,
-      @NonNull AppCompatRadioButton radioNo,
+      @NonNull AppCompatRadioButton radioNo, @NonNull AppCompatRadioButton radioNoContainsBuilding,
       @NonNull AppCompatRadioButton radioNoResidentialBuilding,
       @NonNull AppCompatRadioButton radioNoWithGardenGear,
       @NonNull AppCompatRadioButton radioNoWithRoof, @NonNull AppCompatRadioButton radioYes,
+      @NonNull AppCompatRadioButton radioYesContainsBuilding,
       @NonNull AppCompatRadioButton radioYesResidentialBuilding,
       @NonNull AppCompatRadioButton radioYesWithGardenGear,
       @NonNull AppCompatRadioButton radioYesWithRoof,
-      @NonNull RecyclerView rvDetermineApartmentsFeatures, @NonNull TextInputLayout tilFloor,
-      @NonNull TextInputLayout tilNumberBathrooms, @NonNull TextInputLayout tilNumberBedrooms,
-      @NonNull TextInputLayout tlAgeConstructionYears, @NonNull TextInputLayout tlBuildingAreaTitle,
-      @NonNull TextInputLayout tlGearAreaSquareMetres, @NonNull TextInputLayout tlLandArea,
-      @NonNull TextInputLayout tlNumberFloorsBuilding,
+      @NonNull RecyclerView rvDetermineApartmentsFeatures, @NonNull RecyclerView rvFarmFeatures,
+      @NonNull RecyclerView rvLandOrganization, @NonNull RecyclerView rvRate,
+      @NonNull TextInputLayout tilFloor, @NonNull TextInputLayout tilNumberBathrooms,
+      @NonNull TextInputLayout tilNumberBedrooms, @NonNull TextInputLayout tlAgeConstructionYears,
+      @NonNull TextInputLayout tlBuildingAreaTitle, @NonNull TextInputLayout tlFacadeStreet,
+      @NonNull TextInputLayout tlFarmArea, @NonNull TextInputLayout tlGearAreaSquareMetres,
+      @NonNull TextInputLayout tlLandArea, @NonNull TextInputLayout tlNumberFloorsBuilding,
+      @NonNull TextInputLayout tlNumberUnitsBuilding,
       @NonNull TextInputLayout tlRoofAreaSquareMetres,
       @NonNull TextInputLayout tlTotalNumberApartmentsBuilding,
       @NonNull TextInputLayout tlYearConstruction,
       @NonNull AppCompatTextView tvAgeConstructionYears,
       @NonNull AppCompatTextView tvApartmentCondition, @NonNull AppCompatTextView tvBuildingArea,
-      @NonNull AppCompatTextView tvDetermineApartmentsFeatures, @NonNull AppCompatTextView tvFloor,
+      @NonNull AppCompatTextView tvContainsBuilding,
+      @NonNull AppCompatTextView tvDetermineApartmentsFeatures,
+      @NonNull AppCompatTextView tvFacadeStreet, @NonNull AppCompatTextView tvFarmArea,
+      @NonNull AppCompatTextView tvFarmFeatures, @NonNull AppCompatTextView tvFloor,
       @NonNull AppCompatTextView tvFurnished, @NonNull AppCompatTextView tvGearAreaSquareMetres,
-      @NonNull AppCompatTextView tvLandArea, @NonNull AppCompatTextView tvNumberBathrooms,
-      @NonNull AppCompatTextView tvNumberBedrooms,
+      @NonNull AppCompatTextView tvLandArea, @NonNull AppCompatTextView tvLandOrganization,
+      @NonNull AppCompatTextView tvNumberBathrooms, @NonNull AppCompatTextView tvNumberBedrooms,
       @NonNull AppCompatTextView tvNumberFloorsBuilding,
-      @NonNull AppCompatTextView tvRoofAreaSquareMetres,
+      @NonNull AppCompatTextView tvNumberUnitsBuilding, @NonNull AppCompatTextView tvRate,
+      @NonNull AppCompatTextView tvRoofAreaSquareMetres, @NonNull AppCompatTextView tvTitle,
       @NonNull AppCompatTextView tvTotalNumberApartmentsBuilding,
       @NonNull AppCompatTextView tvWithGardenGear, @NonNull AppCompatTextView tvWithRoof,
       @NonNull AppCompatTextView tvYearConstruction) {
@@ -242,9 +312,12 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
     this.btnNext = btnNext;
     this.etAgeConstructionYears = etAgeConstructionYears;
     this.etBuildingAreaTitle = etBuildingAreaTitle;
+    this.etFacadeStreet = etFacadeStreet;
+    this.etFarmArea = etFarmArea;
     this.etGearAreaSquareMetres = etGearAreaSquareMetres;
     this.etLandArea = etLandArea;
     this.etNumberFloorsBuilding = etNumberFloorsBuilding;
+    this.etNumberUnitsBuilding = etNumberUnitsBuilding;
     this.etRoofAreaSquareMetres = etRoofAreaSquareMetres;
     this.etTotalNumberApartmentsBuilding = etTotalNumberApartmentsBuilding;
     this.etYearConstruction = etYearConstruction;
@@ -252,42 +325,59 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
     this.radio1 = radio1;
     this.radio2 = radio2;
     this.radioGroupApartmentCondition = radioGroupApartmentCondition;
+    this.radioGroupContainsBuilding = radioGroupContainsBuilding;
     this.radioGroupFurnished = radioGroupFurnished;
     this.radioGroupResidentialBuilding = radioGroupResidentialBuilding;
     this.radioGroupWithGardenGear = radioGroupWithGardenGear;
     this.radioGroupWithRoof = radioGroupWithRoof;
     this.radioNo = radioNo;
+    this.radioNoContainsBuilding = radioNoContainsBuilding;
     this.radioNoResidentialBuilding = radioNoResidentialBuilding;
     this.radioNoWithGardenGear = radioNoWithGardenGear;
     this.radioNoWithRoof = radioNoWithRoof;
     this.radioYes = radioYes;
+    this.radioYesContainsBuilding = radioYesContainsBuilding;
     this.radioYesResidentialBuilding = radioYesResidentialBuilding;
     this.radioYesWithGardenGear = radioYesWithGardenGear;
     this.radioYesWithRoof = radioYesWithRoof;
     this.rvDetermineApartmentsFeatures = rvDetermineApartmentsFeatures;
+    this.rvFarmFeatures = rvFarmFeatures;
+    this.rvLandOrganization = rvLandOrganization;
+    this.rvRate = rvRate;
     this.tilFloor = tilFloor;
     this.tilNumberBathrooms = tilNumberBathrooms;
     this.tilNumberBedrooms = tilNumberBedrooms;
     this.tlAgeConstructionYears = tlAgeConstructionYears;
     this.tlBuildingAreaTitle = tlBuildingAreaTitle;
+    this.tlFacadeStreet = tlFacadeStreet;
+    this.tlFarmArea = tlFarmArea;
     this.tlGearAreaSquareMetres = tlGearAreaSquareMetres;
     this.tlLandArea = tlLandArea;
     this.tlNumberFloorsBuilding = tlNumberFloorsBuilding;
+    this.tlNumberUnitsBuilding = tlNumberUnitsBuilding;
     this.tlRoofAreaSquareMetres = tlRoofAreaSquareMetres;
     this.tlTotalNumberApartmentsBuilding = tlTotalNumberApartmentsBuilding;
     this.tlYearConstruction = tlYearConstruction;
     this.tvAgeConstructionYears = tvAgeConstructionYears;
     this.tvApartmentCondition = tvApartmentCondition;
     this.tvBuildingArea = tvBuildingArea;
+    this.tvContainsBuilding = tvContainsBuilding;
     this.tvDetermineApartmentsFeatures = tvDetermineApartmentsFeatures;
+    this.tvFacadeStreet = tvFacadeStreet;
+    this.tvFarmArea = tvFarmArea;
+    this.tvFarmFeatures = tvFarmFeatures;
     this.tvFloor = tvFloor;
     this.tvFurnished = tvFurnished;
     this.tvGearAreaSquareMetres = tvGearAreaSquareMetres;
     this.tvLandArea = tvLandArea;
+    this.tvLandOrganization = tvLandOrganization;
     this.tvNumberBathrooms = tvNumberBathrooms;
     this.tvNumberBedrooms = tvNumberBedrooms;
     this.tvNumberFloorsBuilding = tvNumberFloorsBuilding;
+    this.tvNumberUnitsBuilding = tvNumberUnitsBuilding;
+    this.tvRate = tvRate;
     this.tvRoofAreaSquareMetres = tvRoofAreaSquareMetres;
+    this.tvTitle = tvTitle;
     this.tvTotalNumberApartmentsBuilding = tvTotalNumberApartmentsBuilding;
     this.tvWithGardenGear = tvWithGardenGear;
     this.tvWithRoof = tvWithRoof;
@@ -357,6 +447,18 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.et_facade_street;
+      TextInputEditText etFacadeStreet = rootView.findViewById(id);
+      if (etFacadeStreet == null) {
+        break missingId;
+      }
+
+      id = R.id.et_farm_area;
+      TextInputEditText etFarmArea = rootView.findViewById(id);
+      if (etFarmArea == null) {
+        break missingId;
+      }
+
       id = R.id.et_gear_area_square_metres;
       TextInputEditText etGearAreaSquareMetres = rootView.findViewById(id);
       if (etGearAreaSquareMetres == null) {
@@ -372,6 +474,12 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
       id = R.id.et_number_floors_building;
       TextInputEditText etNumberFloorsBuilding = rootView.findViewById(id);
       if (etNumberFloorsBuilding == null) {
+        break missingId;
+      }
+
+      id = R.id.et_number_units_building;
+      TextInputEditText etNumberUnitsBuilding = rootView.findViewById(id);
+      if (etNumberUnitsBuilding == null) {
         break missingId;
       }
 
@@ -417,6 +525,12 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.radioGroup_contains_building;
+      RadioGroup radioGroupContainsBuilding = rootView.findViewById(id);
+      if (radioGroupContainsBuilding == null) {
+        break missingId;
+      }
+
       id = R.id.radioGroup_furnished;
       RadioGroup radioGroupFurnished = rootView.findViewById(id);
       if (radioGroupFurnished == null) {
@@ -447,6 +561,12 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.radio_no_contains_building;
+      AppCompatRadioButton radioNoContainsBuilding = rootView.findViewById(id);
+      if (radioNoContainsBuilding == null) {
+        break missingId;
+      }
+
       id = R.id.radio_no_residential_building;
       AppCompatRadioButton radioNoResidentialBuilding = rootView.findViewById(id);
       if (radioNoResidentialBuilding == null) {
@@ -471,6 +591,12 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.radio_yes_contains_building;
+      AppCompatRadioButton radioYesContainsBuilding = rootView.findViewById(id);
+      if (radioYesContainsBuilding == null) {
+        break missingId;
+      }
+
       id = R.id.radio_yes_residential_building;
       AppCompatRadioButton radioYesResidentialBuilding = rootView.findViewById(id);
       if (radioYesResidentialBuilding == null) {
@@ -492,6 +618,24 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
       id = R.id.rv_determine_apartments_features;
       RecyclerView rvDetermineApartmentsFeatures = rootView.findViewById(id);
       if (rvDetermineApartmentsFeatures == null) {
+        break missingId;
+      }
+
+      id = R.id.rv_farm_features;
+      RecyclerView rvFarmFeatures = rootView.findViewById(id);
+      if (rvFarmFeatures == null) {
+        break missingId;
+      }
+
+      id = R.id.rv_land_organization;
+      RecyclerView rvLandOrganization = rootView.findViewById(id);
+      if (rvLandOrganization == null) {
+        break missingId;
+      }
+
+      id = R.id.rv_rate;
+      RecyclerView rvRate = rootView.findViewById(id);
+      if (rvRate == null) {
         break missingId;
       }
 
@@ -525,6 +669,18 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tl_facade_street;
+      TextInputLayout tlFacadeStreet = rootView.findViewById(id);
+      if (tlFacadeStreet == null) {
+        break missingId;
+      }
+
+      id = R.id.tl_farm_area;
+      TextInputLayout tlFarmArea = rootView.findViewById(id);
+      if (tlFarmArea == null) {
+        break missingId;
+      }
+
       id = R.id.tl_gear_area_square_metres;
       TextInputLayout tlGearAreaSquareMetres = rootView.findViewById(id);
       if (tlGearAreaSquareMetres == null) {
@@ -540,6 +696,12 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
       id = R.id.tl_number_floors_building;
       TextInputLayout tlNumberFloorsBuilding = rootView.findViewById(id);
       if (tlNumberFloorsBuilding == null) {
+        break missingId;
+      }
+
+      id = R.id.tl_number_units_building;
+      TextInputLayout tlNumberUnitsBuilding = rootView.findViewById(id);
+      if (tlNumberUnitsBuilding == null) {
         break missingId;
       }
 
@@ -579,9 +741,33 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_contains_building;
+      AppCompatTextView tvContainsBuilding = rootView.findViewById(id);
+      if (tvContainsBuilding == null) {
+        break missingId;
+      }
+
       id = R.id.tv_determine_apartments_features;
       AppCompatTextView tvDetermineApartmentsFeatures = rootView.findViewById(id);
       if (tvDetermineApartmentsFeatures == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_facade_street;
+      AppCompatTextView tvFacadeStreet = rootView.findViewById(id);
+      if (tvFacadeStreet == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_farm_area;
+      AppCompatTextView tvFarmArea = rootView.findViewById(id);
+      if (tvFarmArea == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_farm_features;
+      AppCompatTextView tvFarmFeatures = rootView.findViewById(id);
+      if (tvFarmFeatures == null) {
         break missingId;
       }
 
@@ -609,6 +795,12 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_land_organization;
+      AppCompatTextView tvLandOrganization = rootView.findViewById(id);
+      if (tvLandOrganization == null) {
+        break missingId;
+      }
+
       id = R.id.tv_number_bathrooms;
       AppCompatTextView tvNumberBathrooms = rootView.findViewById(id);
       if (tvNumberBathrooms == null) {
@@ -627,9 +819,27 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_number_units_building;
+      AppCompatTextView tvNumberUnitsBuilding = rootView.findViewById(id);
+      if (tvNumberUnitsBuilding == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_rate;
+      AppCompatTextView tvRate = rootView.findViewById(id);
+      if (tvRate == null) {
+        break missingId;
+      }
+
       id = R.id.tv_roof_area_square_metres;
       AppCompatTextView tvRoofAreaSquareMetres = rootView.findViewById(id);
       if (tvRoofAreaSquareMetres == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_title;
+      AppCompatTextView tvTitle = rootView.findViewById(id);
+      if (tvTitle == null) {
         break missingId;
       }
 
@@ -659,19 +869,24 @@ public final class FragmentCommericalAdverismentBinding implements ViewBinding {
 
       return new FragmentCommericalAdverismentBinding((ConstraintLayout) rootView, actvFloor,
           actvNumberBathrooms, actvNumberBedrooms, btnNext, etAgeConstructionYears,
-          etBuildingAreaTitle, etGearAreaSquareMetres, etLandArea, etNumberFloorsBuilding,
-          etRoofAreaSquareMetres, etTotalNumberApartmentsBuilding, etYearConstruction, ivBack,
-          radio1, radio2, radioGroupApartmentCondition, radioGroupFurnished,
+          etBuildingAreaTitle, etFacadeStreet, etFarmArea, etGearAreaSquareMetres, etLandArea,
+          etNumberFloorsBuilding, etNumberUnitsBuilding, etRoofAreaSquareMetres,
+          etTotalNumberApartmentsBuilding, etYearConstruction, ivBack, radio1, radio2,
+          radioGroupApartmentCondition, radioGroupContainsBuilding, radioGroupFurnished,
           radioGroupResidentialBuilding, radioGroupWithGardenGear, radioGroupWithRoof, radioNo,
-          radioNoResidentialBuilding, radioNoWithGardenGear, radioNoWithRoof, radioYes,
-          radioYesResidentialBuilding, radioYesWithGardenGear, radioYesWithRoof,
-          rvDetermineApartmentsFeatures, tilFloor, tilNumberBathrooms, tilNumberBedrooms,
-          tlAgeConstructionYears, tlBuildingAreaTitle, tlGearAreaSquareMetres, tlLandArea,
-          tlNumberFloorsBuilding, tlRoofAreaSquareMetres, tlTotalNumberApartmentsBuilding,
-          tlYearConstruction, tvAgeConstructionYears, tvApartmentCondition, tvBuildingArea,
-          tvDetermineApartmentsFeatures, tvFloor, tvFurnished, tvGearAreaSquareMetres, tvLandArea,
-          tvNumberBathrooms, tvNumberBedrooms, tvNumberFloorsBuilding, tvRoofAreaSquareMetres,
-          tvTotalNumberApartmentsBuilding, tvWithGardenGear, tvWithRoof, tvYearConstruction);
+          radioNoContainsBuilding, radioNoResidentialBuilding, radioNoWithGardenGear,
+          radioNoWithRoof, radioYes, radioYesContainsBuilding, radioYesResidentialBuilding,
+          radioYesWithGardenGear, radioYesWithRoof, rvDetermineApartmentsFeatures, rvFarmFeatures,
+          rvLandOrganization, rvRate, tilFloor, tilNumberBathrooms, tilNumberBedrooms,
+          tlAgeConstructionYears, tlBuildingAreaTitle, tlFacadeStreet, tlFarmArea,
+          tlGearAreaSquareMetres, tlLandArea, tlNumberFloorsBuilding, tlNumberUnitsBuilding,
+          tlRoofAreaSquareMetres, tlTotalNumberApartmentsBuilding, tlYearConstruction,
+          tvAgeConstructionYears, tvApartmentCondition, tvBuildingArea, tvContainsBuilding,
+          tvDetermineApartmentsFeatures, tvFacadeStreet, tvFarmArea, tvFarmFeatures, tvFloor,
+          tvFurnished, tvGearAreaSquareMetres, tvLandArea, tvLandOrganization, tvNumberBathrooms,
+          tvNumberBedrooms, tvNumberFloorsBuilding, tvNumberUnitsBuilding, tvRate,
+          tvRoofAreaSquareMetres, tvTitle, tvTotalNumberApartmentsBuilding, tvWithGardenGear,
+          tvWithRoof, tvYearConstruction);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

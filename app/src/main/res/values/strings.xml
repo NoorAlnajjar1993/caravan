@@ -67,7 +67,6 @@
     <string name="filter">فلتر</string>
 
     <string name="reset">إعادة ضبط</string>
-    <string name="select_ad_category">حدد فئة الإعلان</string>
     <string name="property_type">نوع العقار</string>
     <string name="architecture">عمارة</string>
     <string name="land">أرض</string>
@@ -150,7 +149,7 @@
     <string name="notifications">الاشعارات</string>
 
     <string name="add_ads">أضف اعلان</string>
-    <string name="text_04">اعلان عقاري (متبقي 5 اعلانات)</string>
+    <string name="text_04">اعلان عقاري</string>
     <string name="text_05">شقة، منزل، أرض، مزرعة، عمارة، تجاري</string>
     <string name="text_06">اعلان شركة اسكان</string>
     <string name="text_07">عدة شقق وطوابق، اسكان قائم او تحت الإنشاء</string>
@@ -175,7 +174,7 @@
     <string name="no">لا</string>
     <string name="select">اختر</string>
     <string name="number_bathrooms">عدد الحمامات</string>
-    <string name="land_area">مساحة الأرض</string>
+    <string name="land_area"> مساحة الأرض ( متر مربع )</string>
     <string name="year_construction">سنة البناء</string>
     <string name="total_number_apartments_building">مجموع عدد الشقق في المبنى</string>
     <string name="number_floors_building">عدد طوابق المبنى</string>
@@ -213,7 +212,7 @@
     <string name="installments_available">قابل للتقسيط</string>
     <string name="construction_age">عمر البناء</string>
 
-    <string name="building_area">مساحة البناء</string>
+    <string name="building_area">مساحة البناء ( متر مربع )</string>
     <string name="property_condition">حالة العقار</string>
 
     <string name="number_apartments_building">عدد الشقق في المبنى</string>
@@ -232,5 +231,31 @@
     <string name="Whatsapp_is_not_installed">تطبيق واتساب غير مثبت في هاتفك.</string>
     <string name="block">حظر</string>
     <string name="report">ابلاغ</string>
+    <string name="select_ad_category">حدد فئة الإعلان</string>
+    <string name="estate_type">نوع العقار</string>
+    <string name="number_units_building">عدد الوحدات في المبنى </string>
+
+    <string name="number_units">عدد الوحدات</string>
+    <string name="farm_area">مساحة المزرعة ( متر مربع )</string>
+
+    <string name="contains_building">تحتوي على مبنى</string>
+    <string name="farm_features">ميزات المزرعة</string>
+
+    <string name="facade_street">الواجهة على الشارع(متر)</string>
+    <string name="land_organization">تنظيم الارض</string>
+    <string name="rate">منسوب</string>
+    <string name="estate_condition">حالة العقار</string>
+    <string name="number_rooms">عدد غرف</string>
+    <string name="organization">التنظيم</string>
+    <string name="rented_building_">المجمع مؤجر؟</string>
+    <string name="category">التصنيف</string>
+
+    <string name="family_count">عدد الأسرة</string>
+
+    <string name="label_app_settings">label_app_settings</string>
+    <string name="label_permission_settings_desc">label_permission_settings_desc</string>
+    <string name="label_dialog_of_permissions">label_dialog_of_permissions</string>
+    <string name="label_ok">label_ok</string>
+
 
 </resources>

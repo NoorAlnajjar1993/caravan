@@ -21,7 +21,10 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
+import com.caravan.databinding.DialogCommercialBinding
 import com.caravan.databinding.DialogDeactivateBinding
+import com.caravan.databinding.DialogHousingAdsBinding
+import com.caravan.databinding.DialogLogInAddAdsBinding
 import com.caravan.databinding.DialogLogInBinding
 import com.caravan.databinding.DialogLogOutBinding
 import com.caravan.databinding.DialogReportBinding
@@ -99,12 +102,12 @@ fun View.trueOf() {
         isEnabled = false
     }
 }
+
 fun View.trueOn() {
     post {
         isEnabled = true
     }
 }
-
 
 
 inline fun <M, V : BaseViewHolder<M>> BaseAdapter<M, V>.onItemClick(
@@ -206,7 +209,11 @@ inline fun ViewPager.onPageChanged(crossinline callback: (position: Int) -> Unit
         override fun onPageScrollStateChanged(state: Int) {
         }
 
-        override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
+        override fun onPageScrolled(
+            position: Int,
+            positionOffset: Float,
+            positionOffsetPixels: Int
+        ) {
         }
 
         override fun onPageSelected(position: Int) {
@@ -221,7 +228,11 @@ inline fun ViewPager.onPageScrolled(crossinline callback: (position: Int) -> Uni
         override fun onPageScrollStateChanged(state: Int) {
         }
 
-        override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
+        override fun onPageScrolled(
+            position: Int,
+            positionOffset: Float,
+            positionOffsetPixels: Int
+        ) {
             callback(position)
         }
 
@@ -243,12 +254,9 @@ fun ViewPager.goToPreviousPage() {
 }
 
 
-
-
 fun resetEditText(view: EditText) {
     view.text = null
 }
-
 
 
 inline fun TextView.afterTextChanged(crossinline afterTextChanged: (String) -> Unit) {
@@ -270,7 +278,6 @@ val Int.px: Int
     get() = (this * Resources.getSystem().displayMetrics.density).toInt()
 
 
-
 // fun TextView.boldFont( ) {
 //    val face = ResourcesCompat.getFont(
 //        context,
@@ -281,7 +288,7 @@ val Int.px: Int
 //}
 
 
-fun EditText.setOnDrawbleRightClick(onClick : () -> Unit){
+fun EditText.setOnDrawbleRightClick(onClick: () -> Unit) {
     this.setOnTouchListener(View.OnTouchListener { v, event ->
         val DRAWABLE_RIGHT = 2
 
@@ -300,7 +307,7 @@ fun EditText.setOnDrawbleRightClick(onClick : () -> Unit){
 }
 
 
-fun EditText.setMinCharacterLength (minCharacterLength:Int) {
+fun EditText.setMinCharacterLength(minCharacterLength: Int) {
     onTextChanged {
         if (text.toString().trim().length < minCharacterLength) {
             error = "more ${minCharacterLength.minus(text?.length!!)} character";
@@ -401,6 +408,88 @@ fun Context.showLoginDialog(
     }.show()
 }
 
+
+fun Context.showLoginAddAdsDialog(
+    onPositiveButtonClick: (dialog: Dialog) -> Unit = {},
+    isCancelable: Boolean = true
+) {
+    val dialog = Dialog(this)
+    dialog.apply {
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
+        val binding = DialogLogInAddAdsBinding.inflate(LayoutInflater.from(context))
+        setContentView(binding.root)
+
+        binding.apply {
+            onClickListener = View.OnClickListener {
+                when (it) {
+                    btnLogout -> onPositiveButtonClick(dialog)
+                }
+            }
+        }
+
+        window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+        setCancelable(isCancelable)
+
+    }.show()
+}
+
+
+
+fun Context.showHousingAdsDialog(
+    onPositiveButtonClick: (dialog: Dialog) -> Unit = {},
+    onNegativeButtonClick: (dialog: Dialog) -> Unit = {},
+    isCancelable: Boolean = true
+) {
+    val dialog = Dialog(this)
+    dialog.apply {
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
+        val binding = DialogHousingAdsBinding.inflate(LayoutInflater.from(context))
+        setContentView(binding.root)
+
+        binding.apply {
+            onClickListener = View.OnClickListener {
+                when (it) {
+                    btnLogout -> onPositiveButtonClick(dialog)
+                    btnCancel -> onNegativeButtonClick(dialog)
+                }
+            }
+        }
+
+        window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+        setCancelable(isCancelable)
+
+    }.show()
+}
+
+fun Context.showCommercialDialog(
+    onPositiveButtonClick: (dialog: Dialog) -> Unit = {},
+    onNegativeButtonClick: (dialog: Dialog) -> Unit = {},
+    isCancelable: Boolean = true
+) {
+    val dialog = Dialog(this)
+    dialog.apply {
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
+        val binding = DialogCommercialBinding.inflate(LayoutInflater.from(context))
+        setContentView(binding.root)
+
+        binding.apply {
+            onClickListener = View.OnClickListener {
+                when (it) {
+                    btnLogout -> onPositiveButtonClick(dialog)
+                    btnCancel -> onNegativeButtonClick(dialog)
+                }
+            }
+        }
+
+        window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+        setCancelable(isCancelable)
+
+    }.show()
+}
+
 fun Context.showBlockDialog(
     onPositiveButtonClick: (dialog: Dialog) -> Unit = {},
     isCancelable: Boolean = true,
@@ -426,4 +515,6 @@ fun Context.showBlockDialog(
         setCancelable(isCancelable)
 
     }.show()
+
+
 }

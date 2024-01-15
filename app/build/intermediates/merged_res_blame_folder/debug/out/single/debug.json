@@ -4,20 +4,32 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\custom_bg_purple.xml"
     },
     {
-        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_splach.xml.flat",
-        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_splach.xml"
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_report.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\dialog_report.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_talk_through_2.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_talk_through_2.xml"
     },
     {
-        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_report.xml.flat",
-        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\dialog_report.xml"
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_maps.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_maps.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_splach.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_splach.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_commertcial_ads_single.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_commertcial_ads_single.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_directions.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_directions.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_complete_1.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\complete_1.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_play.png.flat",
@@ -136,6 +148,10 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\raw\\favourites.json"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_housing_ads.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_housing_ads.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_seen.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_seen.xml"
     },
@@ -148,8 +164,16 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_roof.xml"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_add_ads_images.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_add_ads_images.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_in.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\anim\\fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_log_in_add_ads.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\dialog_log_in_add_ads.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_bg_sheet_white.xml.flat",
@@ -176,8 +200,16 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_add_estate_ads.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_add_estate_ads.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_talk_through_3.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_talk_through_3.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_add_media.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_add_media.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_call.xml.flat",
@@ -200,6 +232,10 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_arrow_white.xml"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_housing_ads_single.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_housing_ads_single.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_user_gray.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_user_gray.xml"
     },
@@ -218,6 +254,10 @@
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_complete_3.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\complete_3.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -260,6 +300,10 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_complete_4.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\complete_4.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_whatsapp.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_whatsapp.xml"
     },
@@ -278,6 +322,10 @@
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_profile_purple.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_profile_purple.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_commertcial_estate_single.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_commertcial_estate_single.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_feature_19.xml.flat",
@@ -300,12 +348,28 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\photo2.png"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_point.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_point.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_house.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_house.xml"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_add_commercial_estate.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_add_commercial_estate.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_add_housing_ads.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_add_housing_ads.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_real_estate_ads_single.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_real_estate_ads_single.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_favourite.xml.flat",
@@ -318,6 +382,14 @@
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_feature_8.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_feature_8.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_remove.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_remove.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_commerical_ad_specification.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_commerical_ad_specification.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_calendar.xml.flat",
@@ -340,16 +412,16 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rounded_background.xml.flat",
-        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\rounded_background.xml"
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_bg_red_light.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\custom_bg_red_light.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_block.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_block.xml"
     },
     {
-        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_bg_red_light.xml.flat",
-        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\custom_bg_red_light.xml"
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rounded_background.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\rounded_background.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_photo9.png.flat",
@@ -358,6 +430,10 @@
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_bannar_holder.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\bannar_holder.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_building_hint.png.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_building_hint.png"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rect_purple_1.png.flat",
@@ -424,16 +500,16 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_uncheck_box.xml"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_whats_app.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_whats_app.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_underline_purple.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\underline_purple.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_photo7.png.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\photo7.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_whats_app.xml.flat",
-        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_whats_app.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_feature_3.xml.flat",
@@ -516,6 +592,18 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\navigation\\profile_nav.xml"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_login.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_add_commercial_ads.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_add_commercial_ads.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_commercial.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_commercial.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\font_neo_sans_arabic.ttf.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\font\\neo_sans_arabic.ttf"
     },
@@ -568,6 +656,10 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_edit.png"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_ad_category.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_ad_category.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_adv.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_add_adv.xml"
     },
@@ -580,12 +672,12 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_account.xml"
     },
     {
-        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_banner.xml.flat",
-        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\item_banner.xml"
-    },
-    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_banner.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\item_banner.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rect_02.png.flat",
@@ -600,12 +692,12 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_commertcial_estate.xml"
     },
     {
-        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_real_estate_ads.xml.flat",
-        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_real_estate_ads.xml"
-    },
-    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_email.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_real_estate_ads.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_real_estate_ads.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\anim_rotate.xml.flat",
@@ -626,6 +718,10 @@
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_down.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\anim\\slide_down.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_housing_ads.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\dialog_housing_ads.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_underline_gray.xml.flat",
@@ -656,12 +752,12 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\font-ar\\sfui_display_regular.otf"
     },
     {
-        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_feature_11.xml.flat",
-        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_feature_11.xml"
-    },
-    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_iv_camera_container.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\iv_camera_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_feature_11.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_feature_11.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\raw_commercial_ads.json.flat",
@@ -788,6 +884,10 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\outline_light_purple.xml"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_upload_images.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\ic_upload_images.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\raw_check.json.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\raw\\check.json"
     },
@@ -812,6 +912,14 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\bottom_sheet_report.xml"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_bg_yellow_01.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\custom_bg_yellow_01.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_complete.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_complete.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_bg_gray.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\custom_bg_gray.xml"
     },
@@ -822,6 +930,10 @@
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_complete_2.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\complete_2.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_banner_selected.xml.flat",
@@ -864,6 +976,10 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\raw\\search.json"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_commercial.xml.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\dialog_commercial.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_right.xml.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\anim\\slide_in_right.xml"
     },
@@ -874,6 +990,10 @@
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\font_sfui_display_medium.ttf.flat",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\font\\sfui_display_medium.ttf"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back_img_01.png.flat",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\drawable\\back_img_01.png"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_dialog.xml.flat",

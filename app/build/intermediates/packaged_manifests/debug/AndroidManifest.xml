@@ -22,6 +22,12 @@
         android:glEsVersion="0x00020000"
         android:required="true" />
 
+    <queries>
+
+        <!-- Needs to be explicitly declared on Android R+ -->
+        <package android:name="com.google.android.apps.maps" />
+    </queries>
+
     <application
         android:name="com.dominate.caravan.CaravanApp"
         android:allowBackup="true"
@@ -36,6 +42,22 @@
         android:testOnly="true"
         android:theme="@style/HomeTheme"
         android:usesCleartextTraffic="true" >
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD8QrczlhLWxM59xSF0zMhuIYRFZkQFW1A" />
+
         <activity
             android:name="com.dominate.caravan.ui.home.HomeActivity"
             android:configChanges="uiMode"
@@ -89,7 +111,13 @@
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/image_picker_provider_paths" />
-        </provider> <!-- Needs to be explicitly declared on P+ -->
+        </provider>
+
+        <activity
+            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+            android:exported="false"
+            android:label=""
+            android:theme="@style/EasyPermissions.Transparent" /> <!-- Needs to be explicitly declared on P+ -->
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />

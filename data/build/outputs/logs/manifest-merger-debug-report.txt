@@ -1,26 +1,30 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-5:12
-INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-5:12
-INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-5:12
-INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-5:12
-INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-5:12
-INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-5:12
-INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-5:12
+ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-6:12
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-6:12
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-6:12
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-6:12
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-6:12
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-6:12
+INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-6:12
 	package
 		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml
-		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-5:12
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-6:12
 		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml
-		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-5:12
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:1-6:12
 		INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml:5:22-76
 uses-sdk
 INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\owner\Desktop\Android Applications Initiat\android-hawalina-develop\android-hawalina-develop\data\src\main\AndroidManifest.xml

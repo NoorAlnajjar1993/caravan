@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.ImageDecoder
 import android.net.Uri
@@ -17,6 +18,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
@@ -26,6 +28,7 @@ import com.caravan.databinding.FragmentEditPasswordBinding
 import com.caravan.databinding.FragmentProfileBinding
 import com.dominate.caravan.core.autoCleared
 import com.dominate.caravan.core.base.BaseFragment
+import com.dominate.caravan.ui.owner.OwnerFragment
 import com.dominate.caravan.utils.Resource
 import dagger.hilt.android.AndroidEntryPoint
 import java.io.File
@@ -34,6 +37,7 @@ import java.io.FileNotFoundException
 import java.io.FileOutputStream
 import java.io.IOException
 import java.io.InputStream
+import java.net.URLEncoder
 import java.util.UUID
 
 @AndroidEntryPoint
@@ -113,8 +117,37 @@ class ProfileFragment  : BaseFragment()  , TextWatcher {
                 .start(SECOUNDIMAGE)
         }
 
+        binding.btnPostAdNow.setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_addAdsFragment)
+        }
+
+        binding.constraintLayout01.setOnClickListener {
+            isWhatsAppInstalled("com.caravan")
+
+        }
         observeUserProfile()
 
+    }
+
+
+    private fun isWhatsAppInstalled(packageName: String): Boolean {
+        val url =
+            "https://api.whatsapp.com/send?phone=0795986039}" + URLEncoder.encode("", "utf-8")
+        try {
+            val pm: PackageManager = requireActivity().getPackageManager()
+            pm.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES)
+            val i = Intent(Intent.ACTION_VIEW)
+            i.data = Uri.parse(url)
+            startActivity(i)
+        } catch (e: PackageManager.NameNotFoundException) {
+            Toast.makeText(
+                context,
+                getString(R.string.Whatsapp_is_not_installed),
+                Toast.LENGTH_SHORT
+            ).show()
+            e.printStackTrace()
+        }
+        return true
     }
 
     private fun observeUserProfile() {

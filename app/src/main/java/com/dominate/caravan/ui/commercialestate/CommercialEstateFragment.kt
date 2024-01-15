@@ -38,7 +38,7 @@ class CommercialEstateFragment  : BaseFragment()  , TextWatcher {
 
      var binding: FragmentCommercialEstateBinding by autoCleared()
     private val viewModel: HomeViewModel by viewModels()
-    lateinit var commercialEstatesAdapter: CommercialEstatesAdapter
+    lateinit var commercialEstatesAdapter: CommercialEstatesSingleAdapter
     var token: String? = ""
 
     override fun onCreateView(
@@ -124,7 +124,7 @@ class CommercialEstateFragment  : BaseFragment()  , TextWatcher {
 
     private fun commercialEstatesData(commercialEstates: MutableList<CommercialEstate>) {
         if (commercialEstates.isNotEmpty()) {
-            commercialEstatesAdapter = CommercialEstatesAdapter(commercialEstates, {
+            commercialEstatesAdapter = CommercialEstatesSingleAdapter(commercialEstates, {
                 if (prefs.isLoggedIn && !token.isNullOrEmpty()) {
                     it!!.is_favorite = !it.is_favorite
                     AddRemoveFavorite(id = it.id, it.is_favorite)
