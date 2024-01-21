@@ -1,0 +1,7 @@
+#Sun Jan 21 10:04:38 AST 2024
+base.0=C\:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=C\:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\classes.dex

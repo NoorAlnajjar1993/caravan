@@ -71,6 +71,11 @@
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_addAdsFragment_to_addCommercialAdsFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_addAdsFragment_to_addEstateAdsFragment">
                               <value>
                                 <LayoutPositions />
@@ -82,6 +87,11 @@
                               </value>
                             </entry>
                             <entry key="action_addAdsFragment_to_commericalAdvertismentFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_addAdsFragment_to_sigininFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -120,6 +130,15 @@
                             <option name="x" value="-850" />
                             <option name="y" value="-4750" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_addCommercialAdsFragment_to_addAdsImages">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -197,6 +216,32 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="buyFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-2160" />
+                            <option name="y" value="-4460" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_buyFragment_to_cliqFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_buyFragment_to_transferDataFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="changePasswordFragment">
                     <value>
                       <LayoutPositions>
@@ -204,6 +249,18 @@
                           <Point>
                             <option name="x" value="11" />
                             <option name="y" value="-2887" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="cliqFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-2160" />
+                            <option name="y" value="-4250" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -231,6 +288,30 @@
                               </value>
                             </entry>
                           </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="commercialAdsFragment2">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-4058" />
+                            <option name="y" value="-4463" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="commercialEstateAdsFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-1540" />
+                            <option name="y" value="-4250" />
+                          </Point>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -303,6 +384,18 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="completeFeatureFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-2080" />
+                            <option name="y" value="-4770" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="completeFragment">
                     <value>
                       <LayoutPositions>
@@ -311,6 +404,20 @@
                             <option name="x" value="-880" />
                             <option name="y" value="-4150" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_completeFragment_to_featureAdsFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_completeFragment_to_homeFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -374,6 +481,27 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="featureAdsFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-1200" />
+                            <option name="y" value="-3950" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_featureAdsFragment_to_packagesFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="filterFragment">
                     <value>
                       <LayoutPositions>
@@ -418,6 +546,11 @@
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_homeFragment_to_addAdsFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_homeFragment_to_commercialAdsFragment">
                               <value>
                                 <LayoutPositions />
@@ -484,6 +617,18 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="housingAdsFragment2">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-1840" />
+                            <option name="y" value="-4550" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="mapsFragment">
                     <value>
                       <LayoutPositions>
@@ -529,6 +674,27 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="packagesFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-2460" />
+                            <option name="y" value="-4760" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_packagesFragment_to_buyFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="privacyPolicyFragment">
                     <value>
                       <LayoutPositions>
@@ -558,6 +724,31 @@
                               </value>
                             </entry>
                             <entry key="action_profileFragment_to_accountSettingFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_profileFragment_to_addAdsFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_profileFragment_to_commercialAdsFragment2">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_profileFragment_to_commercialEstateAdsFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_profileFragment_to_featureAdsFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_profileFragment_to_housingAdsFragment2">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -785,6 +976,27 @@
                             <option name="x" value="790" />
                             <option name="y" value="-2945" />
                           </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="transferDataFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-2460" />
+                            <option name="y" value="-4550" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_transferDataFragment_to_cliqFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>

@@ -16,9 +16,13 @@ import com.caravan.databinding.FragmentAddCommercialEstateBinding
 import com.caravan.databinding.FragmentCommercialAdsBinding
 import com.dominate.caravan.core.autoCleared
 import com.dominate.caravan.core.base.BaseFragment
+import com.dominate.caravan.medule.addads.AddCommercialAdsModel
+import com.dominate.caravan.medule.addads.AddHousingAdsModel
 import com.dominate.caravan.ui.addads.AddAdsViewModel
+import com.dominate.caravan.ui.addads.addadsimages.AddAdsImages
 import com.dominate.caravan.ui.addads.addcommercialestate.adapter.AddCommercialEstateAdapter
 import com.dominate.caravan.ui.addads.addestateads.AddCategoryModel
+import com.dominate.caravan.ui.addads.addestateads.AddEstateAdsFragment
 import com.vdx.designertoast.DesignerToast
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -28,7 +32,7 @@ class AddCommercialAdsFragment : BaseFragment(), TextWatcher {
     var binding: FragmentAddCommercialAdsBinding by autoCleared()
     private val viewModel: AddAdsViewModel by viewModels()
     lateinit var addCommercialEstateAdapter: AddCommercialEstateAdapter
-    var estateType = 0
+    var type_id = 0
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -75,15 +79,21 @@ class AddCommercialAdsFragment : BaseFragment(), TextWatcher {
 
 
         addCommercialEstateAdapter = AddCommercialEstateAdapter(addCategoryList) {
-            estateType = it!!.id
+            type_id = it!!.id
         }
         addCommercialEstateAdapter.notifyDataSetChanged()
         binding.rvSelectAdCategory.adapter = addCommercialEstateAdapter
 
         binding.btnNext.setOnClickListener {
-            if (estateType == 0) {
+            if (type_id == 0) {
                 showErrorToast("حدد نوع الإعلان التجاري")
             } else {
+                var AddCommercialAdsModel = AddCommercialAdsModel(
+                    type_id = type_id.toString(),
+                    typeOfAds = AddEstateAdsFragment.adCategory.toString()
+                )
+                AddAdsImages.type = "commercial"
+                AddAdsImages.AddCommercialAdsModel = AddCommercialAdsModel
                 findNavController().navigate(R.id.action_addCommercialAdsFragment_to_addAdsImages)
             }
         }

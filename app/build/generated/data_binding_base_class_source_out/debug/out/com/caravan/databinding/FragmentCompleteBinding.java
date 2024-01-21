@@ -32,6 +32,9 @@ public final class FragmentCompleteBinding implements ViewBinding {
   public final AppCompatImageView complete4;
 
   @NonNull
+  public final ConstraintLayout constraintLayout01;
+
+  @NonNull
   public final AppCompatImageView ivBack;
 
   @NonNull
@@ -49,14 +52,15 @@ public final class FragmentCompleteBinding implements ViewBinding {
   private FragmentCompleteBinding(@NonNull ConstraintLayout rootView,
       @NonNull AppCompatImageView complete1, @NonNull AppCompatImageView complete2,
       @NonNull AppCompatImageView complete3, @NonNull AppCompatImageView complete4,
-      @NonNull AppCompatImageView ivBack, @NonNull AppCompatTextView tvText01,
-      @NonNull AppCompatTextView tvText02, @NonNull AppCompatTextView tvText03,
-      @NonNull AppCompatTextView tvText04) {
+      @NonNull ConstraintLayout constraintLayout01, @NonNull AppCompatImageView ivBack,
+      @NonNull AppCompatTextView tvText01, @NonNull AppCompatTextView tvText02,
+      @NonNull AppCompatTextView tvText03, @NonNull AppCompatTextView tvText04) {
     this.rootView = rootView;
     this.complete1 = complete1;
     this.complete2 = complete2;
     this.complete3 = complete3;
     this.complete4 = complete4;
+    this.constraintLayout01 = constraintLayout01;
     this.ivBack = ivBack;
     this.tvText01 = tvText01;
     this.tvText02 = tvText02;
@@ -115,6 +119,12 @@ public final class FragmentCompleteBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.constraintLayout01;
+      ConstraintLayout constraintLayout01 = rootView.findViewById(id);
+      if (constraintLayout01 == null) {
+        break missingId;
+      }
+
       id = R.id.iv_back;
       AppCompatImageView ivBack = rootView.findViewById(id);
       if (ivBack == null) {
@@ -146,7 +156,7 @@ public final class FragmentCompleteBinding implements ViewBinding {
       }
 
       return new FragmentCompleteBinding((ConstraintLayout) rootView, complete1, complete2,
-          complete3, complete4, ivBack, tvText01, tvText02, tvText03, tvText04);
+          complete3, complete4, constraintLayout01, ivBack, tvText01, tvText02, tvText03, tvText04);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

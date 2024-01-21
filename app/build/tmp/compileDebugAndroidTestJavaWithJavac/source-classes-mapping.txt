@@ -1,0 +1,2 @@
+com/caravan/test/BuildConfig.java
+ com.caravan.test.BuildConfig

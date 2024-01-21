@@ -12,12 +12,12 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_maps.xml"
     },
     {
-        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_talk_through_2.xml",
-        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_talk_through_2.xml"
-    },
-    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_verification_code.xml",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_verification_code.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_talk_through_2.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_talk_through_2.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_filter.xml",
@@ -36,16 +36,28 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\activity_on_boarding.xml"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_my_ads_commercial.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_my_ads_commercial.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_feature_ads.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_feature_ads.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_commertcial_estate.xml",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_commertcial_estate.xml"
     },
     {
-        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add_commercial_estate.xml",
-        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_add_commercial_estate.xml"
-    },
-    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_about_company.xml",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_about_company.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_packages.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_packages.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add_commercial_estate.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_add_commercial_estate.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add_estate_ads.xml",
@@ -72,6 +84,10 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\activity_home.xml"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_enter_all_fields.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\dialog_enter_all_fields.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_estate_details.xml",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_estate_details.xml"
     },
@@ -80,24 +96,28 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_register.xml"
     },
     {
-        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_housing_ads.xml",
-        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_housing_ads.xml"
-    },
-    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_search.xml",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_search.xml"
     },
     {
-        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_account_setting.xml",
-        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_account_setting.xml"
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_housing_ads.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_housing_ads.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_log_in_add_ads.xml",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\dialog_log_in_add_ads.xml"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_account_setting.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_account_setting.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_commercial_ads.xml",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_commercial_ads.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_my_ads.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_my_ads.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_real_estate_ads_single.xml",
@@ -120,6 +140,10 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_commerical_adverisment.xml"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_buy.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_buy.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_housing_ads_single.xml",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_housing_ads_single.xml"
     },
@@ -138,6 +162,14 @@
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_add_media.xml",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_add_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_cliq.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_cliq.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_transfer_data.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_transfer_data.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_ad_category.xml",
@@ -192,6 +224,10 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\dialog_log_out.xml"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_my_ads_housing.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_my_ads_housing.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_log_in.xml",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\dialog_log_in.xml"
     },
@@ -208,12 +244,20 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_talk_through_1.xml"
     },
     {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_complete_feature.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_complete_feature.xml"
+    },
+    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\bannar_holder.xml",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\bannar_holder.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_banner.xml",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\item_banner.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_my_ads_commercial_estate.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_my_ads_commercial_estate.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_real_estate_ads.xml",
@@ -244,20 +288,20 @@
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_deactivate.xml",
-        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\dialog_deactivate.xml"
-    },
-    {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_real_estate_ads.xml",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_real_estate_ads.xml"
     },
     {
-        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_similar_estate.xml",
-        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_similar_estate.xml"
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_deactivate.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\dialog_deactivate.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add_commercial_ads.xml",
         "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\fragment_add_commercial_ads.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_similar_estate.xml",
+        "source": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\src\\main\\res\\layout\\row_similar_estate.xml"
     },
     {
         "merged": "C:\\Users\\owner\\Desktop\\Android Applications Initiat\\android-hawalina-develop\\android-hawalina-develop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_commertcial_ads.xml",

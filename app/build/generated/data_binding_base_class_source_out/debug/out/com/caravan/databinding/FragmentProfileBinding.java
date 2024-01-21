@@ -70,6 +70,12 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final AppCompatTextView tvAdvertisementPackage;
 
   @NonNull
+  public final AppCompatTextView tvCommercialEstate;
+
+  @NonNull
+  public final AppCompatTextView tvHousing;
+
+  @NonNull
   public final AppCompatTextView tvMyCommercials;
 
   @NonNull
@@ -90,9 +96,10 @@ public final class FragmentProfileBinding implements ViewBinding {
       @NonNull AppCompatTextView textView07, @NonNull AppCompatTextView textView08,
       @NonNull AppCompatTextView textView09, @NonNull AppCompatTextView tvAboutCaravanCompany,
       @NonNull AppCompatTextView tvAccountSettings,
-      @NonNull AppCompatTextView tvAdvertisementPackage, @NonNull AppCompatTextView tvMyCommercials,
-      @NonNull AppCompatTextView tvMyRealEstateAds, @NonNull AppCompatTextView tvName,
-      @NonNull AppCompatTextView tvPhone) {
+      @NonNull AppCompatTextView tvAdvertisementPackage,
+      @NonNull AppCompatTextView tvCommercialEstate, @NonNull AppCompatTextView tvHousing,
+      @NonNull AppCompatTextView tvMyCommercials, @NonNull AppCompatTextView tvMyRealEstateAds,
+      @NonNull AppCompatTextView tvName, @NonNull AppCompatTextView tvPhone) {
     this.rootView = rootView;
     this.btnPostAdNow = btnPostAdNow;
     this.constraintLayout01 = constraintLayout01;
@@ -110,6 +117,8 @@ public final class FragmentProfileBinding implements ViewBinding {
     this.tvAboutCaravanCompany = tvAboutCaravanCompany;
     this.tvAccountSettings = tvAccountSettings;
     this.tvAdvertisementPackage = tvAdvertisementPackage;
+    this.tvCommercialEstate = tvCommercialEstate;
+    this.tvHousing = tvHousing;
     this.tvMyCommercials = tvMyCommercials;
     this.tvMyRealEstateAds = tvMyRealEstateAds;
     this.tvName = tvName;
@@ -239,6 +248,18 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_commercial_estate;
+      AppCompatTextView tvCommercialEstate = rootView.findViewById(id);
+      if (tvCommercialEstate == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_housing;
+      AppCompatTextView tvHousing = rootView.findViewById(id);
+      if (tvHousing == null) {
+        break missingId;
+      }
+
       id = R.id.tv_my_commercials;
       AppCompatTextView tvMyCommercials = rootView.findViewById(id);
       if (tvMyCommercials == null) {
@@ -266,8 +287,8 @@ public final class FragmentProfileBinding implements ViewBinding {
       return new FragmentProfileBinding((ConstraintLayout) rootView, btnPostAdNow,
           constraintLayout01, imageView03, ivProfileImage, ivUploadImage, textView02, textView03,
           textView04, textView05, textView06, textView07, textView08, textView09,
-          tvAboutCaravanCompany, tvAccountSettings, tvAdvertisementPackage, tvMyCommercials,
-          tvMyRealEstateAds, tvName, tvPhone);
+          tvAboutCaravanCompany, tvAccountSettings, tvAdvertisementPackage, tvCommercialEstate,
+          tvHousing, tvMyCommercials, tvMyRealEstateAds, tvName, tvPhone);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

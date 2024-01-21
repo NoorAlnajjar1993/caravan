@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:visibility="gone"
+    app:behavior_hideable="false"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_bg_sheet_white"
+            android:padding="24dp"
+            android:paddingBottom="105dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="يرجى تحديد المشكلة من فضلك"
+                android:textColor="@color/purble"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                app:layout_constraintTop_toBottomOf="@+id/tv_title"
+                android:layout_marginHorizontal="31dp"
+                android:id="@+id/radioGroup"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:button="@drawable/selector_apartment_condition"
+                    android:background="@null"
+                    android:paddingStart="10dp"
+                    android:id="@+id/radioButton_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="حساب زائف"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_gray" />
+
+                <View
+                    android:id="@+id/view_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/light_gray" />
+
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:button="@drawable/selector_apartment_condition"
+                    android:background="@null"
+                    
+                    android:id="@+id/radioButton_02"
+                    android:paddingStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="الصور غير مناسبة / صور غير واقعية"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_gray" />
+                <View
+                    android:id="@+id/view_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/light_gray" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:button="@drawable/selector_apartment_condition"
+                    android:background="@null"
+                    
+                    android:id="@+id/radioButton_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="اساءة أو مضايفة"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/dark_gray" />
+                <View
+                    android:id="@+id/view_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/light_gray" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:button="@drawable/selector_apartment_condition"
+                    android:background="@null"
+                    
+                    android:id="@+id/radioButton_04"
+                    android:layout_width="match_parent"
+                    android:paddingStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="أرقام التواصل غير متاحة"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_gray" />
+                <View
+                    android:id="@+id/view_04"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/light_gray" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:button="@drawable/selector_apartment_condition"
+                    android:background="@null"
+                    
+                    android:id="@+id/radioButton_05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="سبب آخر"
+                    android:paddingStart="10dp"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_gray" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_problem"
+                    style="@style/AppTheme.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_04">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_problem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/neo_sans_arabic"
+                        android:hint="أخبرنا ما المشكلة"
+                        android:inputType="text"
+                        android:maxLength="60"
+                        android:maxLines="1"
+                        android:textColor="@color/dark_gray"
+                        android:textColorHint="@color/light_gray"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toStartOf="@+id/gl_End"
+                        app:layout_constraintStart_toStartOf="@+id/gl_Start"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <View
+                    android:id="@+id/view_05"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/light_gray" />
+
+            </RadioGroup>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_report"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginVertical="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/red_light"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="@string/report"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:cornerRadius="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

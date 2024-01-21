@@ -89,6 +89,13 @@ class HomeFragment : BaseFragment() {
         binding.tvRealEstateAds.startAnimation(slideUpAnimation)
         binding.rvRealEstateAds.startAnimation(slideUpAnimation)
         binding.constraintLayout02.startAnimation(slideUpAnimation)
+        binding.tvMoreCommercialEstates.startAnimation(slideUpAnimation)
+        binding.tvCommercialEstates.startAnimation(slideUpAnimation)
+        binding.rvCommercialEstates.startAnimation(slideUpAnimation)
+        binding.tvMoreCommercialAds.startAnimation(slideUpAnimation)
+        binding.tvCommercialAds.startAnimation(slideUpAnimation)
+        binding.rvCommercialAds.startAnimation(slideUpAnimation)
+        binding.rvCommercialAds.startAnimation(slideUpAnimation)
 
         Handler().postDelayed({
             binding.loading.visibility = View.GONE

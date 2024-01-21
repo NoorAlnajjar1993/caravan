@@ -28,8 +28,11 @@ class AddEstateAdsFragment : BaseFragment(), TextWatcher {
     private val viewModel: AddAdsViewModel by viewModels()
     lateinit var addCategoryAdapter: AddCategoryAdapter
     lateinit var estateTypeAdapter: EstateTypeAdapter
-    var adCategory = 0
+
     var estateType = 0
+    companion object{
+        var adCategory = 0
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,

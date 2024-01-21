@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray_3">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="12dp"
+        android:src="@drawable/ic_arrow_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/neo_sans_arabic"
+        android:text="باقة الاعلانات"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="@drawable/outline_purple"
+            android:button="@drawable/selector_apartment_condition"
+            android:checked="false"
+            android:fontFamily="@font/neo_sans_arabic_bold"
+            android:padding="14dp"
+            android:text="باقة 10 اعلانات بسعر 20 دينار"
+            android:textColor="@color/dark_gray"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/outline_purple"
+            android:button="@drawable/selector_apartment_condition"
+            android:checked="false"
+            android:fontFamily="@font/neo_sans_arabic_bold"
+            android:padding="14dp"
+            android:text="باقة 50 اعلان بسعر 50 دينار"
+            android:textColor="@color/dark_gray"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/outline_purple"
+            android:button="@drawable/selector_apartment_condition"
+            android:checked="false"
+            android:fontFamily="@font/neo_sans_arabic_bold"
+            android:padding="14dp"
+            android:text="باقة 150 اعلان بسعر 100 دينار"
+            android:textColor="@color/dark_gray"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/outline_purple"
+            android:button="@drawable/selector_apartment_condition"
+            android:checked="false"
+            android:fontFamily="@font/neo_sans_arabic_bold"
+            android:padding="14dp"
+            android:text="باقة 600 اعلان بسعر 300 دينار"
+            android:textColor="@color/dark_gray"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_buy_now"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/purble"
+        android:fontFamily="@font/neo_sans_arabic"
+        android:text="اشبر الآن"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

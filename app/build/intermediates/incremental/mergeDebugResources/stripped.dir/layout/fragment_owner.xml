@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray_3">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="40dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView_01"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/ic_list"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textView_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                tools:text="@string/notifications"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView_02"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/ic_arrow_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_profile_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_account"
+                android:scaleType="centerCrop"
+                app:strokeColor="@color/purble"
+                app:strokeWidth="0.5dp"
+                android:adjustViewBounds="true"
+                app:shapeAppearanceOverlay="@style/roundedImageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_02" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                tools:text="Hamza Muhawesh"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_profile_image" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textDirection="rtl"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/outline_light_purple"
+                android:drawableStart="@drawable/ic_arrow_circle_right"
+                android:drawableEnd="@drawable/ic_phone_purple"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                tools:text="0779231330"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_whatsApp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textDirection="rtl"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/outline_light_purple"
+                android:drawableStart="@drawable/ic_arrow_circle_right"
+                android:drawableEnd="@drawable/ic_whats_app"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                tools:text="0779231330"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_phone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textDirection="rtl"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/outline_light_purple"
+                android:drawableStart="@drawable/ic_arrow_circle_right"
+                android:drawableEnd="@drawable/ic_email"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                tools:text="0779231330"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_whatsApp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ads_name"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                tools:text="اعلانات"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_email"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="لا يوجد إعلانات"
+                android:textColor="@color/purble"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ads_name"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/bottomSheet_block_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/include_block_report_sheet"
+            layout="@layout/bottom_sheet_block_report" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/bottomSheet_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/include_report_sheet"
+            layout="@layout/bottom_sheet_report" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

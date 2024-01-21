@@ -31,6 +31,8 @@ import com.caravan.databinding.FragmentMapsBinding
 import com.dominate.caravan.core.autoCleared
 import com.dominate.caravan.core.base.BaseFragment
 import com.dominate.caravan.medule.AddressResponse
+import com.dominate.caravan.medule.addads.AddRealStateAdsModel
+import com.dominate.caravan.ui.addads.addadsimages.AddAdsImages
 import com.dominate.caravan.ui.home.HomeActivity
 import com.dominate.caravan.utils.AppConstants
 import com.dominate.caravan.utils.AppUtils
@@ -118,6 +120,27 @@ class MapsFragment : BaseFragment() ,
                     lng = map?.cameraPosition?.target?.longitude!!.toString()
                 )
 
+                if (AddAdsImages.type == "real_estate") {
+                    AddAdsImages.realStateAdsModel.lat = model.lat
+                    AddAdsImages.realStateAdsModel.long = model.lng
+                    AddAdsImages.realStateAdsModel.street = street
+                    AddAdsImages.realStateAdsModel.is_the_location_approximate = false
+                }  else if (AddAdsImages.type == "commercial_estate") {
+                    AddAdsImages.AddCommercialEStateAdsModel.lat = model.lat
+                    AddAdsImages.AddCommercialEStateAdsModel.long = model.lng
+                    AddAdsImages.AddCommercialEStateAdsModel.street = street
+                    AddAdsImages.AddCommercialEStateAdsModel.is_the_location_approximate = false
+                }  else if (AddAdsImages.type == "housing") {
+                    AddAdsImages.AddHousingAdsModel.lat = model.lat
+                    AddAdsImages.AddHousingAdsModel.long = model.lng
+                    AddAdsImages.AddHousingAdsModel.street = street
+                    AddAdsImages.AddHousingAdsModel.is_the_location_approximate = false
+                }  else if (AddAdsImages.type == "commercial") {
+                    AddAdsImages.AddCommercialAdsModel.lat = model.lat
+                    AddAdsImages.AddCommercialAdsModel.long = model.lng
+                    AddAdsImages.AddCommercialAdsModel.street = street
+                    AddAdsImages.AddCommercialAdsModel.is_the_location_approximate = false
+                }
                 findNavController().navigate(R.id.action_mapsFragment_to_completeFragment,
                     bundleOf(AppConstants.BUNDLE_MODEL to model))
 

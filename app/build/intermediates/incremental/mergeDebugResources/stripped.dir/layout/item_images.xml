@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <com.google.android.material.imageview.ShapeableImageView
+        app:strokeColor="@color/purble"
+        app:strokeWidth="0.5dp"
+        android:adjustViewBounds="true"
+        app:shapeAppearanceOverlay="@style/cornersImageView"
+        android:id="@+id/imageView_01"
+        android:layout_width="343dp"
+        android:layout_height="343dp"
+        android:scaleType="fitXY"  android:tag="layout/item_images_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"/>
+
+         

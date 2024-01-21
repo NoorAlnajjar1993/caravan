@@ -21,8 +21,11 @@ import com.caravan.databinding.FragmentCommericalAdverismentBinding
 import com.caravan.databinding.FragmentSearchBinding
 import com.dominate.caravan.core.autoCleared
 import com.dominate.caravan.core.base.BaseFragment
+import com.dominate.caravan.medule.addads.AddRealStateAdsModel
 import com.dominate.caravan.ui.addads.AddAdsViewModel
+import com.dominate.caravan.ui.addads.addadsimages.AddAdsImages
 import com.dominate.caravan.ui.addads.addestateads.AddCategoryModel
+import com.dominate.caravan.ui.addads.addestateads.AddEstateAdsFragment
 import com.dominate.caravan.ui.addads.addestateads.adapter.AddCategoryAdapter
 import com.dominate.caravan.ui.home.HomeActivity
 import dagger.hilt.android.AndroidEntryPoint
@@ -37,6 +40,13 @@ class CommericalAdvertismentFragment : BaseFragment() ,TextWatcher {
     lateinit var rateAdapter: AddCategoryAdapter
     lateinit var landOrganizationAdapter: AddCategoryAdapter
 
+    var is_new:Boolean = true
+    var is_commercial:Boolean = true
+    var is_finished = true
+    var with_garden = true
+    var with_roof = true
+    var land_level = "0"
+    var land_organization = "0"
     companion object{
         var title = ""
         var estateType = 0
@@ -103,7 +113,9 @@ class CommericalAdvertismentFragment : BaseFragment() ,TextWatcher {
         rateList.add(AddCategoryModel(3, "طابق واحد", false))
         rateList.add(AddCategoryModel(4, "أكثر من ثلاث طوابق", false))
         rateList.add(AddCategoryModel(5, "طابقين", false))
-        rateAdapter = AddCategoryAdapter (rateList){}
+        rateAdapter = AddCategoryAdapter (rateList){
+            land_level = it!!.text.toString()
+        }
         rateAdapter . notifyDataSetChanged ()
         binding . rvRate . adapter = rateAdapter
 
@@ -120,10 +132,30 @@ class CommericalAdvertismentFragment : BaseFragment() ,TextWatcher {
         landOrganizationList.add(AddCategoryModel(10, "غير ذلك", false))
 
 
-        landOrganizationAdapter = AddCategoryAdapter (landOrganizationList){}
+        landOrganizationAdapter = AddCategoryAdapter (landOrganizationList){
+            land_organization = it!!.text
+        }
         landOrganizationAdapter . notifyDataSetChanged ()
         binding . rvLandOrganization . adapter = landOrganizationAdapter
 
+        binding.radio1.setOnCheckedChangeListener { buttonView, isChecked ->
+            is_new = isChecked
+        }
+        binding.radio2.setOnCheckedChangeListener { buttonView, isChecked ->
+            is_new = !isChecked
+        }
+        binding.radioYesResidentialBuilding.setOnCheckedChangeListener { buttonView, isChecked ->
+            is_commercial = !isChecked
+        }
+        binding.radioNoResidentialBuilding.setOnCheckedChangeListener { buttonView, isChecked ->
+            is_commercial = isChecked
+        }
+        binding.radioYes.setOnCheckedChangeListener { buttonView, isChecked ->
+            is_finished = isChecked
+        }
+        binding.radioNo.setOnCheckedChangeListener { buttonView, isChecked ->
+            is_finished = !isChecked
+        }
 
         binding.radioYesContainsBuilding.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked){
@@ -161,9 +193,11 @@ class CommericalAdvertismentFragment : BaseFragment() ,TextWatcher {
 
         binding.radioYesWithGardenGear.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked){
+                with_garden = true
                 binding.tvGearAreaSquareMetres.visibility = View.VISIBLE
                 binding.tlGearAreaSquareMetres.visibility = View.VISIBLE
             } else{
+                with_garden = false
                 binding.tvGearAreaSquareMetres.visibility = View.GONE
                 binding.tlGearAreaSquareMetres.visibility = View.GONE
             }
@@ -171,9 +205,11 @@ class CommericalAdvertismentFragment : BaseFragment() ,TextWatcher {
 
         binding.radioYesWithRoof.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked){
+                with_roof = true
                 binding.tvRoofAreaSquareMetres.visibility = View.VISIBLE
                 binding.tlRoofAreaSquareMetres.visibility = View.VISIBLE
             } else{
+                with_roof = false
                 binding.tvRoofAreaSquareMetres.visibility = View.GONE
                 binding.tlRoofAreaSquareMetres.visibility = View.GONE
             }
@@ -295,6 +331,31 @@ class CommericalAdvertismentFragment : BaseFragment() ,TextWatcher {
         binding.rvDetermineApartmentsFeatures.adapter = apartmentFeatureAdapter
 
         binding.btnNext.setOnClickListener {
+            var realStateAdsModel = AddRealStateAdsModel(
+                is_new = is_new,
+                is_commercial = is_commercial,
+                age_of_construction = binding.etAgeConstructionYears.text.toString(),
+                is_finished =is_finished,
+                bedrooms_number = binding.actvNumberBedrooms.text.toString(),
+                bathrooms_number = binding.actvNumberBathrooms.text.toString(),
+                building_floors= binding.etNumberFloorsBuilding.text.toString(),
+                building_apartments = binding.etTotalNumberApartmentsBuilding.text.toString(),
+                building_units = binding.etNumberUnitsBuilding.text.toString(),
+                floor = binding.actvFloor.text.toString(),
+                with_garden = with_garden,
+                garden_area= binding.etGearAreaSquareMetres.text.toString(),
+                with_roof= with_roof,
+                roof_area = binding.etRoofAreaSquareMetres.text.toString(),
+                building_area  = binding.etBuildingAreaTitle.text.toString(),
+                land_area = binding.etLandArea.text.toString(),
+                land_level = land_level,
+                land_organization = land_organization,
+                farmArea = binding.etFarmArea.text.toString(),
+                property_id = "1",
+                typeOfAds = AddEstateAdsFragment.adCategory.toString()
+            )
+            AddAdsImages.type = "real_estate"
+            AddAdsImages.realStateAdsModel = realStateAdsModel
             findNavController().navigate(R.id.action_commericalAdvertismentFragment_to_addAdsImages)
         }
     }

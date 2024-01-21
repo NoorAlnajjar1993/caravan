@@ -23,6 +23,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import com.caravan.databinding.DialogCommercialBinding
 import com.caravan.databinding.DialogDeactivateBinding
+import com.caravan.databinding.DialogEnterAllFieldsBinding
 import com.caravan.databinding.DialogHousingAdsBinding
 import com.caravan.databinding.DialogLogInAddAdsBinding
 import com.caravan.databinding.DialogLogInBinding
@@ -417,6 +418,33 @@ fun Context.showLoginAddAdsDialog(
     dialog.apply {
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         val binding = DialogLogInAddAdsBinding.inflate(LayoutInflater.from(context))
+        setContentView(binding.root)
+
+        binding.apply {
+            onClickListener = View.OnClickListener {
+                when (it) {
+                    btnLogout -> onPositiveButtonClick(dialog)
+                }
+            }
+        }
+
+        window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+        setCancelable(isCancelable)
+
+    }.show()
+}
+
+
+
+fun Context.showEnterAllFieldsDialog(
+    onPositiveButtonClick: (dialog: Dialog) -> Unit = {},
+    isCancelable: Boolean = true
+) {
+    val dialog = Dialog(this)
+    dialog.apply {
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
+        val binding = DialogEnterAllFieldsBinding.inflate(LayoutInflater.from(context))
         setContentView(binding.root)
 
         binding.apply {

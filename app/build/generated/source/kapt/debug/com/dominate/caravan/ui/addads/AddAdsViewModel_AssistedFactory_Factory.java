@@ -1,7 +1,9 @@
 package com.dominate.caravan.ui.addads;
 
+import com.dominate.caravan.retrofit.data.HomeDataSource;
 import dagger.internal.Factory;
 import javax.annotation.Generated;
+import javax.inject.Provider;
 
 @Generated(
     value = "dagger.internal.codegen.ComponentProcessor",
@@ -12,20 +14,24 @@ import javax.annotation.Generated;
     "rawtypes"
 })
 public final class AddAdsViewModel_AssistedFactory_Factory implements Factory<AddAdsViewModel_AssistedFactory> {
+  private final Provider<HomeDataSource> homeDataSourceProvider;
+
+  public AddAdsViewModel_AssistedFactory_Factory(Provider<HomeDataSource> homeDataSourceProvider) {
+    this.homeDataSourceProvider = homeDataSourceProvider;
+  }
+
   @Override
   public AddAdsViewModel_AssistedFactory get() {
-    return newInstance();
+    return newInstance(homeDataSourceProvider);
   }
 
-  public static AddAdsViewModel_AssistedFactory_Factory create() {
-    return InstanceHolder.INSTANCE;
+  public static AddAdsViewModel_AssistedFactory_Factory create(
+      Provider<HomeDataSource> homeDataSourceProvider) {
+    return new AddAdsViewModel_AssistedFactory_Factory(homeDataSourceProvider);
   }
 
-  public static AddAdsViewModel_AssistedFactory newInstance() {
-    return new AddAdsViewModel_AssistedFactory();
-  }
-
-  private static final class InstanceHolder {
-    private static final AddAdsViewModel_AssistedFactory_Factory INSTANCE = new AddAdsViewModel_AssistedFactory_Factory();
+  public static AddAdsViewModel_AssistedFactory newInstance(
+      Provider<HomeDataSource> homeDataSource) {
+    return new AddAdsViewModel_AssistedFactory(homeDataSource);
   }
 }

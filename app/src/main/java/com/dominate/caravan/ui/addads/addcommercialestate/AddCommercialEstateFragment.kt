@@ -26,7 +26,7 @@ class AddCommercialEstateFragment : BaseFragment(), TextWatcher {
     var binding: FragmentAddCommercialEstateBinding by autoCleared()
     private val viewModel: AddAdsViewModel by viewModels()
     lateinit var addCommercialEstateAdapter: AddCommercialEstateAdapter
-    var estateType = 0
+    var type = 0
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -75,16 +75,16 @@ class AddCommercialEstateFragment : BaseFragment(), TextWatcher {
 
 
         addCommercialEstateAdapter = AddCommercialEstateAdapter(addCategoryList) {
-            estateType = it!!.id
+            type = it!!.id
         }
         addCommercialEstateAdapter.notifyDataSetChanged()
         binding.rvSelectAdCategory.adapter = addCommercialEstateAdapter
 
         binding.btnNext.setOnClickListener {
-            if (estateType == 0) {
+            if (type == 0) {
                 showErrorToast("حدد نوع الإعلان التجاري")
             } else {
-                CommericalAdSpecificationsFragment.estateType = estateType
+                CommericalAdSpecificationsFragment.type = type
                 findNavController().navigate(R.id.action_addCommercialEstateFragment_to_commericalAdSpecificationsFragment)
             }
         }

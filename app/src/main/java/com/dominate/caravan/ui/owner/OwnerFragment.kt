@@ -160,11 +160,33 @@ class OwnerFragment  : BaseFragment()  , TextWatcher {
             R.anim.fade_in)
         binding.constraintLayout01.startAnimation(fade_in)
 
-        binding.textView02.text = title
-        binding.tvName.text = title
-        binding.tvPhone.text = phone
-        binding.tvWhatsApp.text = whatsapp
-        binding.tvEmail.text = email
+        if (!title.isNullOrEmpty()) {
+            binding.textView02.text = title
+            binding.tvName.text = title
+        }else {
+            binding.textView02.text = "الإسم"
+            binding.tvName.text =  "الإسم"
+        }
+
+        if (!phone.isNullOrEmpty()) {
+            binding.tvPhone.text = phone
+        }else {
+            binding.tvPhone.text = "رقم الهاتق"
+        }
+
+
+        if (!whatsapp.isNullOrEmpty()) {
+            binding.tvWhatsApp.text = whatsapp
+        }else {
+            binding.tvWhatsApp.text = "رقم الواتس اب"
+        }
+
+        if (!email.isNullOrEmpty()) {
+            binding.tvEmail.text = email
+        }else {
+            binding.tvEmail.text = "البريد الإلكتروني"
+        }
+
         binding.tvAdsName.text = "إعلانات $title"
 
         binding.imageView02.setOnClickListener {
@@ -195,7 +217,9 @@ class OwnerFragment  : BaseFragment()  , TextWatcher {
             sendEmail(recipient, subject, message)
         }
 
-        setImageUrl(binding.ivProfileImage, image)
+        if (!image.isNullOrEmpty()) {
+            setImageUrl(binding.ivProfileImage, image)
+        }
     }
 
     private fun sendEmail(recipient: String, subject: String, message: String) {

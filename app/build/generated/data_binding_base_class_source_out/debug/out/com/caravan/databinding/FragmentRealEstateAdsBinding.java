@@ -4,12 +4,15 @@ package com.caravan.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
+import com.airbnb.lottie.LottieAnimationView;
 import com.caravan.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -20,19 +23,16 @@ public final class FragmentRealEstateAdsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final LottieAnimationView animationView;
+
+  @NonNull
   public final AppCompatImageView ivBack;
 
   @NonNull
-  public final AppCompatImageView ivDelete;
+  public final ProgressBar loading;
 
   @NonNull
-  public final AppCompatImageView ivEdit;
-
-  @NonNull
-  public final AppCompatImageView ivImage;
-
-  @NonNull
-  public final AppCompatImageView ivPlay;
+  public final RecyclerView rvMyAds;
 
   @NonNull
   public final AppCompatTextView textView02;
@@ -41,48 +41,33 @@ public final class FragmentRealEstateAdsBinding implements ViewBinding {
   public final AppCompatTextView tvArrested;
 
   @NonNull
-  public final AppCompatTextView tvDate;
-
-  @NonNull
   public final AppCompatTextView tvEffective;
 
   @NonNull
-  public final AppCompatTextView tvName;
-
-  @NonNull
-  public final AppCompatTextView tvPrice;
+  public final AppCompatTextView tvNoAds;
 
   @NonNull
   public final AppCompatTextView tvRejected;
 
   @NonNull
-  public final AppCompatTextView tvSeen;
-
-  @NonNull
   public final AppCompatTextView tvUnderReview;
 
   private FragmentRealEstateAdsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppCompatImageView ivBack, @NonNull AppCompatImageView ivDelete,
-      @NonNull AppCompatImageView ivEdit, @NonNull AppCompatImageView ivImage,
-      @NonNull AppCompatImageView ivPlay, @NonNull AppCompatTextView textView02,
-      @NonNull AppCompatTextView tvArrested, @NonNull AppCompatTextView tvDate,
-      @NonNull AppCompatTextView tvEffective, @NonNull AppCompatTextView tvName,
-      @NonNull AppCompatTextView tvPrice, @NonNull AppCompatTextView tvRejected,
-      @NonNull AppCompatTextView tvSeen, @NonNull AppCompatTextView tvUnderReview) {
+      @NonNull LottieAnimationView animationView, @NonNull AppCompatImageView ivBack,
+      @NonNull ProgressBar loading, @NonNull RecyclerView rvMyAds,
+      @NonNull AppCompatTextView textView02, @NonNull AppCompatTextView tvArrested,
+      @NonNull AppCompatTextView tvEffective, @NonNull AppCompatTextView tvNoAds,
+      @NonNull AppCompatTextView tvRejected, @NonNull AppCompatTextView tvUnderReview) {
     this.rootView = rootView;
+    this.animationView = animationView;
     this.ivBack = ivBack;
-    this.ivDelete = ivDelete;
-    this.ivEdit = ivEdit;
-    this.ivImage = ivImage;
-    this.ivPlay = ivPlay;
+    this.loading = loading;
+    this.rvMyAds = rvMyAds;
     this.textView02 = textView02;
     this.tvArrested = tvArrested;
-    this.tvDate = tvDate;
     this.tvEffective = tvEffective;
-    this.tvName = tvName;
-    this.tvPrice = tvPrice;
+    this.tvNoAds = tvNoAds;
     this.tvRejected = tvRejected;
-    this.tvSeen = tvSeen;
     this.tvUnderReview = tvUnderReview;
   }
 
@@ -113,33 +98,27 @@ public final class FragmentRealEstateAdsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.animationView;
+      LottieAnimationView animationView = rootView.findViewById(id);
+      if (animationView == null) {
+        break missingId;
+      }
+
       id = R.id.iv_back;
       AppCompatImageView ivBack = rootView.findViewById(id);
       if (ivBack == null) {
         break missingId;
       }
 
-      id = R.id.iv_delete;
-      AppCompatImageView ivDelete = rootView.findViewById(id);
-      if (ivDelete == null) {
+      id = R.id.loading;
+      ProgressBar loading = rootView.findViewById(id);
+      if (loading == null) {
         break missingId;
       }
 
-      id = R.id.iv_edit;
-      AppCompatImageView ivEdit = rootView.findViewById(id);
-      if (ivEdit == null) {
-        break missingId;
-      }
-
-      id = R.id.iv_image;
-      AppCompatImageView ivImage = rootView.findViewById(id);
-      if (ivImage == null) {
-        break missingId;
-      }
-
-      id = R.id.iv_play;
-      AppCompatImageView ivPlay = rootView.findViewById(id);
-      if (ivPlay == null) {
+      id = R.id.rv_my_ads;
+      RecyclerView rvMyAds = rootView.findViewById(id);
+      if (rvMyAds == null) {
         break missingId;
       }
 
@@ -155,27 +134,15 @@ public final class FragmentRealEstateAdsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tv_date;
-      AppCompatTextView tvDate = rootView.findViewById(id);
-      if (tvDate == null) {
-        break missingId;
-      }
-
       id = R.id.tv_effective;
       AppCompatTextView tvEffective = rootView.findViewById(id);
       if (tvEffective == null) {
         break missingId;
       }
 
-      id = R.id.tv_name;
-      AppCompatTextView tvName = rootView.findViewById(id);
-      if (tvName == null) {
-        break missingId;
-      }
-
-      id = R.id.tv_price;
-      AppCompatTextView tvPrice = rootView.findViewById(id);
-      if (tvPrice == null) {
+      id = R.id.tv_no_ads;
+      AppCompatTextView tvNoAds = rootView.findViewById(id);
+      if (tvNoAds == null) {
         break missingId;
       }
 
@@ -185,21 +152,15 @@ public final class FragmentRealEstateAdsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tv_seen;
-      AppCompatTextView tvSeen = rootView.findViewById(id);
-      if (tvSeen == null) {
-        break missingId;
-      }
-
       id = R.id.tv_under_review;
       AppCompatTextView tvUnderReview = rootView.findViewById(id);
       if (tvUnderReview == null) {
         break missingId;
       }
 
-      return new FragmentRealEstateAdsBinding((ConstraintLayout) rootView, ivBack, ivDelete, ivEdit,
-          ivImage, ivPlay, textView02, tvArrested, tvDate, tvEffective, tvName, tvPrice, tvRejected,
-          tvSeen, tvUnderReview);
+      return new FragmentRealEstateAdsBinding((ConstraintLayout) rootView, animationView, ivBack,
+          loading, rvMyAds, textView02, tvArrested, tvEffective, tvNoAds, tvRejected,
+          tvUnderReview);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

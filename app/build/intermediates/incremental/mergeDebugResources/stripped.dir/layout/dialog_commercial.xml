@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+                 
+                                  
+                                                       
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:paddingHorizontal="16dp" android:tag="layout/dialog_commercial_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outline_purple"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="19dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_commercial" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textView_06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="اعلان تجاري"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/textView_05" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textView_071"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="12dp"
+                android:drawableEnd="@drawable/ic_check"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="يظهر في الصفحة الرئيسية أو صفحة البحث"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@+id/textView_06" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textView_07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="12dp"
+                android:drawableEnd="@drawable/ic_check"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="يظهر بشكل اعلان كبير"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@+id/textView_06" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textView_08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="12dp"
+                android:drawableEnd="@drawable/ic_check"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="صالح لمدة 12 شهر"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@+id/textView_06" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textView_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="12dp"
+                android:drawableEnd="@drawable/ic_check"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:text="سعر الإعلان 50 دينار"
+                android:textColor="@color/purble"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@+id/textView_06" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="0.30"
+                    android:background="@drawable/outline_light_purple"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:gravity="center"
+                    android:tag="binding_1"             
+                    android:paddingVertical="10dp"
+                    android:text="@string/back"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnLogout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:background="@drawable/custom_bg_purple"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:tag="binding_2"             
+                    android:padding="10dp"
+                    android:text="استمرار"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

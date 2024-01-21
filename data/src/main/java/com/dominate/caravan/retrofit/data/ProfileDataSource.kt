@@ -31,6 +31,9 @@ class ProfileDataSource @Inject constructor(
         networkService.updateProfile(token, name, phone_number, whatsapp_number, about, image)
     }
 
+    suspend fun updateProfile2( token:String, name: RequestBody , phone_number: RequestBody,image: MultipartBody.Part?)=getResult {
+        networkService.updateProfile2(token, name, phone_number, image)
+    }
     suspend fun resetPasswordProfile( token: String,password: String,new_password: String)=getResult {
         networkService.changePassword(token, ChangePasswordRequest(password,new_password))
     }

@@ -34,6 +34,15 @@ import com.dominate.caravan.ui.account.accountsetting.AccountSettingViewModel_As
 import com.dominate.caravan.ui.account.changepassword.ChangePasswordFragment;
 import com.dominate.caravan.ui.account.changepassword.ChangePasswordViewModel_AssistedFactory;
 import com.dominate.caravan.ui.account.changepassword.ChangePasswordViewModel_AssistedFactory_Factory;
+import com.dominate.caravan.ui.account.commercialads.CommercialAdsFragment;
+import com.dominate.caravan.ui.account.commercialads.CommercialAdsViewModel_AssistedFactory;
+import com.dominate.caravan.ui.account.commercialads.CommercialAdsViewModel_AssistedFactory_Factory;
+import com.dominate.caravan.ui.account.commercialestateads.CommercialEstateAdsFragment;
+import com.dominate.caravan.ui.account.commercialestateads.CommercialEstateAdsViewModel_AssistedFactory;
+import com.dominate.caravan.ui.account.commercialestateads.CommercialEstateAdsViewModel_AssistedFactory_Factory;
+import com.dominate.caravan.ui.account.housingads.HousingAdsFragment;
+import com.dominate.caravan.ui.account.housingads.HousingAdsViewModel_AssistedFactory;
+import com.dominate.caravan.ui.account.housingads.HousingAdsViewModel_AssistedFactory_Factory;
 import com.dominate.caravan.ui.account.profile.ProfileFragment;
 import com.dominate.caravan.ui.account.profile.ProfileViewModel_AssistedFactory;
 import com.dominate.caravan.ui.account.profile.ProfileViewModel_AssistedFactory_Factory;
@@ -60,7 +69,6 @@ import com.dominate.caravan.ui.auth.register.ReqisterViewModel_AssistedFactory_F
 import com.dominate.caravan.ui.auth.siginin.SiginInViewModel_AssistedFactory;
 import com.dominate.caravan.ui.auth.siginin.SiginInViewModel_AssistedFactory_Factory;
 import com.dominate.caravan.ui.auth.siginin.SigininFragment;
-import com.dominate.caravan.ui.commercialads.CommercialAdsFragment;
 import com.dominate.caravan.ui.commercialestate.CommercialEstateFragment;
 import com.dominate.caravan.ui.estatedetails.EstateDetailsFragment;
 import com.dominate.caravan.ui.estatedetails.EstateDetailsViewModel_AssistedFactory;
@@ -72,13 +80,18 @@ import com.dominate.caravan.ui.home.HomeActivity;
 import com.dominate.caravan.ui.home.HomeFragment;
 import com.dominate.caravan.ui.home.HomeViewModel_AssistedFactory;
 import com.dominate.caravan.ui.home.HomeViewModel_AssistedFactory_Factory;
-import com.dominate.caravan.ui.housingads.HousingAdsFragment;
 import com.dominate.caravan.ui.notification.NotificationFragment;
 import com.dominate.caravan.ui.notification.NotificationViewModel_AssistedFactory;
 import com.dominate.caravan.ui.notification.NotificationViewModel_AssistedFactory_Factory;
 import com.dominate.caravan.ui.owner.OwnerFragment;
 import com.dominate.caravan.ui.owner.OwnerViewModel_AssistedFactory;
 import com.dominate.caravan.ui.owner.OwnerViewModel_AssistedFactory_Factory;
+import com.dominate.caravan.ui.packages.buy.BuyFragment;
+import com.dominate.caravan.ui.packages.cliq.CliqFragment;
+import com.dominate.caravan.ui.packages.completeFeature.CompleteFeatureFragment;
+import com.dominate.caravan.ui.packages.featureads.FeatureAdsFragment;
+import com.dominate.caravan.ui.packages.packages.PackagesFragment;
+import com.dominate.caravan.ui.packages.transferdata.TransferDataFragment;
 import com.dominate.caravan.ui.search.FilterFragment;
 import com.dominate.caravan.ui.search.SearchFragment;
 import com.dominate.caravan.ui.search.SearchViewModel_AssistedFactory;
@@ -247,21 +260,27 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
 
       private volatile Provider<AccountSettingViewModel_AssistedFactory> accountSettingViewModel_AssistedFactoryProvider;
 
+      private volatile Provider<HomeDataSource> homeDataSourceProvider;
+
       private volatile Provider<AddAdsViewModel_AssistedFactory> addAdsViewModel_AssistedFactoryProvider;
 
       private volatile Provider<BannerViewModel_AssistedFactory> bannerViewModel_AssistedFactoryProvider;
 
       private volatile Provider<ChangePasswordViewModel_AssistedFactory> changePasswordViewModel_AssistedFactoryProvider;
 
-      private volatile Provider<EditPasswordViewModel_AssistedFactory> editPasswordViewModel_AssistedFactoryProvider;
+      private volatile Provider<CommercialAdsViewModel_AssistedFactory> commercialAdsViewModel_AssistedFactoryProvider;
 
-      private volatile Provider<HomeDataSource> homeDataSourceProvider;
+      private volatile Provider<CommercialEstateAdsViewModel_AssistedFactory> commercialEstateAdsViewModel_AssistedFactoryProvider;
+
+      private volatile Provider<EditPasswordViewModel_AssistedFactory> editPasswordViewModel_AssistedFactoryProvider;
 
       private volatile Provider<EstateDetailsViewModel_AssistedFactory> estateDetailsViewModel_AssistedFactoryProvider;
 
       private volatile Provider<FavouriteViewModel_AssistedFactory> favouriteViewModel_AssistedFactoryProvider;
 
       private volatile Provider<HomeViewModel_AssistedFactory> homeViewModel_AssistedFactoryProvider;
+
+      private volatile Provider<HousingAdsViewModel_AssistedFactory> housingAdsViewModel_AssistedFactoryProvider;
 
       private volatile Provider<NotificationViewModel_AssistedFactory> notificationViewModel_AssistedFactoryProvider;
 
@@ -324,6 +343,23 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
         return (Provider<AccountSettingViewModel_AssistedFactory>) local;
       }
 
+      private HomeDataSource getHomeDataSource() {
+        return new HomeDataSource(DaggerCaravanApp_HiltComponents_SingletonC.this.getNetworkService());
+      }
+
+      private Provider<HomeDataSource> getHomeDataSourceProvider() {
+        Object local = homeDataSourceProvider;
+        if (local == null) {
+          local = new SwitchingProvider<>(4);
+          homeDataSourceProvider = (Provider<HomeDataSource>) local;
+        }
+        return (Provider<HomeDataSource>) local;
+      }
+
+      private AddAdsViewModel_AssistedFactory getAddAdsViewModel_AssistedFactory() {
+        return AddAdsViewModel_AssistedFactory_Factory.newInstance(getHomeDataSourceProvider());
+      }
+
       private Provider<AddAdsViewModel_AssistedFactory> getAddAdsViewModel_AssistedFactoryProvider(
           ) {
         Object local = addAdsViewModel_AssistedFactoryProvider;
@@ -338,7 +374,7 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
           ) {
         Object local = bannerViewModel_AssistedFactoryProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(4);
+          local = new SwitchingProvider<>(5);
           bannerViewModel_AssistedFactoryProvider = (Provider<BannerViewModel_AssistedFactory>) local;
         }
         return (Provider<BannerViewModel_AssistedFactory>) local;
@@ -352,33 +388,49 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
           ) {
         Object local = changePasswordViewModel_AssistedFactoryProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(5);
+          local = new SwitchingProvider<>(6);
           changePasswordViewModel_AssistedFactoryProvider = (Provider<ChangePasswordViewModel_AssistedFactory>) local;
         }
         return (Provider<ChangePasswordViewModel_AssistedFactory>) local;
+      }
+
+      private CommercialAdsViewModel_AssistedFactory getCommercialAdsViewModel_AssistedFactory() {
+        return CommercialAdsViewModel_AssistedFactory_Factory.newInstance(getHomeDataSourceProvider());
+      }
+
+      private Provider<CommercialAdsViewModel_AssistedFactory> getCommercialAdsViewModel_AssistedFactoryProvider(
+          ) {
+        Object local = commercialAdsViewModel_AssistedFactoryProvider;
+        if (local == null) {
+          local = new SwitchingProvider<>(7);
+          commercialAdsViewModel_AssistedFactoryProvider = (Provider<CommercialAdsViewModel_AssistedFactory>) local;
+        }
+        return (Provider<CommercialAdsViewModel_AssistedFactory>) local;
+      }
+
+      private CommercialEstateAdsViewModel_AssistedFactory getCommercialEstateAdsViewModel_AssistedFactory(
+          ) {
+        return CommercialEstateAdsViewModel_AssistedFactory_Factory.newInstance(getHomeDataSourceProvider());
+      }
+
+      private Provider<CommercialEstateAdsViewModel_AssistedFactory> getCommercialEstateAdsViewModel_AssistedFactoryProvider(
+          ) {
+        Object local = commercialEstateAdsViewModel_AssistedFactoryProvider;
+        if (local == null) {
+          local = new SwitchingProvider<>(8);
+          commercialEstateAdsViewModel_AssistedFactoryProvider = (Provider<CommercialEstateAdsViewModel_AssistedFactory>) local;
+        }
+        return (Provider<CommercialEstateAdsViewModel_AssistedFactory>) local;
       }
 
       private Provider<EditPasswordViewModel_AssistedFactory> getEditPasswordViewModel_AssistedFactoryProvider(
           ) {
         Object local = editPasswordViewModel_AssistedFactoryProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(6);
+          local = new SwitchingProvider<>(9);
           editPasswordViewModel_AssistedFactoryProvider = (Provider<EditPasswordViewModel_AssistedFactory>) local;
         }
         return (Provider<EditPasswordViewModel_AssistedFactory>) local;
-      }
-
-      private HomeDataSource getHomeDataSource() {
-        return new HomeDataSource(DaggerCaravanApp_HiltComponents_SingletonC.this.getNetworkService());
-      }
-
-      private Provider<HomeDataSource> getHomeDataSourceProvider() {
-        Object local = homeDataSourceProvider;
-        if (local == null) {
-          local = new SwitchingProvider<>(8);
-          homeDataSourceProvider = (Provider<HomeDataSource>) local;
-        }
-        return (Provider<HomeDataSource>) local;
       }
 
       private EstateDetailsViewModel_AssistedFactory getEstateDetailsViewModel_AssistedFactory() {
@@ -389,7 +441,7 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
           ) {
         Object local = estateDetailsViewModel_AssistedFactoryProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(7);
+          local = new SwitchingProvider<>(10);
           estateDetailsViewModel_AssistedFactoryProvider = (Provider<EstateDetailsViewModel_AssistedFactory>) local;
         }
         return (Provider<EstateDetailsViewModel_AssistedFactory>) local;
@@ -403,7 +455,7 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
           ) {
         Object local = favouriteViewModel_AssistedFactoryProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(9);
+          local = new SwitchingProvider<>(11);
           favouriteViewModel_AssistedFactoryProvider = (Provider<FavouriteViewModel_AssistedFactory>) local;
         }
         return (Provider<FavouriteViewModel_AssistedFactory>) local;
@@ -416,17 +468,31 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
       private Provider<HomeViewModel_AssistedFactory> getHomeViewModel_AssistedFactoryProvider() {
         Object local = homeViewModel_AssistedFactoryProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(10);
+          local = new SwitchingProvider<>(12);
           homeViewModel_AssistedFactoryProvider = (Provider<HomeViewModel_AssistedFactory>) local;
         }
         return (Provider<HomeViewModel_AssistedFactory>) local;
+      }
+
+      private HousingAdsViewModel_AssistedFactory getHousingAdsViewModel_AssistedFactory() {
+        return HousingAdsViewModel_AssistedFactory_Factory.newInstance(getHomeDataSourceProvider());
+      }
+
+      private Provider<HousingAdsViewModel_AssistedFactory> getHousingAdsViewModel_AssistedFactoryProvider(
+          ) {
+        Object local = housingAdsViewModel_AssistedFactoryProvider;
+        if (local == null) {
+          local = new SwitchingProvider<>(13);
+          housingAdsViewModel_AssistedFactoryProvider = (Provider<HousingAdsViewModel_AssistedFactory>) local;
+        }
+        return (Provider<HousingAdsViewModel_AssistedFactory>) local;
       }
 
       private Provider<NotificationViewModel_AssistedFactory> getNotificationViewModel_AssistedFactoryProvider(
           ) {
         Object local = notificationViewModel_AssistedFactoryProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(11);
+          local = new SwitchingProvider<>(14);
           notificationViewModel_AssistedFactoryProvider = (Provider<NotificationViewModel_AssistedFactory>) local;
         }
         return (Provider<NotificationViewModel_AssistedFactory>) local;
@@ -435,7 +501,7 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
       private Provider<OwnerViewModel_AssistedFactory> getOwnerViewModel_AssistedFactoryProvider() {
         Object local = ownerViewModel_AssistedFactoryProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(12);
+          local = new SwitchingProvider<>(15);
           ownerViewModel_AssistedFactoryProvider = (Provider<OwnerViewModel_AssistedFactory>) local;
         }
         return (Provider<OwnerViewModel_AssistedFactory>) local;
@@ -449,17 +515,21 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
           ) {
         Object local = profileViewModel_AssistedFactoryProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(13);
+          local = new SwitchingProvider<>(16);
           profileViewModel_AssistedFactoryProvider = (Provider<ProfileViewModel_AssistedFactory>) local;
         }
         return (Provider<ProfileViewModel_AssistedFactory>) local;
+      }
+
+      private RealEstateAdsViewModel_AssistedFactory getRealEstateAdsViewModel_AssistedFactory() {
+        return RealEstateAdsViewModel_AssistedFactory_Factory.newInstance(getHomeDataSourceProvider());
       }
 
       private Provider<RealEstateAdsViewModel_AssistedFactory> getRealEstateAdsViewModel_AssistedFactoryProvider(
           ) {
         Object local = realEstateAdsViewModel_AssistedFactoryProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(14);
+          local = new SwitchingProvider<>(17);
           realEstateAdsViewModel_AssistedFactoryProvider = (Provider<RealEstateAdsViewModel_AssistedFactory>) local;
         }
         return (Provider<RealEstateAdsViewModel_AssistedFactory>) local;
@@ -473,7 +543,7 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
           ) {
         Object local = reqisterViewModel_AssistedFactoryProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(15);
+          local = new SwitchingProvider<>(18);
           reqisterViewModel_AssistedFactoryProvider = (Provider<ReqisterViewModel_AssistedFactory>) local;
         }
         return (Provider<ReqisterViewModel_AssistedFactory>) local;
@@ -483,7 +553,7 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
           ) {
         Object local = searchViewModel_AssistedFactoryProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(16);
+          local = new SwitchingProvider<>(19);
           searchViewModel_AssistedFactoryProvider = (Provider<SearchViewModel_AssistedFactory>) local;
         }
         return (Provider<SearchViewModel_AssistedFactory>) local;
@@ -497,7 +567,7 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
           ) {
         Object local = siginInViewModel_AssistedFactoryProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(17);
+          local = new SwitchingProvider<>(20);
           siginInViewModel_AssistedFactoryProvider = (Provider<SiginInViewModel_AssistedFactory>) local;
         }
         return (Provider<SiginInViewModel_AssistedFactory>) local;
@@ -507,7 +577,7 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
           ) {
         Object local = splashViewModel_AssistedFactoryProvider;
         if (local == null) {
-          local = new SwitchingProvider<>(18);
+          local = new SwitchingProvider<>(21);
           splashViewModel_AssistedFactoryProvider = (Provider<SplashViewModel_AssistedFactory>) local;
         }
         return (Provider<SplashViewModel_AssistedFactory>) local;
@@ -515,7 +585,7 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
 
       private Map<String, Provider<ViewModelAssistedFactory<? extends ViewModel>>> getMapOfStringAndProviderOfViewModelAssistedFactoryOf(
           ) {
-        return MapBuilder.<String, Provider<ViewModelAssistedFactory<? extends ViewModel>>>newMapBuilder(17).put("com.dominate.caravan.ui.account.aboutcompany.AboutCompanyViewModel", (Provider) getAboutCompanyViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.account.accountsetting.AccountSettingViewModel", (Provider) getAccountSettingViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.addads.AddAdsViewModel", (Provider) getAddAdsViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.subfeatures.banner.BannerViewModel", (Provider) getBannerViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.account.changepassword.ChangePasswordViewModel", (Provider) getChangePasswordViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.auth.editpassword.EditPasswordViewModel", (Provider) getEditPasswordViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.estatedetails.EstateDetailsViewModel", (Provider) getEstateDetailsViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.favourite.FavouriteViewModel", (Provider) getFavouriteViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.home.HomeViewModel", (Provider) getHomeViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.notification.NotificationViewModel", (Provider) getNotificationViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.owner.OwnerViewModel", (Provider) getOwnerViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.account.profile.ProfileViewModel", (Provider) getProfileViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.account.realestateads.RealEstateAdsViewModel", (Provider) getRealEstateAdsViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.auth.register.ReqisterViewModel", (Provider) getReqisterViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.search.SearchViewModel", (Provider) getSearchViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.auth.siginin.SiginInViewModel", (Provider) getSiginInViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.splach.SplashViewModel", (Provider) getSplashViewModel_AssistedFactoryProvider()).build();
+        return MapBuilder.<String, Provider<ViewModelAssistedFactory<? extends ViewModel>>>newMapBuilder(20).put("com.dominate.caravan.ui.account.aboutcompany.AboutCompanyViewModel", (Provider) getAboutCompanyViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.account.accountsetting.AccountSettingViewModel", (Provider) getAccountSettingViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.addads.AddAdsViewModel", (Provider) getAddAdsViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.subfeatures.banner.BannerViewModel", (Provider) getBannerViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.account.changepassword.ChangePasswordViewModel", (Provider) getChangePasswordViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.account.commercialads.CommercialAdsViewModel", (Provider) getCommercialAdsViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.account.commercialestateads.CommercialEstateAdsViewModel", (Provider) getCommercialEstateAdsViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.auth.editpassword.EditPasswordViewModel", (Provider) getEditPasswordViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.estatedetails.EstateDetailsViewModel", (Provider) getEstateDetailsViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.favourite.FavouriteViewModel", (Provider) getFavouriteViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.home.HomeViewModel", (Provider) getHomeViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.account.housingads.HousingAdsViewModel", (Provider) getHousingAdsViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.notification.NotificationViewModel", (Provider) getNotificationViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.owner.OwnerViewModel", (Provider) getOwnerViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.account.profile.ProfileViewModel", (Provider) getProfileViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.account.realestateads.RealEstateAdsViewModel", (Provider) getRealEstateAdsViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.auth.register.ReqisterViewModel", (Provider) getReqisterViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.search.SearchViewModel", (Provider) getSearchViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.auth.siginin.SiginInViewModel", (Provider) getSiginInViewModel_AssistedFactoryProvider()).put("com.dominate.caravan.ui.splach.SplashViewModel", (Provider) getSplashViewModel_AssistedFactoryProvider()).build();
       }
 
       private ViewModelProvider.Factory getProvideFactory() {
@@ -610,6 +680,22 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
         }
 
         @Override
+        public void injectCommercialAdsFragment(CommercialAdsFragment commercialAdsFragment) {
+          injectCommercialAdsFragment2(commercialAdsFragment);
+        }
+
+        @Override
+        public void injectCommercialEstateAdsFragment(
+            CommercialEstateAdsFragment commercialEstateAdsFragment) {
+          injectCommercialEstateAdsFragment2(commercialEstateAdsFragment);
+        }
+
+        @Override
+        public void injectHousingAdsFragment(HousingAdsFragment housingAdsFragment) {
+          injectHousingAdsFragment2(housingAdsFragment);
+        }
+
+        @Override
         public void injectProfileFragment(ProfileFragment profileFragment) {
           injectProfileFragment2(profileFragment);
         }
@@ -684,8 +770,9 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
         }
 
         @Override
-        public void injectCommercialAdsFragment(CommercialAdsFragment commercialAdsFragment) {
-          injectCommercialAdsFragment2(commercialAdsFragment);
+        public void injectCommercialAdsFragment(
+            com.dominate.caravan.ui.commercialads.CommercialAdsFragment commercialAdsFragment) {
+          injectCommercialAdsFragment3(commercialAdsFragment);
         }
 
         @Override
@@ -710,8 +797,9 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
         }
 
         @Override
-        public void injectHousingAdsFragment(HousingAdsFragment housingAdsFragment) {
-          injectHousingAdsFragment2(housingAdsFragment);
+        public void injectHousingAdsFragment(
+            com.dominate.caravan.ui.housingads.HousingAdsFragment housingAdsFragment) {
+          injectHousingAdsFragment3(housingAdsFragment);
         }
 
         @Override
@@ -722,6 +810,36 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
         @Override
         public void injectOwnerFragment(OwnerFragment ownerFragment) {
           injectOwnerFragment2(ownerFragment);
+        }
+
+        @Override
+        public void injectBuyFragment(BuyFragment buyFragment) {
+          injectBuyFragment2(buyFragment);
+        }
+
+        @Override
+        public void injectCliqFragment(CliqFragment cliqFragment) {
+          injectCliqFragment2(cliqFragment);
+        }
+
+        @Override
+        public void injectCompleteFeatureFragment(CompleteFeatureFragment completeFeatureFragment) {
+          injectCompleteFeatureFragment2(completeFeatureFragment);
+        }
+
+        @Override
+        public void injectFeatureAdsFragment(FeatureAdsFragment featureAdsFragment) {
+          injectFeatureAdsFragment2(featureAdsFragment);
+        }
+
+        @Override
+        public void injectPackagesFragment(PackagesFragment packagesFragment) {
+          injectPackagesFragment2(packagesFragment);
+        }
+
+        @Override
+        public void injectTransferDataFragment(TransferDataFragment transferDataFragment) {
+          injectTransferDataFragment2(transferDataFragment);
         }
 
         @Override
@@ -773,6 +891,22 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
 
         private ChangePasswordFragment injectChangePasswordFragment2(
             ChangePasswordFragment instance) {
+          BaseFragment_MembersInjector.injectPrefs(instance, ActivityCImpl.this.getPrefs());
+          return instance;
+        }
+
+        private CommercialAdsFragment injectCommercialAdsFragment2(CommercialAdsFragment instance) {
+          BaseFragment_MembersInjector.injectPrefs(instance, ActivityCImpl.this.getPrefs());
+          return instance;
+        }
+
+        private CommercialEstateAdsFragment injectCommercialEstateAdsFragment2(
+            CommercialEstateAdsFragment instance) {
+          BaseFragment_MembersInjector.injectPrefs(instance, ActivityCImpl.this.getPrefs());
+          return instance;
+        }
+
+        private HousingAdsFragment injectHousingAdsFragment2(HousingAdsFragment instance) {
           BaseFragment_MembersInjector.injectPrefs(instance, ActivityCImpl.this.getPrefs());
           return instance;
         }
@@ -851,7 +985,8 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
           return instance;
         }
 
-        private CommercialAdsFragment injectCommercialAdsFragment2(CommercialAdsFragment instance) {
+        private com.dominate.caravan.ui.commercialads.CommercialAdsFragment injectCommercialAdsFragment3(
+            com.dominate.caravan.ui.commercialads.CommercialAdsFragment instance) {
           BaseFragment_MembersInjector.injectPrefs(instance, ActivityCImpl.this.getPrefs());
           return instance;
         }
@@ -877,7 +1012,8 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
           return instance;
         }
 
-        private HousingAdsFragment injectHousingAdsFragment2(HousingAdsFragment instance) {
+        private com.dominate.caravan.ui.housingads.HousingAdsFragment injectHousingAdsFragment3(
+            com.dominate.caravan.ui.housingads.HousingAdsFragment instance) {
           BaseFragment_MembersInjector.injectPrefs(instance, ActivityCImpl.this.getPrefs());
           return instance;
         }
@@ -888,6 +1024,37 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
         }
 
         private OwnerFragment injectOwnerFragment2(OwnerFragment instance) {
+          BaseFragment_MembersInjector.injectPrefs(instance, ActivityCImpl.this.getPrefs());
+          return instance;
+        }
+
+        private BuyFragment injectBuyFragment2(BuyFragment instance) {
+          BaseFragment_MembersInjector.injectPrefs(instance, ActivityCImpl.this.getPrefs());
+          return instance;
+        }
+
+        private CliqFragment injectCliqFragment2(CliqFragment instance) {
+          BaseFragment_MembersInjector.injectPrefs(instance, ActivityCImpl.this.getPrefs());
+          return instance;
+        }
+
+        private CompleteFeatureFragment injectCompleteFeatureFragment2(
+            CompleteFeatureFragment instance) {
+          BaseFragment_MembersInjector.injectPrefs(instance, ActivityCImpl.this.getPrefs());
+          return instance;
+        }
+
+        private FeatureAdsFragment injectFeatureAdsFragment2(FeatureAdsFragment instance) {
+          BaseFragment_MembersInjector.injectPrefs(instance, ActivityCImpl.this.getPrefs());
+          return instance;
+        }
+
+        private PackagesFragment injectPackagesFragment2(PackagesFragment instance) {
+          BaseFragment_MembersInjector.injectPrefs(instance, ActivityCImpl.this.getPrefs());
+          return instance;
+        }
+
+        private TransferDataFragment injectTransferDataFragment2(TransferDataFragment instance) {
           BaseFragment_MembersInjector.injectPrefs(instance, ActivityCImpl.this.getPrefs());
           return instance;
         }
@@ -974,51 +1141,60 @@ public final class DaggerCaravanApp_HiltComponents_SingletonC extends CaravanApp
             return (T) ActivityCImpl.this.getProfileDataSource();
 
             case 3: // com.dominate.caravan.ui.addads.AddAdsViewModel_AssistedFactory 
-            return (T) AddAdsViewModel_AssistedFactory_Factory.newInstance();
+            return (T) ActivityCImpl.this.getAddAdsViewModel_AssistedFactory();
 
-            case 4: // com.dominate.caravan.subfeatures.banner.BannerViewModel_AssistedFactory 
-            return (T) BannerViewModel_AssistedFactory_Factory.newInstance();
-
-            case 5: // com.dominate.caravan.ui.account.changepassword.ChangePasswordViewModel_AssistedFactory 
-            return (T) ActivityCImpl.this.getChangePasswordViewModel_AssistedFactory();
-
-            case 6: // com.dominate.caravan.ui.auth.editpassword.EditPasswordViewModel_AssistedFactory 
-            return (T) EditPasswordViewModel_AssistedFactory_Factory.newInstance();
-
-            case 7: // com.dominate.caravan.ui.estatedetails.EstateDetailsViewModel_AssistedFactory 
-            return (T) ActivityCImpl.this.getEstateDetailsViewModel_AssistedFactory();
-
-            case 8: // com.dominate.caravan.retrofit.data.HomeDataSource 
+            case 4: // com.dominate.caravan.retrofit.data.HomeDataSource 
             return (T) ActivityCImpl.this.getHomeDataSource();
 
-            case 9: // com.dominate.caravan.ui.favourite.FavouriteViewModel_AssistedFactory 
+            case 5: // com.dominate.caravan.subfeatures.banner.BannerViewModel_AssistedFactory 
+            return (T) BannerViewModel_AssistedFactory_Factory.newInstance();
+
+            case 6: // com.dominate.caravan.ui.account.changepassword.ChangePasswordViewModel_AssistedFactory 
+            return (T) ActivityCImpl.this.getChangePasswordViewModel_AssistedFactory();
+
+            case 7: // com.dominate.caravan.ui.account.commercialads.CommercialAdsViewModel_AssistedFactory 
+            return (T) ActivityCImpl.this.getCommercialAdsViewModel_AssistedFactory();
+
+            case 8: // com.dominate.caravan.ui.account.commercialestateads.CommercialEstateAdsViewModel_AssistedFactory 
+            return (T) ActivityCImpl.this.getCommercialEstateAdsViewModel_AssistedFactory();
+
+            case 9: // com.dominate.caravan.ui.auth.editpassword.EditPasswordViewModel_AssistedFactory 
+            return (T) EditPasswordViewModel_AssistedFactory_Factory.newInstance();
+
+            case 10: // com.dominate.caravan.ui.estatedetails.EstateDetailsViewModel_AssistedFactory 
+            return (T) ActivityCImpl.this.getEstateDetailsViewModel_AssistedFactory();
+
+            case 11: // com.dominate.caravan.ui.favourite.FavouriteViewModel_AssistedFactory 
             return (T) ActivityCImpl.this.getFavouriteViewModel_AssistedFactory();
 
-            case 10: // com.dominate.caravan.ui.home.HomeViewModel_AssistedFactory 
+            case 12: // com.dominate.caravan.ui.home.HomeViewModel_AssistedFactory 
             return (T) ActivityCImpl.this.getHomeViewModel_AssistedFactory();
 
-            case 11: // com.dominate.caravan.ui.notification.NotificationViewModel_AssistedFactory 
+            case 13: // com.dominate.caravan.ui.account.housingads.HousingAdsViewModel_AssistedFactory 
+            return (T) ActivityCImpl.this.getHousingAdsViewModel_AssistedFactory();
+
+            case 14: // com.dominate.caravan.ui.notification.NotificationViewModel_AssistedFactory 
             return (T) NotificationViewModel_AssistedFactory_Factory.newInstance();
 
-            case 12: // com.dominate.caravan.ui.owner.OwnerViewModel_AssistedFactory 
+            case 15: // com.dominate.caravan.ui.owner.OwnerViewModel_AssistedFactory 
             return (T) OwnerViewModel_AssistedFactory_Factory.newInstance();
 
-            case 13: // com.dominate.caravan.ui.account.profile.ProfileViewModel_AssistedFactory 
+            case 16: // com.dominate.caravan.ui.account.profile.ProfileViewModel_AssistedFactory 
             return (T) ActivityCImpl.this.getProfileViewModel_AssistedFactory();
 
-            case 14: // com.dominate.caravan.ui.account.realestateads.RealEstateAdsViewModel_AssistedFactory 
-            return (T) RealEstateAdsViewModel_AssistedFactory_Factory.newInstance();
+            case 17: // com.dominate.caravan.ui.account.realestateads.RealEstateAdsViewModel_AssistedFactory 
+            return (T) ActivityCImpl.this.getRealEstateAdsViewModel_AssistedFactory();
 
-            case 15: // com.dominate.caravan.ui.auth.register.ReqisterViewModel_AssistedFactory 
+            case 18: // com.dominate.caravan.ui.auth.register.ReqisterViewModel_AssistedFactory 
             return (T) ActivityCImpl.this.getReqisterViewModel_AssistedFactory();
 
-            case 16: // com.dominate.caravan.ui.search.SearchViewModel_AssistedFactory 
+            case 19: // com.dominate.caravan.ui.search.SearchViewModel_AssistedFactory 
             return (T) SearchViewModel_AssistedFactory_Factory.newInstance();
 
-            case 17: // com.dominate.caravan.ui.auth.siginin.SiginInViewModel_AssistedFactory 
+            case 20: // com.dominate.caravan.ui.auth.siginin.SiginInViewModel_AssistedFactory 
             return (T) ActivityCImpl.this.getSiginInViewModel_AssistedFactory();
 
-            case 18: // com.dominate.caravan.ui.splach.SplashViewModel_AssistedFactory 
+            case 21: // com.dominate.caravan.ui.splach.SplashViewModel_AssistedFactory 
             return (T) SplashViewModel_AssistedFactory_Factory.newInstance();
 
             default: throw new AssertionError(id);

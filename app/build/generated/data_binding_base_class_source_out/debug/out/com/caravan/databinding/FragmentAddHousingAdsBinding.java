@@ -51,13 +51,13 @@ public final class FragmentAddHousingAdsBinding implements ViewBinding {
   public final TextInputEditText etGearAreaSquareMetres;
 
   @NonNull
-  public final TextInputEditText etLandArea;
-
-  @NonNull
   public final TextInputEditText etNumberFloorsBuilding;
 
   @NonNull
   public final TextInputEditText etRoofAreaSquareMetres;
+
+  @NonNull
+  public final TextInputEditText etTo;
 
   @NonNull
   public final TextInputEditText etTotalNumberApartmentsBuilding;
@@ -165,8 +165,8 @@ public final class FragmentAddHousingAdsBinding implements ViewBinding {
       @NonNull AppCompatAutoCompleteTextView actvNumberFloorApartment,
       @NonNull MaterialButton btnNext, @NonNull TextInputEditText etBuildingAreaTitle,
       @NonNull TextInputEditText etFrom, @NonNull TextInputEditText etGearAreaSquareMetres,
-      @NonNull TextInputEditText etLandArea, @NonNull TextInputEditText etNumberFloorsBuilding,
-      @NonNull TextInputEditText etRoofAreaSquareMetres,
+      @NonNull TextInputEditText etNumberFloorsBuilding,
+      @NonNull TextInputEditText etRoofAreaSquareMetres, @NonNull TextInputEditText etTo,
       @NonNull TextInputEditText etTotalNumberApartmentsBuilding,
       @NonNull AppCompatImageView ivBack, @NonNull LinearLayoutCompat linApartmentArea,
       @NonNull RadioGroup radioGroupWithGardenGear, @NonNull RadioGroup radioGroupWithRoof,
@@ -198,9 +198,9 @@ public final class FragmentAddHousingAdsBinding implements ViewBinding {
     this.etBuildingAreaTitle = etBuildingAreaTitle;
     this.etFrom = etFrom;
     this.etGearAreaSquareMetres = etGearAreaSquareMetres;
-    this.etLandArea = etLandArea;
     this.etNumberFloorsBuilding = etNumberFloorsBuilding;
     this.etRoofAreaSquareMetres = etRoofAreaSquareMetres;
+    this.etTo = etTo;
     this.etTotalNumberApartmentsBuilding = etTotalNumberApartmentsBuilding;
     this.ivBack = ivBack;
     this.linApartmentArea = linApartmentArea;
@@ -311,12 +311,6 @@ public final class FragmentAddHousingAdsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.et_land_area;
-      TextInputEditText etLandArea = rootView.findViewById(id);
-      if (etLandArea == null) {
-        break missingId;
-      }
-
       id = R.id.et_number_floors_building;
       TextInputEditText etNumberFloorsBuilding = rootView.findViewById(id);
       if (etNumberFloorsBuilding == null) {
@@ -326,6 +320,12 @@ public final class FragmentAddHousingAdsBinding implements ViewBinding {
       id = R.id.et_roof_area_square_metres;
       TextInputEditText etRoofAreaSquareMetres = rootView.findViewById(id);
       if (etRoofAreaSquareMetres == null) {
+        break missingId;
+      }
+
+      id = R.id.et_to;
+      TextInputEditText etTo = rootView.findViewById(id);
+      if (etTo == null) {
         break missingId;
       }
 
@@ -529,8 +529,8 @@ public final class FragmentAddHousingAdsBinding implements ViewBinding {
 
       return new FragmentAddHousingAdsBinding((ConstraintLayout) rootView, actvFloor,
           actvNumberBathrooms, actvNumberBedrooms, actvNumberFloorApartment, btnNext,
-          etBuildingAreaTitle, etFrom, etGearAreaSquareMetres, etLandArea, etNumberFloorsBuilding,
-          etRoofAreaSquareMetres, etTotalNumberApartmentsBuilding, ivBack, linApartmentArea,
+          etBuildingAreaTitle, etFrom, etGearAreaSquareMetres, etNumberFloorsBuilding,
+          etRoofAreaSquareMetres, etTo, etTotalNumberApartmentsBuilding, ivBack, linApartmentArea,
           radioGroupWithGardenGear, radioGroupWithRoof, radioNoWithGardenGear, radioNoWithRoof,
           radioYesWithGardenGear, radioYesWithRoof, tilFloor, tilNumberBathrooms, tilNumberBedrooms,
           tilNumberFloorApartment, tlBuildingAreaTitle, tlFrom, tlGearAreaSquareMetres,

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+                 
+                                  
+                                                       
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:paddingHorizontal="16dp" android:tag="layout/dialog_report_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outline_purple"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="19dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_block_dialog" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:paddingHorizontal="24dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text="هل أنت متأكد من انك تريد حظر Mahmodul Hasan ?"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:background="@drawable/custom_bg_red_light"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:gravity="center"
+                android:layout_marginHorizontal="24dp"
+                android:lines="1"
+                android:layout_marginTop="24dp"
+                android:tag="binding_1"             
+                android:padding="10dp"
+                android:text="@string/block"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

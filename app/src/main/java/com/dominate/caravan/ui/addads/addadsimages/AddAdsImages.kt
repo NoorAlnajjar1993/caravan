@@ -18,12 +18,20 @@ import com.caravan.R
 import com.caravan.databinding.FragmentAddAdsImagesBinding
 import com.dominate.caravan.core.autoCleared
 import com.dominate.caravan.core.base.BaseFragment
+import com.dominate.caravan.core.showEnterAllFieldsDialog
+import com.dominate.caravan.medule.addads.AddCommercialAdsModel
+import com.dominate.caravan.medule.addads.AddCommercialEStateAdsModel
+import com.dominate.caravan.medule.addads.AddHousingAdsModel
+import com.dominate.caravan.medule.addads.AddRealStateAdsModel
 import com.dominate.caravan.medule.home.Media
 import com.dominate.caravan.ui.addads.AddAdsViewModel
 import com.dominate.caravan.ui.addads.addadsimages.adapter.MediaAdapter
 import com.github.dhaval2404.imagepicker.ImagePicker
 import com.vdx.designertoast.DesignerToast
 import dagger.hilt.android.AndroidEntryPoint
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
 import java.io.File
 import java.io.FileOutputStream
 import java.io.InputStream
@@ -34,13 +42,18 @@ class AddAdsImages : BaseFragment(), TextWatcher {
 
     var binding: FragmentAddAdsImagesBinding by autoCleared()
     private val viewModel: AddAdsViewModel by viewModels()
-    var mediasList :ArrayList<Media> = ArrayList()
+    var mediasList: ArrayList<Media> = ArrayList()
     lateinit var mediaAdapter: MediaAdapter
 
-
+    var property_ownership = "1"
+    var installment_payment = true
 
     companion object {
-        var estateType = 0
+        var type = ""
+        lateinit var realStateAdsModel: AddRealStateAdsModel
+        lateinit var AddCommercialEStateAdsModel: AddCommercialEStateAdsModel
+        lateinit var AddHousingAdsModel : AddHousingAdsModel
+        lateinit var AddCommercialAdsModel : AddCommercialAdsModel
     }
 
 
@@ -70,6 +83,11 @@ class AddAdsImages : BaseFragment(), TextWatcher {
 
     private fun setData() {
 
+        requireContext().showEnterAllFieldsDialog(
+            onPositiveButtonClick = {
+                it.dismiss()
+            })
+
         binding.ivBack.setOnClickListener {
             findNavController().popBackStack()
 
@@ -84,10 +102,99 @@ class AddAdsImages : BaseFragment(), TextWatcher {
             }
 
         }
+
+        binding.radioOwner.setOnCheckedChangeListener { buttonView, isChecked ->
+            property_ownership = if (isChecked) {
+                "1"
+            } else {
+                "2"
+            }
+        }
+        binding.radioNotOwner.setOnCheckedChangeListener { buttonView, isChecked ->
+            property_ownership = if (isChecked) {
+                "2"
+            } else {
+                "1"
+            }
+        }
+        binding.radioYes.setOnCheckedChangeListener { buttonView, isChecked ->
+            installment_payment = isChecked
+        }
+        binding.radioNo.setOnCheckedChangeListener { buttonView, isChecked ->
+            installment_payment = !isChecked
+        }
+
+
         binding.btnNext.setOnClickListener {
+            if (type == "real_estate") {
+                realStateAdsModel.title = binding.etAdTitle.text.toString()
+                realStateAdsModel.description = binding.etAdDescription.text.toString()
+                realStateAdsModel.property_ownership = property_ownership
+                realStateAdsModel.installment_payment = installment_payment
+                realStateAdsModel.price = binding.etPrice.text.toString()
+                realStateAdsModel.region = binding.etRegion.text.toString()
+                realStateAdsModel.region = binding.etRegion.text.toString()
+                realStateAdsModel.phone_number = binding.etPhoneNumber.text.toString()
+                realStateAdsModel.media = medias(mediasList)
+            } else   if (type == "commercial_estate") {
+                AddCommercialEStateAdsModel.title = binding.etAdTitle.text.toString()
+                AddCommercialEStateAdsModel.description = binding.etAdDescription.text.toString()
+                AddCommercialEStateAdsModel.property_ownership = property_ownership
+                AddCommercialEStateAdsModel.installment_payment = installment_payment
+                AddCommercialEStateAdsModel.price = binding.etPrice.text.toString()
+                AddCommercialEStateAdsModel.region = binding.etRegion.text.toString()
+                AddCommercialEStateAdsModel.region = binding.etRegion.text.toString()
+                AddCommercialEStateAdsModel.phone_number = binding.etPhoneNumber.text.toString()
+                AddCommercialEStateAdsModel.media = medias(mediasList)
+            } else   if (type == "housing") {
+                AddHousingAdsModel.title = binding.etAdTitle.text.toString()
+                AddHousingAdsModel.description = binding.etAdDescription.text.toString()
+                AddHousingAdsModel.property_ownership = property_ownership
+                AddHousingAdsModel.installment_payment = installment_payment
+                AddHousingAdsModel.price = binding.etPrice.text.toString()
+                AddHousingAdsModel.region = binding.etRegion.text.toString()
+                AddHousingAdsModel.region = binding.etRegion.text.toString()
+                AddHousingAdsModel.phone_number = binding.etPhoneNumber.text.toString()
+                AddHousingAdsModel.media = medias(mediasList)
+            } else   if (type == "commercial") {
+                AddCommercialAdsModel.title = binding.etAdTitle.text.toString()
+                AddCommercialAdsModel.description = binding.etAdDescription.text.toString()
+                AddCommercialAdsModel.property_ownership = property_ownership
+                AddCommercialAdsModel.installment_payment = installment_payment
+                AddCommercialAdsModel.price = binding.etPrice.text.toString()
+                AddCommercialAdsModel.region = binding.etRegion.text.toString()
+                AddCommercialAdsModel.region = binding.etRegion.text.toString()
+                AddCommercialAdsModel.phone_number = binding.etPhoneNumber.text.toString()
+                AddCommercialAdsModel.media = medias(mediasList)
+            }
+
             findNavController().navigate(R.id.action_addAdsImages_to_mapsFragment)
 
         }
+    }
+
+    private fun medias(mediasList: ArrayList<Media>?): ArrayList<MultipartBody.Part>? {
+        return if (mediasList.isNullOrEmpty()) {
+            null
+        } else {
+            val mediasPart = ArrayList<MultipartBody.Part>()
+            mediasPart.clear()
+            for ((index, mediaModel) in mediasList.withIndex()) {
+                val imagePart = uploadImageMedia(mediaModel.path ?: mediaModel.image, index)
+                if (imagePart != null) {
+                    mediasPart.add(imagePart)
+                }
+            }
+            mediasPart
+        }
+    }
+
+    fun uploadImageMedia(path: String, index: Int): MultipartBody.Part? {
+        return if (path.isNotEmpty() && File(path).exists()) {
+            val file = File(path)
+            val requestFile = RequestBody.create("application/octet-stream".toMediaTypeOrNull(), file)
+            MultipartBody.Part.createFormData("media", "${file.name}.jpeg", requestFile)
+        } else { null }
     }
 
     fun showErrorToast(message: String) {
@@ -131,8 +238,12 @@ class AddAdsImages : BaseFragment(), TextWatcher {
                 if (requestCode == 1001) {
                     val contentURI = data!!.data
                     var imagePath = getRealPathFromURI(contentURI!!, requireContext())
-                    mediasList.add(Media(
-                        image = contentURI.toString()))
+                    mediasList.add(
+                        Media(
+                            image = contentURI.toString(),
+                            path = imagePath
+                        )
+                    )
                     mediaAdapter = MediaAdapter(mediasList) {
                         mediasList.remove(it)
                     }
@@ -150,7 +261,6 @@ class AddAdsImages : BaseFragment(), TextWatcher {
             }
         }
     }
-
 
 
 }

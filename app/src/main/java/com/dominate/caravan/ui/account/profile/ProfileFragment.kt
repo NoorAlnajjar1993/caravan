@@ -15,6 +15,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.util.Base64
 import android.util.Log
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,7 +31,12 @@ import com.dominate.caravan.core.autoCleared
 import com.dominate.caravan.core.base.BaseFragment
 import com.dominate.caravan.ui.owner.OwnerFragment
 import com.dominate.caravan.utils.Resource
+import com.vdx.designertoast.DesignerToast
 import dagger.hilt.android.AndroidEntryPoint
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
+import okhttp3.RequestBody.Companion.toRequestBody
 import java.io.File
 import java.io.FileInputStream
 import java.io.FileNotFoundException
@@ -61,8 +67,6 @@ class ProfileFragment  : BaseFragment()  , TextWatcher {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentProfileBinding.inflate(inflater, container, false)
-
-
         return binding.root
 
     }
@@ -111,6 +115,17 @@ class ProfileFragment  : BaseFragment()  , TextWatcher {
             findNavController().navigate(R.id.action_profileFragment_to_realEstateAdsFragment)
 
         }
+        binding.tvMyCommercials.setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_commercialAdsFragment2)
+
+        }
+        binding.tvHousing.setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_housingAdsFragment2)
+
+        }
+        binding.tvCommercialEstate.setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_commercialEstateAdsFragment)
+        }
 
         binding.ivUploadImage.setOnClickListener {
             com.github.dhaval2404.imagepicker.ImagePicker.with(this)
@@ -123,6 +138,10 @@ class ProfileFragment  : BaseFragment()  , TextWatcher {
 
         binding.constraintLayout01.setOnClickListener {
             isWhatsAppInstalled("com.caravan")
+
+        }
+        binding.tvAdvertisementPackage.setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_featureAdsFragment)
 
         }
         observeUserProfile()
@@ -157,6 +176,10 @@ class ProfileFragment  : BaseFragment()  , TextWatcher {
                it.data!!.let {
                    binding.tvName.text= it.results.name
                    binding.tvPhone.text= it.results.phone_number
+                  if (!it.results.image.isNullOrEmpty()){
+                      Glide.with(this).load(it.results.image).into(binding.ivProfileImage)
+
+                  }
                }
             }
         })
@@ -173,6 +196,7 @@ class ProfileFragment  : BaseFragment()  , TextWatcher {
                 //HIDE CAMERA ICON AND TEXT
                 val contentURI = data!!.data
                 viewModel.frontCivilIdImagePath = getRealPathFromURI(contentURI!!, requireContext())
+                observeUpdateProfile()
 //                try {
 //                    bitmapFrontCivilId = when {
 //                        Build.VERSION.SDK_INT < 28 -> MediaStore.Images.Media.getBitmap(
@@ -192,6 +216,46 @@ class ProfileFragment  : BaseFragment()  , TextWatcher {
             super.onActivityResult(requestCode, resultCode, data)
         }
     }
+
+
+    private fun observeUpdateProfile() {
+        viewModel.updateProfile(token!!,
+            prefs.getCurrentUser().name.toRequestBody(),
+            prefs.getCurrentUser().phone_number.toRequestBody(),
+            image = uploadImageBack( viewModel.frontCivilIdImagePath, "image"))
+        viewModel.updateProfileResponse.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
+            if (it.status == Resource.Status.SUCCESS) {
+
+                it.data!!.let {
+                    showSuccessToast(it.results.toString())
+                }
+            }
+        })
+    }
+
+    fun showSuccessToast(message: String) {
+        DesignerToast.Custom(
+            requireContext(), message, Gravity.TOP or Gravity.FILL_HORIZONTAL, Toast.LENGTH_SHORT,
+            R.drawable.purple_gradient, 16, "#FFFFFF", R.drawable.ic_checkbox_rect, 55, 219
+        )
+    }
+
+    fun uploadImageBack(filePath: String, name:String): MultipartBody.Part? {
+        if (filePath.isNotEmpty()) {
+            val file = File(filePath)
+            val requestFile =
+                RequestBody.create("application/octet-stream".toMediaTypeOrNull(), file)
+            val filePart = MultipartBody.Part.createFormData(
+                name,
+                "/C:/Users/Owner/Desktop/${file.name}.png",
+                requestFile
+            )
+            return filePart
+        } else {
+            return null
+        }
+    }
+
 
     fun encoder(imagePath: String?): String? {
         var base64Image = ""

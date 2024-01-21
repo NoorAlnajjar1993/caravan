@@ -295,6 +295,34 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_profileFragment_to_commercialAdsFragment2"
+            app:destination="@id/commercialAdsFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_profileFragment_to_housingAdsFragment2"
+            app:destination="@id/housingAdsFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_profileFragment_to_commercialEstateAdsFragment"
+            app:destination="@id/commercialEstateAdsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_profileFragment_to_featureAdsFragment"
+            app:destination="@id/featureAdsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/changePasswordFragment"
@@ -594,7 +622,25 @@
         android:id="@+id/completeFragment"
         tools:layout="@layout/fragment_complete"
         android:name="com.dominate.caravan.ui.addads.complete.CompleteFragment"
-        android:label="CompleteFragment" />
+        android:label="CompleteFragment" >
+        <action
+            android:id="@+id/action_completeFragment_to_featureAdsFragment"
+            app:destination="@id/featureAdsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_completeFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
     <fragment
         android:id="@+id/addHousingAdsFragment"
         tools:layout="@layout/fragment_add_housing_ads"
@@ -621,4 +667,88 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
+    <fragment
+        android:id="@+id/commercialAdsFragment2"
+        android:name="com.dominate.caravan.ui.account.commercialads.CommercialAdsFragment"
+        android:label="CommercialAdsFragment" />
+    <fragment
+        android:id="@+id/housingAdsFragment2"
+        android:name="com.dominate.caravan.ui.account.housingads.HousingAdsFragment"
+        android:label="HousingAdsFragment" />
+    <fragment
+        android:id="@+id/commercialEstateAdsFragment"
+        android:name="com.dominate.caravan.ui.account.commercialestateads.CommercialEstateAdsFragment"
+        android:label="CommercialEstateAdsFragment" />
+    <fragment
+        android:id="@+id/featureAdsFragment"
+        android:name="com.dominate.caravan.ui.packages.featureads.FeatureAdsFragment"
+        android:label="FeatureAdsFragment">
+        <action
+            android:id="@+id/action_featureAdsFragment_to_packagesFragment"
+            app:destination="@id/packagesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/packagesFragment"
+        android:name="com.dominate.caravan.ui.packages.packages.PackagesFragment"
+        android:label="PackagesFragment" >
+        <action
+            android:id="@+id/action_packagesFragment_to_buyFragment"
+            app:destination="@id/buyFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/buyFragment"
+        android:name="com.dominate.caravan.ui.packages.buy.BuyFragment"
+        android:label="BuyFragment">
+        <action
+            android:id="@+id/action_buyFragment_to_transferDataFragment"
+            app:destination="@id/transferDataFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_buyFragment_to_cliqFragment"
+            app:destination="@id/cliqFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/transferDataFragment"
+        android:name="com.dominate.caravan.ui.packages.transferdata.TransferDataFragment"
+        android:label="TransferDataFragment">
+        <action
+            android:id="@+id/action_transferDataFragment_to_completeFeatureFragment"
+            app:destination="@id/completeFeatureFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/cliqFragment"
+        android:name="com.dominate.caravan.ui.packages.cliq.CliqFragment"
+        android:label="CliqFragment" >
+        <action
+            android:id="@+id/action_cliqFragment_to_completeFeatureFragment"
+            app:destination="@id/completeFeatureFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/completeFeatureFragment"
+        android:name="com.dominate.caravan.ui.packages.completeFeature.CompleteFeatureFragment"
+        android:label="CompleteFeatureFragment" />
 </navigation>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray_3">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/ic_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:text=""
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+          <androidx.appcompat.widget.AppCompatImageView
+              android:id="@+id/complete_1"
+              app:layout_constraintTop_toBottomOf="@+id/iv_back"
+              app:layout_constraintStart_toStartOf="parent"
+              android:src="@drawable/complete_1"
+              android:layout_marginTop="54dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/complete_2"
+                app:layout_constraintTop_toTopOf="@+id/complete_1"
+                app:layout_constraintBottom_toBottomOf="@+id/complete_1"
+                app:layout_constraintStart_toStartOf="@+id/complete_1"
+                app:layout_constraintEnd_toEndOf="@+id/complete_1"
+                android:src="@drawable/complete_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/complete_3"
+                app:layout_constraintTop_toTopOf="@+id/complete_2"
+                app:layout_constraintBottom_toBottomOf="@+id/complete_2"
+                app:layout_constraintStart_toStartOf="@+id/complete_2"
+                android:src="@drawable/complete_3"
+                app:layout_constraintEnd_toEndOf="@+id/complete_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/complete_4"
+                app:layout_constraintTop_toTopOf="@+id/complete_2"
+                app:layout_constraintBottom_toBottomOf="@+id/complete_2"
+                app:layout_constraintStart_toStartOf="@+id/complete_2"
+                android:src="@drawable/complete_4"
+                app:layout_constraintEnd_toEndOf="@+id/complete_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_text_01"
+                app:layout_constraintTop_toBottomOf="@+id/complete_1"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/neo_sans_arabic_bold"
+                android:layout_marginTop="40dp"
+                android:textSize="16sp"
+                android:text="تم الارسال بنجاح"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_text_02"
+                app:layout_constraintTop_toBottomOf="@+id/tv_text_01"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:text="أمهلنا دقائق من فضلك، وسيتم تنفيذ طلبك \n بأسرع وقت"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/custom_bg_green"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_text_02">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:src="@drawable/ic_whatsapp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neo_sans_arabic_bold"
+                    android:text="@string/are_you_having_problem_connect_with_us"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView_04"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neo_sans_arabic"
+                    android:text="@string/our_team_ready_answer_your_inquiries"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_03"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
